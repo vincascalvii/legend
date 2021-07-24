@@ -107,11 +107,15 @@ a {
 }
 
 .pokedex .block {
+	display: flex;
+	justify-content: space-between;
     background-color: #eee;
     width: 100%;
     height: 100px;
     margin-bottom: 10px;
+    border: 1px solid #eee;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .pokedex .block .info,
