@@ -1,0 +1,44 @@
+/* ================================================================
+
+	POKEMON BLOCK
+
+================================================================ */
+
+.pokedex .block .info,
+.pokedex .block .image {
+    display: block;
+}
+
+.pokedex .block .info {
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+	padding: 10px;
+}
+
+.pokedex .block .name {
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin: 0;
+}
+
+.pokedex .block .type {
+	background-color: rgba(255,255,255,.5);
+	font-size: 1.4rem;
+	padding: 0 10px;
+	margin: 5px 0 0;
+    border-radius: 10px;
+	align-self: flex-start;
+}
+
+.pokedex .block.water {
+	background-color: #5ef14b;
+}
+
+.pokedex .block.fire {
+	background-color: #ff6e3f;
+}
+
+.pokedex .block.water {
+	background-color: #59a7ff;
+}

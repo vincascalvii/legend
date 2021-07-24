@@ -34,6 +34,12 @@
 	<!-- CRITICAL CSS -->
 	<link rel="stylesheet" type="text/css" href="/legend/css/critical-all.css?version1">
 
+	<!-- NON-CRITICAL CSS (ASYNC) -->
+	<link rel="preload" href="/css/non-critical.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript>
+		<link rel="stylesheet" href="/css/non-critical.css">
+	</noscript>
+
     <!-- FACEBOOK OPENGRAPH -->
     <meta property="og:site_name" content="Calvin Lam">
     <meta property="og:type" content="website">
@@ -75,7 +81,7 @@
 								<path d="M 9 2 C 5.1458514 2 2 5.1458514 2 9 C 2 12.854149 5.1458514 16 9 16 C 10.747998 16 12.345009 15.348024 13.574219 14.28125 L 14 14.707031 L 14 16 L 20 22 L 22 20 L 16 14 L 14.707031 14 L 14.28125 13.574219 C 15.348024 12.345009 16 10.747998 16 9 C 16 5.1458514 12.854149 2 9 2 z M 9 4 C 11.773268 4 14 6.2267316 14 9 C 14 11.773268 11.773268 14 9 14 C 6.2267316 14 4 11.773268 4 9 C 4 6.2267316 6.2267316 4 9 4 z"></path>
 							</svg>
 						</label>
-						<input type="text" id="search-bar" name="search-bar" class="input" placeholder="search">
+						<input type="text" id="search-bar" name="search-bar" class="input" placeholder="Search">
 					</div>
 
 					<div class="select-wrapper">
@@ -103,13 +109,76 @@
 		<section class="pokedex">
 			<div class="container">
 
-				<a href="/" class="block" aria-label="pokemon_name">
+				<a href="/pokemon?no=1" class="block grass" aria-label="Leafen">
+					<div class="info">
+						<p class="name">Leafen</p>
+						<p class="type type-1">Grass</p>
+						<p class="type type-2"></p>
+					</div>
 				</a>
 
-				<a href="/" class="block" aria-label="pokemon_name">
+				<a href="/pokemon?no=2" class="block grass" aria-label="Petalen">
+					<div class="info">
+						<p class="name">Petalen</p>
+						<p class="type type-1">Grass</p>
+						<p class="type type-2"></p>
+					</div>
 				</a>
 
-				<a href="/" class="block" aria-label="pokemon_name">
+				<a href="/pokemon?no=3" class="block grass ghost" aria-label="Shadoward">
+					<div class="info">
+						<p class="name">Shadoward</p>
+						<p class="type type-1">Grass</p>
+						<p class="type type-2">Ghost</p>
+					</div>
+				</a>
+
+				<a href="/pokemon?no=4" class="block fire" aria-label="Pupyro">
+					<div class="info">
+						<p class="name">Pupyro</p>
+						<p class="type type-1">Fire</p>
+						<p class="type type-2"></p>
+					</div>
+				</a>
+
+				<a href="/pokemon?no=5" class="block fire" aria-label="Flamound">
+					<div class="info">
+						<p class="name">Flamound</p>
+						<p class="type type-1">Fire</p>
+						<p class="type type-2"></p>
+					</div>
+				</a>
+
+				<a href="/pokemon?no=6" class="block fire dark" aria-label="Wolflare">
+					<div class="info">
+						<p class="name">Wolflare</p>
+						<p class="type type-1">Fire</p>
+						<p class="type type-2">Dark</p>
+					</div>
+				</a>
+
+				<a href="/pokemon?no=7" class="block water" aria-label="Turteen">
+					<div class="info">
+						<p class="name">Turteen</p>
+						<p class="type type-1">Water</p>
+						<p class="type type-2"></p>
+					</div>
+				</a>
+
+				<a href="/pokemon?no=8" class="block water" aria-label="Turtank">
+					<div class="info">
+						<p class="name">Turtank</p>
+						<p class="type type-1">Water</p>
+						<p class="type type-2"></p>
+					</div>
+				</a>
+
+				<a href="/pokemon?no=9" class="block water steel" aria-label="Turtidal">
+					<div class="info">
+						<p class="name">Turtidal</p>
+						<p class="type type-1">Water</p>
+						<p class="type type-2">Steel</p>
+					</div>
 				</a>
 
 			</div>

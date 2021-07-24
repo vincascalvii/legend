@@ -39,8 +39,8 @@ a {
 
 .header .back .icon {
     fill: #727272;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 
 .header .title {
@@ -116,4 +116,9 @@ a {
 
 .pokedex .block:nth-child(odd) {
     margin-right: 20px;
+}
+
+.pokedex .block .info
+.pokedex .block .image {
+	display: none;
 }
