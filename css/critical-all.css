@@ -108,14 +108,14 @@ a {
 
 .pokedex .block {
     background-color: #eee;
-    width: calc(50% - 10px);
+    width: calc(50% - 5px);
     height: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border-radius: 10px;
 }
 
 .pokedex .block:nth-child(odd) {
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .pokedex .block .info,
