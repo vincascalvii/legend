@@ -118,7 +118,7 @@ a {
     margin-right: 20px;
 }
 
-.pokedex .block .info
+.pokedex .block .info,
 .pokedex .block .image {
 	display: none;
 }
