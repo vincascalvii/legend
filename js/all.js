@@ -4,11 +4,11 @@
 
 ================================================================ */
 
-var searchBar = document.getElementById('#search-bar');
+var searchBar = document.getElementById('search-bar');
 var pokemons = document.querySelectorAll('.pokedex .block');
 
 searchBar.onkeyup = function() {
-	var searchTerm = document.getElementById('#search-bar').value;
+	var searchTerm = document.getElementById('search-bar').value;
 	if ( searchTerm ) searchTerm.toLowerCase();
 	console.log(searchTerm);
 	console.log(pokemons.innterText);
