@@ -118,7 +118,12 @@
 						</div>
 					</div>
 					<div class="image">
-						<img src="/legend/img/pokemon/001-1.png" alt="Leafen">
+						<picture>
+							<source data-srcset="/legend/img/pokemon/001-1.webp" type="image/webp">
+							<img data-src="/legend/img/pokemon/001-1.png" 
+							 	 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+							 	 class="lazyload" alt="Leafen">
+						</picture>
 					</div>
 				</a>
 
@@ -217,6 +222,9 @@
 		</section>
 
 	</main>
+
+	<!-- LAZYSIZES / LAZY LOADING -->
+	<script src="/js/lazysizes/lazysizes.min.js"></script>
 
 </body>
 
