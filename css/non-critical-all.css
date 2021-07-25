@@ -50,23 +50,23 @@
 }
 
 .pokedex .block.normal {
-	background-color: #adadad;
-	border-color: #adadad;
+	background-color: #727272;
+	border-color: #727272;
 }
 
 .pokedex .block.grass {
-	background-color: #53cc43;
-	border-color: #53cc43;
+	background-color: #28861c;
+	border-color: #28861c;
 }
 
 .pokedex .block.fire {
-	background-color: #ea5f32;
-	border-color: #ea5f32;
+	background-color: #ce481d;
+	border-color: #ce481d;
 }
 
 .pokedex .block.water {
-	background-color: #3c82d0;
-	border-color: #3c82d0;
+	background-color: #2d74c1;
+	border-color: #2d74c1;
 }
 
 .pokedex .block .image {
