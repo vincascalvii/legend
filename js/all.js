@@ -5,10 +5,11 @@
 ================================================================ */
 
 var searchBar = document.getElementById('#search-bar');
-var searchTerm = document.getElementById('#search-bar').value.toLowerCase();
 var pokemons = document.querySelectorAll('.pokedex .block');
 
 searchBar.onkeyup = function() {
+	var searchTerm = document.getElementById('#search-bar').value;
+	if ( searchTerm ) searchTerm.toLowerCase();
 	console.log(searchTerm);
 	console.log(pokemons.innterText);
 	for ( var i = 0; i < pokemons.length; i++ ) {
