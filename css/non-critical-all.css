@@ -49,6 +49,11 @@
 	margin-right: 5px;
 }
 
+.pokedex .block.normal {
+	background-color: #adadad;
+	border-color: #adadad;
+}
+
 .pokedex .block.grass {
 	background-color: #53cc43;
 	border-color: #53cc43;
