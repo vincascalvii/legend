@@ -5,7 +5,7 @@
 ================================================================ */
 
 .pokedex .block.active {
-	display: block;
+	display: flex;
 }
 
 .pokedex .block .info,
