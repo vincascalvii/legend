@@ -4,6 +4,10 @@
 
 ================================================================ */
 
+.pokedex .block.active {
+	display: block;
+}
+
 .pokedex .block .info,
 .pokedex .block .image {
     display: block;

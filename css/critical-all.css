@@ -107,7 +107,7 @@ a {
 }
 
 .pokedex .block {
-	display: flex;
+	display: none;
 	justify-content: space-between;
     background-color: #eee;
     width: 100%;
