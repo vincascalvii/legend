@@ -83,7 +83,7 @@ a {
 
 .header .filter .select-wrapper {
     position: relative;
-    width: calc(30% - 10px);
+    width: calc(35% - 10px);
 }
 
 .header .filter .select-wrapper .label {
