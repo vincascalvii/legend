@@ -47,25 +47,19 @@
 }
 
 .pokedex .block .type:first-child {
-	margin-right: 12px;
+	margin-right: 10px;
 }
 
 .pokedex .block .type .type-icon {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #f5f5fb;
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-}
-
-.pokedex .block .type .type-icon .icon {
-	width: 25px;
-	height: 25px;
+	width: 18px;
+	height: 18px;
+	margin-right: 5px;
 }
 
 .pokedex .block .image {
+	position: absolute;
+	top: 0;
+	right: 0;
 	height: 120px;
 }
 
@@ -83,17 +77,12 @@
 	border-color: #ccc;
 }
 
-.pokedex .block .type.grass {
+.pokedex .block .type.grass .type-label {
 	color: #028802;
 }
 
-.pokedex .block .type.grass .type-icon {
-	background-color: #028802;
-}
-
-.pokedex .block .type.fire {
+.pokedex .block .type.fire .type-label {
 	color: #c54f0b;
-	border-color: #ff7f35;
 }
 
 .pokedex .block .type.water {
@@ -121,15 +110,10 @@
 	border-color: #727272;
 }
 
-.pokedex .block .type.ghost {
+.pokedex .block .type.ghost .type-label {
 	color: #8c5fc7;
 }
 
-.pokedex .block .type.ghost .type-icon {
-	background-color: #8c5fc7;
-}
-
-.pokedex .block .type.dark {
+.pokedex .block .type.dark .type-label {
 	color: #7f6c61;
-	border-color: #8c796e;
 }
