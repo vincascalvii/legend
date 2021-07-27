@@ -31,10 +31,10 @@ fetch('/legend/data/all/all.json')
 			type.innerHTML = data[i]['type'];
 
 		var info = document.createElement('div');
-			div.classList.add('info');
-			div.appendChild(number);
-			div.appendChild(name);
-			div.appendChild(type);
+			info.classList.add('info');
+			info.appendChild(number);
+			info.appendChild(name);
+			info.appendChild(type);
 
 		var image = document.createElement('picture');
 			image.innerHTML = '<source srcset="/legend/img/pokemon/' + data[i]['number'] 
