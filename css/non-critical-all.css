@@ -47,13 +47,17 @@
 }
 
 .pokedex .block .type:first-child {
-	margin-right: 10px;
+	margin-right: 20px;
 }
 
 .pokedex .block .type .type-icon {
-	width: 18px;
-	height: 18px;
+	width: 20px;
+	height: 20px;
 	margin-right: 5px;
+}
+
+.pokedex .block .type .type-label {
+	line-height: 1;
 }
 
 .pokedex .block .image {
@@ -85,9 +89,8 @@
 	color: #c54f0b;
 }
 
-.pokedex .block .type.water {
+.pokedex .block .type.water .type-label {
 	color: #1774c3;
-	border-color: #58b2ff;
 }
 
 .pokedex .block .type.electric {
@@ -105,9 +108,8 @@
 	border-color: #d88f35;
 }
 
-.pokedex .block .type.steel {
-	color: #333;
-	border-color: #727272;
+.pokedex .block .type.steel .type-label {
+	color: #406f79;
 }
 
 .pokedex .block .type.ghost .type-label {
