@@ -76,9 +76,8 @@
 	z-index: -1;
 }
 
-.pokedex .block .type.normal {
-	color:  #727272;
-	border-color: #ccc;
+.pokedex .block .type.normal .type-label {
+	color: #727272;
 }
 
 .pokedex .block .type.grass .type-label {
@@ -103,9 +102,8 @@
 	border-color: #80f3ff;
 }
 
-.pokedex .block .type.rock {
+.pokedex .block .type.rock .type-label {
 	color: #ab6600;
-	border-color: #d88f35;
 }
 
 .pokedex .block .type.steel .type-label {
