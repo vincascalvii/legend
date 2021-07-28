@@ -52,12 +52,17 @@ fetch('/legend/data/all/all.json')
 							+ data[i]['name'] + '">';
 
 		var background = document.createElement('picture');
-			background.innerHTML = '<source srcset="/legend/img/others/pokedex-corner-200x200.webp" '
+			background.innerHTML = '<source srcset="/legend/img/others/pokedex-corner-200x200.webp 1x, '
+								 + '/legend/img/others/pokedex-corner-400x400.webp 2x, '
+								 + '/legend/img/others/pokedex-corner-600x600.webp 3x" '
 								 + 'type="image/webp">'
-								 + '<img src="/legend/img/others/pokedex-corner-200x200.png" '
+								 + '<img src="/legend/img/others/pokedex-corner-200x200.png 1x, '
+								 + '/legend/img/others/pokedex-corner-400x400.png 2x, '
+								 + '/legend/img/others/pokedex-corner-600x600.png 3x" '
 							 	 + 'class="background" alt="Pokeball background">';
 
 		var block = document.createElement('a');
+			block.href = '/legend/pokemon?no=' + data[i]['number'];
 			block.classList.add('block', 'active');
 			block.setAttribute('aria-label', data[i]['name']);
 			block.appendChild(info);

@@ -64,6 +64,7 @@
 	position: absolute;
 	top: 0;
 	right: 0;
+	width: auto;
 	height: 120px;
 }
 
