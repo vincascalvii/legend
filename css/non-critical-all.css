@@ -64,9 +64,15 @@
 	position: absolute;
 	top: 0;
 	right: 0;
-	min-width: 120px;
-	max-width: 160px;
 	height: 120px;
+}
+
+.pokedex .block .image-120x120 {
+	width: 120px;
+}
+
+.pokedex .block .image-160x120 {
+	width: 160px;
 }
 
 .pokedex .block .background {
@@ -110,10 +116,18 @@
 	color: #406f79;
 }
 
+.pokedex .block .type.bug .type-label {
+	color: #6d9212;
+}
+
 .pokedex .block .type.ghost .type-label {
 	color: #8c5fc7;
 }
 
 .pokedex .block .type.dark .type-label {
 	color: #7f6c61;
+}
+
+.pokedex .block .type.fairy .type-label {
+	color: #bd2e9e;
 }
