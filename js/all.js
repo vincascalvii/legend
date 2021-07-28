@@ -48,7 +48,8 @@ fetch('/legend/data/all/all.json')
 							+ '/legend/img/pokemon/' + data[i]['number'] 
 							+ '/' + data[i]['image_2'] + '.png 2x, '
 							+ '/legend/img/pokemon/' + data[i]['number'] 
-							+ '/' + data[i]['image_3'] + '.png 3x" class="image" alt="Leafen">';
+							+ '/' + data[i]['image_3'] + '.png 3x" class="image" alt="' 
+							+ data[i]['name'] + '">';
 
 		var background = document.createElement('picture');
 			background.innerHTML = '<source srcset="/legend/img/others/pokedex-corner-200x200.webp" '
