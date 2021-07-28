@@ -64,7 +64,8 @@
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: auto;
+	min-width: 120px;
+	max-width: 160px;
 	height: 120px;
 }
 
@@ -93,14 +94,12 @@
 	color: #1774c3;
 }
 
-.pokedex .block .type.electric {
+.pokedex .block .type.electric .type-label {
 	color: #867500;
-	border-color: #ffeb00;
 }
 
-.pokedex .block .type.flying {
+.pokedex .block .type.flying .type-label {
 	color: #00866d;
-	border-color: #80f3ff;
 }
 
 .pokedex .block .type.rock .type-label {
