@@ -96,91 +96,26 @@
 
 		<!-- POKEDEX -->
 		<section class="pokedex">
-			<div class="container">
-
-				<!-- 
-
-				<a href="/pokemon?no=14" class="block active electric" aria-label="Elechic">
-					<div class="info">
-						<p class="number">&#35;014</p>
-						<p class="name">Elechic</p>
-						<div class="types">
-							<span class="type electric">Electric</span>
-							<span class="type flying">Flying</span>
-						</div>
-					</div>
-					<picture>
-						<source data-srcset="/legend/img/pokemon/014/160x120.webp 1x, /legend/img/pokemon/014/320x240.webp 2x, /legend/img/pokemon/014/480x360.webp 3x" type="image/webp">
-						<img data-src="/legend/img/pokemon/014/160x120.png 1x, /legend/img/pokemon/014/320x240.png 2x, /legend/img/pokemon/014/480x360.png 3x" 
-						 	 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-						 	 class="lazyload image" alt="Elechic">
-					</picture>
-					<picture>
-						<source data-srcset="/legend/img/others/pokedex-corner-200x200.webp" type="image/webp">
-						<img data-src="/legend/img/others/pokedex-corner-200x200.png" 
-							 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-							 class="lazyload background" alt="Pokeball background">
-					</picture>
-				</a>
-
-				<a href="/pokemon?no=15" class="block active electric" aria-label="Currenbird">
-					<div class="info">
-						<p class="number">&#35;015</p>
-						<p class="name">Currenbird</p>
-						<div class="types">
-							<span class="type electric">Electric</span>
-							<span class="type flying">Flying</span>
-						</div>
-					</div>
-					<picture>
-						<source data-srcset="/legend/img/pokemon/015/160x120.webp 1x, /legend/img/pokemon/015/320x240.webp 2x, /legend/img/pokemon/015/480x360.webp 3x" type="image/webp">
-						<img data-src="/legend/img/pokemon/015/160x120.png 1x, /legend/img/pokemon/015/320x240.png 2x, /legend/img/pokemon/015/480x360.png 3x" 
-						 	 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-						 	 class="lazyload image" alt="Currenbird">
-					</picture>
-					<picture>
-						<source data-srcset="/legend/img/others/pokedex-corner-200x200.webp" type="image/webp">
-						<img data-src="/legend/img/others/pokedex-corner-200x200.png" 
-							 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-							 class="lazyload background" alt="Pokeball background">
-					</picture>
-				</a>
-
-				<a href="/pokemon?no=16" class="block active electric" aria-label="Thundaptor">
-					<div class="info">
-						<p class="number">&#35;016</p>
-						<p class="name">Thundaptor</p>
-						<div class="types">
-							<span class="type electric">Electric</span>
-							<span class="type flying">Flying</span>
-						</div>
-					</div>
-					<picture>
-						<source data-srcset="/legend/img/pokemon/016/160x120.webp 1x, /legend/img/pokemon/016/320x240.webp 2x, /legend/img/pokemon/016/480x360.webp 3x" type="image/webp">
-						<img data-src="/legend/img/pokemon/016/160x120.png 1x, /legend/img/pokemon/016/320x240.png 2x, /legend/img/pokemon/016/480x360.png 3x" 
-						 	 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-						 	 class="lazyload image" alt="Thundaptor">
-					</picture>
-					<picture>
-						<source data-srcset="/legend/img/others/pokedex-corner-200x200.webp" type="image/webp">
-						<img data-src="/legend/img/others/pokedex-corner-200x200.png" 
-							 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-							 class="lazyload background" alt="Pokeball background">
-					</picture>
-				</a>
- -->
-			</div>
+			<div class="container"></div>
 		</section>
 
 	</main>
 
 	<script>
-		// Load non-critical CSS
-        var nonCriticalCSS = document.createElement("link");
-        	nonCriticalCSS.rel = "stylesheet";
-        	nonCriticalCSS.type = "text/css";
-        	nonCriticalCSS.href = "/legend/css/non-critical-all.css";
-        document.head.appendChild(nonCriticalCSS);
+		// Load non-critical CSS by first checking if it's IE8
+        if ( document.createStyleSheet ) {
+        	document.createStyleSheet("/legend/css/non-critical-all.css");
+
+        // Else, load the stylesheet by appending <link> to <head>
+        } else {
+        	var nonCriticalCSS = document.createElement('link');
+	        	nonCriticalCSS.rel = 'stylesheet';
+	        	nonCriticalCSS.type = 'text/css';
+	        	nonCriticalCSS.href = '/legend/css/non-critical-all.css';
+
+	        // Use this selector style for IE9 compability, using just ".head" will not work
+        	document.getElementsByTagName('head')[0].appendChild(nonCriticalCSS);
+        }
 	</script>
 
 	<!-- LAZYSIZES / LAZY LOADING -->
