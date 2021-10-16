@@ -177,9 +177,7 @@
 	</main>
 
 	<script>
-	    var isIE = !!window.MSInputMethodContext && !!document.documentMode;
-	    var isFirefox = navigator.userAgent.toLowerCase().indexOf("firefox") > -1;
-    	if ( isIE || isFirefox ) {
+    	if ( window.document.documentMode || navigator.userAgent.indexOf("Firefox") > -1  ) {
 	        var nonCriticalCSS = document.createElement("link");
 	        	nonCriticalCSS.rel = "stylesheet";
 	        	nonCriticalCSS.type = "text/css";

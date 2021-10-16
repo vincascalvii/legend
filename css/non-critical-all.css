@@ -87,50 +87,44 @@
 	z-index: -1;
 }
 
-.pokedex .block .type.normal .type-label {
+.pokedex .block .type.neutral {
 	color: #727272;
 }
 
-.pokedex .block .type.grass .type-label {
+.pokedex .block .type.nature {
 	color: #028802;
 }
 
-.pokedex .block .type.fire .type-label {
+.pokedex .block .type.fire {
 	color: #c54f0b;
 }
 
-.pokedex .block .type.water .type-label {
+.pokedex .block .type.water {
 	color: #1774c3;
 }
 
-.pokedex .block .type.electric .type-label {
+.pokedex .block .type.electric {
 	color: #867500;
+	border-color: #edd115;
 }
 
-.pokedex .block .type.flying .type-label {
+.pokedex .block .type.wind {
 	color: #00866d;
 }
 
-.pokedex .block .type.rock .type-label {
+.pokedex .block .type.earth {
 	color: #ab6600;
 }
 
-.pokedex .block .type.steel .type-label {
+.pokedex .block .type.metal {
 	color: #406f79;
 }
 
-.pokedex .block .type.bug .type-label {
-	color: #5e800d;
-}
-
-.pokedex .block .type.ghost .type-label {
-	color: #8c5fc7;
-}
-
-.pokedex .block .type.dark .type-label {
+.pokedex .block .type.dark {
 	color: #7f6c61;
 }
 
-.pokedex .block .type.fairy .type-label {
-	color: #bd2e9e;
+.pokedex .block .type.light {
+	color: #8b7500;
+	border-color: #ffec6b;
 }
