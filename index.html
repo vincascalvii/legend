@@ -37,8 +37,8 @@
 	</style>
 
 	<!-- NON-CRITICAL CSS (ASYNC) -->
-	<!-- <link rel="preload" href="/legend/css/non-critical-all.css" as="style" 
-		  onload="this.onload=null;this.rel='stylesheet'"> -->
+	<link rel="preload" href="/legend/css/non-critical-all.css" as="style" 
+		  onload="this.onload=null;this.rel='stylesheet'">
 	<noscript><link rel="stylesheet" href="/legend/css/non-critical-all.css"></noscript>
 
     <!-- FACEBOOK OPENGRAPH -->
@@ -175,11 +175,6 @@
 		</section>
 
 	</main>
-
-	<script type="text/javascript">
-		/*! loadCSS. [c]2020 Filament Group, Inc. MIT License */
-		!function(e){"use strict";var t=function(t,n,o,r){var i,a=e.document,d=a.createElement("link");if(n)i=n;else{var l=(a.body||a.getElementsByTagName("head")[0]).childNodes;i=l[l.length-1]}var s=a.styleSheets;if(r)for(var f in r)r.hasOwnProperty(f)&&d.setAttribute(f,r[f]);d.rel="stylesheet",d.href=t,d.media="only x",function e(t){if(a.body)return t();setTimeout(function(){e(t)})}(function(){i.parentNode.insertBefore(d,n?i:i.nextSibling)});var u=function(e){for(var t=d.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){u(e)})};function c(){d.addEventListener&&d.removeEventListener("load",c),d.media=o||"all"}return d.addEventListener&&d.addEventListener("load",c),d.onloadcssdefined=u,u(c),d};"undefined"!=typeof exports?exports.loadCSS=t:e.loadCSS=t}("undefined"!=typeof global?global:this),loadCSS("/legend/css/non-critical-all.css");
-	</script>
 
 	<!-- LAZYSIZES / LAZY LOADING -->
 	<script src="/js/lazysizes/lazysizes.min.js"></script>
