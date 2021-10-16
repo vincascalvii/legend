@@ -6,11 +6,11 @@
 
 // Fetch the data
 fetch('/legend/data/all/all.json')
-.then( response => {
+.then( function(response) {
 	if (!response.ok) throw new Error("HTTP error " + response.status);
     return response.json();
 })
-.then( data => {
+.then( function(data) {
 
 	console.log(data);
 
@@ -28,7 +28,13 @@ fetch('/legend/data/all/all.json')
 
 		var type = document.createElement('div');
 			type.classList.add('types');
-			type.innerHTML = data[i]['type'];
+			type.innerHTML = '<span class="type ' + data[i]['type_1'].toLowerCase() + '">' 
+						   + data[i]['type_1'] + '</span>';
+
+		if ( data[i]['type_2'] != '' && data[i]['type_2'] != null ) {
+			type.innerHTML += '<span class="type ' + data[i]['type_2'].toLowerCase() + '">' 
+						   + data[i]['type_2'] + '</span>';
+		}
 
 		var info = document.createElement('div');
 			info.classList.add('info');
