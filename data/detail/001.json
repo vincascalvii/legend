@@ -12,12 +12,12 @@
 		"desc" : "Its Speed stat is boosted every turn."
 	},
 	"stats" : {
-		"hp" : "49",
-		"atk" : "62",
-		"def" : "52",
-		"spa" : "44",
-		"spd" : "36",
-		"spe" : "67",
-		"total" : "310"
+		"hp" : "16",
+		"atk" : "20",
+		"def" : "17",
+		"spa" : "13",
+		"spd" : "12",
+		"spe" : "22",
+		"total" : "100"
 	}
 }]

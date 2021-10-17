@@ -50,6 +50,20 @@ if ( no != '' && no != null ) {
 		document.querySelector('.stat-spe .stat-value').innerHTML = data[0]['stats']['spe'];
 		document.querySelector('.stat-total .stat-value').innerHTML = data[0]['stats']['total'];
 
+		// Populate stat bars
+		document.querySelector('.stat-hp .stat-bar-fill').css.width = 
+			(( parseInt(data[0]['stats']['hp']) / 300 ) * 100 ) + '%';
+		document.querySelector('.stat-atk .stat-bar-fill').css.width = 
+			(( parseInt(data[0]['stats']['hp']) / 300 ) * 100 ) + '%';
+		document.querySelector('.stat-def .stat-bar-fill').css.width = 
+			(( parseInt(data[0]['stats']['hp']) / 300 ) * 100 ) + '%';
+		document.querySelector('.stat-spa .stat-bar-fill').css.width = 
+			(( parseInt(data[0]['stats']['hp']) / 300 ) * 100 ) + '%';
+		document.querySelector('.stat-spd .stat-bar-fill').css.width = 
+			(( parseInt(data[0]['stats']['hp']) / 300 ) * 100 ) + '%';
+		document.querySelector('.stat-spe .stat-bar-fill').css.width = 
+			(( parseInt(data[0]['stats']['hp']) / 300 ) * 100 ) + '%';
+
 	})
 	.catch( function(error) {
 		console.log('Fetch error: ', error);

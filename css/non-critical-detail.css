@@ -8,42 +8,57 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-bottom: 10px;
 }
 
 .stats .stat-label {
 	color: #727272;
-	width: 100px;
+	width: 60px;
 }
 
 .stats .stat-value {
-	width: 100px;
+	width: 60px;
+	font-weight: 500;
 }
 
 .stats .stat-bar {
 	flex: 1;
-	height: 5px;
+    height: 8px;
+    background-color: #eee;
+    border-radius: 30px;
+    overflow: hidden;
 }
 
-.stats .stat-hp .stat-bar {
-	background-color: green;
+.stats .stat-bar .stat-bar-fill {
+	display: block;
+    height: 100%;
 }
 
-.stats .stat-atk .stat-bar {
-	background-color: red;
+.stats .stat-hp .stat-bar-fill {
+	background-color: #4aa94a;
 }
 
-.stats .stat-def .stat-bar {
-	background-color: brown;
+.stats .stat-atk .stat-bar-fill {
+	background-color: #f75e36;
 }
 
-.stats .stat-spa .stat-bar {
-	background-color: purple;
+.stats .stat-def .stat-bar-fill {
+	background-color: #b77a3f;
 }
 
-.stats .stat-spd .stat-bar {
-	background-color: yellow;
+.stats .stat-spa .stat-bar-fill {
+	background-color: #9f3ed5;
 }
 
-.stats .stat-spe .stat-bar {
-	background-color: blue;
+.stats .stat-spd .stat-bar-fill {
+	background-color: #e9cf32;
+}
+
+.stats .stat-spe .stat-bar-fill {
+	background-color: #486feb;
+}
+
+.condition-label {
+	color: #727272;
+	font-size: 1.4rem;
 }
