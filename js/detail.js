@@ -19,7 +19,7 @@ if ( no != '' && no != null ) {
 		console.log(data);
 
 		// Change background colour
-		document.querySelector('main').classList.add(data[0]['type_1']);
+		document.querySelector('main').classList.add(data[0]['type_1'].toLowerCase());
 
 		// Populate name
 		document.querySelector('.name').innerHTML = data[0]['name'];
@@ -29,16 +29,17 @@ if ( no != '' && no != null ) {
 		document.querySelector('.types span:first-child')
 			.classList.add(data[0]['type_1'].toLowerCase());
 		if ( data[0]['type_2'] != '' && data[0]['type_2'] != null ) {
-			document.querySelector('.types span:nth-child(2)').innerHTML = data[0]['type_2']
-			document.querySelector('.types span:nth-child(2)')
-				.classList.add(data[0]['type_2'].toLowerCase());
+			var type2 = document.createElement('span');
+				type2.classList.add(data[0]['type_2'].toLowerCase());
+				type2.innerHTML = data[0]['type_2']
+			document.querySelector('.types').appendChild(type2);
 		}
 
 		// Populate abilities
 		document.querySelector('.ability-1 .ability-name').innerHTML = data[0]['ability_1']['name'];
 		document.querySelector('.ability-1 .ability-desc').innerHTML = data[0]['ability_1']['desc'];
 		document.querySelector('.ability-2 .ability-name').innerHTML = data[0]['ability_2']['name'];
-		document.querySelector('.ability-2 .ability-name').innerHTML = data[0]['ability_2']['desc'];
+		document.querySelector('.ability-2 .ability-desc').innerHTML = data[0]['ability_2']['desc'];
 
 	})
 	.catch( function(error) {
