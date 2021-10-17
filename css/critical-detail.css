@@ -73,18 +73,62 @@ main.nature {
     display: flex;
 }
 
-.header .type {
-    display: flex;
-    align-items: center;
-    background-color: rgba(0,0,0,.4);
+.type {
     color: #fff;
     font-size: 1.4rem;
     padding: 5px 10px;
+    margin-right: 10px;
     border-radius: 30px;
 }
 
-.header .type:first-child {
-    margin-right: 10px;
+.type.neutral {
+    background-color: #727272;
+}
+
+.type.nature {
+    background-color: #2b7d53;
+}
+
+.type.fire {
+    background-color: #bf4e2f;
+}
+
+.type.water {
+    background-color: #3d59d1;
+}
+
+.type.electric {
+    background-color: #f5e234;
+}
+
+.type.wind {
+    background-color: #0f7d81;
+}
+
+.type.earth {
+    background-color: #a1673b;
+}
+
+.type.metal {
+    background-color: #555;
+}
+
+.type.ice {
+    background-color: #47f0fd;
+    color: #555;
+}
+
+.type.dark {
+    background-color: #6e6257;
+}
+
+.type.light {
+    background-color: #fff386;
+    color: #666;
+}
+
+.type.toxic {
+    background-color: #9f41c1;
 }
 
 .image {

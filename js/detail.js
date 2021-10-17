@@ -54,15 +54,15 @@ if ( no != '' && no != null ) {
 		document.querySelector('.stat-hp .stat-bar-fill').style.width = 
 			(( parseInt(data[0]['stats']['hp']) / 300 ) * 100 ) + '%';
 		document.querySelector('.stat-atk .stat-bar-fill').style.width = 
-			(( parseInt(data[0]['stats']['hp']) / 300 ) * 100 ) + '%';
+			(( parseInt(data[0]['stats']['atk']) / 300 ) * 100 ) + '%';
 		document.querySelector('.stat-def .stat-bar-fill').style.width = 
-			(( parseInt(data[0]['stats']['hp']) / 300 ) * 100 ) + '%';
+			(( parseInt(data[0]['stats']['def']) / 300 ) * 100 ) + '%';
 		document.querySelector('.stat-spa .stat-bar-fill').style.width = 
-			(( parseInt(data[0]['stats']['hp']) / 300 ) * 100 ) + '%';
+			(( parseInt(data[0]['stats']['spa']) / 300 ) * 100 ) + '%';
 		document.querySelector('.stat-spd .stat-bar-fill').style.width = 
-			(( parseInt(data[0]['stats']['hp']) / 300 ) * 100 ) + '%';
+			(( parseInt(data[0]['stats']['spd']) / 300 ) * 100 ) + '%';
 		document.querySelector('.stat-spe .stat-bar-fill').style.width = 
-			(( parseInt(data[0]['stats']['hp']) / 300 ) * 100 ) + '%';
+			(( parseInt(data[0]['stats']['spe']) / 300 ) * 100 ) + '%';
 
 	})
 	.catch( function(error) {

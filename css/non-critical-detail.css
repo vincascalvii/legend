@@ -57,7 +57,15 @@
 	background-color: #486feb;
 }
 
-.condition-label {
+.condition .condition-label {
 	color: #727272;
 	font-size: 1.4rem;
+}
+
+.condition .condition-types {
+	display: flex;
+}
+
+.condition .type {
+	margin-bottom: 10px;
 }
