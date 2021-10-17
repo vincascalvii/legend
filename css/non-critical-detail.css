@@ -64,6 +64,7 @@
 
 .condition .condition-types {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .condition .type {
