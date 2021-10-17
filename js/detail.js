@@ -80,3 +80,39 @@ function getParameter() {
 
     return key === false ? results : null;
 }
+
+/* =============================================================================
+
+    SWITCH TAB
+
+============================================================================= */
+
+(function() {
+
+	var tabs = document.querySelectorAll('.info .tab');
+
+	for ( var i = 0; i < tabs.length; i++ ) {
+		tabs[i].addEventListener('click', function() {
+
+			// Remove all active class off the tab
+			for ( var j = 0; j < tabs.length; j++ ) {
+				tabs[j].classList.remove('active');
+			}
+
+			// Add it back in to the current tab
+			this.classList.add('active');
+
+			// Remove all active class off the tab
+			for ( var k = 0; k < tabs.length; k++ ) {
+				tabs[k].classList.remove('active');
+			}
+
+			// Display the current tab content
+			var currentTab = 'tab-' + this.innerText.toLowerCase();
+			document.querySelector(currentTab).classList.add('active');
+
+		}, false);
+	}
+
+
+})();
