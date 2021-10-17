@@ -42,13 +42,13 @@ if ( no != '' && no != null ) {
 		document.querySelector('.ability-2 .ability-desc').innerHTML = data[0]['ability_2']['desc'];
 
 		// Populate stats
-		document.querySelector('.stat-hp').innerHTML = data[0]['stats']['hp'];
-		document.querySelector('.stat-atk').innerHTML = data[0]['stats']['atk'];
-		document.querySelector('.stat-def').innerHTML = data[0]['stats']['def'];
-		document.querySelector('.stat-spa').innerHTML = data[0]['stats']['spa'];
-		document.querySelector('.stat-spd').innerHTML = data[0]['stats']['spd'];
-		document.querySelector('.stat-spe').innerHTML = data[0]['stats']['spe'];
-		document.querySelector('.stat-total').innerHTML = data[0]['stats']['total'];
+		document.querySelector('.stat-hp .stat-value').innerHTML = data[0]['stats']['hp'];
+		document.querySelector('.stat-atk .stat-value').innerHTML = data[0]['stats']['atk'];
+		document.querySelector('.stat-def .stat-value').innerHTML = data[0]['stats']['def'];
+		document.querySelector('.stat-spa .stat-value').innerHTML = data[0]['stats']['spa'];
+		document.querySelector('.stat-spd .stat-value').innerHTML = data[0]['stats']['spd'];
+		document.querySelector('.stat-spe .stat-value').innerHTML = data[0]['stats']['spe'];
+		document.querySelector('.stat-total .stat-value').innerHTML = data[0]['stats']['total'];
 
 	})
 	.catch( function(error) {
@@ -112,8 +112,9 @@ function getParameter() {
 			this.classList.add('active');
 
 			// Remove all active class off the tab
-			for ( var k = 0; k < tabs.length; k++ ) {
-				tabs[k].classList.remove('active');
+			var tabContents = document.querySelectorAll('.info .tab-content');
+			for ( var k = 0; k < tabContents.length; k++ ) {
+				tabContents[k].classList.remove('active');
 			}
 
 			// Display the current tab content

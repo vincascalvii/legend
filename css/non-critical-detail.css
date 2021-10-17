@@ -1,4 +1,9 @@
 
+.info .separator {
+	margin: 40px 0;
+	border-top: 1px solid #ddd;
+}
+
 .stats .stat {
 	display: flex;
 	justify-content: space-between;
