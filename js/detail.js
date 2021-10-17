@@ -51,17 +51,17 @@ if ( no != '' && no != null ) {
 		document.querySelector('.stat-total .stat-value').innerHTML = data[0]['stats']['total'];
 
 		// Populate stat bars
-		document.querySelector('.stat-hp .stat-bar-fill').css.width = 
+		document.querySelector('.stat-hp .stat-bar-fill').style.width = 
 			(( parseInt(data[0]['stats']['hp']) / 300 ) * 100 ) + '%';
-		document.querySelector('.stat-atk .stat-bar-fill').css.width = 
+		document.querySelector('.stat-atk .stat-bar-fill').style.width = 
 			(( parseInt(data[0]['stats']['hp']) / 300 ) * 100 ) + '%';
-		document.querySelector('.stat-def .stat-bar-fill').css.width = 
+		document.querySelector('.stat-def .stat-bar-fill').style.width = 
 			(( parseInt(data[0]['stats']['hp']) / 300 ) * 100 ) + '%';
-		document.querySelector('.stat-spa .stat-bar-fill').css.width = 
+		document.querySelector('.stat-spa .stat-bar-fill').style.width = 
 			(( parseInt(data[0]['stats']['hp']) / 300 ) * 100 ) + '%';
-		document.querySelector('.stat-spd .stat-bar-fill').css.width = 
+		document.querySelector('.stat-spd .stat-bar-fill').style.width = 
 			(( parseInt(data[0]['stats']['hp']) / 300 ) * 100 ) + '%';
-		document.querySelector('.stat-spe .stat-bar-fill').css.width = 
+		document.querySelector('.stat-spe .stat-bar-fill').style.width = 
 			(( parseInt(data[0]['stats']['hp']) / 300 ) * 100 ) + '%';
 
 	})
