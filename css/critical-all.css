@@ -118,6 +118,10 @@ a {
         padding: 0;
     }
 
+    .header .container {
+        position: relative;
+    }
+
     .header .back {
         position: absolute;
         left: 0;
