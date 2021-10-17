@@ -2,5 +2,13 @@
 	"number" : "001",
 	"name" : "Leafen",
 	"type_1" : "Nature",
-	"type_2" : ""
+	"type_2" : "",
+	"ability_1" : {
+		"name" : "Overgrow",
+		"desc" : "Powers up Grass-type moves when the Pokémon&rsquot;s HP is low."
+	},
+	"ability_2" : {
+		"name" : "Speed Boost",
+		"desc" : "Its Speed stat is boosted every turn."
+	}
 }]

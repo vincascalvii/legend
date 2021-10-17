@@ -18,10 +18,13 @@ if ( no != '' && no != null ) {
 
 		console.log(data);
 
-		// Populate the name
+		// Change background colour
+		document.querySelector('main').classList.add(data[0]['type_1']);
+
+		// Populate name
 		document.querySelector('.name').innerHTML = data[0]['name'];
 
-		// Populate the types
+		// Populate types
 		document.querySelector('.types span:first-child').innerHTML = data[0]['type_1']
 		document.querySelector('.types span:first-child')
 			.classList.add(data[0]['type_1'].toLowerCase());
@@ -30,6 +33,12 @@ if ( no != '' && no != null ) {
 			document.querySelector('.types span:nth-child(2)')
 				.classList.add(data[0]['type_2'].toLowerCase());
 		}
+
+		// Populate abilities
+		document.querySelector('.ability-1 .ability-name').innerHTML = data[0]['ability_1']['name'];
+		document.querySelector('.ability-1 .ability-desc').innerHTML = data[0]['ability_1']['desc'];
+		document.querySelector('.ability-2 .ability-name').innerHTML = data[0]['ability_2']['name'];
+		document.querySelector('.ability-2 .ability-name').innerHTML = data[0]['ability_2']['desc'];
 
 	})
 	.catch( function(error) {
