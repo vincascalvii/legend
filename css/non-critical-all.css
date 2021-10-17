@@ -120,11 +120,20 @@
 	color: #406f79;
 }
 
+.pokedex .block .type.ice {
+	color: #008370;
+	border-color: #36f9de;
+}
+
 .pokedex .block .type.dark {
 	color: #7f6c61;
 }
 
 .pokedex .block .type.light {
-	color: #8b7500;
-	border-color: #ffec6b;
+	color: #7c7648;
+	border-color: #efe926;
+}
+
+.pokedex .block .type.toxic {
+	color: #bd28cf;
 }
