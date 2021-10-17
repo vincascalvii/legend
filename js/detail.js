@@ -41,6 +41,15 @@ if ( no != '' && no != null ) {
 		document.querySelector('.ability-2 .ability-name').innerHTML = data[0]['ability_2']['name'];
 		document.querySelector('.ability-2 .ability-desc').innerHTML = data[0]['ability_2']['desc'];
 
+		// Populate stats
+		document.querySelector('.stat-hp').innerHTML = data[0]['stats']['hp'];
+		document.querySelector('.stat-atk').innerHTML = data[0]['stats']['atk'];
+		document.querySelector('.stat-def').innerHTML = data[0]['stats']['def'];
+		document.querySelector('.stat-spa').innerHTML = data[0]['stats']['spa'];
+		document.querySelector('.stat-spd').innerHTML = data[0]['stats']['spd'];
+		document.querySelector('.stat-spe').innerHTML = data[0]['stats']['spe'];
+		document.querySelector('.stat-total').innerHTML = data[0]['stats']['total'];
+
 	})
 	.catch( function(error) {
 		console.log('Fetch error: ', error);
@@ -109,7 +118,7 @@ function getParameter() {
 
 			// Display the current tab content
 			var currentTab = 'tab-' + this.innerText.toLowerCase();
-			document.querySelector(currentTab).classList.add('active');
+			document.querySelector('.info .' + currentTab).classList.add('active');
 
 		}, false);
 	}

@@ -119,7 +119,12 @@ main.nature {
 }
 
 .info .tab-content {
+    display: none;
     padding: 30px;
+}
+
+.info .tab-content.active {
+    display: block;
 }
 
 .info .tab-content .tab-heading {

@@ -10,5 +10,14 @@
 	"ability_2" : {
 		"name" : "Speed Boost",
 		"desc" : "Its Speed stat is boosted every turn."
+	},
+	"stats" : {
+		"hp" : "49",
+		"atk" : "62",
+		"def" : "52",
+		"spa" : "44",
+		"spd" : "36",
+		"spe" : "67",
+		"total" : "310"
 	}
 }]

@@ -1,0 +1,44 @@
+
+.stats .stat {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.stats .stat-label {
+	color: #727272;
+	width: 100px;
+}
+
+.stats .stat-value {
+	width: 100px;
+}
+
+.stats .stat-bar {
+	flex: 1;
+	height: 5px;
+}
+
+.stats .stat-hp .stat-bar {
+	background-color: green;
+}
+
+.stats .stat-atk .stat-bar {
+	background-color: red;
+}
+
+.stats .stat-def .stat-bar {
+	background-color: brown;
+}
+
+.stats .stat-spa .stat-bar {
+	background-color: purple;
+}
+
+.stats .stat-spd .stat-bar {
+	background-color: yellow;
+}
+
+.stats .stat-spe .stat-bar {
+	background-color: blue;
+}
