@@ -70,7 +70,7 @@ fetch('/legend/data/all/all.json')
 							 	 + 'class="background" alt="Pokeball background">';
 
 		var block = document.createElement('a');
-			block.href = '/legend/pokemon?no=' + data[i]['number'];
+			block.href = '/legend/detail?no=' + data[i]['number'];
 			block.classList.add('block', 'active');
 			block.setAttribute('aria-label', data[i]['name']);
 			block.appendChild(info);
@@ -87,9 +87,6 @@ fetch('/legend/data/all/all.json')
 .catch( function(error) {
 	console.log('Fetch error: ', error);
 });
-
-
-
 
 /* ================================================================
 
