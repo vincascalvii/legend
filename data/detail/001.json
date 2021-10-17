@@ -19,5 +19,8 @@
 		"spd" : "12",
 		"spe" : "22",
 		"total" : "100"
-	}
+	},
+	"weak" : ["Fire", "Ice", "Toxic"],
+	"resist" : ["Water", "Electric", "Earth" ],
+	"immune" : ["Light"]
 }]

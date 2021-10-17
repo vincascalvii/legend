@@ -64,6 +64,23 @@ if ( no != '' && no != null ) {
 		document.querySelector('.stat-spe .stat-bar-fill').style.width = 
 			(( parseInt(data[0]['stats']['spe']) / 300 ) * 100 ) + '%';
 
+		// Populate battle condition
+		for ( var weak = 0; weak < data[0]['weak'].length; weak++ ) {
+			document.querySelector('.condition-types').innerHTML += 
+				'<span class="type '  + data[0]['weak'][weak].toLowerCase() +  '">' + 
+				data[0]['weak'][weak] + '</span>';
+		}
+		for ( var resist = 0; resist < data[0]['resist'].length; resist++ ) {
+			document.querySelector('.condition-types').innerHTML += 
+				'<span class="type '  + data[0]['resist'][resist].toLowerCase() +  '">' + 
+				data[0]['resist'][resist] + '</span>';
+		}
+		for ( var immune = 0; immune < data[0]['immune'].length; immune++ ) {
+			document.querySelector('.condition-types').innerHTML += 
+				'<span class="type '  + data[0]['immune'][immune].toLowerCase() +  '">' + 
+				data[0]['immune'][immune] + '</span>';
+		}
+
 	})
 	.catch( function(error) {
 		console.log('Fetch error: ', error);
