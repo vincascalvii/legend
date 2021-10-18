@@ -150,20 +150,18 @@ if ( no != '' && no != null ) {
 
 		// Populate moveset
 		for ( var ms = 0; ms < data[0]['moves'].length; ms++ ) {
-			var move = document.createElement('tr');
-				move.innerHTML = 
-					'<td rowspan="2" class="move-lvl">' + data[0]['moves'][ms]['level'] + '</td>' +
-					'<td rowspan="2" class="move-name">' + data[0]['moves'][ms]['name'] + '</td>' +
-					'<td class="move-type">' + data[0]['moves'][ms]['type'] + '</td>' +
-					'<td class="move-cat">' + data[0]['moves'][ms]['category'] + '</td>' +
-					'<td class="move-pwr">' + data[0]['moves'][ms]['power'] + '</td>' +
-					'<td class="move-acc">' + data[0]['moves'][ms]['accuracy'] + '</td>' +
-					'<td class="move-cost">' + data[0]['moves'][ms]['cost'] + '</td>';
-			var moveEffect = document.createElement('tr');
-				moveEffect.innerHTML = '<td colspan="6" class="move-effect">' + 
-					data[0]['moves'][ms]['effect'] + '</td>';
-			document.querySelector('.move-table tbody').appendChild(move);
-			document.querySelector('.move-table tbody').appendChild(moveEffect);
+			var move = document.createElement('div');
+				move.innerHTML = '<p class="move-label"><span class="move-name">' + 
+					data[0]['moves'][ms]['name'] + '</span><span class="move-type ' +
+					data[0]['moves'][ms]['type'] + '">' + data[0]['moves'][ms]['type'] + 
+					'</span><span class="move-level">' + data[0]['moves'][ms]['level'] + 
+					'</span></p>' + '<p class="move-details"><span class="move-category">' + 
+					data[0]['moves'][ms]['category'] + '</span><span class="move-power">' +
+					data[0]['moves'][ms]['power'] + '</span><span class="move-accuracy">' +
+					data[0]['moves'][ms]['accuracy'] + '</span><span class="move-cost">' +
+					data[0]['moves'][ms]['cost'] + '</span></p>' +
+					'<p class="move-effect">' + data[0]['moves'][ms]['effect'] + '</p>';
+			document.querySelector('.moves').appendChild(move);
 		}
 
 	})

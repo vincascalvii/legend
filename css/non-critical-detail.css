@@ -62,19 +62,19 @@
 	background-color: #4aa94a;
 }
 
-.stats .stat-atk .stat-bar-fill {
+.stats .stat-m-atk .stat-bar-fill {
 	background-color: #f75e36;
 }
 
-.stats .stat-def .stat-bar-fill {
+.stats .stat-m-def .stat-bar-fill {
 	background-color: #b77a3f;
 }
 
-.stats .stat-spa .stat-bar-fill {
+.stats .stat-r-atk .stat-bar-fill {
 	background-color: #9f3ed5;
 }
 
-.stats .stat-spd .stat-bar-fill {
+.stats .stat-r-def .stat-bar-fill {
 	background-color: #e9cf32;
 }
 
