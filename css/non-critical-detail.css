@@ -106,10 +106,6 @@
 	border-top: 1px solid #ddd;
 }
 
-.moves .move:last-child {
-	border-bottom: 1px solid #ddd;
-}
-
 .moves .move-label {
 	display: flex;
 	align-items: center;

@@ -148,21 +148,39 @@ if ( no != '' && no != null ) {
 			document.querySelector('.condition-immunity').appendChild(immunity);
 		}
 
-		// Populate moveset
-		for ( var ms = 0; ms < data[0]['moves'].length; ms++ ) {
-			var move = document.createElement('div');
-				move.classList.add('move');
-				move.innerHTML = '<p class="move-label"><span class="move-name">' + 
-					data[0]['moves'][ms]['name'] + '</span><span class="type ' +
-					data[0]['moves'][ms]['type'].toLowerCase() + '">' + data[0]['moves'][ms]['type'] + 
-					'</span><span class="move-level">' + data[0]['moves'][ms]['level'] + 
-					'</span></p>' + '<p class="move-details"><span class="move-category">' + 
-					data[0]['moves'][ms]['category'] + '</span><span class="move-power">PWR: ' +
-					data[0]['moves'][ms]['power'] + '</span><span class="move-accuracy">ACC: ' +
-					data[0]['moves'][ms]['accuracy'] + '</span><span class="move-stamina">STA: ' +
-					data[0]['moves'][ms]['stamina'] + '</span></p>' +
-					'<p class="move-effect">' + data[0]['moves'][ms]['effect'] + '</p>';
-			document.querySelector('.moves').appendChild(move);
+		// Populate moveset by level up
+		for ( var ml = 0; ml < data[0]['moves_level'].length; ml++ ) {
+			var moveLevel = document.createElement('div');
+				moveLevel.classList.add('move');
+				moveLevel.innerHTML = '<p class="move-label"><span class="move-name">' + 
+					data[0]['moves_level'][ml]['name'] + '</span><span class="type ' +
+					data[0]['moves_level'][ml]['type'].toLowerCase() + '">' + 
+					data[0]['moves_level'][ml]['type'] + '</span><span class="move-level">' + 
+					data[0]['moves_level'][ml]['level'] + '</span></p>' + 
+					'<p class="move-details"><span class="move-category">' + 
+					data[0]['moves_level'][ml]['category'] + '</span><span class="move-power">PWR: ' +
+					data[0]['moves_level'][ml]['power'] + '</span><span class="move-accuracy">ACC: ' +
+					data[0]['moves_level'][ml]['accuracy'] + '</span><span class="move-stamina">STA: ' +
+					data[0]['moves_level'][ml]['stamina'] + '</span></p>' +
+					'<p class="move-effect">' + data[0]['moves_level'][ml]['effect'] + '</p>';
+			document.querySelector('.moves-level').appendChild(moveLevel);
+		}
+
+		// Populate moveset by tutor
+		for ( var mt = 0; mt < data[0]['moves_tutor'].length; mt++ ) {
+			var moveLevel = document.createElement('div');
+				moveLevel.classList.add('move');
+				moveLevel.innerHTML = '<p class="move-label"><span class="move-name">' + 
+					data[0]['moves_tutor'][mt]['name'] + '</span><span class="type ' +
+					data[0]['moves_tutor'][mt]['type'].toLowerCase() + '">' + 
+					data[0]['moves_tutor'][mt]['type'] + '</span></p>' + 
+					'<p class="move-details"><span class="move-category">' + 
+					data[0]['moves_tutor'][mt]['category'] + '</span><span class="move-power">PWR: ' +
+					data[0]['moves_tutor'][mt]['power'] + '</span><span class="move-accuracy">ACC: ' +
+					data[0]['moves_tutor'][mt]['accuracy'] + '</span><span class="move-stamina">STA: ' +
+					data[0]['moves_tutor'][mt]['stamina'] + '</span></p>' +
+					'<p class="move-effect">' + data[0]['moves_tutor'][mt]['effect'] + '</p>';
+			document.querySelector('.moves-tutor').appendChild(moveLevel);
 		}
 
 	})
