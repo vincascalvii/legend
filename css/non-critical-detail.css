@@ -95,3 +95,13 @@
 .condition .type {
 	margin-bottom: 10px;
 }
+
+.move-table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.move-table th,
+.move-table td {
+	border: 1px solid #ddd;
+}

@@ -1,16 +1,17 @@
 [{
 	"number" : "001",
 	"name" : "Leafen",
-	"type_1" : "Nature",
-	"type_2" : "",
-	"ability_1" : {
-		"name" : "Terra Growth",
-		"desc" : "Increase the possessor's Nature-type moves' power to 50%."
-	},
-	"ability_2" : {
-		"name" : "Accelerate",
-		"desc" : "Increase the possessor's Speed stat by 1 stage at the end of each turn."
-	},
+	"types" : ["Nature", ""],
+	"abilities" : [
+		{
+			"name" : "Terra Growth",
+			"desc" : "Increase the possessor's Nature-type moves' power to 50%."
+		},
+		{
+			"name" : "Accelerate (Secret)",
+			"desc" : "Increase the possessor's Speed stat by 1 stage at the end of each turn."
+		}
+	],
 	"description" : "Leafen is an agile and cunning kitten who loves to eat berries. It usually doesn't live as house-hold pet since its natural habitat belongs to the forest. Its eyes glow red when dusk arrives, allowing it to scare enemies away from the dark.",
 	"gender" : {
 		"male" : "50%",
@@ -21,10 +22,10 @@
 	"height" : "0.6m",
 	"stats" : {
 		"hp" : "32",
-		"atk" : "40",
-		"def" : "34",
-		"spa" : "26",
-		"spd" : "24",
+		"m_atk" : "40",
+		"m_def" : "34",
+		"r_atk" : "26",
+		"r_def" : "24",
 		"spe" : "44",
 		"total" : "200"
 	},
@@ -32,5 +33,27 @@
 	"major_resistance" : [],
 	"weakness" : ["Fire", "Ice", "Toxic"],
 	"resistance" : ["Water", "Electric", "Earth" ],
-	"immunity" : ["Light"]
+	"immunity" : ["Light"],
+	"moves" : [
+		{
+			"level" : "Start",
+			"name" : "Scratch",
+			"type" : "Neutral",
+			"category" : "Melee",
+			"power" : "20",
+			"accuracy" : "100%",
+			"cost" : "5",
+			"effect" : "The user scratches the opponent with sharp claws."
+		},
+		{
+			"level" : "Start",
+			"name" : "Growl",
+			"type" : "Neutral",
+			"category" : "Support",
+			"power" : "-",
+			"accuracy" : "100%",
+			"cost" : "5",
+			"effect" : "The user lets out a growl that lowers the opponent(s)' Melee Attack by one stage."
+		}
+	]
 }]

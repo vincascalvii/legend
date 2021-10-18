@@ -25,10 +25,10 @@ if ( no != '' && no != null ) {
 		document.querySelector('.name').innerHTML = data[0]['name'];
 
 		// Populate types
-		document.querySelector('.types span:first-child').innerHTML = data[0]['type_1']
+		document.querySelector('.types span:first-child').innerHTML = data[0]['types'][0]
 		document.querySelector('.types span:first-child')
 			.classList.add(data[0]['type_1'].toLowerCase());
-		if ( data[0]['type_2'] != '' && data[0]['type_2'] != null ) {
+		if ( data[0]['types'][1] != '' && data[0]['types'][1] != null ) {
 			var type2 = document.createElement('span');
 				type2.classList.add(data[0]['type_2'].toLowerCase());
 				type2.innerHTML = data[0]['type_2']
@@ -36,10 +36,10 @@ if ( no != '' && no != null ) {
 		}
 
 		// Populate abilities
-		document.querySelector('.ability-1 .ability-name').innerHTML = data[0]['ability_1']['name'];
-		document.querySelector('.ability-1 .ability-desc').innerHTML = data[0]['ability_1']['desc'];
-		document.querySelector('.ability-2 .ability-name').innerHTML = data[0]['ability_2']['name'];
-		document.querySelector('.ability-2 .ability-desc').innerHTML = data[0]['ability_2']['desc'];
+		document.querySelector('.ability-1 .ability-name').innerHTML = data[0]['abilities'][0]['name'];
+		document.querySelector('.ability-1 .ability-desc').innerHTML = data[0]['abilities'][0]['desc'];
+		document.querySelector('.ability-2 .ability-name').innerHTML = data[0]['abilities'][1]['name'];
+		document.querySelector('.ability-2 .ability-desc').innerHTML = data[0]['abilities'][1]['desc'];
 
 		// Populate description
 		document.querySelector('.description').innerHTML = data[0]['description'];
@@ -56,10 +56,10 @@ if ( no != '' && no != null ) {
 
 		// Populate stats
 		document.querySelector('.stat-hp .stat-value').innerHTML = data[0]['stats']['hp'];
-		document.querySelector('.stat-atk .stat-value').innerHTML = data[0]['stats']['atk'];
-		document.querySelector('.stat-def .stat-value').innerHTML = data[0]['stats']['def'];
-		document.querySelector('.stat-spa .stat-value').innerHTML = data[0]['stats']['spa'];
-		document.querySelector('.stat-spd .stat-value').innerHTML = data[0]['stats']['spd'];
+		document.querySelector('.stat-m-atk .stat-value').innerHTML = data[0]['stats']['m_atk'];
+		document.querySelector('.stat-m-def .stat-value').innerHTML = data[0]['stats']['m_def'];
+		document.querySelector('.stat-r-atk .stat-value').innerHTML = data[0]['stats']['r_atk'];
+		document.querySelector('.stat-r-def .stat-value').innerHTML = data[0]['stats']['r_def'];
 		document.querySelector('.stat-spe .stat-value').innerHTML = data[0]['stats']['spe'];
 		document.querySelector('.stat-total .stat-value').innerHTML = data[0]['stats']['total'];
 
@@ -145,6 +145,24 @@ if ( no != '' && no != null ) {
 					data[0]['immunity'][im] + '</span>';
 			}
 			document.querySelector('.condition-immunity').appendChild(immunity);
+		}
+
+		// Populate moveset
+		for ( var ms = 0; ms < data[0]['moves'].length; ms++ ) {
+			var move = document.createElement('tr');
+				move.innerHTML = 
+					'<td rowspan="2" class="move-lvl">' + data[0]['moves'][ms]['level'] + '</td>' +
+					'<td rowspan="2" class="move-name">' + data[0]['moves'][ms]['name'] + '</td>' +
+					'<td class="move-type">' + data[0]['moves'][ms]['type'] + '</td>' +
+					'<td class="move-cat">' + data[0]['moves'][ms]['category'] + '</td>' +
+					'<td class="move-pwr">' + data[0]['moves'][ms]['power'] + '</td>' +
+					'<td class="move-acc">' + data[0]['moves'][ms]['accuracy'] + '</td>' +
+					'<td class="move-cost">' + data[0]['moves'][ms]['cost'] + '</td>';
+			var moveEffect = document.createElement('tr');
+				moveEffect.innerHTML = '<td colspan="6" class="move-effect">' + 
+					data[0]['moves'][ms]['effect'] + '</td>';
+			document.querySelector('.move-table tbody').appendChild(move);
+			document.querySelector('.move-table tbody').appendChild(moveEffect);
 		}
 
 	})
