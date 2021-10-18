@@ -25,13 +25,14 @@ if ( no != '' && no != null ) {
 		document.querySelector('.name').innerHTML = data[0]['name'];
 
 		// Populate types
-		document.querySelector('.types span:first-child').innerHTML = data[0]['types'][0]
-		document.querySelector('.types span:first-child')
-			.classList.add(data[0]['type_1'].toLowerCase());
+		document.querySelector('.types span:first-child').innerHTML = data[0]['types'][0];
+		document.querySelector('.types span:first-child').classList.add(
+			data[0]['type_1'].toLowerCase()
+		);
 		if ( data[0]['types'][1] != '' && data[0]['types'][1] != null ) {
 			var type2 = document.createElement('span');
-				type2.classList.add(data[0]['type_2'].toLowerCase());
-				type2.innerHTML = data[0]['type_2']
+				type2.classList.add(data[0]['types'][1].toLowerCase());
+				type2.innerHTML = data[0]['types'][1];
 			document.querySelector('.types').appendChild(type2);
 		}
 
