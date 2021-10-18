@@ -10,12 +10,12 @@
 	align-items: center;
 }
 
-.additional .additional-value {
+.additional {
 	margin-bottom: 10px;
 }
 
 .additional .additional-label {
-	color: #727722;
+	color: #727272;
 	width: 80px;
 }
 
