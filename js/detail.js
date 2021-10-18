@@ -31,7 +31,7 @@ if ( no != '' && no != null ) {
 		);
 		if ( data[0]['types'][1] != '' && data[0]['types'][1] != null ) {
 			var type2 = document.createElement('span');
-				type2.classList.add(data[0]['types'][1].toLowerCase());
+				type2.classList.add('type', data[0]['types'][1].toLowerCase());
 				type2.innerHTML = data[0]['types'][1];
 			document.querySelector('.types').appendChild(type2);
 		}
