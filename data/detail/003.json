@@ -43,7 +43,7 @@
 			"power" : "-",
 			"accuracy" : "-",
 			"stamina" : "10",
-			"effect" : "Boost Speed stat by 1 stage."
+			"effect" : "Accelerate to boost the user's Speed stat."
 		},
 		{
 			"level" : "-",
@@ -103,7 +103,7 @@
 			"power" : "-",
 			"accuracy" : "-",
 			"stamina" : "15",
-			"effect" : "Increase the Evasion stat by 1 stage."
+			"effect" : "Use faster footwork to raise the user's Evasion stat."
 		},
 		{
 			"level" : "Level 50",
@@ -143,34 +143,43 @@
 			"power" : "-",
 			"accuracy" : "-",
 			"stamina" : "10",
-			"effect" : "Rest for 2 turns. This move fully restores the user's HP."
+			"effect" : "Rest for 2 turns. Each turn restores the user's HP by 50% and Stamina by 25%. This move also removes all status condition."
 		},
 		{
-			"name" : "Substitute",
+			"name" : "Tail Slap",
 			"type" : "Neutral",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "25",
-			"effect" : "Create a substitute that serves as the user's decoy with the cost of a quarter HP."
-		},
-		{
-			"name" : "Endure",
-			"type" : "Neutral",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "25",
-			"effect" : "Endure upcoming attack(s) for 1 turn, leaving at least 1 HP, but reduce success rate by 50% if used consecutively with any other faint-cheating moves."
-		},
-		{
-			"name" : "Dig",
-			"type" : "Earth",
 			"category" : "Melee",
-			"power" : "60",
-			"accuracy" : "100%",
+			"power" : "40",
+			"accuracy" : "90%",
+			"stamina" : "10",
+			"effect" : "Slap the opponent with a tail. This move has a 20% chance of causing the target to flinch."
+		},
+		{
+			"name" : "Battle Dance",
+			"type" : "Neutral",
+			"category" : "Support",
+			"power" : "-",
+			"accuracy" : "-",
 			"stamina" : "15",
-			"effect" : "Burrow into the ground and attack the next turn. The user becomes untargetable by all non-Earth typed moves during this turn."
+			"effect" : "Uplift the fighting spirit with a battle dance. This move boosts the user's Melee Attack stat and Speed stat."
+		},
+		{
+			"name" : "Grassy Blast",
+			"type" : "Nature",
+			"category" : "Ranged",
+			"power" : "70",
+			"accuracy" : "95%",
+			"stamina" : "20",
+			"effect" : "Draw power from nature and blast at the opponent. This move has a 20% chance to cause the target to flinch."
+		},
+		{
+			"name" : "Photosynthesis",
+			"type" : "Nature",
+			"category" : "Support",
+			"power" : "-",
+			"accuracy" : "-",
+			"stamina" : "20",
+			"effect" : "Restore the user's HP by 25%. During harsh sunlight, this move restores 50% instead."
 		},
 		{
 			"name" : "Shadow Slash",
@@ -182,13 +191,58 @@
 			"effect" : "Slash the opponent with claws made from shadow. This move has a 10% critical hit chance."
 		},
 		{
-			"name" : "Grassy Blast",
-			"type" : "Nature",
+			"name" : "Pursuit",
+			"type" : "Dark",
+			"category" : "Melee",
+			"power" : "40",
+			"accuracy" : "75%",
+			"stamina" : "10",
+			"effect" : "Chase after the opponent and inflict double damage if the target switches out."
+		},
+		{
+			"name" : "Gust",
+			"type" : "Wind",
 			"category" : "Ranged",
-			"power" : "70",
-			"accuracy" : "95%",
-			"stamina" : "20",
-			"effect" : "Draw power from nature and blast at the opponent. This move has a 20% chance to cause the target to flinch."
+			"power" : "30",
+			"accuracy" : "90%",
+			"stamina" : "10",
+			"effect" : "Kicks up a burst of wind at the opponent. This move also removes traps and obstacles on the field."
+		},
+		{
+			"name" : "Scavenge",
+			"type" : "Wind",
+			"category" : "Melee",
+			"power" : "40",
+			"accuracy" : "100%",
+			"stamina" : "10",
+			"effect" : "Swoop down and strike the opponent. This move has a 25% chance of stealing the opponent's item."
+		},
+		{
+			"name" : "Sand Attack",
+			"type" : "Earth",
+			"category" : "Ranged",
+			"power" : "10",
+			"accuracy" : "80%",
+			"stamina" : "5",
+			"effect" : "Hurl sand at the opponent, reducing the target's Accuracy by one stage."
+		},
+		{
+			"name" : "Iron Tail",
+			"type" : "Metal",
+			"category" : "Melee",
+			"power" : "60",
+			"accuracy" : "90%",
+			"stamina" : "15",
+			"effect" : "Slam the opponent with a steel-hard tail. This move has a 30% chance of reducing the target's Defense stat by one stage."
+		},
+		{
+			"name" : "Poison Tail",
+			"type" : "Toxic",
+			"category" : "Melee",
+			"power" : "60",
+			"accuracy" : "90%",
+			"stamina" : "10",
+			"effect" : "Hit the opponent with a poisonous tail. This move has a 10% chance of poisoning the target."
 		}
 	]
 }]

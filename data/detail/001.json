@@ -73,7 +73,7 @@
 			"power" : "-",
 			"accuracy" : "-",
 			"stamina" : "10",
-			"effect" : "Boost Speed stat by 1 stage."
+			"effect" : "Accelerate to boost the user's Speed stat."
 		},
 		{
 			"level" : "Level 10",
@@ -143,52 +143,16 @@
 			"power" : "-",
 			"accuracy" : "-",
 			"stamina" : "10",
-			"effect" : "Rest for 2 turns. This move fully restores the user's HP."
+			"effect" : "Rest for 2 turns. Each turn restores the user's HP by 50% and Stamina by 25%. This move also removes all status condition."
 		},
 		{
-			"name" : "Substitute",
-			"type" : "Neutral",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "25",
-			"effect" : "Create a substitute that serves as the user's decoy with the cost of a quarter HP."
-		},
-		{
-			"name" : "Endure",
-			"type" : "Neutral",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "25",
-			"effect" : "Endure upcoming attack(s) for 1 turn, leaving at least 1 HP, but reduce success rate by 50% if used consecutively with any other faint-cheating moves."
-		},
-		{
-			"name" : "Dig",
+			"name" : "Sand Attack",
 			"type" : "Earth",
-			"category" : "Melee",
-			"power" : "60",
-			"accuracy" : "100%",
-			"stamina" : "15",
-			"effect" : "Burrow into the ground and attack the next turn. The user becomes untargetable by all non-Earth typed moves during this turn."
-		},
-		{
-			"name" : "Shadow Slash",
-			"type" : "Dark",
-			"category" : "Melee",
-			"power" : "60",
-			"accuracy" : "100%",
-			"stamina" : "15",
-			"effect" : "Slash the opponent with claws made from shadow. This move has a 10% critical hit chance."
-		},
-		{
-			"name" : "Grassy Blast",
-			"type" : "Nature",
 			"category" : "Ranged",
-			"power" : "70",
-			"accuracy" : "95%",
-			"stamina" : "20",
-			"effect" : "Draw power from nature and blast at the opponent. This move has a 20% chance to cause the target to flinch."
+			"power" : "10",
+			"accuracy" : "80%",
+			"stamina" : "5",
+			"effect" : "Hurl sand at the opponent, reducing the target's accuracy by one stage."
 		}
 	]
 }]
