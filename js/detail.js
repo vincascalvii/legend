@@ -84,10 +84,10 @@ if ( no != '' && no != null ) {
 				'<h3 class="condition-label">Major Weakness (x4)</h3>';
 			var majorWeakness = document.createElement('div');
 				majorWeakness.classList.add('condition-types');
-			for ( var mw = 0; mw < data[0]['major-weakness'].length; mw++ ) {
+			for ( var mw = 0; mw < data[0]['major_weakness'].length; mw++ ) {
 				majorWeakness.innerHTML += '<span class="type '  + 
-					data[0]['major-weakness'][mw].toLowerCase() +  '">' + 
-					data[0]['major-weakness'][mw] + '</span>';
+					data[0]['major_weakness'][mw].toLowerCase() +  '">' + 
+					data[0]['major_weakness'][mw] + '</span>';
 			}
 			document.querySelector('.condition-major-weakness').appendChild(majorWeakness);
 		}
@@ -126,10 +126,10 @@ if ( no != '' && no != null ) {
 				'<h3 class="condition-label">Major Resistance (x¼)</h3>';
 			var majorResistance = document.createElement('div');
 				majorResistance.classList.add('condition-types');
-			for ( var mr = 0; mr < data[0]['major-resistance'].length; mr++ ) {
+			for ( var mr = 0; mr < data[0]['major_resistance'].length; mr++ ) {
 				majorResistance.innerHTML += '<span class="type '  + 
-					data[0]['major-resistance'][mr].toLowerCase() +  '">' + 
-					data[0]['major-resistance'][mr] + '</span>';
+					data[0]['major_resistance'][mr].toLowerCase() +  '">' + 
+					data[0]['major_resistance'][mr] + '</span>';
 			}
 			document.querySelector('.condition-major-resistance').appendChild(majorResistance);
 		}
