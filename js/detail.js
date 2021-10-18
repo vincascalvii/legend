@@ -136,7 +136,7 @@ if ( no != '' && no != null ) {
 		// Populate immunity
 		if ( data[0]['immunity'].length > 0 ) {
 			document.querySelector('.condition-immunity').innerHTML =
-				'<h3 class="condition-label">Weakness (x2)</h3>';
+				'<h3 class="condition-label">Immunity (x0)</h3>';
 			var immunity = document.createElement('div');
 				immunity.classList.add('condition-types');
 			for ( var im = 0; im < data[0]['immunity'].length; im++ ) {
