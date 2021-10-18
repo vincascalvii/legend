@@ -8,7 +8,7 @@
 			"desc" : "Increase the possessor's Nature-type moves' power to 50%."
 		},
 		{
-			"name" : "Accelerate (Secret)",
+			"name" : "Agility (Secret)",
 			"desc" : "Increase the possessor's Speed stat by 1 stage at the end of each turn."
 		}
 	],
@@ -43,7 +43,7 @@
 			"power" : "20",
 			"accuracy" : "100%",
 			"stamina" : "5",
-			"effect" : "The user scratches the opponent with sharp claws."
+			"effect" : "Scratch the opponent with sharp claws."
 		},
 		{
 			"level" : "-",
@@ -53,7 +53,77 @@
 			"power" : "-",
 			"accuracy" : "100%",
 			"stamina" : "5",
-			"effect" : "The user lets out a growl that lowers the opponent(s)' Melee Attack by one stage."
+			"effect" : "Let out a growl that lowers the opponent(s)' Melee Attack by one stage."
+		},
+		{
+			"level" : "5",
+			"name" : "Leaf Blade",
+			"type" : "Nature",
+			"category" : "Melee",
+			"power" : "30",
+			"accuracy" : "90%",
+			"stamina" : "10",
+			"effect" : "Attack the opponent with a hardened leave."
+		},
+		{
+			"level" : "8",
+			"name" : "Accelerate",
+			"type" : "Neutral",
+			"category" : "Support",
+			"power" : "-",
+			"accuracy" : "-",
+			"stamina" : "10",
+			"effect" : "Boost Speed stat by 1 stage."
+		},
+		{
+			"level" : "10",
+			"name" : "Dodge",
+			"type" : "Neutral",
+			"category" : "Support",
+			"power" : "-",
+			"accuracy" : "-",
+			"stamina" : "10",
+			"effect" : "Dodge upcoming attack(s), but reduce success rate by 50% if used consecutively with any other evasion moves."
+		},
+		{
+			"level" : "15",
+			"name" : "Razor Leave",
+			"type" : "Nature",
+			"category" : "Melee",
+			"power" : "50",
+			"accuracy" : "90%",
+			"stamina" : "15",
+			"effect" : "Attack the opponent with razor sharp leaves. This move has 10% critical hit chance."
+		},
+		{
+			"level" : "18",
+			"name" : "Quick Strike",
+			"type" : "Neutral",
+			"category" : "Melee",
+			"power" : "40",
+			"accuracy" : "100%",
+			"stamina" : "15",
+			"effect" : "Lunges at the opponent quickly before the target can react. This move has a +1 priority."
+		},
+		{
+			"level" : "25",
+			"name" : "Stalk",
+			"type" : "Dark",
+			"category" : "Melee",
+			"power" : "-",
+			"accuracy" : "100%",
+			"stamina" : "10",
+			"effect" : "Stalk the opponent, allowing the next move to have +1 priority and 50% critical hit chance."
+		},
+		{
+			"level" : "30",
+			"name" : "Copycat",
+			"type" : "Neutral",
+			"category" : "Other",
+			"power" : "-",
+			"accuracy" : "-",
+			"stamina" : "15",
+			"effect" : "Copy the move used immediately before the user. If no moves have been used, this move will fail."
 		}
 	]
 }]
