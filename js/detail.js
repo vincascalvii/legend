@@ -65,7 +65,7 @@ if ( no != '' && no != null ) {
 			(( parseInt(data[0]['stats']['spe']) / 120 ) * 100 ) + '%';
 
 		// Populate major weakness
-		if ( data[0]['major-weakness'].length > 0 ) {
+		if ( data[0]['major_weakness'].length > 0 ) {
 			document.querySelector('.condition-major-weakness').innerHTML =
 				'<h3 class="condition-label">Major Weakness (x4)</h3>';
 			var majorWeakness = document.createElement('div');
@@ -107,7 +107,7 @@ if ( no != '' && no != null ) {
 		}
 
 		// Populate major resistance
-		if ( data[0]['major-resistance'].length > 0 ) {
+		if ( data[0]['major_resistance'].length > 0 ) {
 			document.querySelector('.condition-major-resistance').innerHTML =
 				'<h3 class="condition-label">Major Resistance (x¼)</h3>';
 			var majorResistance = document.createElement('div');
