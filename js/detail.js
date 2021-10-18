@@ -48,11 +48,11 @@ if ( no != '' && no != null ) {
 		document.querySelector('.additional-male-value').innerHTML = data[0]['gender']['male'];
 		document.querySelector('.additional-female-value').innerHTML = data[0]['gender']['female'];
 		document.querySelector('.additional-species .additional-value').innerHTML = 
-			data[0]['gender']['species'];
+			data[0]['species'];
 		document.querySelector('.additional-weight .additional-value').innerHTML = 
-			data[0]['gender']['weight'];
+			data[0]['weight'];
 		document.querySelector('.additional-height .additional-value').innerHTML = 
-			data[0]['gender']['height'];
+			data[0]['height'];
 
 		// Populate stats
 		document.querySelector('.stat-hp .stat-value').innerHTML = data[0]['stats']['hp'];
