@@ -156,9 +156,9 @@ if ( no != '' && no != null ) {
 					data[0]['moves'][ms]['type'] + '">' + data[0]['moves'][ms]['type'] + 
 					'</span><span class="move-level">' + data[0]['moves'][ms]['level'] + 
 					'</span></p>' + '<p class="move-details"><span class="move-category">' + 
-					data[0]['moves'][ms]['category'] + '</span><span class="move-power">' +
-					data[0]['moves'][ms]['power'] + '</span><span class="move-accuracy">' +
-					data[0]['moves'][ms]['accuracy'] + '</span><span class="move-cost">' +
+					data[0]['moves'][ms]['category'] + '</span><span class="move-power">Power: ' +
+					data[0]['moves'][ms]['power'] + '</span><span class="move-accuracy">Accuracy: ' +
+					data[0]['moves'][ms]['accuracy'] + '</span><span class="move-cost">Cost: ' +
 					data[0]['moves'][ms]['cost'] + '</span></p>' +
 					'<p class="move-effect">' + data[0]['moves'][ms]['effect'] + '</p>';
 			document.querySelector('.moves').appendChild(move);
