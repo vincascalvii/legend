@@ -189,6 +189,6 @@
 			"accuracy" : "95%",
 			"stamina" : "20",
 			"effect" : "Draw power from nature and blast at the opponent. This move has a 20% chance to cause the target to flinch."
-		},
+		}
 	]
 }]
