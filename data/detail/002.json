@@ -117,13 +117,13 @@
 		},
 		{
 			"level" : "Level 40",
-			"name" : "Aerial Strike",
-			"type" : "Wind",
+			"name" : "Shadow Slash",
+			"type" : "Dark",
 			"category" : "Melee",
-			"power" : "70",
+			"power" : "60",
 			"accuracy" : "100%",
-			"stamina" : "20",
-			"effect" : "Strike the opponent with quick movement in the air. This attack has a 10% critical hit chance."
+			"stamina" : "15",
+			"effect" : "Slash the opponent with claws made from shadow. This move has a 10% critical hit chance."
 		}
 	],
 	"moves_tutor" : [
@@ -164,15 +164,6 @@
 			"effect" : "Restore the user's HP by 25%. During harsh sunlight, this move restores 50% instead."
 		},
 		{
-			"name" : "Shadow Slash",
-			"type" : "Dark",
-			"category" : "Melee",
-			"power" : "60",
-			"accuracy" : "100%",
-			"stamina" : "15",
-			"effect" : "Slash the opponent with claws made from shadow. This move has a 10% critical hit chance."
-		},
-		{
 			"name" : "Pursuit",
 			"type" : "Dark",
 			"category" : "Melee",
@@ -180,15 +171,6 @@
 			"accuracy" : "75%",
 			"stamina" : "10",
 			"effect" : "Chase after the opponent and inflict double damage if the target switches out."
-		},
-		{
-			"name" : "Gust",
-			"type" : "Wind",
-			"category" : "Ranged",
-			"power" : "30",
-			"accuracy" : "90%",
-			"stamina" : "10",
-			"effect" : "Kicks up a burst of wind at the opponent. This move also removes traps and obstacles on the field."
 		},
 		{
 			"name" : "Sand Attack",
