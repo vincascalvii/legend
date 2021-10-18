@@ -67,13 +67,13 @@ if ( no != '' && no != null ) {
 		// Populate stat bars
 		document.querySelector('.stat-hp .stat-bar-fill').style.width = 
 			(( parseInt(data[0]['stats']['hp']) / 120 ) * 100 ) + '%';
-		document.querySelector('.stat-atk .stat-bar-fill').style.width = 
+		document.querySelector('.stat-m-atk .stat-bar-fill').style.width = 
 			(( parseInt(data[0]['stats']['atk']) / 120 ) * 100 ) + '%';
-		document.querySelector('.stat-def .stat-bar-fill').style.width = 
+		document.querySelector('.stat-m-def .stat-bar-fill').style.width = 
 			(( parseInt(data[0]['stats']['def']) / 120 ) * 100 ) + '%';
-		document.querySelector('.stat-spa .stat-bar-fill').style.width = 
+		document.querySelector('.stat-r-atk .stat-bar-fill').style.width = 
 			(( parseInt(data[0]['stats']['spa']) / 120 ) * 100 ) + '%';
-		document.querySelector('.stat-spd .stat-bar-fill').style.width = 
+		document.querySelector('.stat-r-def .stat-bar-fill').style.width = 
 			(( parseInt(data[0]['stats']['spd']) / 120 ) * 100 ) + '%';
 		document.querySelector('.stat-spe .stat-bar-fill').style.width = 
 			(( parseInt(data[0]['stats']['spe']) / 120 ) * 100 ) + '%';
