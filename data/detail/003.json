@@ -1,0 +1,129 @@
+[{
+	"number" : "002",
+	"name" : "Shadoward",
+	"types" : ["Nature", "Wind"],
+	"abilities" : [
+		{
+			"name" : "Terra Growth",
+			"desc" : "Increase the possessor's Nature-type moves' power to 50%."
+		},
+		{
+			"name" : "Agility (Secret)",
+			"desc" : "Increase the possessor's Speed stat by 1 stage at the end of each turn."
+		}
+	],
+	"description" : "Shadoward lurk inside the forest and usually go active at night. They use the red end of the tail as a bait to lure their prey to their hunting ground. Combined with their green mane, they become very hard to be spotted out, making them a fearsome assassin.",
+	"gender" : {
+		"male" : "50%",
+		"female" : "50%"
+	},
+	"species" : "Cat",
+	"weight" : "84.0kg",
+	"height" : "2.0m",
+	"stats" : {
+		"hp" : "62",
+		"m_atk" : "77",
+		"m_def" : "63",
+		"r_atk" : "50",
+		"r_def" : "54",
+		"spe" : "94",
+		"total" : "400"
+	},
+	"major_weakness" : ["Ice"],
+	"weakness" : ["Fire", "Toxic"],
+	"resistance" : ["Nature", "Water", "Earth" ],
+	"major_resistance" : [],
+	"immunity" : ["Earth", "Light"],
+	"moves" : [
+		{
+			"level" : "-",
+			"name" : "Accelerate",
+			"type" : "Neutral",
+			"category" : "Support",
+			"power" : "-",
+			"accuracy" : "-",
+			"stamina" : "10",
+			"effect" : "Boost Speed stat by 1 stage."
+		},
+		{
+			"level" : "-",
+			"name" : "Dodge",
+			"type" : "Neutral",
+			"category" : "Support",
+			"power" : "-",
+			"accuracy" : "-",
+			"stamina" : "10",
+			"effect" : "Dodge upcoming attack(s), but reduce success rate by 50% if used consecutively with any other evasion moves."
+		},
+		{
+			"level" : "-",
+			"name" : "Quick Strike",
+			"type" : "Neutral",
+			"category" : "Melee",
+			"power" : "40",
+			"accuracy" : "100%",
+			"stamina" : "15",
+			"effect" : "Lunges at the opponent quickly before the target can react. This move has a +1 priority."
+		},
+		{
+			"level" : "-",
+			"name" : "Stalk",
+			"type" : "Dark",
+			"category" : "Melee",
+			"power" : "-",
+			"accuracy" : "100%",
+			"stamina" : "10",
+			"effect" : "Stalk the opponent, allowing the next move to have +1 priority and 50% critical hit chance."
+		},
+		{
+			"level" : "-",
+			"name" : "Fury Cutter",
+			"type" : "Nature",
+			"category" : "Melee",
+			"power" : "60",
+			"accuracy" : "95%",
+			"stamina" : "20",
+			"effect" : "Slash the opponent with scythe-like attack. Consecutive success uses of this move increases the power by 5 each time (Max. 30)."
+		},
+		{
+			"level" : "Level 40",
+			"name" : "Aerial Strike",
+			"type" : "Wind",
+			"category" : "Melee",
+			"power" : "70",
+			"accuracy" : "100%",
+			"stamina" : "20",
+			"effect" : "Strike the opponent with quick movement in the air. This attack has a 10% critical hit chance."
+		},
+		{
+			"level" : "Level 45",
+			"name" : "Quick Footwork",
+			"type" : "Wind",
+			"category" : "Support",
+			"power" : "-",
+			"accuracy" : "-",
+			"stamina" : "15",
+			"effect" : "Increase the Evasion stat by 1 stage."
+		},
+		{
+			"level" : "Level 50",
+			"name" : "Shadow Sneak",
+			"type" : "Dark",
+			"category" : "Melee",
+			"power" : "60",
+			"accuracy" : "100%",
+			"stamina" : "15",
+			"effect" : "Sneak in the dark and attacks the next turn. The user becomes untargetable by all non-Light typed moves during this turn."
+		},
+		{
+			"level" : "Level 60",
+			"name" : "Swift Cut",
+			"type" : "Nature",
+			"category" : "Melee",
+			"power" : "70",
+			"accuracy" : "100%",
+			"stamina" : "20",
+			"effect" : "The user reacts quickly and uses its deadly tail to counter the enemy attack. This move has +2 priority but will fail if the opponent is not readying an attack."
+		}
+	]
+}]

@@ -1,6 +1,6 @@
 [{
-	"number" : "001",
-	"name" : "Leafen",
+	"number" : "002",
+	"name" : "Petalen",
 	"types" : ["Nature", ""],
 	"abilities" : [
 		{
@@ -12,22 +12,22 @@
 			"desc" : "Increase the possessor's Speed stat by 1 stage at the end of each turn."
 		}
 	],
-	"description" : "Leafen is an agile and cunning kitten who loves to eat berries. It usually doesn't live as house-hold pet since its natural habitat belongs to the forest. Its eyes glow red when dusk arrives, allowing it to scare enemies away from the dark.",
+	"description" : "Petalen like to live in the forest and enjoy brushing themselves on leaves and bushes. They move swiftly between trees and their tails are used as a sharp blade that cuts down their foes and prey.",
 	"gender" : {
 		"male" : "50%",
 		"female" : "50%"
 	},
 	"species" : "Cat",
-	"weight" : "3.8kg",
-	"height" : "0.6m",
+	"weight" : "24.0kg",
+	"height" : "1.3m",
 	"stats" : {
-		"hp" : "32",
-		"m_atk" : "40",
-		"m_def" : "34",
-		"r_atk" : "26",
-		"r_def" : "24",
-		"spe" : "44",
-		"total" : "200"
+		"hp" : "50",
+		"m_atk" : "52",
+		"m_def" : "51",
+		"r_atk" : "46",
+		"r_def" : "37",
+		"spe" : "64",
+		"total" : "300"
 	},
 	"major_weakness" : [],
 	"major_resistance" : [],
@@ -35,16 +35,6 @@
 	"resistance" : ["Water", "Electric", "Earth" ],
 	"immunity" : ["Light"],
 	"moves" : [
-		{
-			"level" : "-",
-			"name" : "Scratch",
-			"type" : "Neutral",
-			"category" : "Melee",
-			"power" : "20",
-			"accuracy" : "100%",
-			"stamina" : "5",
-			"effect" : "Scratch the opponent with sharp claws."
-		},
 		{
 			"level" : "-",
 			"name" : "Growl",
@@ -56,17 +46,7 @@
 			"effect" : "Let out a growl that lowers the opponent(s)' Melee Attack by one stage."
 		},
 		{
-			"level" : "Level 5",
-			"name" : "Leaf Blade",
-			"type" : "Nature",
-			"category" : "Melee",
-			"power" : "30",
-			"accuracy" : "90%",
-			"stamina" : "10",
-			"effect" : "Attack the opponent with a hardened leave."
-		},
-		{
-			"level" : "Level 8",
+			"level" : "-",
 			"name" : "Accelerate",
 			"type" : "Neutral",
 			"category" : "Support",
@@ -76,7 +56,7 @@
 			"effect" : "Boost Speed stat by 1 stage."
 		},
 		{
-			"level" : "Level 10",
+			"level" : "-",
 			"name" : "Dodge",
 			"type" : "Neutral",
 			"category" : "Support",
@@ -86,7 +66,7 @@
 			"effect" : "Dodge upcoming attack(s), but reduce success rate by 50% if used consecutively with any other evasion moves."
 		},
 		{
-			"level" : "Level 15",
+			"level" : "-",
 			"name" : "Razor Leave",
 			"type" : "Nature",
 			"category" : "Melee",
@@ -96,7 +76,7 @@
 			"effect" : "Attack the opponent with razor sharp leaves. This move has 10% critical hit chance."
 		},
 		{
-			"level" : "Level 18",
+			"level" : "-",
 			"name" : "Quick Strike",
 			"type" : "Neutral",
 			"category" : "Melee",
@@ -124,6 +104,26 @@
 			"accuracy" : "-",
 			"stamina" : "15",
 			"effect" : "Copy the move used immediately before the user. If no moves have been used, this move will fail."
+		},
+		{
+			"level" : "Level 35",
+			"name" : "Fury Cutter",
+			"type" : "Nature",
+			"category" : "Melee",
+			"power" : "60",
+			"accuracy" : "95%",
+			"stamina" : "20",
+			"effect" : "Slash the opponent with scythe-like attack. Consecutive success uses of this move increases the power by 5 each time (Max. 30)."
+		},
+		{
+			"level" : "Level 40",
+			"name" : "Aerial Strike",
+			"type" : "Wind",
+			"category" : "Melee",
+			"power" : "70",
+			"accuracy" : "100%",
+			"stamina" : "20",
+			"effect" : "Strike the opponent with quick movement in the air. This attack has a 10% critical hit chance."
 		}
 	]
 }]
