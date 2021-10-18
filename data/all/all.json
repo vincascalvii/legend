@@ -21,7 +21,7 @@
 		"number" : "003",
 		"name" : "Shadoward",
 		"type_1" : "Nature",
-		"type_2" : "Wind",
+		"type_2" : "Dark",
 		"image_1" : "160x120",
 		"image_2" : "320x240",
 		"image_3" : "480x360"
@@ -48,7 +48,7 @@
 		"number" : "006",
 		"name" : "Wolflare",
 		"type_1" : "Fire",
-		"type_2" : "Dark",
+		"type_2" : "Earth",
 		"image_1" : "160x120",
 		"image_2" : "320x240",
 		"image_3" : "480x360"
