@@ -5,9 +5,18 @@
 }
 
 .additional,
-.additional .additional-gender .additional-value {
+.additional-gender .additional-value {
 	display: flex;
 	align-items: center;
+}
+
+.additional .additional-value {
+	margin-bottom: 10px;
+}
+
+.additional .additional-label {
+	color: #727722;
+	width: 80px;
 }
 
 .additional .additional-male {
@@ -15,8 +24,9 @@
 }
 
 .additional .additional-gender .icon {
-	width: 20px;
-	height: 20px;
+	width: 15px;
+	height: 15px;
+	margin-right: 5px;
 }
 
 .stats .stat {
@@ -25,8 +35,7 @@
 	margin-bottom: 10px;
 }
 
-.stats .stat-label,
-.additional .additional-label {
+.stats .stat-label {
 	color: #727272;
 	width: 70px;
 }
