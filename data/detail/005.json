@@ -8,26 +8,26 @@
 			"desc" : "Increase the possessor's Fire-type moves' power to 50%."
 		},
 		{
-			"name" : "High Spirit (Secret)",
-			"desc" : "The possessor cannot be Asleep while having this ability."
+			"name" : "Sharp Claws (Secret)",
+			"desc" : "Increase the power of the possessor's Claw-typed moves by 30%."
 		}
 	],
-	"description" : "Pupyro are very aggressive puppies at first hand but will become attached to those who they deem worthy of their owners. They have a very strong fighting spirit and would often cause trouble against others of their kind.",
+	"description" : "Flamound are tougher and stronger than their pre-evolution. Their natural instinct always tells them to find a worthy owner before they can proceed further in anything. Usually, that stubbornness makes it very hard for them to evolve.",
 	"gender" : {
 		"male" : "50%",
 		"female" : "50%"
 	},
 	"species" : "Dog",
-	"weight" : "7.2kg",
-	"height" : "0.7m",
+	"weight" : "36.0kg",
+	"height" : "1.4m",
 	"stats" : {
-		"hp" : "40",
-		"m_atk" : "42",
-		"m_def" : "32",
-		"r_atk" : "24",
-		"r_def" : "30",
-		"spe" : "32",
-		"total" : "200"
+		"hp" : "52",
+		"m_atk" : "72",
+		"m_def" : "47",
+		"r_atk" : "32",
+		"r_def" : "43",
+		"spe" : "54",
+		"total" : "300"
 	},
 	"major_weakness" : [],
 	"weakness" : ["Water", "Wind", "Earth"],
@@ -35,16 +35,6 @@
 	"major_resistance" : [],
 	"immunity" : [],
 	"moves_level" : [
-		{
-			"level" : "-",
-			"name" : "Tackle",
-			"type" : "Neutral",
-			"category" : "Melee",
-			"power" : "20",
-			"accuracy" : "100%",
-			"stamina" : "5",
-			"effect" : "Charge at the opponent with a full-body tackle."
-		},
 		{
 			"level" : "-",
 			"name" : "Growl",
@@ -56,7 +46,7 @@
 			"effect" : "Let out a growl that lowers the opponent(s)' Melee Attack by one stage."
 		},
 		{
-			"level" : "Level 5",
+			"level" : "-",
 			"name" : "Fire Ball",
 			"type" : "Fire",
 			"category" : "Ranged",
@@ -66,7 +56,7 @@
 			"effect" : "Blast a fire ball at the opponent."
 		},
 		{
-			"level" : "Level 8",
+			"level" : "-",
 			"name" : "Bite",
 			"type" : "Neutral",
 			"category" : "Melee",
@@ -76,7 +66,7 @@
 			"effect" : "Bite the opponent with vicious fangs. This move has a 20% chance to reduce the target's Melee Defense stat."
 		},
 		{
-			"level" : "Level 10",
+			"level" : "-",
 			"name" : "Howl",
 			"type" : "Neutral",
 			"category" : "Support",
@@ -86,7 +76,7 @@
 			"effect" : "Howl to increase the spirit, raising the user's Melee Attack stat."
 		},
 		{
-			"level" : "Level 15",
+			"level" : "-",
 			"name" : "Fire Chomp",
 			"type" : "Fire",
 			"category" : "Melee",
@@ -96,7 +86,7 @@
 			"effect" : "Chomp at the opponent with flame-cloaked fangs. This move has a 20% chance to reduce the target's Melee Defense stat and 10% chance to leave a burn."
 		},
 		{
-			"level" : "Level 18",
+			"level" : "-",
 			"name" : "Headbutt",
 			"type" : "Neutral",
 			"category" : "Melee",
@@ -124,6 +114,26 @@
 			"accuracy" : "95%",
 			"stamina" : "15",
 			"effect" : "Recklessly slam into the opponent but also hurt the user by a quarter of the damage dealt. This move has a 20% chance of causing the target to flinch."
+		},
+		{
+			"level" : "Level 35",
+			"name" : "Flame Charge",
+			"type" : "Fire",
+			"category" : "Melee",
+			"power" : "60",
+			"accuracy" : "100%",
+			"stamina" : "15",
+			"effect" : "Charge at the opponent in a cloak of flame. This move has a 30% chance to raise the user's Speed stat and 10% chance to leave the target with a burn."
+		},
+		{
+			"level" : "Level 40",
+			"name" : "Ground Stomp",
+			"type" : "Earth",
+			"category" : "Melee",
+			"power" : "60",
+			"accuracy" : "90%",
+			"stamina" : "15",
+			"effect" : "Strongly stomp down on the ground to strike everything around the user, foes and allies. This move lowers the Speed stats of those hit."
 		}
 	],
 	"moves_tutor" : [
@@ -146,6 +156,15 @@
 			"effect" : "Rest for 2 turns. Each turn restores the user's HP by 50% and Stamina by 25%. This move also removes all status condition."
 		},
 		{
+			"name" : "Fire Breath",
+			"type" : "Fire",
+			"category" : "Ranged",
+			"power" : "70",
+			"accuracy" : "100%",
+			"stamina" : "20",
+			"effect" : "Scorch the opponent with an intense blast of fire. This move has a 10% chance of leaving the target with a burn."
+		},
+		{
 			"name" : "Electric Chomp",
 			"type" : "Electric",
 			"category" : "Melee",
@@ -162,6 +181,15 @@
 			"accuracy" : "80%",
 			"stamina" : "5",
 			"effect" : "Hurl sand at the opponent, reducing the target's accuracy by one stage."
+		},
+		{
+			"name" : "Burrow",
+			"type" : "Earth",
+			"category" : "Melee",
+			"power" : "60",
+			"accuracy" : "90%",
+			"stamina" : "15",
+			"effect" : "Burrow into the ground and attack the next turn. The user becomes untargetable by all non-Earth typed moves during this turn."
 		}
 	]
 }]
