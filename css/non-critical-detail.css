@@ -136,3 +136,7 @@
 	margin-right: 10px;
 	border-right: 1px solid #ddd;
 }
+
+.moves .move-details span:last-child {
+	border: none;
+}
