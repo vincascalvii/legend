@@ -104,5 +104,6 @@
 
 .move-table th,
 .move-table td {
+	padding: 10px;
 	border: 1px solid #ddd;
 }

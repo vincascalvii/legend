@@ -36,7 +36,7 @@
 	"immunity" : ["Light"],
 	"moves" : [
 		{
-			"level" : "Start",
+			"level" : "-",
 			"name" : "Scratch",
 			"type" : "Neutral",
 			"category" : "Melee",
@@ -46,7 +46,7 @@
 			"effect" : "The user scratches the opponent with sharp claws."
 		},
 		{
-			"level" : "Start",
+			"level" : "-",
 			"name" : "Growl",
 			"type" : "Neutral",
 			"category" : "Support",
