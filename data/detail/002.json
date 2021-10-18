@@ -30,9 +30,9 @@
 		"total" : "300"
 	},
 	"major_weakness" : [],
-	"major_resistance" : [],
 	"weakness" : ["Fire", "Ice", "Toxic"],
 	"resistance" : ["Water", "Electric", "Earth" ],
+	"major_resistance" : [],
 	"immunity" : ["Light"],
 	"moves_level" : [
 		{
@@ -89,7 +89,7 @@
 			"level" : "Level 25",
 			"name" : "Stalk",
 			"type" : "Dark",
-			"category" : "Melee",
+			"category" : "Support",
 			"power" : "-",
 			"accuracy" : "100%",
 			"stamina" : "10",

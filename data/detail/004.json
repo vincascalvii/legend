@@ -1,0 +1,167 @@
+[{
+	"number" : "004",
+	"name" : "Pupyro",
+	"types" : ["Fire", ""],
+	"abilities" : [
+		{
+			"name" : "Ember Spirit",
+			"desc" : "Increase the possessor's Fire-type moves' power to 50%."
+		},
+		{
+			"name" : "High Spirit (Secret)",
+			"desc" : "The possessor cannot be Asleep while having this ability."
+		}
+	],
+	"description" : "Pupyro are very aggressive puppies at first hand but will become attached to those who they deem worthy of their owners. They have a very strong fighting spirit and would often cause trouble against others of their kind.",
+	"gender" : {
+		"male" : "50%",
+		"female" : "50%"
+	},
+	"species" : "Dog",
+	"weight" : "7.2kg",
+	"height" : "0.7m",
+	"stats" : {
+		"hp" : "40",
+		"m_atk" : "42",
+		"m_def" : "32",
+		"r_atk" : "24",
+		"r_def" : "30",
+		"spe" : "32",
+		"total" : "200"
+	},
+	"major_weakness" : [],
+	"weakness" : ["Water", "Wind", "Earth"],
+	"resistance" : ["Nature", "Fire", "Metal", "Ice" ],
+	"major_resistance" : [],
+	"immunity" : [],
+	"moves_level" : [
+		{
+			"level" : "-",
+			"name" : "Tackle",
+			"type" : "Neutral",
+			"category" : "Melee",
+			"power" : "20",
+			"accuracy" : "100%",
+			"stamina" : "5",
+			"effect" : "Charge at the opponent with a full-body tackle."
+		},
+		{
+			"level" : "-",
+			"name" : "Growl",
+			"type" : "Neutral",
+			"category" : "Support",
+			"power" : "-",
+			"accuracy" : "100%",
+			"stamina" : "5",
+			"effect" : "Let out a growl that lowers the opponent(s)' Melee Attack by one stage."
+		},
+		{
+			"level" : "Level 5",
+			"name" : "Fire Ball",
+			"type" : "Fire",
+			"category" : "Ranged",
+			"power" : "30",
+			"accuracy" : "90%",
+			"stamina" : "10",
+			"effect" : "Blast a fire ball at the opponent."
+		},
+		{
+			"level" : "Level 8",
+			"name" : "Bite",
+			"type" : "Neutral",
+			"category" : "Melee",
+			"power" : "40",
+			"accuracy" : "95%",
+			"stamina" : "10",
+			"effect" : "Bite the opponent with vicious fangs. This move has a 20% chance to reduce the target's Melee Defense stat."
+		},
+		{
+			"level" : "Level 10",
+			"name" : "Howl",
+			"type" : "Neutral",
+			"category" : "Support",
+			"power" : "-",
+			"accuracy" : "-",
+			"stamina" : "10",
+			"effect" : "Howl to increase the spirit, raising the user's Melee Attack stat."
+		},
+		{
+			"level" : "Level 15",
+			"name" : "Fire Chomp",
+			"type" : "Fire",
+			"category" : "Melee",
+			"power" : "50",
+			"accuracy" : "90%",
+			"stamina" : "15",
+			"effect" : "Chomp at the opponent with flame-cloaked fangs. This move has a 20% chance to reduce the target's Melee Defense stat and 10% chance to leave a burn."
+		},
+		{
+			"level" : "Level 18",
+			"name" : "Headbutt",
+			"type" : "Neutral",
+			"category" : "Melee",
+			"power" : "40",
+			"accuracy" : "95%",
+			"stamina" : "10",
+			"effect" : "Recklessly headbutt the opponent that also hurt the user by a quarter of the damage dealt. This move also has a 20% chance of causing the target to flinch."
+		},
+		{
+			"level" : "Level 25",
+			"name" : "Intimidate",
+			"type" : "Dark",
+			"category" : "Support",
+			"power" : "-",
+			"accuracy" : "100%",
+			"stamina" : "10",
+			"effect" : "Frighten the target with a scary face to lower the target's Melee Attack."
+		},
+		{
+			"level" : "Level 30",
+			"name" : "Take Down",
+			"type" : "Neutral",
+			"category" : "Melee",
+			"power" : "60",
+			"accuracy" : "95%",
+			"stamina" : "15",
+			"effect" : "Recklessly slam into the opponent but also hurt the user by a quarter of the damage dealt. This move has a 20% chance of causing the target to flinch."
+		}
+	],
+	"moves_tutor" : [
+		{
+			"name" : "Dodge",
+			"type" : "Neutral",
+			"category" : "Support",
+			"power" : "-",
+			"accuracy" : "-",
+			"stamina" : "10",
+			"effect" : "Dodge upcoming attack(s), but reduce success rate by 50% if used consecutively with any other evasion moves."
+		},
+		{
+			"name" : "Rest",
+			"type" : "Neutral",
+			"category" : "Support",
+			"power" : "-",
+			"accuracy" : "-",
+			"stamina" : "10",
+			"effect" : "Rest for 2 turns. Each turn restores the user's HP by 50% and Stamina by 25%. This move also removes all status condition."
+		},
+		{
+			"name" : "Thunder Chomp",
+			"type" : "Electric",
+			"category" : "Melee",
+			"power" : "50",
+			"accuracy" : "90%",
+			"stamina" : "15",
+			"effect" : "Chomp at the opponent with electrified fangs. This move has a 20% chance to reduce the target's Melee Defense stat and 10% chance to leave it with paralysis."
+		},
+		{
+			"name" : "Sand Attack",
+			"type" : "Earth",
+			"category" : "Ranged",
+			"power" : "10",
+			"accuracy" : "80%",
+			"stamina" : "5",
+			"effect" : "Hurl sand at the opponent, reducing the target's accuracy by one stage."
+		}
+	]
+}]

@@ -30,9 +30,9 @@
 		"total" : "200"
 	},
 	"major_weakness" : [],
-	"major_resistance" : [],
 	"weakness" : ["Fire", "Ice", "Toxic"],
 	"resistance" : ["Water", "Electric", "Earth" ],
+	"major_resistance" : [],
 	"immunity" : ["Light"],
 	"moves_level" : [
 		{
@@ -109,7 +109,7 @@
 			"level" : "Level 25",
 			"name" : "Stalk",
 			"type" : "Dark",
-			"category" : "Melee",
+			"category" : "Support",
 			"power" : "-",
 			"accuracy" : "100%",
 			"stamina" : "10",
@@ -144,6 +144,15 @@
 			"accuracy" : "-",
 			"stamina" : "10",
 			"effect" : "Rest for 2 turns. Each turn restores the user's HP by 50% and Stamina by 25%. This move also removes all status condition."
+		},
+		{
+			"name" : "Photosynthesis",
+			"type" : "Nature",
+			"category" : "Support",
+			"power" : "-",
+			"accuracy" : "-",
+			"stamina" : "20",
+			"effect" : "Restore the user's HP by 25%. During harsh sunlight, this move restores 50% instead."
 		},
 		{
 			"name" : "Sand Attack",

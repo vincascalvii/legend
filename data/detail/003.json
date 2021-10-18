@@ -69,7 +69,7 @@
 			"level" : "-",
 			"name" : "Stalk",
 			"type" : "Dark",
-			"category" : "Melee",
+			"category" : "Support",
 			"power" : "-",
 			"accuracy" : "100%",
 			"stamina" : "10",
@@ -223,7 +223,7 @@
 			"category" : "Melee",
 			"power" : "60",
 			"accuracy" : "90%",
-			"stamina" : "10",
+			"stamina" : "15",
 			"effect" : "Hit the opponent with a poisonous tail. This move has a 10% chance of poisoning the target."
 		}
 	]
