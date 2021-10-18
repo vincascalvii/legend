@@ -41,6 +41,19 @@ if ( no != '' && no != null ) {
 		document.querySelector('.ability-2 .ability-name').innerHTML = data[0]['ability_2']['name'];
 		document.querySelector('.ability-2 .ability-desc').innerHTML = data[0]['ability_2']['desc'];
 
+		// Populate description
+		document.querySelector('.description').innerHTML = data[0]['description'];
+
+		// Populate additional details
+		document.querySelector('.additional-male-value').innerHTML = data[0]['gender']['male'];
+		document.querySelector('.additional-female-value').innerHTML = data[0]['gender']['female'];
+		document.querySelector('.additional-species .additional-value').innerHTML = 
+			data[0]['gender']['species'];
+		document.querySelector('.additional-weight .additional-value').innerHTML = 
+			data[0]['gender']['weight'];
+		document.querySelector('.additional-height .additional-value').innerHTML = 
+			data[0]['gender']['height'];
+
 		// Populate stats
 		document.querySelector('.stat-hp .stat-value').innerHTML = data[0]['stats']['hp'];
 		document.querySelector('.stat-atk .stat-value').innerHTML = data[0]['stats']['atk'];

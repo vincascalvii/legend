@@ -4,13 +4,29 @@
 	border-top: 1px solid #ddd;
 }
 
+.additional,
+.additional .additional-gender .additional-value {
+	display: flex;
+	align-items: center;
+}
+
+.additional .additional-male {
+	margin-right: 20px;
+}
+
+.additional .additional-gender .icon {
+	width: 20px;
+	height: 20px;
+}
+
 .stats .stat {
 	display: flex;
 	align-items: center;
 	margin-bottom: 10px;
 }
 
-.stats .stat-label {
+.stats .stat-label,
+.additional .additional-label {
 	color: #727272;
 	width: 70px;
 }

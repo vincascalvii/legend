@@ -11,6 +11,14 @@
 		"name" : "Accelerate",
 		"desc" : "Increase the possessor's Speed stat by 1 stage at the end of each turn."
 	},
+	"description" : "Leafen is an agile and cunning kitten who loves to eat berries. It usually doesn't live as house-hold pet since its natural habitat belongs to the forest. Its eyes glow red when dusk arrives, allowing it to scare enemies away from the dark.",
+	"gender" : {
+		"male" : "50%",
+		"female" : "50%"
+	},
+	"species" : "Cat",
+	"weight" : "3.8kg",
+	"height" : "0.6m",
 	"stats" : {
 		"hp" : "32",
 		"atk" : "40",
