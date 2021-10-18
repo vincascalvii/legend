@@ -27,7 +27,7 @@ if ( no != '' && no != null ) {
 		// Populate types
 		document.querySelector('.types span:first-child').innerHTML = data[0]['types'][0];
 		document.querySelector('.types span:first-child').classList.add(
-			data[0]['type_1'].toLowerCase()
+			data[0]['types'][0].toLowerCase()
 		);
 		if ( data[0]['types'][1] != '' && data[0]['types'][1] != null ) {
 			var type2 = document.createElement('span');
