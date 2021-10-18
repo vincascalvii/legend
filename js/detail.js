@@ -151,15 +151,16 @@ if ( no != '' && no != null ) {
 		// Populate moveset
 		for ( var ms = 0; ms < data[0]['moves'].length; ms++ ) {
 			var move = document.createElement('div');
+				move.classList.add('move');
 				move.innerHTML = '<p class="move-label"><span class="move-name">' + 
-					data[0]['moves'][ms]['name'] + '</span><span class="move-type ' +
-					data[0]['moves'][ms]['type'] + '">' + data[0]['moves'][ms]['type'] + 
+					data[0]['moves'][ms]['name'] + '</span><span class="type ' +
+					data[0]['moves'][ms]['type'].toLowerCase() + '">' + data[0]['moves'][ms]['type'] + 
 					'</span><span class="move-level">' + data[0]['moves'][ms]['level'] + 
 					'</span></p>' + '<p class="move-details"><span class="move-category">' + 
-					data[0]['moves'][ms]['category'] + '</span><span class="move-power">Power: ' +
-					data[0]['moves'][ms]['power'] + '</span><span class="move-accuracy">Accuracy: ' +
-					data[0]['moves'][ms]['accuracy'] + '</span><span class="move-cost">Cost: ' +
-					data[0]['moves'][ms]['cost'] + '</span></p>' +
+					data[0]['moves'][ms]['category'] + '</span><span class="move-power">PWR: ' +
+					data[0]['moves'][ms]['power'] + '</span><span class="move-accuracy">ACC: ' +
+					data[0]['moves'][ms]['accuracy'] + '</span><span class="move-stamina">STA: ' +
+					data[0]['moves'][ms]['stamina'] + '</span></p>' +
 					'<p class="move-effect">' + data[0]['moves'][ms]['effect'] + '</p>';
 			document.querySelector('.moves').appendChild(move);
 		}

@@ -97,7 +97,7 @@
 }
 
 .moves {
-	width: calc(100% - 60px);
+	width: calc(100% + 60px);
     margin: 0 -30px;
 }
 
@@ -119,13 +119,6 @@
 	font-size: 1.6rem;
 	font-weight: 500;
 	margin-right: 20px;
-}
-
-.moves .move-type {
-	color: #fff;
-    font-size: 1.4rem;
-    padding: 5px 10px;
-    border-radius: 30px;
 }
 
 .moves .move-level {

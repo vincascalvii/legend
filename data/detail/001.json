@@ -42,7 +42,7 @@
 			"category" : "Melee",
 			"power" : "20",
 			"accuracy" : "100%",
-			"cost" : "5",
+			"stamina" : "5",
 			"effect" : "The user scratches the opponent with sharp claws."
 		},
 		{
@@ -52,7 +52,7 @@
 			"category" : "Support",
 			"power" : "-",
 			"accuracy" : "100%",
-			"cost" : "5",
+			"stamina" : "5",
 			"effect" : "The user lets out a growl that lowers the opponent(s)' Melee Attack by one stage."
 		}
 	]
