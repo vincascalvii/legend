@@ -4,23 +4,25 @@
 	"type_1" : "Nature",
 	"type_2" : "",
 	"ability_1" : {
-		"name" : "Overgrow",
-		"desc" : "Powers up Grass-type moves when the Pokémon&rsquo;s HP is low."
+		"name" : "Terra Growth",
+		"desc" : "Increase the possessor's Nature-type moves' power to 50%."
 	},
 	"ability_2" : {
-		"name" : "Speed Boost",
-		"desc" : "Its Speed stat is boosted every turn."
+		"name" : "Accelerate",
+		"desc" : "Increase the possessor's Speed stat by 1 stage at the end of each turn."
 	},
 	"stats" : {
-		"hp" : "16",
-		"atk" : "20",
-		"def" : "17",
-		"spa" : "13",
-		"spd" : "12",
-		"spe" : "22",
-		"total" : "100"
+		"hp" : "32",
+		"atk" : "40",
+		"def" : "34",
+		"spa" : "26",
+		"spd" : "24",
+		"spe" : "44",
+		"total" : "200"
 	},
-	"weak" : ["Fire", "Ice", "Toxic"],
-	"resist" : ["Water", "Electric", "Earth" ],
-	"immune" : ["Light"]
+	"major_weakness" : [],
+	"major_resistance" : [],
+	"weakness" : ["Fire", "Ice", "Toxic"],
+	"resistance" : ["Water", "Electric", "Earth" ],
+	"immunity" : ["Light"]
 }]

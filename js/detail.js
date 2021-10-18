@@ -52,33 +52,86 @@ if ( no != '' && no != null ) {
 
 		// Populate stat bars
 		document.querySelector('.stat-hp .stat-bar-fill').style.width = 
-			(( parseInt(data[0]['stats']['hp']) / 300 ) * 100 ) + '%';
+			(( parseInt(data[0]['stats']['hp']) / 120 ) * 100 ) + '%';
 		document.querySelector('.stat-atk .stat-bar-fill').style.width = 
-			(( parseInt(data[0]['stats']['atk']) / 300 ) * 100 ) + '%';
+			(( parseInt(data[0]['stats']['atk']) / 120 ) * 100 ) + '%';
 		document.querySelector('.stat-def .stat-bar-fill').style.width = 
-			(( parseInt(data[0]['stats']['def']) / 300 ) * 100 ) + '%';
+			(( parseInt(data[0]['stats']['def']) / 120 ) * 100 ) + '%';
 		document.querySelector('.stat-spa .stat-bar-fill').style.width = 
-			(( parseInt(data[0]['stats']['spa']) / 300 ) * 100 ) + '%';
+			(( parseInt(data[0]['stats']['spa']) / 120 ) * 100 ) + '%';
 		document.querySelector('.stat-spd .stat-bar-fill').style.width = 
-			(( parseInt(data[0]['stats']['spd']) / 300 ) * 100 ) + '%';
+			(( parseInt(data[0]['stats']['spd']) / 120 ) * 100 ) + '%';
 		document.querySelector('.stat-spe .stat-bar-fill').style.width = 
-			(( parseInt(data[0]['stats']['spe']) / 300 ) * 100 ) + '%';
+			(( parseInt(data[0]['stats']['spe']) / 120 ) * 100 ) + '%';
 
-		// Populate battle condition
-		for ( var weak = 0; weak < data[0]['weak'].length; weak++ ) {
-			document.querySelector('.condition-weak .condition-types').innerHTML += 
-				'<span class="type '  + data[0]['weak'][weak].toLowerCase() +  '">' + 
-				data[0]['weak'][weak] + '</span>';
+		// Populate major weakness
+		if ( data[0]['major-weakness'].length > 0 ) {
+			document.querySelector('.condition-major-weakness').innerHTML =
+				'<h3 class="condition-label">Major Weakness (x4)</h3>';
+			var majorWeakness = document.createElement('div');
+				majorWeakness.classList.add('condition-types');
+			for ( var mw = 0; mw < data[0]['major-weakness'].length; mw++ ) {
+				majorWeakness.innerHTML += '<span class="type '  + 
+					data[0]['major-weakness'][mw].toLowerCase() +  '">' + 
+					data[0]['major-weakness'][mw] + '</span>';
+			}
+			document.querySelector('.condition-major-weakness').appendChild(majorWeakness);
 		}
-		for ( var resist = 0; resist < data[0]['resist'].length; resist++ ) {
-			document.querySelector('.condition-resist .condition-types').innerHTML += 
-				'<span class="type '  + data[0]['resist'][resist].toLowerCase() +  '">' + 
-				data[0]['resist'][resist] + '</span>';
+
+		// Populate weakness
+		if ( data[0]['weakness'].length > 0 ) {
+			document.querySelector('.condition-weakness').innerHTML =
+				'<h3 class="condition-label">Weakness (x2)</h3>';
+			var weakness = document.createElement('div');
+				weakness.classList.add('condition-types');
+			for ( var w = 0; w < data[0]['weakness'].length; w++ ) {
+				weakness.innerHTML += '<span class="type '  + 
+					data[0]['weakness'][w].toLowerCase() +  '">' + 
+					data[0]['weakness'][w] + '</span>';
+			}
+			document.querySelector('.condition-weakness').appendChild(weakness);
 		}
-		for ( var immune = 0; immune < data[0]['immune'].length; immune++ ) {
-			document.querySelector('.condition-immune .condition-types').innerHTML += 
-				'<span class="type '  + data[0]['immune'][immune].toLowerCase() +  '">' + 
-				data[0]['immune'][immune] + '</span>';
+
+		// Populate resistance
+		if ( data[0]['resistance'].length > 0 ) {
+			document.querySelector('.condition-resistance').innerHTML =
+				'<h3 class="condition-label">Resistance (x½)</h3>';
+			var resistance = document.createElement('div');
+				resistance.classList.add('condition-types');
+			for ( var r = 0; r < data[0]['resistance'].length; r++ ) {
+				resistance.innerHTML += '<span class="type '  + 
+					data[0]['resistance'][r].toLowerCase() +  '">' + 
+					data[0]['resistance'][r] + '</span>';
+			}
+			document.querySelector('.condition-resistance').appendChild(resistance);
+		}
+
+		// Populate major resistance
+		if ( data[0]['major-resistance'].length > 0 ) {
+			document.querySelector('.condition-major-resistance').innerHTML =
+				'<h3 class="condition-label">Major Resistance (x¼)</h3>';
+			var majorResistance = document.createElement('div');
+				majorResistance.classList.add('condition-types');
+			for ( var mr = 0; mr < data[0]['major-resistance'].length; mr++ ) {
+				majorResistance.innerHTML += '<span class="type '  + 
+					data[0]['major-resistance'][mr].toLowerCase() +  '">' + 
+					data[0]['major-resistance'][mr] + '</span>';
+			}
+			document.querySelector('.condition-major-resistance').appendChild(majorResistance);
+		}
+
+		// Populate immunity
+		if ( data[0]['immunity'].length > 0 ) {
+			document.querySelector('.condition-immunity').innerHTML =
+				'<h3 class="condition-label">Weakness (x2)</h3>';
+			var immunity = document.createElement('div');
+				immunity.classList.add('condition-types');
+			for ( var im = 0; im < data[0]['immunity'].length; im++ ) {
+				immunity.innerHTML += '<span class="type '  + 
+					data[0]['immunity'][im].toLowerCase() +  '">' + 
+					data[0]['immunity'][im] + '</span>';
+			}
+			document.querySelector('.condition-immunity').appendChild(immunity);
 		}
 
 	})
@@ -130,6 +183,7 @@ function getParameter() {
 (function() {
 
 	var tabs = document.querySelectorAll('.info .tab');
+	var tabContents = document.querySelectorAll('.info .tab-content');
 
 	for ( var i = 0; i < tabs.length; i++ ) {
 		tabs[i].addEventListener('click', function() {
@@ -143,7 +197,6 @@ function getParameter() {
 			this.classList.add('active');
 
 			// Remove all active class off the tab
-			var tabContents = document.querySelectorAll('.info .tab-content');
 			for ( var k = 0; k < tabContents.length; k++ ) {
 				tabContents[k].classList.remove('active');
 			}
