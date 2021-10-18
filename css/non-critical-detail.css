@@ -11,12 +11,12 @@
 }
 
 .additional {
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 .additional .additional-label {
 	color: #727272;
-	width: 80px;
+	width: 100px;
 }
 
 .additional .additional-male {
@@ -32,7 +32,7 @@
 .stats .stat {
 	display: flex;
 	align-items: center;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 .stats .stat-label {
