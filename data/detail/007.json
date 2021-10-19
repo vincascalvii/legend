@@ -1,0 +1,158 @@
+[{
+	"number" : "007",
+	"name" : "Turteen",
+	"types" : ["Water", ""],
+	"abilities" : [
+		{
+			"name" : "Aquatic",
+			"desc" : "Increase the possessor's Water-type moves' power to 50%."
+		},
+		{
+			"name" : "Tough Shell (Secret)",
+			"desc" : "Prevent critical hit from opponents's moves."
+		}
+	],
+	"description" : "Turteen are very shy Pokémon who love to stay hidden within their shells most of the time. Their shells are specially designed so that water can easily flow in. The stored water can later be used as water beam to defend themselves.",
+	"gender" : {
+		"male" : "50%",
+		"female" : "50%"
+	},
+	"species" : "Turtle",
+	"weight" : "10.2kg",
+	"height" : "0.5m",
+	"stats" : {
+		"hp" : "42",
+		"atk" : "33",
+		"def" : "39",
+		"spa" : "33",
+		"spd" : "39",
+		"spe" : "14",
+		"total" : "200"
+	},
+	"major_weakness" : [],
+	"weakness" : ["Nature", "Electric", "Toxic"],
+	"resistance" : ["Fire", "Water", "Earth" ],
+	"major_resistance" : [],
+	"immunity" : [],
+	"moves_level" : [
+		{
+			"level" : "-",
+			"name" : "Tackle",
+			"type" : "Neutral",
+			"category" : "Physical",
+			"power" : "20",
+			"accuracy" : "100%",
+			"stamina" : "5",
+			"effect" : "Charge at the opponent with a full-body tackle."
+		},
+		{
+			"level" : "-",
+			"name" : "Withdraw",
+			"type" : "Neutral",
+			"category" : "Support",
+			"power" : "-",
+			"accuracy" : "100%",
+			"stamina" : "5",
+			"effect" : "Withdraw into a hard shell, raising the user's Defense stat."
+		},
+		{
+			"level" : "Level 5",
+			"name" : "Water Gun",
+			"type" : "Water",
+			"category" : "Special",
+			"power" : "30",
+			"accuracy" : "90%",
+			"stamina" : "10",
+			"effect" : "Blast at the opponent with a shot of water."
+		},
+		{
+			"level" : "Level 8",
+			"name" : "Bite",
+			"type" : "Neutral",
+			"category" : "Physical",
+			"power" : "40",
+			"accuracy" : "95%",
+			"stamina" : "10",
+			"effect" : "Bite the opponent with vicious fangs. This move has a 20% chance to reduce the target's Defense stat."
+		},
+		{
+			"level" : "Level 10",
+			"name" : "Barrier",
+			"type" : "Neutral",
+			"category" : "Support",
+			"power" : "-",
+			"accuracy" : "-",
+			"stamina" : "20",
+			"effect" : "Create a barrier to reduce damage from physical attacks for 5 turns."
+		},
+		{
+			"level" : "Level 15",
+			"name" : "Water Pulse",
+			"type" : "Water",
+			"category" : "Special",
+			"power" : "50",
+			"accuracy" : "90%",
+			"stamina" : "15",
+			"effect" : "Attack the opponent with a pulsing blast of water. This move has a 20% chance of leaving the target in confusion."
+		},
+		{
+			"level" : "Level 18",
+			"name" : "Shield",
+			"type" : "Neutral",
+			"category" : "Support",
+			"power" : "-",
+			"accuracy" : "-",
+			"stamina" : "20",
+			"effect" : "Create a shield to reduce damage from special attacks for 5 turns."
+		},
+		{
+			"level" : "Level 25",
+			"name" : "Iron Wall",
+			"type" : "Steel",
+			"category" : "Support",
+			"power" : "-",
+			"accuracy" : "-",
+			"stamina" : "15",
+			"effect" : "Harden the body like an iron wall to sharply raise the user's Defense stat."
+		},
+		{
+			"level" : "Level 30",
+			"name" : "Rainfall",
+			"type" : "Water",
+			"category" : "Support",
+			"power" : "-",
+			"accuracy" : "-",
+			"stamina" : "20",
+			"effect" : "Summon a heavy rain that falls for 5 turns. The rain powers up Water-type moves by 50% and lowers the power of Fire-type moves by 50%."
+		}
+	],
+	"moves_tutor" : [
+		{
+			"name" : "Guard",
+			"type" : "Neutral",
+			"category" : "Support",
+			"power" : "-",
+			"accuracy" : "-",
+			"stamina" : "10",
+			"effect" : "Guard upcoming attack(s), but reduce success rate by 50% if used consecutively with any other evasion moves."
+		},
+		{
+			"name" : "Rest",
+			"type" : "Neutral",
+			"category" : "Support",
+			"power" : "-",
+			"accuracy" : "-",
+			"stamina" : "10",
+			"effect" : "Rest for 2 turns. Each turn restores the user's HP by 50% and Stamina by 25%. This move also removes all status condition."
+		},
+		{
+			"name" : "Shell Break",
+			"type" : "Neutral",
+			"category" : "Support",
+			"power" : "-",
+			"accuracy" : "-",
+			"stamina" : "20",
+			"effect" : "Break out of the shell to drastically raise the user's Speed stat, but lowers the user's Defense and Special Defense stats."
+		}
+	]
+}]

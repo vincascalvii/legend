@@ -4,11 +4,11 @@
 	"types" : ["Nature", ""],
 	"abilities" : [
 		{
-			"name" : "Terra Growth",
+			"name" : "Verdant",
 			"desc" : "Increase the possessor's Nature-type moves' power to 50%."
 		},
 		{
-			"name" : "Agility (Secret)",
+			"name" : "Nimble (Secret)",
 			"desc" : "Increase the possessor's Speed stat by 1 stage at the end of each turn."
 		}
 	],
@@ -87,7 +87,7 @@
 		},
 		{
 			"level" : "Level 15",
-			"name" : "Razor Leave",
+			"name" : "Leaf Razor",
 			"type" : "Nature",
 			"category" : "Physical",
 			"power" : "50",

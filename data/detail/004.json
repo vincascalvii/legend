@@ -4,12 +4,12 @@
 	"types" : ["Fire", ""],
 	"abilities" : [
 		{
-			"name" : "Ember Spirit",
+			"name" : "Pyro",
 			"desc" : "Increase the possessor's Fire-type moves' power to 50%."
 		},
 		{
-			"name" : "High Spirit (Secret)",
-			"desc" : "The possessor cannot be Asleep while having this ability."
+			"name" : "Sharp Claws (Secret)",
+			"desc" : "Increase the power of the possessor's Claw-typed moves by 30%."
 		}
 	],
 	"description" : "Pupyro are very aggressive puppies at first hand but will become attached to those who they deem worthy of their owners. They have a very strong fighting spirit and would often cause trouble against others of their kind.",

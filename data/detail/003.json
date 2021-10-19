@@ -4,11 +4,11 @@
 	"types" : ["Nature", "Dark"],
 	"abilities" : [
 		{
-			"name" : "Terra Growth",
+			"name" : "Verdant",
 			"desc" : "Increase the possessor's Nature-type moves' power to 50%."
 		},
 		{
-			"name" : "Agility (Secret)",
+			"name" : "Nimble (Secret)",
 			"desc" : "Increase the possessor's Speed stat by 1 stage at the end of each turn."
 		}
 	],
@@ -117,7 +117,7 @@
 		},
 		{
 			"level" : "Level 60",
-			"name" : "Swift Cut",
+			"name" : "Deadly Blossom",
 			"type" : "Nature",
 			"category" : "Physical",
 			"power" : "70",

@@ -35,6 +35,10 @@ main.fire {
     background-color: #e56640;
 }
 
+main.water {
+    background-color: #6072bf;
+}
+
 .container {
 	width: 100%;
 	padding: 0 20px;
