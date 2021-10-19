@@ -136,3 +136,7 @@
 .moves .move-details span:last-child {
 	border: none;
 }
+
+.tab-moves .separator {
+	margin: 40px -30px;
+}
