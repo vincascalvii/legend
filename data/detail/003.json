@@ -226,7 +226,7 @@
 			"power" : "60",
 			"accuracy" : "90%",
 			"stamina" : "15",
-			"effect" : "Slam the opponent with a steel-hard tail. This move has a 30% chance of reducing the target's Defense stat by one stage."
+			"effect" : "Slam the opponent with a steel-hard tail. This move has a 20% chance of reducing the target's Defense stat by one stage."
 		},
 		{
 			"name" : "Poison Tail",

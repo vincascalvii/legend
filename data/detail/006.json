@@ -101,7 +101,7 @@
 			"type" : "Earth",
 			"category" : "Physical",
 			"power" : "60",
-			"accuracy" : "90%",
+			"accuracy" : "95%",
 			"stamina" : "15",
 			"effect" : "Strongly stomp down on the ground to strike everything around the user, foes and allies. This move lowers the Speed stats of those hit."
 		},
@@ -120,10 +120,10 @@
 			"name" : "Rock Fall",
 			"type" : "Earth",
 			"category" : "Physical",
-			"power" : "-",
-			"accuracy" : "-",
+			"power" : "60",
+			"accuracy" : "90%",
 			"stamina" : "15",
-			"effect" : "Let out a powerful cry to uplift the spirit. This move raises the user's Attack stat and Defense stat."
+			"effect" : "Hurl large boulders at the opponent(s) to inflict damage. This move has a 20% chance of causing the target to flinch."
 		},
 		{
 			"level" : "Level 60",
