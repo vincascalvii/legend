@@ -118,7 +118,7 @@
 		{
 			"level" : "Level 50",
 			"name" : "Heavy Bash",
-			"type" : "Steel",
+			"type" : "Metal",
 			"category" : "Physical",
 			"power" : "60",
 			"accuracy" : "100%",
@@ -138,7 +138,7 @@
 		{
 			"level" : "Level 70",
 			"name" : "Steel Crusher",
-			"type" : "Steel",
+			"type" : "Metal",
 			"category" : "Physical",
 			"power" : "80",
 			"accuracy" : "95%",
