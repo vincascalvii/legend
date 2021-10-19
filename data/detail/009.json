@@ -129,10 +129,10 @@
 			"level" : "Level 60",
 			"name" : "Aqua Shield",
 			"type" : "Water",
-			"category" : "Physical",
-			"power" : "70",
-			"accuracy" : "100%",
-			"stamina" : "20",
+			"category" : "Support",
+			"power" : "-",
+			"accuracy" : "-",
+			"stamina" : "15",
 			"effect" : "Create a water shield to surround the body, protecting the user from the next damaging move(s). If used successfully, this move raises the user's Defense or Special Defense stat based on the attack category, but reduce success rate by 50% if used consecutively with any other evasion moves."
 		},
 		{
