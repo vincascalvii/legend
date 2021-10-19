@@ -22,10 +22,10 @@
 	"height" : "0.6m",
 	"stats" : {
 		"hp" : "32",
-		"m_atk" : "40",
-		"m_def" : "34",
-		"r_atk" : "26",
-		"r_def" : "24",
+		"atk" : "40",
+		"def" : "34",
+		"spa" : "26",
+		"spd" : "24",
 		"spe" : "44",
 		"total" : "200"
 	},
@@ -39,7 +39,7 @@
 			"level" : "-",
 			"name" : "Scratch",
 			"type" : "Neutral",
-			"category" : "Melee",
+			"category" : "Physical",
 			"power" : "20",
 			"accuracy" : "100%",
 			"stamina" : "5",
@@ -53,13 +53,13 @@
 			"power" : "-",
 			"accuracy" : "100%",
 			"stamina" : "5",
-			"effect" : "Let out a growl that lowers the opponent(s)' Melee Attack by one stage."
+			"effect" : "Let out a growl that lowers the opponent(s)' Attack by one stage."
 		},
 		{
 			"level" : "Level 5",
 			"name" : "Leaf Blade",
 			"type" : "Nature",
-			"category" : "Melee",
+			"category" : "Physical",
 			"power" : "30",
 			"accuracy" : "90%",
 			"stamina" : "10",
@@ -89,7 +89,7 @@
 			"level" : "Level 15",
 			"name" : "Razor Leave",
 			"type" : "Nature",
-			"category" : "Melee",
+			"category" : "Physical",
 			"power" : "50",
 			"accuracy" : "90%",
 			"stamina" : "15",
@@ -99,7 +99,7 @@
 			"level" : "Level 18",
 			"name" : "Quick Strike",
 			"type" : "Neutral",
-			"category" : "Melee",
+			"category" : "Physical",
 			"power" : "40",
 			"accuracy" : "100%",
 			"stamina" : "15",
@@ -128,15 +128,6 @@
 	],
 	"moves_tutor" : [
 		{
-			"name" : "Dodge",
-			"type" : "Neutral",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "10",
-			"effect" : "Dodge upcoming attack(s), but reduce success rate by 50% if used consecutively with any other evasion moves."
-		},
-		{
 			"name" : "Rest",
 			"type" : "Neutral",
 			"category" : "Support",
@@ -157,11 +148,11 @@
 		{
 			"name" : "Sand Attack",
 			"type" : "Earth",
-			"category" : "Ranged",
+			"category" : "Physical",
 			"power" : "10",
 			"accuracy" : "80%",
 			"stamina" : "5",
-			"effect" : "Hurl sand at the opponent, reducing the target's accuracy by one stage."
+			"effect" : "Hurl sand at the opponent to lower the target's Accuracy."
 		}
 	]
 }]

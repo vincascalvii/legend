@@ -57,24 +57,24 @@ if ( no != '' && no != null ) {
 
 		// Populate stats
 		document.querySelector('.stat-hp .stat-value').innerHTML = data[0]['stats']['hp'];
-		document.querySelector('.stat-m-atk .stat-value').innerHTML = data[0]['stats']['m_atk'];
-		document.querySelector('.stat-m-def .stat-value').innerHTML = data[0]['stats']['m_def'];
-		document.querySelector('.stat-r-atk .stat-value').innerHTML = data[0]['stats']['r_atk'];
-		document.querySelector('.stat-r-def .stat-value').innerHTML = data[0]['stats']['r_def'];
+		document.querySelector('.stat-atk .stat-value').innerHTML = data[0]['stats']['atk'];
+		document.querySelector('.stat-def .stat-value').innerHTML = data[0]['stats']['def'];
+		document.querySelector('.stat-spa .stat-value').innerHTML = data[0]['stats']['spa'];
+		document.querySelector('.stat-spd .stat-value').innerHTML = data[0]['stats']['spd'];
 		document.querySelector('.stat-spe .stat-value').innerHTML = data[0]['stats']['spe'];
 		document.querySelector('.stat-total .stat-value').innerHTML = data[0]['stats']['total'];
 
 		// Populate stat bars
 		document.querySelector('.stat-hp .stat-bar-fill').style.width = 
 			(( parseInt(data[0]['stats']['hp']) / 120 ) * 100 ) + '%';
-		document.querySelector('.stat-m-atk .stat-bar-fill').style.width = 
-			(( parseInt(data[0]['stats']['m_atk']) / 120 ) * 100 ) + '%';
-		document.querySelector('.stat-m-def .stat-bar-fill').style.width = 
-			(( parseInt(data[0]['stats']['m_def']) / 120 ) * 100 ) + '%';
-		document.querySelector('.stat-r-atk .stat-bar-fill').style.width = 
-			(( parseInt(data[0]['stats']['r_atk']) / 120 ) * 100 ) + '%';
-		document.querySelector('.stat-r-def .stat-bar-fill').style.width = 
-			(( parseInt(data[0]['stats']['r_def']) / 120 ) * 100 ) + '%';
+		document.querySelector('.stat-atk .stat-bar-fill').style.width = 
+			(( parseInt(data[0]['stats']['atk']) / 120 ) * 100 ) + '%';
+		document.querySelector('.stat-def .stat-bar-fill').style.width = 
+			(( parseInt(data[0]['stats']['def']) / 120 ) * 100 ) + '%';
+		document.querySelector('.stat-spa .stat-bar-fill').style.width = 
+			(( parseInt(data[0]['stats']['spa']) / 120 ) * 100 ) + '%';
+		document.querySelector('.stat-spd .stat-bar-fill').style.width = 
+			(( parseInt(data[0]['stats']['spd']) / 120 ) * 100 ) + '%';
 		document.querySelector('.stat-spe .stat-bar-fill').style.width = 
 			(( parseInt(data[0]['stats']['spe']) / 120 ) * 100 ) + '%';
 

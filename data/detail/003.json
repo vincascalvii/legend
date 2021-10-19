@@ -22,10 +22,10 @@
 	"height" : "2.0m",
 	"stats" : {
 		"hp" : "62",
-		"m_atk" : "77",
-		"m_def" : "63",
-		"r_atk" : "50",
-		"r_def" : "54",
+		"atk" : "77",
+		"def" : "63",
+		"spa" : "50",
+		"spd" : "54",
 		"spe" : "94",
 		"total" : "400"
 	},
@@ -59,7 +59,7 @@
 			"level" : "-",
 			"name" : "Quick Strike",
 			"type" : "Neutral",
-			"category" : "Melee",
+			"category" : "Physical",
 			"power" : "40",
 			"accuracy" : "100%",
 			"stamina" : "15",
@@ -79,7 +79,7 @@
 			"level" : "-",
 			"name" : "Fury Cutter",
 			"type" : "Nature",
-			"category" : "Melee",
+			"category" : "Physical",
 			"power" : "60",
 			"accuracy" : "95%",
 			"stamina" : "20",
@@ -87,9 +87,9 @@
 		},
 		{
 			"level" : "Level 40",
-			"name" : "Shadow Slash",
+			"name" : "Shadow Claw",
 			"type" : "Dark",
-			"category" : "Melee",
+			"category" : "Physical",
 			"power" : "60",
 			"accuracy" : "100%",
 			"stamina" : "15",
@@ -97,7 +97,7 @@
 		},
 		{
 			"level" : "Level 45",
-			"name" : "Quick Footwork",
+			"name" : "Quick Feet",
 			"type" : "Wind",
 			"category" : "Support",
 			"power" : "-",
@@ -109,7 +109,7 @@
 			"level" : "Level 50",
 			"name" : "Shadow Sneak",
 			"type" : "Dark",
-			"category" : "Melee",
+			"category" : "Physical",
 			"power" : "60",
 			"accuracy" : "100%",
 			"stamina" : "15",
@@ -119,23 +119,34 @@
 			"level" : "Level 60",
 			"name" : "Swift Cut",
 			"type" : "Nature",
-			"category" : "Melee",
+			"category" : "Physical",
 			"power" : "70",
 			"accuracy" : "100%",
 			"stamina" : "20",
 			"effect" : "The user reacts quickly and uses its deadly tail to counter the enemy attack. This move has +2 priority but will fail if the opponent is not readying an attack."
+		},
+		{
+			"level" : "Level 70",
+			"name" : "Phantom Force",
+			"type" : "Dark",
+			"category" : "Physical",
+			"power" : "80",
+			"accuracy" : "95%",
+			"stamina" : "25",
+			"effect" : "Surround the body with a swirl of dark energy then strike at the opponent. This move has 20% chance of lowering the target's Attack stat."
+		},
+		{
+			"level" : "Level 80",
+			"name" : "Forest Glide",
+			"type" : "Nature",
+			"category" : "Physical",
+			"power" : "80",
+			"accuracy" : "95%",
+			"stamina" : "25",
+			"effect" : "Glide through the forest to strike at the opponent. If the battle takes place in Forest Terrain, this move has +1 priority."
 		}
 	],
 	"moves_tutor" : [
-		{
-			"name" : "Dodge",
-			"type" : "Neutral",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "10",
-			"effect" : "Dodge upcoming attack(s), but reduce success rate by 50% if used consecutively with any other evasion moves."
-		},
 		{
 			"name" : "Rest",
 			"type" : "Neutral",
@@ -148,7 +159,7 @@
 		{
 			"name" : "Tail Slap",
 			"type" : "Neutral",
-			"category" : "Melee",
+			"category" : "Physical",
 			"power" : "40",
 			"accuracy" : "90%",
 			"stamina" : "10",
@@ -161,12 +172,12 @@
 			"power" : "-",
 			"accuracy" : "-",
 			"stamina" : "15",
-			"effect" : "Uplift the fighting spirit with a battle dance. This move boosts the user's Melee Attack stat and Speed stat."
+			"effect" : "Uplift the fighting spirit with a battle dance. This move boosts the user's Attack stat and Speed stat."
 		},
 		{
 			"name" : "Grassy Blast",
 			"type" : "Nature",
-			"category" : "Ranged",
+			"category" : "Special",
 			"power" : "70",
 			"accuracy" : "95%",
 			"stamina" : "20",
@@ -184,7 +195,7 @@
 		{
 			"name" : "Pursuit",
 			"type" : "Dark",
-			"category" : "Melee",
+			"category" : "Physical",
 			"power" : "40",
 			"accuracy" : "75%",
 			"stamina" : "10",
@@ -193,7 +204,7 @@
 		{
 			"name" : "Scavenge",
 			"type" : "Wind",
-			"category" : "Melee",
+			"category" : "Physical",
 			"power" : "40",
 			"accuracy" : "100%",
 			"stamina" : "10",
@@ -202,16 +213,16 @@
 		{
 			"name" : "Sand Attack",
 			"type" : "Earth",
-			"category" : "Ranged",
+			"category" : "Physical",
 			"power" : "10",
 			"accuracy" : "80%",
 			"stamina" : "5",
-			"effect" : "Hurl sand at the opponent, reducing the target's Accuracy by one stage."
+			"effect" : "Hurl sand at the opponent to lower the target's Accuracy."
 		},
 		{
 			"name" : "Iron Tail",
 			"type" : "Metal",
-			"category" : "Melee",
+			"category" : "Physical",
 			"power" : "60",
 			"accuracy" : "90%",
 			"stamina" : "15",
@@ -220,7 +231,7 @@
 		{
 			"name" : "Poison Tail",
 			"type" : "Toxic",
-			"category" : "Melee",
+			"category" : "Physical",
 			"power" : "60",
 			"accuracy" : "90%",
 			"stamina" : "15",

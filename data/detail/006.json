@@ -1,7 +1,7 @@
 [{
-	"number" : "005",
-	"name" : "Flamound",
-	"types" : ["Fire", ""],
+	"number" : "006",
+	"name" : "Wolflare",
+	"types" : ["Fire", "Earth"],
 	"abilities" : [
 		{
 			"name" : "Ember Spirit",
@@ -12,28 +12,28 @@
 			"desc" : "Increase the power of the possessor's Claw-typed moves by 30%."
 		}
 	],
-	"description" : "Flamound are tougher and stronger than their pre-evolution. Their natural instinct always tells them to find a worthy owner before they can proceed further in anything. Usually, that stubbornness makes it very hard for them to evolve.",
+	"description" : "Wolflare are very aggressive Pokémon due to their duelling spirit and ego. Their sharp claws are able to cut down rocks and steels if they are taken care properly. When their fighting spirit is set alight, their manes and arms will light up like a blazing flame.",
 	"gender" : {
 		"male" : "50%",
 		"female" : "50%"
 	},
 	"species" : "Dog",
-	"weight" : "36.0kg",
-	"height" : "1.4m",
+	"weight" : "93.0kg",
+	"height" : "1.8m",
 	"stats" : {
-		"hp" : "52",
-		"atk" : "72",
-		"def" : "47",
-		"spa" : "32",
-		"spd" : "43",
-		"spe" : "54",
-		"total" : "300"
+		"hp" : "70",
+		"atk" : "92",
+		"def" : "65",
+		"spa" : "46",
+		"spd" : "61",
+		"spe" : "66",
+		"total" : "400"
 	},
-	"major_weakness" : [],
-	"weakness" : ["Water", "Wind", "Earth"],
-	"resistance" : ["Nature", "Fire", "Metal", "Ice" ],
-	"major_resistance" : [],
-	"immunity" : [],
+	"major_weakness" : ["Water"],
+	"weakness" : ["Wind", "Earth"],
+	"resistance" : ["Metal", "Toxic"],
+	"major_resistance" : ["Fire"],
+	"immunity" : ["Electric"],
 	"moves_level" : [
 		{
 			"level" : "-",
@@ -44,26 +44,6 @@
 			"accuracy" : "100%",
 			"stamina" : "5",
 			"effect" : "Let out a growl that lowers the opponent(s)' Attack by one stage."
-		},
-		{
-			"level" : "-",
-			"name" : "Fire Ball",
-			"type" : "Fire",
-			"category" : "Special",
-			"power" : "30",
-			"accuracy" : "90%",
-			"stamina" : "10",
-			"effect" : "Blast a fire ball at the opponent. This move has a 10% chance of leaving the target with a burn."
-		},
-		{
-			"level" : "-",
-			"name" : "Bite",
-			"type" : "Neutral",
-			"category" : "Physical",
-			"power" : "40",
-			"accuracy" : "95%",
-			"stamina" : "10",
-			"effect" : "Bite the opponent with vicious fangs. This move has a 20% chance to reduce the target's Defense stat."
 		},
 		{
 			"level" : "-",
@@ -87,16 +67,6 @@
 		},
 		{
 			"level" : "-",
-			"name" : "Headbutt",
-			"type" : "Neutral",
-			"category" : "Physical",
-			"power" : "40",
-			"accuracy" : "95%",
-			"stamina" : "10",
-			"effect" : "Recklessly headbutt the opponent that also hurt the user by a quarter of the damage dealt. This move also has a 20% chance of causing the target to flinch."
-		},
-		{
-			"level" : "Level 25",
 			"name" : "Glare",
 			"type" : "Dark",
 			"category" : "Support",
@@ -106,7 +76,7 @@
 			"effect" : "Frighten the target with a scary face to lower the target's Speed stat."
 		},
 		{
-			"level" : "Level 30",
+			"level" : "-",
 			"name" : "Take Down",
 			"type" : "Neutral",
 			"category" : "Physical",
@@ -116,7 +86,7 @@
 			"effect" : "Recklessly slam into the opponent but also hurt the user by a quarter of the damage dealt. This move has a 20% chance of causing the target to flinch."
 		},
 		{
-			"level" : "Level 35",
+			"level" : "-",
 			"name" : "Fiery Claw",
 			"type" : "Fire",
 			"category" : "Physical",
@@ -134,6 +104,56 @@
 			"accuracy" : "90%",
 			"stamina" : "15",
 			"effect" : "Strongly stomp down on the ground to strike everything around the user, foes and allies. This move lowers the Speed stats of those hit."
+		},
+		{
+			"level" : "Level 45",
+			"name" : "Battle Cry",
+			"type" : "Neutral",
+			"category" : "Support",
+			"power" : "-",
+			"accuracy" : "-",
+			"stamina" : "15",
+			"effect" : "Let out a powerful cry to uplift the spirit. This move raises the user's Attack stat and Defense stat."
+		},
+		{
+			"level" : "Level 50",
+			"name" : "Rock Fall",
+			"type" : "Earth",
+			"category" : "Physical",
+			"power" : "-",
+			"accuracy" : "-",
+			"stamina" : "15",
+			"effect" : "Let out a powerful cry to uplift the spirit. This move raises the user's Attack stat and Defense stat."
+		},
+		{
+			"level" : "Level 60",
+			"name" : "Flame Charge",
+			"type" : "Fire",
+			"category" : "Physical",
+			"power" : "50",
+			"accuracy" : "100%",
+			"stamina" : "20",
+			"effect" : "Charge at the opponent in a cloak of fire. Successful hit will raise the user's Attack stat."
+		},
+		{
+			"level" : "Level 70",
+			"name" : "Earthquake",
+			"type" : "Earth",
+			"category" : "Physical",
+			"power" : "80",
+			"accuracy" : "100%",
+			"stamina" : "25",
+			"effect" : "Set off an earthquake that strikes everyone around the user, foes and allies."
+		},
+		{
+			"level" : "Level 80",
+			"name" : "Raging Flame",
+			"type" : "Fire",
+			"category" : "Physical",
+			"power" : "80",
+			"accuracy" : "95%",
+			"stamina" : "25",
+			"effect" : "The user ignites itself and charge at the opponent. This move has a 20% chance of leaving the target with a burn but also hurts the user by a quarter of the damage dealt."
 		}
 	],
 	"moves_tutor" : [
@@ -156,6 +176,15 @@
 			"effect" : "Rest for 2 turns. Each turn restores the user's HP by 50% and Stamina by 25%. This move also removes all status condition."
 		},
 		{
+			"name" : "Rough Combat",
+			"type" : "Neutral",
+			"category" : "Physical",
+			"power" : "80",
+			"accuracy" : "100%",
+			"stamina" : "25",
+			"effect" : "Fight the opponent up close with a rough style. This move lowers the user's Defense if used in succession."
+		},
+		{
 			"name" : "Thunder Claw",
 			"type" : "Electric",
 			"category" : "Physical",
@@ -171,7 +200,7 @@
 			"power" : "10",
 			"accuracy" : "80%",
 			"stamina" : "5",
-			"effect" : "Hurl sand at the opponent to lower the target's Accuracy."
+			"effect" : "Hurl sand at the opponent, reducing the target's accuracy by one stage."
 		},
 		{
 			"name" : "Burrow",
