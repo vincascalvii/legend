@@ -204,7 +204,7 @@
 		},
 		{
 			"name" : "Powerball",
-			"type" : "Steel",
+			"type" : "Metal",
 			"category" : "Physical",
 			"power" : "70",
 			"accuracy" : "80%",
