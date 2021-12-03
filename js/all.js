@@ -49,18 +49,18 @@ fetch('/legend/data/all/all.json')
 
 		// Populate the thumbnail
 		var image = document.createElement('picture');
-			image.innerHTML = '<source srcset="/legend/img/pokemon/thumb-' + data[i]['number'] 
-							+ '/' + data[i]['image_1'] + '.webp 1x, '
-							+ '/legend/img/pokemon/thumb-' + data[i]['number'] 
-							+ '/' + data[i]['image_2'] + '.webp 2x, '
-							+ '/legend/img/pokemon/thumb-' + data[i]['number'] 
-							+ '/' + data[i]['image_3'] + '.webp 3x" type="image/webp">'
-							+ '<img src="/legend/img/pokemon/thumb-' + data[i]['number'] 
-							+ '/' + data[i]['image_1'] + '.png 1x, '
-							+ '/legend/img/pokemon/thumb-' + data[i]['number'] 
-							+ '/' + data[i]['image_2'] + '.png 2x, '
-							+ '/legend/img/pokemon/thumb-' + data[i]['number'] 
-							+ '/' + data[i]['image_3'] + '.png 3x" class="image '
+			image.innerHTML = '<source srcset="/legend/img/pokemon/' + data[i]['number'] 
+							+ '/thumb-' + data[i]['image_1'] + '.webp 1x, '
+							+ '/legend/img/pokemon/' + data[i]['number'] 
+							+ '/thumb-' + data[i]['image_2'] + '.webp 2x, '
+							+ '/legend/img/pokemon/' + data[i]['number'] 
+							+ '/thumb-' + data[i]['image_3'] + '.webp 3x" type="image/webp">'
+							+ '<img src="/legend/img/pokemon/' + data[i]['number'] 
+							+ '/thumb-' + data[i]['image_1'] + '.png 1x, '
+							+ '/legend/img/pokemon/' + data[i]['number'] 
+							+ '/thumb-' + data[i]['image_2'] + '.png 2x, '
+							+ '/legend/img/pokemon/' + data[i]['number'] 
+							+ '/thumb-' + data[i]['image_3'] + '.png 3x" class="image '
 							+ 'image-' + data[i]['image_1'] + '" alt="' 
 							+ data[i]['name'] + '">';
 
