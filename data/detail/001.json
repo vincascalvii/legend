@@ -36,123 +36,51 @@
 	"immunity" : ["Light"],
 	"moves_level" : [
 		{
-			"level" : "-",
-			"name" : "Scratch",
-			"type" : "Neutral",
-			"category" : "Physical",
-			"power" : "20",
-			"accuracy" : "100%",
-			"stamina" : "5",
-			"effect" : "Scratch the opponent with sharp claws."
+			"id" : "4",
+			"level" : "-"
 		},
 		{
-			"level" : "-",
-			"name" : "Growl",
-			"type" : "Neutral",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "100%",
-			"stamina" : "5",
-			"effect" : "Let out a growl that lowers the opponent(s)' Attack by one stage."
+			"id" : "6",
+			"level" : "-"
 		},
 		{
-			"level" : "Level 5",
-			"name" : "Leaf Blade",
-			"type" : "Nature",
-			"category" : "Physical",
-			"power" : "30",
-			"accuracy" : "90%",
-			"stamina" : "10",
-			"effect" : "Attack the opponent with a hardened leave."
+			"id" : "101",
+			"level" : "Level 5"
 		},
 		{
-			"level" : "Level 8",
-			"name" : "Accelerate",
-			"type" : "Neutral",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "10",
-			"effect" : "Accelerate to boost the user's Speed stat."
+			"id" : "9",
+			"level" : "Level 8"
 		},
 		{
-			"level" : "Level 10",
-			"name" : "Dodge",
-			"type" : "Neutral",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "10",
-			"effect" : "Dodge upcoming attack(s), but reduce success rate by 50% if used consecutively with any other evasion moves."
+			"id" : "1",
+			"level" : "Level 10"
 		},
 		{
-			"level" : "Level 15",
-			"name" : "Leaf Razor",
-			"type" : "Nature",
-			"category" : "Physical",
-			"power" : "50",
-			"accuracy" : "90%",
-			"stamina" : "15",
-			"effect" : "Attack the opponent with razor sharp leaves. This move has 10% critical hit chance."
+			"id" : "102",
+			"level" : "Level 15"
 		},
 		{
-			"level" : "Level 18",
-			"name" : "Quick Strike",
-			"type" : "Neutral",
-			"category" : "Physical",
-			"power" : "40",
-			"accuracy" : "100%",
-			"stamina" : "15",
-			"effect" : "Lunges at the opponent quickly before the target can react. This move has a +1 priority."
+			"id" : "13",
+			"level" : "Level 18"
 		},
 		{
-			"level" : "Level 25",
-			"name" : "Stalk",
-			"type" : "Dark",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "100%",
-			"stamina" : "10",
-			"effect" : "Stalk the opponent, allowing the next move to have +1 priority and 50% critical hit chance."
+			"id" : "906",
+			"level" : "Level 25"
 		},
 		{
-			"level" : "Level 30",
-			"name" : "Copycat",
-			"type" : "Neutral",
-			"category" : "Other",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "15",
-			"effect" : "Copy the move used immediately before the user. If no moves have been used, this move will fail."
+			"id" : "17",
+			"level" : "Level 30"
 		}
 	],
 	"moves_tutor" : [
 		{
-			"name" : "Rest",
-			"type" : "Neutral",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "10",
-			"effect" : "Rest for 2 turns. Each turn restores the user's HP by 50% and Stamina by 25%. This move also removes all status condition."
+			"id" : "3"
 		},
 		{
-			"name" : "Photosynthesis",
-			"type" : "Nature",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "20",
-			"effect" : "Restore the user's HP by 25%. During harsh sunlight, this move restores 50% instead."
+			"id" : "107"
 		},
 		{
-			"name" : "Sand Attack",
-			"type" : "Earth",
-			"category" : "Physical",
-			"power" : "10",
-			"accuracy" : "80%",
-			"stamina" : "5",
-			"effect" : "Hurl sand at the opponent to lower the target's Accuracy."
+			"id" : "601"
 		}
 	]
 }]

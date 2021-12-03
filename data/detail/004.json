@@ -107,13 +107,13 @@
 		},
 		{
 			"level" : "Level 25",
-			"name" : "Intimidate",
+			"name" : "Glare",
 			"type" : "Dark",
 			"category" : "Support",
 			"power" : "-",
 			"accuracy" : "100%",
 			"stamina" : "10",
-			"effect" : "Frighten the target with a scary face to lower the target's Attack."
+			"effect" : "Frighten the target with a scary face to lower the target's Speed stat."
 		},
 		{
 			"level" : "Level 30",

@@ -87,13 +87,13 @@
 		},
 		{
 			"level" : "Level 15",
-			"name" : "Water Pulse",
+			"name" : "Water Bomb",
 			"type" : "Water",
 			"category" : "Special",
 			"power" : "50",
 			"accuracy" : "90%",
 			"stamina" : "15",
-			"effect" : "Attack the opponent with a pulsing blast of water. This move has a 20% chance of leaving the target in confusion."
+			"effect" : "Attack the opponent with a strong blast of water. This move has a 20% chance of leaving the target in confusion."
 		},
 		{
 			"level" : "Level 18",
@@ -108,7 +108,7 @@
 		{
 			"level" : "Level 25",
 			"name" : "Iron Wall",
-			"type" : "Steel",
+			"type" : "Metal",
 			"category" : "Support",
 			"power" : "-",
 			"accuracy" : "-",
