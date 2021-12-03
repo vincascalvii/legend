@@ -16,8 +16,6 @@ if ( no != '' && no != null ) {
 	})
 	.then( function(data) {
 
-		console.log(data);
-
 		// Change background colour
 		document.querySelector('main').classList.add(data[0]['types'][0].toLowerCase());
 
@@ -149,7 +147,7 @@ if ( no != '' && no != null ) {
 		}
 
 		// Fetch the moves
-		fetch('/legend/data/all/moves')
+		fetch('/legend/data/all/moves.json')
 		.then( function(response) {
 			if (!response.ok) throw new Error("HTTP error " + response.status);
 		    return response.json();
