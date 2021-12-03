@@ -358,3 +358,35 @@ function getParameter() {
 	}, false);
 
 })();
+
+/* =============================================================================
+
+    OPENGRAPH & TWITTER CARD
+
+============================================================================= */
+
+(function() {
+
+	// Get the pokemon name
+	var name = document.querySelector('.header .name').innerText;
+
+	// Prepare the image, url, title and description
+	var image = '/legend/img/pokemon/' + no + '/full-900x900.png';
+	var url = 'https://vincascalvii.github.io/legend/detail/?no=' + no;
+	var title = name + ' - Pok&#233;mon Design - Calvin Lam';
+	var description = 'Explore all about ' + name +
+		' from Newzar region in Pok&#233;mon Storm and Pok&#233;mon Quake.';
+
+	// Update OpenGraph info
+	document.querySelector('meta[property="og:image"]').content = image;
+	document.querySelector('meta[property="og:url"]').content = url;
+	document.querySelector('meta[property="og:title"]').content = title;
+	document.querySelector('meta[property="og:description"]').content = description;
+
+	// Update Twitter card info
+	document.querySelector('meta[property="twitter:image"]').content = image;
+	document.querySelector('meta[property="twitter:url"]').content = url;
+	document.querySelector('meta[property="twitter:title"]').content = title;
+	document.querySelector('meta[property="twitter:description"]').content = description;
+
+})();
