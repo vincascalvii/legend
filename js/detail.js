@@ -312,6 +312,9 @@ function getParameter() {
 	// Add "click" event to the button
 	shinyTrigger.addEventListener('click', function() {
 
+		// Toggle the trigger class to tell whether it's active or not
+		this.classList.toggle('active');
+
 		// If shiny version hasn't been loaded yet, then load it
 		if ( !loaded ) {
 
