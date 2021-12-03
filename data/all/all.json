@@ -80,94 +80,94 @@
 		"image_2" : "320x240",
 		"image_3" : "480x360"
 	},
-	{
-		"number" : "010",
-		"name" : "Tapahorn",
-		"type_1" : "Neutral",
-		"type_2" : "",
-		"image_1" : "160x120",
-		"image_2" : "320x240",
-		"image_3" : "480x360"
-	},
-	{
-		"number" : "011",
-		"name" : "Palmahorn",
-		"type_1" : "Neutral",
-		"type_2" : "",
-		"image_1" : "120x120",
-		"image_2" : "240x240",
-		"image_3" : "360x360"
-	},
-	{
-		"number" : "012",
-		"name" : "Snailog",
-		"type_1" : "Nature",
-		"type_2" : "Earth",
-		"image_1" : "120x120",
-		"image_2" : "240x240",
-		"image_3" : "360x360"
-	},
-	{
-		"number" : "013",
-		"name" : "Trunklug",
-		"type_1" : "Nature",
-		"type_2" : "Earth",
-		"image_1" : "120x120",
-		"image_2" : "240x240",
-		"image_3" : "360x360"
-	},
-	{
-		"number" : "014",
-		"name" : "Elechic",
-		"type_1" : "Electric",
-		"type_2" : "Wind",
-		"image_1" : "120x120",
-		"image_2" : "240x240",
-		"image_3" : "360x360"
-	},
-	{
-		"number" : "015",
-		"name" : "Currrenbird",
-		"type_1" : "Electric",
-		"type_2" : "Wind",
-		"image_1" : "120x120",
-		"image_2" : "240x240",
-		"image_3" : "360x360"
-	},
-	{
-		"number" : "016",
-		"name" : "Thundaptor",
-		"type_1" : "Electric",
-		"type_2" : "Wind",
-		"image_1" : "120x120",
-		"image_2" : "240x240",
-		"image_3" : "360x360"
-	},
-	{
-		"number" : "017",
-		"name" : "Blupillar",
-		"type_1" : "Light",
-		"type_2" : "",
-		"image_1" : "120x120",
-		"image_2" : "240x240",
-		"image_3" : "360x360"
-	},
-	{
-		"number" : "018",
-		"name" : "Silkocoon",
-		"type_1" : "Light",
-		"type_2" : "",
-		"image_1" : "120x120",
-		"image_2" : "240x240",
-		"image_3" : "360x360"
-	},
-	{
-		"number" : "019",
-		"name" : "Faerifly",
-		"type_1" : "Light",
-		"type_2" : "Wind",
-		"image_1" : "160x120",
-		"image_2" : "320x240",
-		"image_3" : "480x360"
-	}
+	// {
+	// 	"number" : "010",
+	// 	"name" : "Tapahorn",
+	// 	"type_1" : "Neutral",
+	// 	"type_2" : "",
+	// 	"image_1" : "160x120",
+	// 	"image_2" : "320x240",
+	// 	"image_3" : "480x360"
+	// },
+	// {
+	// 	"number" : "011",
+	// 	"name" : "Palmahorn",
+	// 	"type_1" : "Neutral",
+	// 	"type_2" : "",
+	// 	"image_1" : "120x120",
+	// 	"image_2" : "240x240",
+	// 	"image_3" : "360x360"
+	// },
+	// {
+	// 	"number" : "012",
+	// 	"name" : "Snailog",
+	// 	"type_1" : "Nature",
+	// 	"type_2" : "Earth",
+	// 	"image_1" : "120x120",
+	// 	"image_2" : "240x240",
+	// 	"image_3" : "360x360"
+	// },
+	// {
+	// 	"number" : "013",
+	// 	"name" : "Trunklug",
+	// 	"type_1" : "Nature",
+	// 	"type_2" : "Earth",
+	// 	"image_1" : "120x120",
+	// 	"image_2" : "240x240",
+	// 	"image_3" : "360x360"
+	// },
+	// {
+	// 	"number" : "014",
+	// 	"name" : "Elechic",
+	// 	"type_1" : "Electric",
+	// 	"type_2" : "Wind",
+	// 	"image_1" : "120x120",
+	// 	"image_2" : "240x240",
+	// 	"image_3" : "360x360"
+	// },
+	// {
+	// 	"number" : "015",
+	// 	"name" : "Currrenbird",
+	// 	"type_1" : "Electric",
+	// 	"type_2" : "Wind",
+	// 	"image_1" : "120x120",
+	// 	"image_2" : "240x240",
+	// 	"image_3" : "360x360"
+	// },
+	// {
+	// 	"number" : "016",
+	// 	"name" : "Thundaptor",
+	// 	"type_1" : "Electric",
+	// 	"type_2" : "Wind",
+	// 	"image_1" : "120x120",
+	// 	"image_2" : "240x240",
+	// 	"image_3" : "360x360"
+	// },
+	// {
+	// 	"number" : "017",
+	// 	"name" : "Blupillar",
+	// 	"type_1" : "Light",
+	// 	"type_2" : "",
+	// 	"image_1" : "120x120",
+	// 	"image_2" : "240x240",
+	// 	"image_3" : "360x360"
+	// },
+	// {
+	// 	"number" : "018",
+	// 	"name" : "Silkocoon",
+	// 	"type_1" : "Light",
+	// 	"type_2" : "",
+	// 	"image_1" : "120x120",
+	// 	"image_2" : "240x240",
+	// 	"image_3" : "360x360"
+	// },
+	// {
+	// 	"number" : "019",
+	// 	"name" : "Faerifly",
+	// 	"type_1" : "Light",
+	// 	"type_2" : "Wind",
+	// 	"image_1" : "160x120",
+	// 	"image_2" : "320x240",
+	// 	"image_3" : "480x360"
+	// }
 ]

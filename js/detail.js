@@ -34,6 +34,10 @@ if ( no != '' && no != null ) {
 			document.querySelector('.types').appendChild(type2);
 		}
 
+		// Populate image
+		document.querySelector('.image').innerHTML =
+			'<img src="/img/pokemon/' + no + '/full-300x300.png" alt="' + data[0]['name'] + '">';
+
 		// Populate abilities
 		document.querySelector('.ability-1 .ability-name').innerHTML = data[0]['abilities'][0]['name'];
 		document.querySelector('.ability-1 .ability-desc').innerHTML = data[0]['abilities'][0]['desc'];
