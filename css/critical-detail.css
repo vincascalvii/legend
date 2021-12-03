@@ -161,7 +161,7 @@ main.water {
     display: block;
 }
 
-.image .shiny-trigger {
+.shiny-trigger {
     position: absolute;
     right: 20px;
     top: 250px;
@@ -178,7 +178,7 @@ main.water {
     z-index: 1;
 }
 
-.image .shiny-trigger.ative {
+.shiny-trigger.active {
     background-color: #727272;
     color: #fff;
 }
