@@ -22,7 +22,7 @@ if ( no != '' && no != null ) {
 		// Populate name
 		document.querySelector('.name').innerHTML = data[0]['name'];
 
-		// Populate types
+		// Populate typings
 		document.querySelector('.types span:first-child').innerHTML = data[0]['types'][0];
 		document.querySelector('.types span:first-child').classList.add(
 			data[0]['types'][0].toLowerCase()
@@ -33,6 +33,9 @@ if ( no != '' && no != null ) {
 				type2.innerHTML = data[0]['types'][1];
 			document.querySelector('.types').appendChild(type2);
 		}
+
+		// Populate number
+		document.querySelector('.number').innerHTML = data[0]['number'];
 
 		// Populate image
 		document.querySelector('.image').innerHTML +=

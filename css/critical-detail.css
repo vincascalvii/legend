@@ -81,6 +81,12 @@ main.water {
     display: flex;
 }
 
+.header .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
 .type {
     color: #fff;
     font-size: 1.4rem;
@@ -140,6 +146,12 @@ main.water {
     background-color: #9f41c1;
 }
 
+.header .number {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
 .main-container {
     position: relative;
 }
@@ -174,7 +186,7 @@ main.water {
     color: #727272;
     font-size: 2rem;
     line-height: 1;
-    border: 3px solid #fff;
+    border: 1px solid #fff;
     border-radius: 10px;
     z-index: 1;
     transition: .2s ease-in-out;
@@ -262,8 +274,16 @@ main.water {
         align-items: center;
     }
 
+    .header .left {
+        order: 1;
+    }
+
     .header .name {
-        margin: 0 20px 0 40px;
+        margin: 0 20px;
+    }
+
+    .header .number {
+        margin-left: 40px;
     }
 
     .main-container {
