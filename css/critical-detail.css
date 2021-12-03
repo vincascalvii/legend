@@ -273,6 +273,14 @@ main.water {
         margin-right: 40px;
     }
 
+    .shiny-trigger {
+        top: 460px;
+        left: 460px;
+        right: initial;
+        bottom: initial;
+        cursor: pointer;
+    }
+
     .info {
         flex: 1;
         height: calc(100vh - 120px);
