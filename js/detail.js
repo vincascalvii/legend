@@ -37,9 +37,9 @@ if ( no != '' && no != null ) {
 		// Populate image
 		document.querySelector('.image').innerHTML +=
 			'<picture>' +
-			'<source data-srcset="/legend/img/pokemon' + no + '/full-500x500.webp" ' +
+			'<source data-srcset="/legend/img/pokemon/' + no + '/full-500x500.webp" ' +
 			'media="(min-width: 1024px)" type="image/webp">' +
-			'<source data-srcset="/legend/img/pokemon' + no + '/full-500x500.png" ' +
+			'<source data-srcset="/legend/img/pokemon/' + no + '/full-500x500.png" ' +
 			'media="(min-width: 1024px)" type="image/png">' +
 			'<source data-srcset="/legend/img/pokemon/' + 
 			no + '/full-300x300.webp 1x, /legend/img/pokemon/' +
@@ -309,18 +309,11 @@ function getParameter() {
 	// Set first load as false first
 	var loaded = false;
 
-	console.log(shinyTrigger);
-	console.log('about to add click event');
-
 	// Add "click" event to the button
 	shinyTrigger.addEventListener('click', function() {
 
-		console.log('clicked');
-
 		// If shiny version hasn't been loaded yet, then load it
 		if ( !loaded ) {
-
-			console.log('1st time load');
 
 			// Hide the normal version
 			document.querySelector('.image-normal').classList.remove('active');
@@ -331,9 +324,9 @@ function getParameter() {
 			// Add the shiny version ( including class "active" to display it straight away )
 			document.querySelector('.image').innerHTML +=
 				'<picture>' +
-				'<source data-srcset="/legend/img/pokemon' + no + '/shiny-500x500.webp" ' +
+				'<source data-srcset="/legend/img/pokemon/' + no + '/shiny-500x500.webp" ' +
 				'media="(min-width: 1024px)" type="image/webp">' +
-				'<source data-srcset="/legend/img/pokemon' + no + '/shiny-500x500.png" ' +
+				'<source data-srcset="/legend/img/pokemon/' + no + '/shiny-500x500.png" ' +
 				'media="(min-width: 1024px)" type="image/png">' +
 				'<source data-srcset="/legend/img/pokemon/' + 
 				no + '/shiny-300x300.webp 1x, /legend/img/pokemon/' +
@@ -355,13 +348,10 @@ function getParameter() {
 
 		// If the shiny version is already loaded, simply toggle the 2 versions
 		} else {
-			console.log('already loaded');
 			document.querySelector('.image-normal').classList.toggle('active');
 			document.querySelector('.image-shiny').classList.toggle('active');
 		}
 
 	}, false);
-
-	console.log('finish adding click event');
 
 })();
