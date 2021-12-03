@@ -140,8 +140,11 @@ main.water {
     background-color: #9f41c1;
 }
 
-.image {
+.main-container {
     position: relative;
+}
+
+.image {
     width: 300px;
     height: 300px;
     margin: 0 auto;
@@ -160,8 +163,8 @@ main.water {
 
 .image .shiny-trigger {
     position: absolute;
-    right: 0;
-    bottom: 10px;
+    right: 20px;
+    top: 250px;
     width: 40px;
     height: 40px;
     display: flex;
