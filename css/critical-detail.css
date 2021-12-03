@@ -141,6 +141,7 @@ main.water {
 }
 
 .image {
+    width: 300px;
     height: 300px;
 }
 
@@ -230,13 +231,19 @@ main.water {
 
     .image {
         width: 500px;
+        height: 500px;
         margin-right: 40px;
     }
 
     .info {
         flex: 1;
-        height: 80vh;
+        height: calc(100vh - 120px);
+        padding-bottom: 30px;
         border-radius: 30px;
+    }
+
+    .info .tabs .tab {
+        cursor: pointer;
     }
 
     .info .tab-content {
@@ -244,9 +251,32 @@ main.water {
         overflow-y: scroll;
     }
 
+    .info .tab-content::-webkit-scrollbar {
+        width: 30px;
+    }
+     
+    .info .tab-content::-webkit-scrollbar-track {
+        background-color: #fff;
+    }
+
+    .info .tab-content::-webkit-scrollbar-thumb {
+        border: 10px solid #fff;
+        background-clip: padding-box;
+        background-color: #ccc;
+        border-radius: 30px;
+    }
+
+    .info .tab-content::-webkit-scrollbar-thumb:hover {
+        background-color: #aaa;
+    }
+
 }
 
 @media only screen and (min-width: 1366px) {
+
+    body {
+        font-size: 1.6rem;
+    }
 
     .container,
     .main-container {
@@ -254,7 +284,6 @@ main.water {
     }
 
     .image {
-        width: 600px;
         margin-right: 80px;
     }
 
