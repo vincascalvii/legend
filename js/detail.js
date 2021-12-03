@@ -53,7 +53,7 @@ if ( no != '' && no != null ) {
 			'media="(max-width: 1023px)" type="image/png">' +
 			'<img data-src="/legend/img/pokemon/' + no + '/full-500x500.png" ' + 
 			'src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"' + 
-			' class="lazyload image-normal" alt="' + data[0]['name'] + '">' +
+			' class="lazyload image-normal active" alt="' + data[0]['name'] + '">' +
 			'</picture>';
 
 		// Populate abilities
@@ -312,8 +312,12 @@ function getParameter() {
 	// Add "click" event to the button
 	shinyTrigger.addEventListener('click', function() {
 
+		console.log('clicked');
+
 		// If shiny version hasn't been loaded yet, then load it
 		if ( !loaded ) {
+
+			console.log('1st time load');
 
 			// Hide the normal version
 			document.querySelector('.image-normal').classList.remove('active');
@@ -345,6 +349,7 @@ function getParameter() {
 
 		// If the shiny version is already loaded, simply toggle the 2 versions
 		} else {
+			console.log('already loaded');
 			document.querySelector('.image-normal').classList.toggle('active');
 			document.querySelector('.image-shiny').classList.toggle('active');
 		}
