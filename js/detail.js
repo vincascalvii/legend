@@ -37,9 +37,9 @@ if ( no != '' && no != null ) {
 		// Populate image
 		document.querySelector('.image').innerHTML +=
 			'<picture>' +
-			'<source data-srcset="legend/img/pokemon' + no + '/full-500x500.webp" ' +
+			'<source data-srcset="/legend/img/pokemon' + no + '/full-500x500.webp" ' +
 			'media="(min-width: 1024px)" type="image/webp">' +
-			'<source data-srcset="legend/img/pokemon' + no + '/full-500x500.png" ' +
+			'<source data-srcset="/legend/img/pokemon' + no + '/full-500x500.png" ' +
 			'media="(min-width: 1024px)" type="image/png">' +
 			'<source data-srcset="/legend/img/pokemon/' + 
 			no + '/full-300x300.webp 1x, /legend/img/pokemon/' +
@@ -309,6 +309,8 @@ function getParameter() {
 	// Set first load as false first
 	var loaded = false;
 
+	console.log('about to add click event');
+
 	// Add "click" event to the button
 	shinyTrigger.addEventListener('click', function() {
 
@@ -322,12 +324,15 @@ function getParameter() {
 			// Hide the normal version
 			document.querySelector('.image-normal').classList.remove('active');
 
+			// Get the pokemon name
+			var name = document.querySelector('.header .name').innerText;
+
 			// Add the shiny version ( including class "active" to display it straight away )
 			document.querySelector('.image').innerHTML +=
 				'<picture>' +
-				'<source data-srcset="legend/img/pokemon' + no + '/shiny-500x500.webp" ' +
+				'<source data-srcset="/legend/img/pokemon' + no + '/shiny-500x500.webp" ' +
 				'media="(min-width: 1024px)" type="image/webp">' +
-				'<source data-srcset="legend/img/pokemon' + no + '/shiny-500x500.png" ' +
+				'<source data-srcset="/legend/img/pokemon' + no + '/shiny-500x500.png" ' +
 				'media="(min-width: 1024px)" type="image/png">' +
 				'<source data-srcset="/legend/img/pokemon/' + 
 				no + '/shiny-300x300.webp 1x, /legend/img/pokemon/' +
@@ -341,7 +346,7 @@ function getParameter() {
 				'media="(max-width: 1023px)" type="image/png">' +
 				'<img data-src="/legend/img/pokemon/' + no + '/shiny-500x500.png" ' + 
 				'src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"' + 
-				' class="lazyload image-shiny active" alt="' + data[0]['name'] + '">' +
+				' class="lazyload image-shiny active" alt="' + name + '">' +
 				'</picture>';
 
 			// Set loaded as "true" so future toggle won't add further request
@@ -355,5 +360,7 @@ function getParameter() {
 		}
 
 	}, false);
+
+	console.log('finish adding click event');
 
 })();
