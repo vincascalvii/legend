@@ -174,8 +174,14 @@ main.water {
     color: #727272;
     font-size: 2rem;
     line-height: 1;
+    border: 3px solid #fff;
     border-radius: 10px;
     z-index: 1;
+    transition: .2s ease-in-out;
+}
+
+.shiny-trigger:hover {
+    background-color: #f5f5fb;
 }
 
 .shiny-trigger.active {
@@ -319,10 +325,6 @@ main.water {
 }
 
 @media only screen and (min-width: 1366px) {
-
-    body {
-        font-size: 1.6rem;
-    }
 
     .container,
     .main-container {
