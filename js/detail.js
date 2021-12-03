@@ -35,18 +35,25 @@ if ( no != '' && no != null ) {
 		}
 
 		// Populate image
-		document.querySelector('.image').innerHTML =
+		document.querySelector('.image').innerHTML +=
 			'<picture>' +
+			'<source data-srcset="legend/img/pokemon' + no + '/full-500x500.webp" ' +
+			'media="(min-width: 1024px)" type="image/webp">' +
+			'<source data-srcset="legend/img/pokemon' + no + '/full-500x500.png" ' +
+			'media="(min-width: 1024px)" type="image/png">' +
 			'<source data-srcset="/legend/img/pokemon/' + 
 			no + '/full-300x300.webp 1x, /legend/img/pokemon/' +
 			no + '/full-600x600.webp 2x, /legend/img/pokemon/' +
-			no + '/full-900x900.webp 3x" type="image/webp">' +
-			'<img data-src="/legend/img/pokemon/' + 
+			no + '/full-900x900.webp 3x" ' +
+			'media="(max-width: 1023px)" type="image/webp">' +
+			'<source data-srcset="/legend/img/pokemon/' + 
 			no + '/full-300x300.png 1x, /legend/img/pokemon/' +
 			no + '/full-600x600.png 2x, /legend/img/pokemon/' +
 			no + '/full-900x900.png 3x" ' +
+			'media="(max-width: 1023px)" type="image/png">' +
+			'<img data-src="/legend/img/pokemon/' + no + '/full-500x500.png" ' + 
 			'src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"' + 
-			' class="lazyload" alt="' + data[0]['name'] + '">' +
+			' class="lazyload image-normal" alt="' + data[0]['name'] + '">' +
 			'</picture>';
 
 		// Populate abilities
@@ -285,5 +292,63 @@ function getParameter() {
 		}, false);
 	}
 
+
+})();
+
+/* =============================================================================
+
+    SHINY
+
+============================================================================= */
+
+(function() {
+
+	// Get the button trigger for shiny version
+	var shinyTrigger = document.querySelector('.shiny-trigger');
+
+	// Set first load as false first
+	var loaded = false;
+
+	// Add "click" event to the button
+	shinyTrigger.addEventListener('click', function() {
+
+		// If shiny version hasn't been loaded yet, then load it
+		if ( !loaded ) {
+
+			// Hide the normal version
+			document.querySelector('.image-normal').classList.remove('active');
+
+			// Add the shiny version ( including class "active" to display it straight away )
+			document.querySelector('.image').innerHTML +=
+				'<picture>' +
+				'<source data-srcset="legend/img/pokemon' + no + '/shiny-500x500.webp" ' +
+				'media="(min-width: 1024px)" type="image/webp">' +
+				'<source data-srcset="legend/img/pokemon' + no + '/shiny-500x500.png" ' +
+				'media="(min-width: 1024px)" type="image/png">' +
+				'<source data-srcset="/legend/img/pokemon/' + 
+				no + '/shiny-300x300.webp 1x, /legend/img/pokemon/' +
+				no + '/shiny-600x600.webp 2x, /legend/img/pokemon/' +
+				no + '/shiny-900x900.webp 3x" ' +
+				'media="(max-width: 1023px)" type="image/webp">' +
+				'<source data-srcset="/legend/img/pokemon/' + 
+				no + '/shiny-300x300.png 1x, /legend/img/pokemon/' +
+				no + '/shiny-600x600.png 2x, /legend/img/pokemon/' +
+				no + '/shiny-900x900.png 3x" ' +
+				'media="(max-width: 1023px)" type="image/png">' +
+				'<img data-src="/legend/img/pokemon/' + no + '/shiny-500x500.png" ' + 
+				'src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"' + 
+				' class="lazyload image-shiny active" alt="' + data[0]['name'] + '">' +
+				'</picture>';
+
+			// Set loaded as "true" so future toggle won't add further request
+			loaded = true;
+
+		// If the shiny version is already loaded, simply toggle the 2 versions
+		} else {
+			document.querySelector('.image-normal').classList.toggle('active');
+			document.querySelector('.image-shiny').classList.toggle('active');
+		}
+
+	}, false);
 
 })();
