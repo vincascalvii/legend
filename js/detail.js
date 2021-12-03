@@ -384,9 +384,9 @@ function getParameter() {
 	document.querySelector('meta[property="og:description"]').content = description;
 
 	// Update Twitter card info
-	document.querySelector('meta[property="twitter:image"]').content = image;
-	document.querySelector('meta[property="twitter:url"]').content = url;
-	document.querySelector('meta[property="twitter:title"]').content = title;
-	document.querySelector('meta[property="twitter:description"]').content = description;
+	document.querySelector('meta[name="twitter:image"]').content = image;
+	document.querySelector('meta[name="twitter:url"]').content = url;
+	document.querySelector('meta[name="twitter:title"]').content = title;
+	document.querySelector('meta[name="twitter:description"]').content = description;
 
 })();
