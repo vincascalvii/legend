@@ -153,10 +153,7 @@ if ( no != '' && no != null ) {
 		    return response.json();
 		})
 		.then( function(moves) {
-
-			console.log(moves);
-			console.log(moves[0]);
-
+			
 			// Populate moveset by level up
 			for ( var ml = 0; ml < data[0]['moves_level'].length; ml++ ) {
 				var id = data[0]['moves_level'][ml]['id'];

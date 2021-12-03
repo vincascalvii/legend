@@ -36,123 +36,51 @@
 	"immunity" : [],
 	"moves_level" : [
 		{
-			"level" : "-",
-			"name" : "Tackle",
-			"type" : "Neutral",
-			"category" : "Physical",
-			"power" : "20",
-			"accuracy" : "100%",
-			"stamina" : "5",
-			"effect" : "Charge at the opponent with a full-body tackle."
+			"id" : "5",
+			"level" : "-"
 		},
 		{
-			"level" : "-",
-			"name" : "Withdraw",
-			"type" : "Neutral",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "100%",
-			"stamina" : "5",
-			"effect" : "Withdraw into a hard shell, raising the user's Defense stat."
+			"id" : "8",
+			"level" : "-"
 		},
 		{
-			"level" : "Level 5",
-			"name" : "Water Gun",
-			"type" : "Water",
-			"category" : "Special",
-			"power" : "30",
-			"accuracy" : "90%",
-			"stamina" : "10",
-			"effect" : "Blast at the opponent with a shot of water."
+			"id" : "301",
+			"level" : "Level 5"
 		},
 		{
-			"level" : "Level 8",
-			"name" : "Bite",
-			"type" : "Neutral",
-			"category" : "Physical",
-			"power" : "40",
-			"accuracy" : "95%",
-			"stamina" : "10",
-			"effect" : "Bite the opponent with vicious fangs. This move has a 20% chance to reduce the target's Defense stat."
+			"id" : "11",
+			"level" : "Level 8"
 		},
 		{
-			"level" : "Level 10",
-			"name" : "Barrier",
-			"type" : "Neutral",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "20",
-			"effect" : "Create a barrier to reduce damage from physical attacks for 5 turns."
+			"id" : "18",
+			"level" : "Level 10"
 		},
 		{
-			"level" : "Level 15",
-			"name" : "Water Bomb",
-			"type" : "Water",
-			"category" : "Special",
-			"power" : "50",
-			"accuracy" : "90%",
-			"stamina" : "15",
-			"effect" : "Attack the opponent with a strong blast of water. This move has a 20% chance of leaving the target in confusion."
+			"id" : "302",
+			"level" : "Level 15"
 		},
 		{
-			"level" : "Level 18",
-			"name" : "Shield",
-			"type" : "Neutral",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "20",
-			"effect" : "Create a shield to reduce damage from special attacks for 5 turns."
+			"id" : "19",
+			"level" : "Level 18"
 		},
 		{
-			"level" : "Level 25",
-			"name" : "Iron Wall",
-			"type" : "Metal",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "15",
-			"effect" : "Harden the body like an iron wall to sharply raise the user's Defense stat."
+			"id" : "707",
+			"level" : "Level 25"
 		},
 		{
-			"level" : "Level 30",
-			"name" : "Rainfall",
-			"type" : "Water",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "20",
-			"effect" : "Summon a heavy rain that falls for 5 turns. The rain powers up Water-type moves by 50% and lowers the power of Fire-type moves by 50%."
+			"id" : "307",
+			"level" : "Level 30"
 		}
 	],
 	"moves_tutor" : [
 		{
-			"name" : "Guard",
-			"type" : "Neutral",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "10",
-			"effect" : "Guard upcoming attack(s), but reduce success rate by 50% if used consecutively with any other evasion moves."
+			"id" : "2"
 		},
 		{
-			"name" : "Rest",
-			"type" : "Neutral",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "10",
-			"effect" : "Rest for 2 turns. Each turn restores the user's HP by 50% and Stamina by 25%. This move also removes all status condition."
+			"id" : "3"
 		},
 		{
-			"name" : "Shell Break",
-			"type" : "Neutral",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "20",
-			"effect" : "Break out of the shell to drastically raise the user's Speed stat, but lowers the user's Defense and Special Defense stats."
+			"id" : "22"
 		}
 	]
 }]

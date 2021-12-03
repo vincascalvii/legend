@@ -86,128 +86,132 @@
 		</header>
 
 
-		<div class="image"></div>
+		<div class="main-container">
 
-		<div class="info">
-			<ul class="tabs">
-				<li class="tab active">Overview</li>
-				<li class="tab">Stats</li>
-				<li class="tab">Moves</li>
-				<li class="tab">Evolution</li>
-			</ul>
-			<div class="tab-content tab-overview active">
-				<h2 class="tab-heading">Abilities</h2>
-				<div class="ability ability-1">
-					<h3 class="ability-name"></h3>
-					<p class="ability-desc"></p>
+			<div class="image"></div>
+
+			<div class="info">
+				<ul class="tabs">
+					<li class="tab active">Overview</li>
+					<li class="tab">Stats</li>
+					<li class="tab">Moves</li>
+					<li class="tab">Evolution</li>
+				</ul>
+				<div class="tab-content tab-overview active">
+					<h2 class="tab-heading">Abilities</h2>
+					<div class="ability ability-1">
+						<h3 class="ability-name"></h3>
+						<p class="ability-desc"></p>
+					</div>
+					<div class="ability ability-2">
+						<h3 class="ability-name"></h3>
+						<p class="ability-desc"></p>
+					</div>
+					<hr class="separator">
+					<h2 class="tab-heading">Description</h2>
+					<p class="description"></p>
+					<hr class="separator">
+					<h2 class="tab-heading">Additional Details</h2>
+					<div class="additional additional-gender">
+						<span class="additional-label">Gender</span>
+						<span class="additional-value additional-male">
+							<svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 48 48">
+								<path fill="#2196F3" d="M30.793 4.186H34.793V26.228H30.793z" transform="rotate(44.992 32.795 15.209)"></path>
+								<path fill="#2196F3" d="M18 42L18 42c-3.206 0-6.219-1.248-8.485-3.515C7.248 36.219 6 33.205 6 30s1.248-6.219 3.515-8.485C11.781 19.248 14.794 18 18 18s6.219 1.248 8.485 3.515c4.68 4.679 4.68 12.292 0 16.971C24.218 40.752 21.205 42 18 42zM18 22c-2.137 0-4.146.832-5.657 2.343-3.119 3.119-3.119 8.195 0 11.314C13.854 37.168 15.862 38 18 38c2.137 0 4.146-.832 5.657-2.343 3.119-3.119 3.119-8.195 0-11.314C22.146 22.832 20.137 22 18 22zM25 6H42V10H25z"></path>
+								<path fill="#2196F3" d="M38 6H42V23H38z"></path>
+							</svg>
+							<span class="additional-male-value"></span>
+						</span>
+						<span class="additional-value additional-female">
+							<svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 48 48">
+								<path fill="#FF1744" d="M26,25.9c2.4-0.4,4.7-1.5,6.5-3.3c2.3-2.3,3.5-5.3,3.5-8.5c0-3.2-1.2-6.2-3.5-8.5c-2.3-2.3-5.3-3.5-8.5-3.5c-3.2,0-6.2,1.2-8.5,3.5l0,0c-2.3,2.3-3.5,5.3-3.5,8.5c0,5.9,4.3,10.9,10,11.8V34l-8,0l0,4l8,0v8h4v-8l8,0v-4l-8,0V25.9z M16,14.1c0-2.1,0.8-4.1,2.3-5.7c1.5-1.5,3.5-2.3,5.7-2.3c4.4,0,8,3.6,8,8c0,2.1-0.8,4.1-2.3,5.7c-1.5,1.5-3.5,2.3-5.7,2.3C19.6,22.1,16,18.5,16,14.1z"></path>
+							</svg>
+							<span class="additional-female-value"></span>
+						</span>
+					</div>
+					<div class="additional additional-species">
+						<span class="additional-label">Species</span>
+						<span class="additional-value"></span>
+					</div>
+					<div class="additional additional-weight">
+						<span class="additional-label">Weight</span>
+						<span class="additional-value"></span>
+					</div>
+					<div class="additional additional-height">
+						<span class="additional-label">Height</span>
+						<span class="additional-value"></span>
+					</div>
 				</div>
-				<div class="ability ability-2">
-					<h3 class="ability-name"></h3>
-					<p class="ability-desc"></p>
+				<div class="tab-content tab-stats">
+					<h2 class="tab-heading">Base Stats</h2>
+					<div class="stats">
+						<div class="stat stat-hp">
+							<span class="stat-label">HP</span>
+							<span class="stat-value"></span>
+							<span class="stat-bar">
+								<span class="stat-bar-fill"></span>
+							</span>
+						</div>
+						<div class="stat stat-atk">
+							<span class="stat-label">ATK</span>
+							<span class="stat-value"></span>
+							<span class="stat-bar">
+								<span class="stat-bar-fill"></span>
+							</span>
+						</div>
+						<div class="stat stat-def">
+							<span class="stat-label">DEF</span>
+							<span class="stat-value"></span>
+							<span class="stat-bar">
+								<span class="stat-bar-fill"></span>
+							</span>
+						</div>
+						<div class="stat stat-spa">
+							<span class="stat-label">SPA</span>
+							<span class="stat-value"></span>
+							<span class="stat-bar">
+								<span class="stat-bar-fill"></span>
+							</span>
+						</div>
+						<div class="stat stat-spd">
+							<span class="stat-label">SPD</span>
+							<span class="stat-value"></span>
+							<span class="stat-bar">
+								<span class="stat-bar-fill"></span>
+							</span>
+						</div>
+						<div class="stat stat-spe">
+							<span class="stat-label">SPE</span>
+							<span class="stat-value"></span>
+							<span class="stat-bar">
+								<span class="stat-bar-fill"></span>
+							</span>
+						</div>
+						<div class="stat stat-total">
+							<span class="stat-label">Total</span>
+							<span class="stat-value"></span>
+						</div>
+					</div>
+					<hr class="separator">
+					<h2 class="tab-heading">Type Effectiveness</h2>
+					<div class="condition condition-major-weakness"></div>
+					<div class="condition condition-weakness"></div>
+					<div class="condition condition-resistance"></div>
+					<div class="condition condition-major-resistance"></div>
+					<div class="condition condition-immunity"></div>
 				</div>
-				<hr class="separator">
-				<h2 class="tab-heading">Description</h2>
-				<p class="description"></p>
-				<hr class="separator">
-				<h2 class="tab-heading">Additional Details</h2>
-				<div class="additional additional-gender">
-					<span class="additional-label">Gender</span>
-					<span class="additional-value additional-male">
-						<svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 48 48">
-							<path fill="#2196F3" d="M30.793 4.186H34.793V26.228H30.793z" transform="rotate(44.992 32.795 15.209)"></path>
-							<path fill="#2196F3" d="M18 42L18 42c-3.206 0-6.219-1.248-8.485-3.515C7.248 36.219 6 33.205 6 30s1.248-6.219 3.515-8.485C11.781 19.248 14.794 18 18 18s6.219 1.248 8.485 3.515c4.68 4.679 4.68 12.292 0 16.971C24.218 40.752 21.205 42 18 42zM18 22c-2.137 0-4.146.832-5.657 2.343-3.119 3.119-3.119 8.195 0 11.314C13.854 37.168 15.862 38 18 38c2.137 0 4.146-.832 5.657-2.343 3.119-3.119 3.119-8.195 0-11.314C22.146 22.832 20.137 22 18 22zM25 6H42V10H25z"></path>
-							<path fill="#2196F3" d="M38 6H42V23H38z"></path>
-						</svg>
-						<span class="additional-male-value"></span>
-					</span>
-					<span class="additional-value additional-female">
-						<svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 48 48">
-							<path fill="#FF1744" d="M26,25.9c2.4-0.4,4.7-1.5,6.5-3.3c2.3-2.3,3.5-5.3,3.5-8.5c0-3.2-1.2-6.2-3.5-8.5c-2.3-2.3-5.3-3.5-8.5-3.5c-3.2,0-6.2,1.2-8.5,3.5l0,0c-2.3,2.3-3.5,5.3-3.5,8.5c0,5.9,4.3,10.9,10,11.8V34l-8,0l0,4l8,0v8h4v-8l8,0v-4l-8,0V25.9z M16,14.1c0-2.1,0.8-4.1,2.3-5.7c1.5-1.5,3.5-2.3,5.7-2.3c4.4,0,8,3.6,8,8c0,2.1-0.8,4.1-2.3,5.7c-1.5,1.5-3.5,2.3-5.7,2.3C19.6,22.1,16,18.5,16,14.1z"></path>
-						</svg>
-						<span class="additional-female-value"></span>
-					</span>
+				<div class="tab-content tab-moves">
+					<h2 class="tab-heading">Level Up</h2>
+					<div class="moves moves-level"></div>
+					<hr class="separator">
+					<h2 class="tab-heading">Move Tutor</h2>
+					<div class="moves moves-tutor"></div>
 				</div>
-				<div class="additional additional-species">
-					<span class="additional-label">Species</span>
-					<span class="additional-value"></span>
-				</div>
-				<div class="additional additional-weight">
-					<span class="additional-label">Weight</span>
-					<span class="additional-value"></span>
-				</div>
-				<div class="additional additional-height">
-					<span class="additional-label">Height</span>
-					<span class="additional-value"></span>
+				<div class="tab-content tab-evolution">
+					<h2 class="tab-heading">Evolution</h2>
 				</div>
 			</div>
-			<div class="tab-content tab-stats">
-				<h2 class="tab-heading">Base Stats</h2>
-				<div class="stats">
-					<div class="stat stat-hp">
-						<span class="stat-label">HP</span>
-						<span class="stat-value"></span>
-						<span class="stat-bar">
-							<span class="stat-bar-fill"></span>
-						</span>
-					</div>
-					<div class="stat stat-atk">
-						<span class="stat-label">ATK</span>
-						<span class="stat-value"></span>
-						<span class="stat-bar">
-							<span class="stat-bar-fill"></span>
-						</span>
-					</div>
-					<div class="stat stat-def">
-						<span class="stat-label">DEF</span>
-						<span class="stat-value"></span>
-						<span class="stat-bar">
-							<span class="stat-bar-fill"></span>
-						</span>
-					</div>
-					<div class="stat stat-spa">
-						<span class="stat-label">SPA</span>
-						<span class="stat-value"></span>
-						<span class="stat-bar">
-							<span class="stat-bar-fill"></span>
-						</span>
-					</div>
-					<div class="stat stat-spd">
-						<span class="stat-label">SPD</span>
-						<span class="stat-value"></span>
-						<span class="stat-bar">
-							<span class="stat-bar-fill"></span>
-						</span>
-					</div>
-					<div class="stat stat-spe">
-						<span class="stat-label">SPE</span>
-						<span class="stat-value"></span>
-						<span class="stat-bar">
-							<span class="stat-bar-fill"></span>
-						</span>
-					</div>
-					<div class="stat stat-total">
-						<span class="stat-label">Total</span>
-						<span class="stat-value"></span>
-					</div>
-				</div>
-				<hr class="separator">
-				<h2 class="tab-heading">Type Effectiveness</h2>
-				<div class="condition condition-major-weakness"></div>
-				<div class="condition condition-weakness"></div>
-				<div class="condition condition-resistance"></div>
-				<div class="condition condition-major-resistance"></div>
-				<div class="condition condition-immunity"></div>
-			</div>
-			<div class="tab-content tab-moves">
-				<h2 class="tab-heading">Level Up</h2>
-				<div class="moves moves-level"></div>
-				<hr class="separator">
-				<h2 class="tab-heading">Move Tutor</h2>
-				<div class="moves moves-tutor"></div>
-			</div>
-			<div class="tab-content tab-evolution">
-				<h2 class="tab-heading">Evolution</h2>
-			</div>
+
 		</div>
 
 

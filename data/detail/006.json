@@ -36,198 +36,78 @@
 	"immunity" : ["Electric"],
 	"moves_level" : [
 		{
-			"level" : "-",
-			"name" : "Growl",
-			"type" : "Neutral",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "100%",
-			"stamina" : "5",
-			"effect" : "Let out a growl that lowers the opponent(s)' Attack by one stage."
+			"id" : "6",
+			"level" : "-"
 		},
 		{
-			"level" : "-",
-			"name" : "Howl",
-			"type" : "Neutral",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "10",
-			"effect" : "Howl to increase the spirit, raising the user's Attack stat."
+			"id" : "7",
+			"level" : "-"
 		},
 		{
-			"level" : "-",
-			"name" : "Fire Fang",
-			"type" : "Fire",
-			"category" : "Physical",
-			"power" : "50",
-			"accuracy" : "90%",
-			"stamina" : "15",
-			"effect" : "Bite the opponent with flame-cloaked fangs. This move has a 20% chance to reduce the target's Defense stat and 10% chance to leave a burn."
+			"id" : "202",
+			"level" : "-"
 		},
 		{
-			"level" : "-",
-			"name" : "Glare",
-			"type" : "Dark",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "100%",
-			"stamina" : "10",
-			"effect" : "Frighten the target with a scary face to lower the target's Speed stat."
+			"id" : "905",
+			"level" : "-"
 		},
 		{
-			"level" : "-",
-			"name" : "Take Down",
-			"type" : "Neutral",
-			"category" : "Physical",
-			"power" : "60",
-			"accuracy" : "95%",
-			"stamina" : "15",
-			"effect" : "Recklessly slam into the opponent but also hurt the user by a quarter of the damage dealt. This move has a 20% chance of causing the target to flinch."
+			"id" : "15",
+			"level" : "-"
 		},
 		{
-			"level" : "-",
-			"name" : "Fiery Claw",
-			"type" : "Fire",
-			"category" : "Physical",
-			"power" : "60",
-			"accuracy" : "100%",
-			"stamina" : "15",
-			"effect" : "Slash the opponent with a blazing claw. This move has a 10% chance of leaving the target with a burn."
+			"id" : "203",
+			"level" : "-"
 		},
 		{
-			"level" : "Level 40",
-			"name" : "Ground Stomp",
-			"type" : "Earth",
-			"category" : "Physical",
-			"power" : "60",
-			"accuracy" : "95%",
-			"stamina" : "15",
-			"effect" : "Strongly stomp down on the ground to strike everything around the user, foes and allies. This move lowers the Speed stats of those hit."
+			"id" : "604",
+			"level" : "Level 40"
 		},
 		{
-			"level" : "Level 45",
-			"name" : "Battle Cry",
-			"type" : "Neutral",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "15",
-			"effect" : "Let out a powerful cry to uplift the spirit. This move raises the user's Attack stat and Defense stat."
+			"id" : "20",
+			"level" : "Level 45"
 		},
 		{
-			"level" : "Level 50",
-			"name" : "Rock Fall",
-			"type" : "Earth",
-			"category" : "Physical",
-			"power" : "60",
-			"accuracy" : "90%",
-			"stamina" : "15",
-			"effect" : "Hurl large boulders at the opponent(s) to inflict damage. This move has a 20% chance of causing the target to flinch."
+			"id" : "603",
+			"level" : "Level 50"
 		},
 		{
-			"level" : "Level 60",
-			"name" : "Flame Charge",
-			"type" : "Fire",
-			"category" : "Physical",
-			"power" : "50",
-			"accuracy" : "100%",
-			"stamina" : "20",
-			"effect" : "Charge at the opponent in a cloak of fire. Successful hit will raise the user's Attack stat."
+			"id" : "204",
+			"level" : "Level 60"
 		},
 		{
-			"level" : "Level 70",
-			"name" : "Earthquake",
-			"type" : "Earth",
-			"category" : "Physical",
-			"power" : "80",
-			"accuracy" : "100%",
-			"stamina" : "25",
-			"effect" : "Set off an earthquake that strikes everyone around the user, foes and allies."
+			"id" : "605",
+			"level" : "Level 70"
 		},
 		{
-			"level" : "Level 80",
-			"name" : "Raging Flame",
-			"type" : "Fire",
-			"category" : "Physical",
-			"power" : "80",
-			"accuracy" : "95%",
-			"stamina" : "25",
-			"effect" : "The user ignites itself and charge at the opponent. This move has a 20% chance of leaving the target with a burn but also hurts the user by a quarter of the damage dealt."
+			"id" : "205",
+			"level" : "Level 80"
 		}
 	],
 	"moves_tutor" : [
 		{
-			"name" : "Dodge",
-			"type" : "Neutral",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "10",
-			"effect" : "Dodge upcoming attack(s), but reduce success rate by 50% if used consecutively with any other evasion moves."
+			"id" : "1"
 		},
 		{
-			"name" : "Rest",
-			"type" : "Neutral",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "10",
-			"effect" : "Rest for 2 turns. Each turn restores the user's HP by 50% and Stamina by 25%. This move also removes all status condition."
+			"id" : "3"
 		},
 		{
-			"name" : "Rough Combat",
-			"type" : "Neutral",
-			"category" : "Physical",
-			"power" : "80",
-			"accuracy" : "100%",
-			"stamina" : "25",
-			"effect" : "Fight the opponent up close with a rough style. This move lowers the user's Defense if used in succession."
+			"id" : "16"
 		},
 		{
-			"name" : "Thunder Claw",
-			"type" : "Electric",
-			"category" : "Physical",
-			"power" : "60",
-			"accuracy" : "100%",
-			"stamina" : "15",
-			"effect" : "Slash the opponent with an electrified claw. This move has a 10% chance of leaving the target with paralysis."
+			"id" : "402"
 		},
 		{
-			"name" : "Sand Attack",
-			"type" : "Earth",
-			"category" : "Physical",
-			"power" : "10",
-			"accuracy" : "80%",
-			"stamina" : "5",
-			"effect" : "Hurl sand at the opponent, reducing the target's accuracy by one stage."
+			"id" : "601"
 		},
 		{
-			"name" : "Burrow",
-			"type" : "Earth",
-			"category" : "Physical",
-			"power" : "60",
-			"accuracy" : "90%",
-			"stamina" : "15",
-			"effect" : "Burrow into the ground and attack the next turn. The user becomes untargetable by all non-Earth typed moves during this turn."
+			"id" : "602"
 		},
 		{
-			"name" : "Iron Claw",
-			"type" : "Metal",
-			"category" : "Physical",
-			"power" : "60",
-			"accuracy" : "100%",
-			"stamina" : "15",
-			"effect" : "Slash the opponent with a harden claw. This move has a 20% chance of lowering the target's Defense stat."
+			"id" : "701"
 		},
 		{
-			"name" : "Shadow Claw",
-			"type" : "Dark",
-			"category" : "Physical",
-			"power" : "60",
-			"accuracy" : "100%",
-			"stamina" : "15",
-			"effect" : "Slash the opponent with a claw made from shadow. This move has a 10% critical hit chance."
+			"id" : "902"
 		}
 	]
 }]

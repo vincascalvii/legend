@@ -36,123 +36,51 @@
 	"immunity" : [],
 	"moves_level" : [
 		{
-			"level" : "-",
-			"name" : "Tackle",
-			"type" : "Neutral",
-			"category" : "Physical",
-			"power" : "20",
-			"accuracy" : "100%",
-			"stamina" : "5",
-			"effect" : "Charge at the opponent with a full-body tackle."
+			"id" : "5",
+			"level" : "-"
 		},
 		{
-			"level" : "-",
-			"name" : "Growl",
-			"type" : "Neutral",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "100%",
-			"stamina" : "5",
-			"effect" : "Let out a growl that lowers the opponent(s)' Attack by one stage."
+			"id" : "6",
+			"level" : "-"
 		},
 		{
-			"level" : "Level 5",
-			"name" : "Fire Ball",
-			"type" : "Fire",
-			"category" : "Special",
-			"power" : "30",
-			"accuracy" : "90%",
-			"stamina" : "10",
-			"effect" : "Blast a fire ball at the opponent."
+			"id" : "201",
+			"level" : "Level 5"
 		},
 		{
-			"level" : "Level 8",
-			"name" : "Bite",
-			"type" : "Neutral",
-			"category" : "Physical",
-			"power" : "40",
-			"accuracy" : "95%",
-			"stamina" : "10",
-			"effect" : "Bite the opponent with vicious fangs. This move has a 20% chance to reduce the target's Defense stat."
+			"id" : "11",
+			"level" : "Level 8"
 		},
 		{
-			"level" : "Level 10",
-			"name" : "Howl",
-			"type" : "Neutral",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "10",
-			"effect" : "Howl to increase the spirit, raising the user's Attack stat."
+			"id" : "7",
+			"level" : "Level 10"
 		},
 		{
-			"level" : "-",
-			"name" : "Fire Fang",
-			"type" : "Fire",
-			"category" : "Physical",
-			"power" : "50",
-			"accuracy" : "90%",
-			"stamina" : "15",
-			"effect" : "Bite the opponent with flame-cloaked fangs. This move has a 20% chance to reduce the target's Defense stat and 10% chance to leave a burn."
+			"id" : "202",
+			"level" : "-"
 		},
 		{
-			"level" : "Level 18",
-			"name" : "Headbutt",
-			"type" : "Neutral",
-			"category" : "Physical",
-			"power" : "40",
-			"accuracy" : "95%",
-			"stamina" : "10",
-			"effect" : "Recklessly headbutt the opponent that also hurt the user by a quarter of the damage dealt. This move also has a 20% chance of causing the target to flinch."
+			"id" : "14",
+			"level" : "Level 18"
 		},
 		{
-			"level" : "Level 25",
-			"name" : "Glare",
-			"type" : "Dark",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "100%",
-			"stamina" : "10",
-			"effect" : "Frighten the target with a scary face to lower the target's Speed stat."
+			"id" : "905",
+			"level" : "Level 25"
 		},
 		{
-			"level" : "Level 30",
-			"name" : "Take Down",
-			"type" : "Neutral",
-			"category" : "Physical",
-			"power" : "60",
-			"accuracy" : "95%",
-			"stamina" : "15",
-			"effect" : "Recklessly slam into the opponent but also hurt the user by a quarter of the damage dealt. This move has a 20% chance of causing the target to flinch."
+			"id" : "15",
+			"level" : "Level 30"
 		}
 	],
 	"moves_tutor" : [
 		{
-			"name" : "Dodge",
-			"type" : "Neutral",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "10",
-			"effect" : "Dodge upcoming attack(s), but reduce success rate by 50% if used consecutively with any other evasion moves."
+			"id" : "1"
 		},
 		{
-			"name" : "Rest",
-			"type" : "Neutral",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "10",
-			"effect" : "Rest for 2 turns. Each turn restores the user's HP by 50% and Stamina by 25%. This move also removes all status condition."
+			"id" : "3"
 		},
 		{
-			"name" : "Sand Attack",
-			"type" : "Earth",
-			"category" : "Physical",
-			"power" : "10",
-			"accuracy" : "80%",
-			"stamina" : "5",
-			"effect" : "Hurl sand at the opponent to lower the target's Accuracy."
+			"id" : "601"
 		}
 	]
 }]

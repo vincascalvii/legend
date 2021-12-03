@@ -36,206 +36,80 @@
 	"immunity" : ["Light"],
 	"moves_level" : [
 		{
-			"level" : "-",
-			"name" : "Accelerate",
-			"type" : "Neutral",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "10",
-			"effect" : "Accelerate to boost the user's Speed stat."
+			"id" : "9",
+			"level" : "-"
 		},
 		{
-			"level" : "-",
-			"name" : "Dodge",
-			"type" : "Neutral",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "10",
-			"effect" : "Dodge upcoming attack(s), but reduce success rate by 50% if used consecutively with any other evasion moves."
+			"id" : "1",
+			"level" : "-"
 		},
 		{
-			"level" : "-",
-			"name" : "Quick Strike",
-			"type" : "Neutral",
-			"category" : "Physical",
-			"power" : "40",
-			"accuracy" : "100%",
-			"stamina" : "15",
-			"effect" : "Lunges at the opponent quickly before the target can react. This move has a +1 priority."
+			"id" : "13",
+			"level" : "-"
 		},
 		{
-			"level" : "-",
-			"name" : "Stalk",
-			"type" : "Dark",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "100%",
-			"stamina" : "10",
-			"effect" : "Stalk the opponent, allowing the next move to have +1 priority and 50% critical hit chance."
+			"id" : "906",
+			"level" : "-"
 		},
 		{
-			"level" : "-",
-			"name" : "Fury Cutter",
-			"type" : "Nature",
-			"category" : "Physical",
-			"power" : "60",
-			"accuracy" : "95%",
-			"stamina" : "20",
-			"effect" : "Slash the opponent with scythe-like attack. Consecutive success uses of this move increases the power by 5 each time (Max. 30)."
+			"id" : "103",
+			"level" : "-"
 		},
 		{
-			"level" : "Level 40",
-			"name" : "Shadow Claw",
-			"type" : "Dark",
-			"category" : "Physical",
-			"power" : "60",
-			"accuracy" : "100%",
-			"stamina" : "15",
-			"effect" : "Slash the opponent with claws made from shadow. This move has a 10% critical hit chance."
+			"id" : "902",
+			"level" : "Level 40"
 		},
 		{
-			"level" : "Level 45",
-			"name" : "Quick Feet",
-			"type" : "Wind",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "15",
-			"effect" : "Use faster footwork to raise the user's Evasion stat."
+			"id" : "10",
+			"level" : "Level 45"
 		},
 		{
-			"level" : "Level 50",
-			"name" : "Shadow Sneak",
-			"type" : "Dark",
-			"category" : "Physical",
-			"power" : "60",
-			"accuracy" : "100%",
-			"stamina" : "15",
-			"effect" : "Sneak in the dark and attack the next turn. The user becomes untargetable by all non-Light typed moves during this turn."
+			"id" : "903",
+			"level" : "Level 50"
 		},
 		{
-			"level" : "Level 60",
-			"name" : "Deadly Blossom",
-			"type" : "Nature",
-			"category" : "Physical",
-			"power" : "70",
-			"accuracy" : "100%",
-			"stamina" : "20",
-			"effect" : "The user reacts quickly and uses its deadly tail to counter the enemy attack. This move has +2 priority but will fail if the opponent is not readying an attack."
+			"id" : "106",
+			"level" : "Level 60"
 		},
 		{
-			"level" : "Level 70",
-			"name" : "Phantom Force",
-			"type" : "Dark",
-			"category" : "Physical",
-			"power" : "80",
-			"accuracy" : "95%",
-			"stamina" : "25",
-			"effect" : "Surround the body with a swirl of dark energy then strike at the opponent. This move has 20% chance of lowering the target's Attack stat."
+			"id" : "904",
+			"level" : "Level 70"
 		},
 		{
-			"level" : "Level 80",
-			"name" : "Forest Glide",
-			"type" : "Nature",
-			"category" : "Physical",
-			"power" : "80",
-			"accuracy" : "95%",
-			"stamina" : "25",
-			"effect" : "Glide through the forest to strike at the opponent. If the battle takes place in Forest Terrain, this move has +1 priority."
+			"id" : "106",
+			"level" : "Level 80"
 		}
 	],
 	"moves_tutor" : [
 		{
-			"name" : "Rest",
-			"type" : "Neutral",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "10",
-			"effect" : "Rest for 2 turns. Each turn restores the user's HP by 50% and Stamina by 25%. This move also removes all status condition."
+			"id" : "3"
 		},
 		{
-			"name" : "Tail Slap",
-			"type" : "Neutral",
-			"category" : "Physical",
-			"power" : "40",
-			"accuracy" : "90%",
-			"stamina" : "10",
-			"effect" : "Slap the opponent with a tail. This move has a 20% chance of causing the target to flinch."
+			"id" : "12"
 		},
 		{
-			"name" : "Battle Dance",
-			"type" : "Neutral",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "15",
-			"effect" : "Uplift the fighting spirit with a battle dance. This move boosts the user's Attack stat and Speed stat."
+			"id" : "21"
 		},
 		{
-			"name" : "Grassy Blast",
-			"type" : "Nature",
-			"category" : "Special",
-			"power" : "70",
-			"accuracy" : "95%",
-			"stamina" : "20",
-			"effect" : "Draw power from nature and blast at the opponent. This move has a 20% chance to cause the target to flinch."
+			"id" : "104"
 		},
 		{
-			"name" : "Photosynthesis",
-			"type" : "Nature",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "20",
-			"effect" : "Restore the user's HP by 25%. During harsh sunlight, this move restores 50% instead."
+			"id" : "107"
 		},
 		{
-			"name" : "Pursuit",
-			"type" : "Dark",
-			"category" : "Physical",
-			"power" : "40",
-			"accuracy" : "75%",
-			"stamina" : "10",
-			"effect" : "Chase after the opponent and inflict double damage if the target switches out."
+			"id" : "901"
 		},
 		{
-			"name" : "Scavenge",
-			"type" : "Wind",
-			"category" : "Physical",
-			"power" : "40",
-			"accuracy" : "100%",
-			"stamina" : "10",
-			"effect" : "Swoop down and strike the opponent. This move has a 25% chance of stealing the opponent's item."
+			"id" : "501"
 		},
 		{
-			"name" : "Sand Attack",
-			"type" : "Earth",
-			"category" : "Physical",
-			"power" : "10",
-			"accuracy" : "80%",
-			"stamina" : "5",
-			"effect" : "Hurl sand at the opponent to lower the target's Accuracy."
+			"id" : "601"
 		},
 		{
-			"name" : "Iron Tail",
-			"type" : "Metal",
-			"category" : "Physical",
-			"power" : "60",
-			"accuracy" : "90%",
-			"stamina" : "15",
-			"effect" : "Slam the opponent with a steel-hard tail. This move has a 20% chance of reducing the target's Defense stat by one stage."
+			"id" : "702"
 		},
 		{
-			"name" : "Poison Tail",
-			"type" : "Toxic",
-			"category" : "Physical",
-			"power" : "60",
-			"accuracy" : "90%",
-			"stamina" : "15",
-			"effect" : "Hit the opponent with a poisonous tail. This move has a 10% chance of poisoning the target."
+			"id" : "1101"
 		}
 	]
 }]

@@ -36,141 +36,57 @@
 	"immunity" : ["Light"],
 	"moves_level" : [
 		{
-			"level" : "-",
-			"name" : "Growl",
-			"type" : "Neutral",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "100%",
-			"stamina" : "5",
-			"effect" : "Let out a growl that lowers the opponent(s)' Attack by one stage."
+			"id" : "6",
+			"level" : "-"
 		},
 		{
-			"level" : "-",
-			"name" : "Accelerate",
-			"type" : "Neutral",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "10",
-			"effect" : "Accelerate to boost the user's Speed stat."
+			"id" : "9",
+			"level" : "-"
 		},
 		{
-			"level" : "-",
-			"name" : "Dodge",
-			"type" : "Neutral",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "10",
-			"effect" : "Dodge upcoming attack(s), but reduce success rate by 50% if used consecutively with any other evasion moves."
+			"id" : "1",
+			"level" : "-"
 		},
 		{
-			"level" : "-",
-			"name" : "Leaf Razor",
-			"type" : "Nature",
-			"category" : "Physical",
-			"power" : "50",
-			"accuracy" : "90%",
-			"stamina" : "15",
-			"effect" : "Attack the opponent with razor sharp leaves. This move has 10% critical hit chance."
+			"id" : "102",
+			"level" : "-"
 		},
 		{
-			"level" : "-",
-			"name" : "Quick Strike",
-			"type" : "Neutral",
-			"category" : "Physical",
-			"power" : "40",
-			"accuracy" : "100%",
-			"stamina" : "15",
-			"effect" : "Lunges at the opponent quickly before the target can react. This move has a +1 priority."
+			"id" : "13",
+			"level" : "-"
 		},
 		{
-			"level" : "Level 25",
-			"name" : "Stalk",
-			"type" : "Dark",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "100%",
-			"stamina" : "10",
-			"effect" : "Stalk the opponent, allowing the next move to have +1 priority and 50% critical hit chance."
+			"id" : "906",
+			"level" : "Level 25"
 		},
 		{
-			"level" : "Level 30",
-			"name" : "Copycat",
-			"type" : "Neutral",
-			"category" : "Other",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "15",
-			"effect" : "Copy the move used immediately before the user. If no moves have been used, this move will fail."
+			"id" : "17",
+			"level" : "Level 30"
 		},
 		{
-			"level" : "Level 35",
-			"name" : "Fury Cutter",
-			"type" : "Nature",
-			"category" : "Physical",
-			"power" : "60",
-			"accuracy" : "95%",
-			"stamina" : "20",
-			"effect" : "Slash the opponent with scythe-like attack. Consecutive success uses of this move increases the power by 5 each time (Max. 30)."
+			"id" : "103",
+			"level" : "Level 35"
 		},
 		{
-			"level" : "Level 40",
-			"name" : "Shadow Claw",
-			"type" : "Dark",
-			"category" : "Physical",
-			"power" : "60",
-			"accuracy" : "100%",
-			"stamina" : "15",
-			"effect" : "Slash the opponent with claws made from shadow. This move has a 10% critical hit chance."
+			"id" : "902",
+			"level" : "Level 40"
 		}
 	],
 	"moves_tutor" : [
 		{
-			"name" : "Rest",
-			"type" : "Neutral",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "10",
-			"effect" : "Rest for 2 turns. Each turn restores the user's HP by 50% and Stamina by 25%. This move also removes all status condition."
+			"id" : "3"
 		},
 		{
-			"name" : "Tail Slap",
-			"type" : "Neutral",
-			"category" : "Physical",
-			"power" : "40",
-			"accuracy" : "90%",
-			"stamina" : "10",
-			"effect" : "Slap the opponent with a tail. This move has a 20% chance of causing the target to flinch."
+			"id" : "12"
 		},
 		{
-			"name" : "Photosynthesis",
-			"type" : "Nature",
-			"category" : "Support",
-			"power" : "-",
-			"accuracy" : "-",
-			"stamina" : "20",
-			"effect" : "Restore the user's HP by 25%. During harsh sunlight, this move restores 50% instead."
+			"id" : "107"
 		},
 		{
-			"name" : "Pursuit",
-			"type" : "Dark",
-			"category" : "Physical",
-			"power" : "40",
-			"accuracy" : "75%",
-			"stamina" : "10",
-			"effect" : "Chase after the opponent and inflict double damage if the target switches out."
+			"id" : "901"
 		},
 		{
-			"name" : "Sand Attack",
-			"type" : "Earth",
-			"category" : "Physical",
-			"power" : "10",
-			"accuracy" : "80%",
-			"stamina" : "5",
-			"effect" : "Hurl sand at the opponent to lower the target's Accuracy."
+			"id" : "601"
 		}
 	]
 }]
