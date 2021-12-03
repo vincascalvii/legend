@@ -309,6 +309,7 @@ function getParameter() {
 	// Set first load as false first
 	var loaded = false;
 
+	console.log(shinyTrigger);
 	console.log('about to add click event');
 
 	// Add "click" event to the button
