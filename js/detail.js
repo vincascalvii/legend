@@ -36,7 +36,18 @@ if ( no != '' && no != null ) {
 
 		// Populate image
 		document.querySelector('.image').innerHTML =
-			'<img src="/img/pokemon/' + no + '/full-300x300.png" alt="' + data[0]['name'] + '">';
+			'<picture>' +
+			'<source data-srcset="/legend/img/pokemon/' + 
+			no + '/full-300x300.webp 1x, /legend/img/pokemon/' +
+			no + '/full-600x600.webp 2x, /legend/img/pokemon/' +
+			no + '/full-900x900.webp 3x" type="image/webp">' +
+			'<img data-src="/legend/img/pokemon/' + 
+			no + '/full-300x300.png 1x, /legend/img/pokemon/' +
+			no + '/full-600x600.png 2x, /legend/img/pokemon/' +
+			no + '/full-900x900.png 3x" ' +
+			'src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"' + 
+			' class="lazyload" alt="' + data[0]['name'] + '">' +
+			'</picture>';
 
 		// Populate abilities
 		document.querySelector('.ability-1 .ability-name').innerHTML = data[0]['abilities'][0]['name'];
