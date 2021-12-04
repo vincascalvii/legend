@@ -144,6 +144,11 @@
 .evo-block {
 	display: flex;
 	align-items: center;
+	margin-bottom: 30px;
+}
+
+.evo-block:last-child {
+	margin-bottom: 0;
 }
 
 .evo-block .evo-thumb {

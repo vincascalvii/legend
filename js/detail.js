@@ -224,29 +224,33 @@ if ( no != '' && no != null ) {
 		});
 
 		// Populate evolution
-		var evolutionContainer = document.querySelector('.evolution');
+		var evolution = document.querySelector('.evolution');
 		if ( data[0]['evolution'].length > 0 ) {
 			for ( var evo = 0; evo < data[0]['evolution'].length; evo++ ) {
-				var evolution = document.createElement('div');
-			    evolution.innerHTML = '<a href="/legend/detail?no=' + data[0]['evolution'][evo]['id'] +
-				'" class="evo-block" aria-label="' + data[0]['name'] + ' link">' +
-				'<picture>' +
+			    evolution.innerHTML += '<a href="/legend/detail?no=' + 
+			    data[0]['evolution'][evo]['id'] + '" class="evo-block" aria-label="' + 
+			    data[0]['name'] + ' link">' + '<picture>' +
 				'<source data-srcset="/legend/img/pokemon/' + 
-				no + '/thumb-' + data[0]['evolution'][evo]['image_1'] + '.webp 1x, /legend/img/pokemon/' +
-				no + '/thumb-' + data[0]['evolution'][evo]['image_2'] + '.webp 2x, /legend/img/pokemon/' +
-				no + '/thumb-' + data[0]['evolution'][evo]['image_3'] + '.webp 3x" ' +
+				data[0]['evolution'][evo]['id'] + '/thumb-' + 
+				data[0]['evolution'][evo]['image_1'] + '.webp 1x, /legend/img/pokemon/' +
+				data[0]['evolution'][evo]['id'] + '/thumb-' + 
+				data[0]['evolution'][evo]['image_2'] + '.webp 2x, /legend/img/pokemon/' +
+				data[0]['evolution'][evo]['id'] + '/thumb-' + 
+				data[0]['evolution'][evo]['image_3'] + '.webp 3x" ' +
 				' type="image/webp">' +
 				'<source data-srcset="/legend/img/pokemon/' + 
-				no + '/thumb-' + data[0]['evolution'][evo]['image_1'] + '.png 1x, /legend/img/pokemon/' +
-				no + '/thumb-' + data[0]['evolution'][evo]['image_2'] + '.png 2x, /legend/img/pokemon/' +
-				no + '/thumb-' + data[0]['evolution'][evo]['image_3'] + '.png 3x" ' +
+				data[0]['evolution'][evo]['id'] + '/thumb-' + 
+				data[0]['evolution'][evo]['image_1'] + '.png 1x, /legend/img/pokemon/' +
+				data[0]['evolution'][evo]['id'] + '/thumb-' + 
+				data[0]['evolution'][evo]['image_2'] + '.png 2x, /legend/img/pokemon/' +
+				data[0]['evolution'][evo]['id'] + '/thumb-' + 
+				data[0]['evolution'][evo]['image_3'] + '.png 3x" ' +
 				' type="image/png">' +
 				'<img data-src="/legend/img/pokemon/' + no + '/thumb-' +
 				data[0]['evolution'][evo]['image_1'] + '.png" ' + 
 				'src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"' + 
 				' class="lazyload evo-thumb" alt="' + data[0]['name'] + ' evolution thumbnail">' +
 				'</picture><p class="evo-req">' + data[0]['evolution'][evo]['req'] + '</p></a>';
-				evolutionContainer.appendChild(evolution);
 			}
 		}
 
