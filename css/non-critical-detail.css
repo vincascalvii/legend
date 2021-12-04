@@ -141,6 +141,22 @@
 	margin: 40px -30px;
 }
 
+.evo-block {
+	display: flex;
+	align-items: center;
+}
+
+.evo-block .evo-thumb {
+	height: 120px;
+	margin-right: 20px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+}
+
+.evo-block .evo-req {
+	color: #727272;
+}
+
 .fade {
 	-webkit-animation: fadein .2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein .2s; /* Firefox < 16 */

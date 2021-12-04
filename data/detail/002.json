@@ -34,6 +34,29 @@
 	"resistance" : ["Water", "Electric", "Earth" ],
 	"major_resistance" : [],
 	"immunity" : ["Light"],
+	"evolution" : [
+		{
+			"id" : "001",
+			"req" : "Base",
+			"image_1" : "120x120",
+			"image_2" : "240x240",
+			"image_3" : "360x360"
+		},
+		{
+			"id" : "002",
+			"req" : "Level 16",
+			"image_1" : "120x120",
+			"image_2" : "240x240",
+			"image_3" : "360x360"
+		},
+		{
+			"id" : "003",
+			"req" : "Level 36",
+			"image_1" : "160x120",
+			"image_2" : "320x240",
+			"image_3" : "480x360"
+		}
+	],
 	"moves_level" : [
 		{
 			"id" : "6",

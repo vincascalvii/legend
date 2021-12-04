@@ -180,6 +180,7 @@ if ( no != '' && no != null ) {
 		.then( function(moves) {
 			
 			// Populate moveset by level up
+			moveLevelContainer = document.querySelector('.moves-level');
 			for ( var ml = 0; ml < data[0]['moves_level'].length; ml++ ) {
 				var id = data[0]['moves_level'][ml]['id'];
 				var level = data[0]['moves_level'][ml]['level'];
@@ -196,10 +197,11 @@ if ( no != '' && no != null ) {
 						moves[0][id]['accuracy'] + '</span><span class="move-stamina">STA: ' +
 						moves[0][id]['stamina'] + '</span></p>' +
 						'<p class="move-effect">' + moves[0][id]['effect'] + '</p>';
-				document.querySelector('.moves-level').appendChild(moveLevel);
+				moveLevelContainer.appendChild(moveLevel);
 			}
 
 			// Populate moveset by tutor
+			var moveTutorContainer = document.querySelector('.moves-tutor');
 			for ( var mt = 0; mt < data[0]['moves_tutor'].length; mt++ ) {
 				var id = data[0]['moves_tutor'][mt]['id'];
 				var moveTutor = document.createElement('div');
@@ -214,12 +216,39 @@ if ( no != '' && no != null ) {
 						moves[0][id]['accuracy'] + '</span><span class="move-stamina">STA: ' +
 						moves[0][id]['stamina'] + '</span></p>' +
 						'<p class="move-effect">' + moves[0][id]['effect'] + '</p>';
-				document.querySelector('.moves-tutor').appendChild(moveTutor);
+				moveTutorContainer.appendChild(moveTutor);
 			}
 		})
 		.catch( function(error) {
 			console.log('Fetch error: ', error);
 		});
+
+		// Populate evolution
+		var evolutionContainer = document.querySelector('.evolution');
+		if ( data[0]['evolution'].length > 0 ) {
+			for ( var evo = 0; evo < data[0]['evolution'].length; evo++ ) {
+				var evolution = document.createElement('div');
+			    evolution.innerHTML = '<a href="/legend/detail?no=' + data[0]['evolution'][evo]['id'] +
+				'" class="evo-block" aria-label="' + data[0]['name'] + ' link">' +
+				'<picture>' +
+				'<source data-srcset="/legend/img/pokemon/' + 
+				no + '/thumb-' + data[0]['evolution'][evo]['image_1'] + '.webp 1x, /legend/img/pokemon/' +
+				no + '/thumb-' + data[0]['evolution'][evo]['image_2'] + '.webp 2x, /legend/img/pokemon/' +
+				no + '/thumb-' + data[0]['evolution'][evo]['image_3'] + '.webp 3x" ' +
+				' type="image/webp">' +
+				'<source data-srcset="/legend/img/pokemon/' + 
+				no + '/thumb-' + data[0]['evolution'][evo]['image_1'] + '.png 1x, /legend/img/pokemon/' +
+				no + '/thumb-' + data[0]['evolution'][evo]['image_2'] + '.png 2x, /legend/img/pokemon/' +
+				no + '/thumb-' + data[0]['evolution'][evo]['image_3'] + '.png 3x" ' +
+				' type="image/png">' +
+				'<img data-src="/legend/img/pokemon/' + no + '/thumb-' +
+				data[0]['evolution'][evo]['image_1'] + '.png" ' + 
+				'src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"' + 
+				' class="lazyload evo-thumb" alt="' + data[0]['name'] + ' evolution thumbnail">' +
+				'</picture><p class="evo-req">' + data[0]['evolution'][evo]['req'] + '</p></a>';
+				evolutionContainer.appendChild(evolution);
+			}
+		}
 
 	})
 	.catch( function(error) {
