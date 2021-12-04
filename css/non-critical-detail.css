@@ -152,6 +152,8 @@
 }
 
 .evo-block .evo-thumb {
+	object-fit: cover;
+	width: 120px;
 	height: 120px;
 	margin-right: 20px;
 	border: 1px solid #ddd;
