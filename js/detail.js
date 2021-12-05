@@ -255,9 +255,9 @@ if ( no != '' && no != null ) {
 		}
 
 		// Manipulate the page title, description along with their OG and Twitter meta
-		var metaTitle = data[0]['name'] + ' - Pok&#233;mon Design - Calvin Lam';
+		var metaTitle = data[0]['name'] + ' - Pokémon Design - Calvin Lam';
 		var metaDesc = 'Explore all about ' + data[0]['name'] +
-			' from Newzar region in Pok&#233;mon Storm and Pok&#233;mon Quake.';
+			' from Newzar region in Pokémon Storm and Pokémon Quake.';
 		document.title = metaTitle;
 		document.querySelector('meta[name="description"]').content = metaDesc;
 		document.querySelector('meta[property="og:title"]').content = metaTitle;
