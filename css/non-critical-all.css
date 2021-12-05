@@ -8,12 +8,6 @@
 	display: flex;
 }
 
-.pokedex .block .info,
-.pokedex .block .image,
-.pokedex .block .background {
-    display: block;
-}
-
 .pokedex .block:hover {
 	border-color:#aaa
 }
