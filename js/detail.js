@@ -254,6 +254,17 @@ if ( no != '' && no != null ) {
 			}
 		}
 
+		// Manipulate the page title, description along with their OG and Twitter meta
+		var metaTitle = data[0]['name'] + ' - Pok&#233;mon Design - Calvin Lam';
+		var metaDesc = 'Explore all about ' + data[0]['name'] +
+			' from Newzar region in Pok&#233;mon Storm and Pok&#233;mon Quake.';
+		document.title = metaTitle;
+		document.querySelector('meta[name="description"]').content = metaDesc;
+		document.querySelector('meta[property="og:title"]').content = metaTitle;
+		document.querySelector('meta[property="og:description"]').content = metaDesc;
+		document.querySelector('meta[name="twitter:title"]').content = metaTitle;
+		document.querySelector('meta[name="twitter:description"]').content = metaDesc;
+
 	})
 	.catch( function(error) {
 		console.log('Fetch error: ', error);
@@ -403,26 +414,16 @@ function getParameter() {
 
 (function() {
 
-	// Get the pokemon name
-	var name = document.querySelector('.header .name').innerText;
-
 	// Prepare the image, url, title and description
 	var image = '/legend/img/pokemon/' + no + '/full-900x900.png';
 	var url = 'https://vincascalvii.github.io/legend/detail/?no=' + no;
-	var title = name + ' - Pok&#233;mon Design - Calvin Lam';
-	var description = 'Explore all about ' + name +
-		' from Newzar region in Pok&#233;mon Storm and Pok&#233;mon Quake.';
 
 	// Update OpenGraph info
 	document.querySelector('meta[property="og:image"]').content = image;
 	document.querySelector('meta[property="og:url"]').content = url;
-	document.querySelector('meta[property="og:title"]').content = title;
-	document.querySelector('meta[property="og:description"]').content = description;
 
 	// Update Twitter card info
 	document.querySelector('meta[name="twitter:image"]').content = image;
 	document.querySelector('meta[name="twitter:url"]').content = url;
-	document.querySelector('meta[name="twitter:title"]').content = title;
-	document.querySelector('meta[name="twitter:description"]').content = description;
 
 })();

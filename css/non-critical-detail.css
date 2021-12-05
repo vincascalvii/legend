@@ -200,3 +200,29 @@
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+
+@media only screen and (min-width: 768px) {
+
+	.evolution {
+		display: flex;
+		align-items: center;
+	}
+
+	.evo-block {
+		flex-direction: column;
+		margin: 0 40px 0 0;
+	}
+
+	.evo-block .evo-thumb {
+		margin-right: 0;
+	}
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+	.info .tabs .tab:hover {
+		color: #3f78ff;
+	}
+
+}
