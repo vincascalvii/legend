@@ -49,31 +49,36 @@ fetch('/legend/data/all/all.json')
 
 		// Populate the thumbnail
 		var image = document.createElement('picture');
-			image.innerHTML = '<source srcset="/legend/img/pokemon/' + data[i]['number'] 
-							+ '/thumb-' + data[i]['image_1'] + '.webp 1x, '
-							+ '/legend/img/pokemon/' + data[i]['number'] 
-							+ '/thumb-' + data[i]['image_2'] + '.webp 2x, '
-							+ '/legend/img/pokemon/' + data[i]['number'] 
-							+ '/thumb-' + data[i]['image_3'] + '.webp 3x" type="image/webp">'
-							+ '<img src="/legend/img/pokemon/' + data[i]['number'] 
-							+ '/thumb-' + data[i]['image_1'] + '.png 1x, '
-							+ '/legend/img/pokemon/' + data[i]['number'] 
-							+ '/thumb-' + data[i]['image_2'] + '.png 2x, '
-							+ '/legend/img/pokemon/' + data[i]['number'] 
-							+ '/thumb-' + data[i]['image_3'] + '.png 3x" class="image '
-							+ 'image-' + data[i]['image_1'] + '" alt="' 
-							+ data[i]['name'] + '">';
+			image.innerHTML = 
+				'<source data-srcset="/legend/img/pokemon/' + data[i]['number'] + '/thumb-' + 
+				data[i]['image_1'] + '.webp 1x, ' + 
+				'/legend/img/pokemon/' + data[i]['number'] + '/thumb-' +
+				data[i]['image_2'] + '.webp 2x, ' + 
+				'/legend/img/pokemon/' + data[i]['number'] + '/thumb-' + 
+				data[i]['image_3'] + '.webp 3x" type="image/webp">' + 
+				'<source data-srcset="/legend/img/pokemon/' + data[i]['number'] + '/thumb-' 
+				+ data[i]['image_1'] + '.png 1x, ' + 
+				'/legend/img/pokemon/' + data[i]['number'] + '/thumb-' + 
+				data[i]['image_2'] + '.png 2x, ' + 
+				'/legend/img/pokemon/' + data[i]['number'] + '/thumb-' + 
+				data[i]['image_3'] + '.png 3x" type="image/png">' +
+				'<img data-src="/legend/img/pokemon/' + data[i]['number'] + '/thumb-' 
+				+ data[i]['image_1'] + '.png" class="lazyload image ' + 
+				'image-' + data[i]['image_1'] + '" alt="' + data[i]['name'] + '">';
 
 		// Populate the block background
 		var background = document.createElement('picture');
-			background.innerHTML = '<source srcset="/legend/img/others/pokedex-corner-200x200.webp 1x, '
-								 + '/legend/img/others/pokedex-corner-400x400.webp 2x, '
-								 + '/legend/img/others/pokedex-corner-600x600.webp 3x" '
-								 + 'type="image/webp">'
-								 + '<img src="/legend/img/others/pokedex-corner-200x200.png 1x, '
-								 + '/legend/img/others/pokedex-corner-400x400.png 2x, '
-								 + '/legend/img/others/pokedex-corner-600x600.png 3x" '
-							 	 + 'class="background" alt="Pokeball background">';
+			background.innerHTML = 
+				'<source data-srcset="/legend/img/others/pokedex-corner-200x200.webp 1x, ' + 
+				'/legend/img/others/pokedex-corner-400x400.webp 2x, ' + 
+				'/legend/img/others/pokedex-corner-600x600.webp 3x" ' + 
+				'type="image/webp">' + 
+				'<source data-srcset="/legend/img/others/pokedex-corner-200x200.png 1x, ' + 
+				'/legend/img/others/pokedex-corner-400x400.png 2x, ' + 
+				'/legend/img/others/pokedex-corner-600x600.png 3x" ' + 
+				'type="image/png><img data-src="/legend/img/others/pokedex-corner-200x200.png" ' +
+				'src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" ' +
+				'class="background lazyload" alt="Pokeball background">';
 
 		// Append all the above to the pokemon block and add link to detail page
 		var block = document.createElement('a');
