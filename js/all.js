@@ -78,7 +78,8 @@ fetch('/legend/data/all/all.json')
 		// Append all the above to the pokemon block and add link to detail page
 		var block = document.createElement('a');
 			block.href = '/legend/detail?no=' + data[i]['number'];
-			block.classList.add('block', 'active');
+			block.classList.add('block');
+			block.classList.add('active');
 			block.setAttribute('aria-label', data[i]['name']);
 			block.appendChild(info);
 			block.appendChild(image);
