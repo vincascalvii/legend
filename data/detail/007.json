@@ -21,13 +21,13 @@
 	"weight" : "10.2kg",
 	"height" : "0.5m",
 	"stats" : {
-		"hp" : "42",
-		"atk" : "33",
-		"def" : "39",
-		"spa" : "33",
-		"spd" : "39",
-		"spe" : "14",
-		"total" : "200"
+		"hp" : "62",
+		"atk" : "48",
+		"def" : "58",
+		"spa" : "48",
+		"spd" : "58",
+		"spe" : "26",
+		"total" : "300"
 	},
 	"major_weakness" : [],
 	"weakness" : ["Nature", "Electric", "Toxic"],
