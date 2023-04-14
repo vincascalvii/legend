@@ -1,0 +1,99 @@
+[{
+	"number" : "011",
+	"name" : "Palmahorn",
+	"types" : ["Neutral", ""],
+	"abilities" : [
+		{
+			"name" : "Gluttony",
+			"desc" : "Make the possessor eat a held Berry when its HP drops to half or less."
+		},
+		{
+			"name" : "Mega Strength (Secret)",
+			"desc" : "Increase the possessor's Attack stat by 50%."
+		}
+	],
+	"description" : "Tapahorn are very harmless Pokémon who love to stay around humans. Their ears are very sensitive and can hear even the smallest sound from faraway, while their horns are used for self-defence. Their favourite food is berry.",
+	"gender" : {
+		"male" : "50%",
+		"female" : "50%"
+	},
+	"species" : "Mouse",
+	"weight" : "90kg",
+	"height" : "1.9m",
+	"stats" : {
+		"hp" : "80",
+		"atk" : "57",
+		"def" : "50",
+		"spa" : "34",
+		"spd" : "50",
+		"spe" : "49",
+		"total" : "320"
+	},
+	"major_weakness" : [],
+	"weakness" : ["Dark"],
+	"resistance" : [],
+	"major_resistance" : [],
+	"immunity" : [],
+	"evolution" : [
+		{
+			"id" : "010",
+			"req" : "Base",
+			"image_1" : "120x120",
+			"image_2" : "240x240",
+			"image_3" : "360x360"
+		},
+		{
+			"id" : "011",
+			"req" : "Level 20 + Eating a Berry",
+			"image_1" : "120x120",
+			"image_2" : "240x240",
+			"image_3" : "360x360"
+		}
+	],
+	"moves_level" : [
+		{
+			"id" : "601",
+			"level" : "-"
+		},
+		{
+			"id" : "14",
+			"level" : "-"
+		},
+		{
+			"id" : "703",
+			"level" : "25"
+		},
+		{
+			"id" : "15",
+			"level" : "30"
+		},
+		{
+			"id" : "20",
+			"level" : "40"
+		},
+		{
+			"id" : "16",
+			"level" : "50"
+		},
+	],
+	"moves_tutor" : [
+		{
+			"id" : "907"
+		},
+		{
+			"id" : "3"
+		},
+		{
+			"id" : "602"
+		},
+		{
+			"id" : "207"
+		},
+		{
+			"id" : "403"
+		},
+		{
+			"id" : "803"
+		}
+	]
+}]

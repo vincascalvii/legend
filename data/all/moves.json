@@ -153,22 +153,22 @@
 		"effect" : "Copy the move used immediately before the user. If no moves have been used, this move will fail."
 	},
 	"18" : {
-		"name" : "Barrier",
-		"type" : "Neutral",
-		"category" : "Support",
-		"power" : "-",
-		"accuracy" : "-",
-		"stamina" : "20",
-		"effect" : "Create a barrier to reduce damage from physical attacks for 5 turns."
-	},
-	"19" : {
 		"name" : "Shield",
 		"type" : "Neutral",
 		"category" : "Support",
 		"power" : "-",
 		"accuracy" : "-",
 		"stamina" : "20",
-		"effect" : "Create a shield to reduce damage from special attacks for 5 turns."
+		"effect" : "Create a shield to reduce damage from physical attacks for 5 turns."
+	},
+	"19" : {
+		"name" : "Barrier",
+		"type" : "Neutral",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "20",
+		"effect" : "Create a barrier to reduce damage from special attacks for 5 turns."
 	},
 	"20" : {
 		"name" : "Battle Cry",
@@ -260,6 +260,33 @@
 		"stamina" : "20",
 		"effect" : "Restore the user's HP by 25%. During harsh sunlight, this move restores 50% instead."
 	},
+	"108" : {
+		"name" : "Foliate",
+		"type" : "Nature",
+		"category" : "Special",
+		"power" : "80",
+		"accuracy" : "100%",
+		"stamina" : "25",
+		"effect" : "Sweep the area around the user with a leaf storm, hitting both foes and allies."
+	},
+	"109" : {
+		"name" : "Energy Drain",
+		"type" : "Nature",
+		"category" : "Special",
+		"power" : "50",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Drain the opponent's HP, and restore half of that to the user."
+	},
+	"110" : {
+		"name" : "Sapping Seed",
+		"type" : "Nature",
+		"category" : "Status",
+		"power" : "-",
+		"accuracy" : "100%",
+		"stamina" : "25",
+		"effect" : "Plant a seed on the opponent. It steals some HP from the target every turn."
+	},
 	"201" : {
 		"name" : "Fire Ball",
 		"type" : "Fire",
@@ -305,6 +332,24 @@
 		"accuracy" : "95%",
 		"stamina" : "25",
 		"effect" : "The user ignites itself and charge at the opponent. This move has a 20% chance of leaving the target with a burn but also hurts the user by a quarter of the damage dealt."
+	},
+	"206" : {
+		"name" : "Fire Breath",
+		"type" : "Fire",
+		"category" : "Special",
+		"power" : "70",
+		"accuracy" : "100%",
+		"stamina" : "20",
+		"effect" : "Breathe out a wave of fire at the opponent. This move has a 10% chance of leaving the target with a burn."
+	},
+	"207" : {
+		"name" : "Fire Punch",
+		"type" : "Fire",
+		"category" : "Physical",
+		"power" : "60",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Punch the opponent with a flaming first. This move has a 10% chance of leaving the target with a burn."
 	},
 	"301" : {
 		"name" : "Water Gun",
@@ -379,7 +424,7 @@
 		"effect" : "Create a water shield to surround the body, protecting the user from the next damaging move(s). If used successfully, this move raises the user's Defense or Special Defense stat based on the attack category, but reduce success rate by 50% if used consecutively with any other evasion moves."
 	},
 	"401" : {
-		"name" : "Electric Fang",
+		"name" : "Thunder Fang",
 		"type" : "Electric",
 		"category" : "Physical",
 		"power" : "50",
@@ -396,6 +441,78 @@
 		"stamina" : "15",
 		"effect" : "Slash the opponent with an electrified claw. This move has a 10% chance of leaving the target with paralysis."
 	},
+	"403" : {
+		"name" : "Thunder Punch",
+		"type" : "Electric",
+		"category" : "Physical",
+		"power" : "60",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Punch the opponent with an electrified first. This move has a 10% chance of leaving the target with paralysis."
+	},
+	"404" : {
+		"name" : "Zap",
+		"type" : "Electric",
+		"category" : "Physical",
+		"power" : "30",
+		"accuracy" : "90%",
+		"stamina" : "10",
+		"effect" : "Surround the body with electric and zap the opponent."
+	},
+	"405" : {
+		"name" : "Jolt",
+		"type" : "Electric",
+		"category" : "Special",
+		"power" : "30",
+		"accuracy" : "90%",
+		"stamina" : "10",
+		"effect" : "Attack the opponent with a jolt of electricity."
+	},
+	"406" : {
+		"name" : "Shock Wave",
+		"type" : "Electric",
+		"category" : "Special",
+		"power" : "50",
+		"accuracy" : "90%",
+		"stamina" : "15",
+		"effect" : "Strike the opponent with a wave of electricity. This move has a 10% chance of leaving the target with paralysis."
+	},
+	"407" : {
+		"name" : "Thunder Bolt",
+		"type" : "Electric",
+		"category" : "Special",
+		"power" : "70",
+		"accuracy" : "100%",
+		"stamina" : "20",
+		"effect" : "Summon a strong electric bolt to strike at the opponent. This move has a 10% chance of leaving the target with paralysis."
+	},
+	"408" : {
+		"name" : "Discharge",
+		"type" : "Electric",
+		"category" : "Special",
+		"power" : "80",
+		"accuracy" : "100%",
+		"stamina" : "25",
+		"effect" : "Strike everything around the user by letting loose a flare of electricity."
+	},
+	"409" : {
+		"name" : "Lightning Leap",
+		"type" : "Electric",
+		"category" : "Physical",
+		"power" : "40",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Leap at the opponent like a quick zap, then switch place with an ally waiting in party."
+	},
+	"410" : {
+		"name" : "Static Stun",
+		"type" : "Electric",
+		"category" : "Status",
+		"power" : "-",
+		"accuracy" : "90%",
+		"stamina" : "10",
+		"effect" : "Launch a weak jolt of electricity that paralyses the opponent."
+	},
 	"501" : {
 		"name" : "Scavenge",
 		"type" : "Wind",
@@ -404,6 +521,69 @@
 		"accuracy" : "100%",
 		"stamina" : "10",
 		"effect" : "Swoop down and strike the opponent. This move has a 25% chance of stealing the opponent's item."
+	},
+	"502" : {
+		"name" : "Peck",
+		"type" : "Wind",
+		"category" : "Physical",
+		"power" : "30",
+		"accuracy" : "90%",
+		"stamina" : "10",
+		"effect" : "Jab the target with a sharply pointed beak."
+	},
+	"503" : {
+		"name" : "Air Blade",
+		"type" : "Wind",
+		"category" : "Special",
+		"power" : "30",
+		"accuracy" : "90%",
+		"stamina" : "10",
+		"effect" : "Attack the opponent with a blade of air."
+	},
+	"504" : {
+		"name" : "Tailwind",
+		"type" : "Wind",
+		"category" : "Status",
+		"power" : "-",
+		"accuracy" : "100%",
+		"stamina" : "20",
+		"effect" : "Whip up a turbulent whirlwind that boost the Speed stats of itself and its allies for 4 turns."
+	},
+	"505" : {
+		"name" : "Aero Blast",
+		"type" : "Wind",
+		"category" : "Special",
+		"power" : "70",
+		"accuracy" : "100%",
+		"stamina" : "20",
+		"effect" : "Attack the opponent with fierce wind. This move has a 10% chance of leaving the target with confusion."
+	},
+	"506" : {
+		"name" : "Cyclone",
+		"type" : "Wind",
+		"category" : "Special",
+		"power" : "80",
+		"accuracy" : "80%",
+		"stamina" : "20",
+		"effect" : "Wrap the opponent in a powerful storm. This move will trap the opponent and deal 1/8 of the target's maximum HP per turn."
+	},
+	"507" : {
+		"name" : "Hurricane",
+		"type" : "Wind",
+		"category" : "Special",
+		"power" : "80",
+		"accuracy" : "100%",
+		"stamina" : "25",
+		"effect" : "Stir up a hurricane to attack the surrounding area, including foes and allies."
+	},
+	"508" : {
+		"name" : "Sky Dive",
+		"type" : "Wind",
+		"category" : "Physical",
+		"power" : "80",
+		"accuracy" : "100%",
+		"stamina" : "20",
+		"effect" : "Plummet down onto the opponent below and crash into it. This move deals 25% recoil damage to the user."
 	},
 	"601" : {
 		"name" : "Sand Attack",
@@ -531,6 +711,15 @@
 		"stamina" : "20",
 		"effect" : "Shoot a beam of frosty ice at the opponent. This move has a 10% chance of leaving the target frozen."
 	},
+	"803" : {
+		"name" : "Ice Punch",
+		"type" : "Ice",
+		"category" : "Physical",
+		"power" : "60",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Punch the opponent with an icy first. This move has a 10% chance of leaving the target frozen."
+	},
 	"901" : {
 		"name" : "Pursuit",
 		"type" : "Dark",
@@ -584,6 +773,15 @@
 		"accuracy" : "100%",
 		"stamina" : "10",
 		"effect" : "Stalk the opponent, allowing the next move to have +1 priority and 50% critical hit chance."
+	},
+	"907" : {
+		"name" : "Taunt",
+		"type" : "Dark",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Taunt the opponent, causing the target to only be able to use attack moves for three turns."
 	},
 	"1101" : {
 		"name" : "Poison Tail",
