@@ -263,7 +263,7 @@
 	"108" : {
 		"name" : "Foliate",
 		"type" : "Nature",
-		"category" : "Special",
+		"category" : "Physical",
 		"power" : "80",
 		"accuracy" : "100%",
 		"stamina" : "25",
