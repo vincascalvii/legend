@@ -1,0 +1,104 @@
+[{
+	"number" : "013",
+	"name" : "Trunklug",
+	"types" : ["Nature", "Earth"],
+	"abilities" : [
+		{
+			"name" : "Oblivious",
+			"desc" : "The possessor is oblivious, and that keeps it from being infatuated or falling for taunts."
+		},
+		{
+			"name" : "Herbivorous (Secret)",
+			"desc" : "Increase the possessor's Attack stat by 1 stage when hit by a Nature-type move."
+		}
+	],
+	"description" : "Trunklug are gentle Pokémon who love to soak themselves in the grass and enjoy a cool chilling wind on the plains. They are well-known for growing a small tree on their back and decorate it over the year. Many other smaller Pokémon also love to reside under that small tree.",
+	"gender" : {
+		"male" : "50%",
+		"female" : "50%"
+	},
+	"species" : "Snail",
+	"weight" : "72.2kg",
+	"height" : "1.6m",
+	"stats" : {
+		"hp" : "100",
+		"atk" : "80",
+		"def" : "94",
+		"spa" : "48",
+		"spd" : "83",
+		"spe" : "30",
+		"total" : "435"
+	},
+	"major_weakness" : [],
+	"weakness" : ["Nature", "Ice"],
+	"resistance" : ["Earth"],
+	"major_resistance" : [],
+	"immunity" : ["Electric", "Light"],
+	"evolution" : [
+		{
+			"id" : "010",
+			"req" : "Base",
+			"image_1" : "120x120",
+			"image_2" : "240x240",
+			"image_3" : "360x360"
+		},
+		{
+			"id" : "011",
+			"req" : "Level 22",
+			"image_1" : "120x120",
+			"image_2" : "240x240",
+			"image_3" : "360x360"
+		}
+	],
+	"moves_level" : [
+		{
+			"id" : "110",
+			"level" : "-"
+		},
+		{
+			"id" : "601",
+			"level" : "-"
+		},
+		{
+			"id" : "107",
+			"level" : "-"
+		},
+		{
+			"id" : "15",
+			"level" : "Level 25"
+		},
+		{
+			"id" : "109",
+			"level" : "Level 30"
+		},
+		{
+			"id" : "104",
+			"level" : "Level 40"
+		},
+		{
+			"id" : "605",
+			"level" : "Level 50"
+		},
+		{
+			"id" : "108",
+			"level" : "Level 60"
+		}
+	],
+	"moves_tutor" : [
+		{
+			"id" : "3"
+		},
+		{
+			"id" : "18"
+		},
+		{
+			"id" : "19"
+		},
+		{
+			"id" : "603"
+		},
+		{
+			"id" : "707"
+		}
+	]
+}]

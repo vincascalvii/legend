@@ -1,0 +1,94 @@
+[{
+	"number" : "012",
+	"name" : "Snailog",
+	"types" : ["Nature", "Earth"],
+	"abilities" : [
+		{
+			"name" : "Oblivious",
+			"desc" : "The possessor is oblivious, and that keeps it from being infatuated or falling for taunts."
+		},
+		{
+			"name" : "Herbivorous (Secret)",
+			"desc" : "Increase the possessor's Attack stat by 1 stage when hit by a Nature-type move."
+		}
+	],
+	"description" : "Snailog are gentle and carefree Pokémon who love to spend their day on a cool grassy plain and enjoy their meals. They love to collect seeds and plant small trees on the wooden log they always carry. It can also serve as a soft cover to protect themselves.",
+	"gender" : {
+		"male" : "50%",
+		"female" : "50%"
+	},
+	"species" : "Snail",
+	"weight" : "6.3kg",
+	"height" : "0.7m",
+	"stats" : {
+		"hp" : "50",
+		"atk" : "29",
+		"def" : "37",
+		"spa" : "19",
+		"spd" : "18",
+		"spe" : "7",
+		"total" : "160"
+	},
+	"major_weakness" : [],
+	"weakness" : ["Nature", "Ice"],
+	"resistance" : ["Earth"],
+	"major_resistance" : [],
+	"immunity" : ["Electric", "Light"],
+	"evolution" : [
+		{
+			"id" : "010",
+			"req" : "Base",
+			"image_1" : "120x120",
+			"image_2" : "240x240",
+			"image_3" : "360x360"
+		},
+		{
+			"id" : "011",
+			"req" : "Level 22",
+			"image_1" : "120x120",
+			"image_2" : "240x240",
+			"image_3" : "360x360"
+		}
+	],
+	"moves_level" : [
+		{
+			"id" : "5",
+			"level" : "-"
+		},
+		{
+			"id" : "101",
+			"level" : "Level 5"
+		},
+		{
+			"id" : "110",
+			"level" : "Level 10"
+		},
+		{
+			"id" : "601",
+			"level" : "Level 15"
+		},
+		{
+			"id" : "107",
+			"level" : "Level 20"
+		},
+		{
+			"id" : "15",
+			"level" : "Level 25"
+		},
+		{
+			"id" : "109",
+			"level" : "Level 25"
+		}
+	],
+	"moves_tutor" : [
+		{
+			"id" : "3"
+		},
+		{
+			"id" : "18"
+		},
+		{
+			"id" : "19"
+		}
+	]
+}]

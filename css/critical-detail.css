@@ -27,6 +27,10 @@ a {
 	text-decoration: none;
 }
 
+main.neutral {
+    background-color: #bbb;
+}
+
 main.nature {
     background-color: #48d08b;
 }
@@ -37,6 +41,10 @@ main.fire {
 
 main.water {
     background-color: #6072bf;
+}
+
+main.electric {
+    background-color: #ffca6b;
 }
 
 .container {
