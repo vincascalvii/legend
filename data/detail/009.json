@@ -21,13 +21,13 @@
 	"weight" : "320.0kg",
 	"height" : "2.2m",
 	"stats" : {
-		"hp" : "84",
-		"atk" : "66",
-		"def" : "78",
-		"spa" : "66",
-		"spd" : "78",
-		"spe" : "28",
-		"total" : "400"
+		"hp" : "108",
+		"atk" : "85",
+		"def" : "105",
+		"spa" : "85",
+		"spd" : "105",
+		"spe" : "32",
+		"total" : "520"
 	},
 	"major_weakness" : ["Electric"],
 	"weakness" : [],
