@@ -8,8 +8,8 @@
 			"desc" : "Make the possessor eat a held Berry when its HP drops to half or less."
 		},
 		{
-			"name" : "Mega Strength (Secret)",
-			"desc" : "Increase the possessor's Attack stat by 50%."
+			"name" : "Forage (Secret)",
+			"desc" : "50% chance of picking up an item the opponent used during the battle."
 		}
 	],
 	"description" : "Tapahorn are very harmless Pokémon who love to stay around humans. Their ears are very sensitive and can hear even the smallest sound from faraway, while their horns are used for self-defence. Their favourite food is berry.",
@@ -21,13 +21,13 @@
 	"weight" : "2.5kg",
 	"height" : "0.6m",
 	"stats" : {
-		"hp" : "45",
-		"atk" : "30",
-		"def" : "25",
-		"spa" : "16",
-		"spd" : "17",
-		"spe" : "27",
-		"total" : "160"
+		"hp" : "60",
+		"atk" : "40",
+		"def" : "40",
+		"spa" : "26",
+		"spd" : "32",
+		"spe" : "42",
+		"total" : "240"
 	},
 	"major_weakness" : [],
 	"weakness" : ["Dark"],
