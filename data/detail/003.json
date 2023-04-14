@@ -21,13 +21,13 @@
 	"weight" : "84.0kg",
 	"height" : "2.0m",
 	"stats" : {
-		"hp" : "62",
-		"atk" : "77",
-		"def" : "63",
-		"spa" : "50",
-		"spd" : "54",
-		"spe" : "94",
-		"total" : "400"
+		"hp" : "79",
+		"atk" : "103",
+		"def" : "81",
+		"spa" : "74",
+		"spd" : "71",
+		"spe" : "112",
+		"total" : "520"
 	},
 	"major_weakness" : ["Fire"],
 	"weakness" : ["Ice", "Toxic"],
@@ -99,7 +99,7 @@
 			"level" : "Level 70"
 		},
 		{
-			"id" : "106",
+			"id" : "108",
 			"level" : "Level 80"
 		}
 	],
