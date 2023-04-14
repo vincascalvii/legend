@@ -21,13 +21,13 @@
 	"weight" : "6.3kg",
 	"height" : "0.7m",
 	"stats" : {
-		"hp" : "50",
-		"atk" : "29",
-		"def" : "37",
-		"spa" : "19",
-		"spd" : "18",
-		"spe" : "7",
-		"total" : "160"
+		"hp" : "70",
+		"atk" : "44",
+		"def" : "52",
+		"spa" : "29",
+		"spd" : "28",
+		"spe" : "17",
+		"total" : "240"
 	},
 	"major_weakness" : [],
 	"weakness" : ["Nature", "Ice"],
@@ -73,10 +73,6 @@
 		},
 		{
 			"id" : "15",
-			"level" : "Level 25"
-		},
-		{
-			"id" : "109",
 			"level" : "Level 25"
 		}
 	],
