@@ -21,13 +21,13 @@
 	"weight" : "90kg",
 	"height" : "1.9m",
 	"stats" : {
-		"hp" : "80",
-		"atk" : "57",
-		"def" : "50",
-		"spa" : "34",
-		"spd" : "50",
-		"spe" : "49",
-		"total" : "320"
+		"hp" : "95",
+		"atk" : "72",
+		"def" : "70",
+		"spa" : "54",
+		"spd" : "70",
+		"spe" : "69",
+		"total" : "430"
 	},
 	"major_weakness" : [],
 	"weakness" : ["Dark"],
@@ -65,15 +65,15 @@
 		},
 		{
 			"id" : "15",
-			"level" : "Level 30"
+			"level" : "Level 35"
 		},
 		{
 			"id" : "20",
-			"level" : "Level 40"
+			"level" : "Level 50"
 		},
 		{
 			"id" : "16",
-			"level" : "Level 50"
+			"level" : "Level 70"
 		}
 	],
 	"moves_tutor" : [
