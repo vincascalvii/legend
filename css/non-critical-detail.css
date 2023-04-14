@@ -134,6 +134,8 @@
 }
 
 .moves .move-details span:last-child {
+	padding-right: 0;
+	margin-right: 0;
 	border: none;
 }
 
