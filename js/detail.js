@@ -89,17 +89,17 @@ if ( no != '' && no != null ) {
 
 		// Populate stat bars
 		document.querySelector('.stat-hp .stat-bar-fill').style.width = 
-			(( parseInt(data[0]['stats']['hp']) / 120 ) * 100 ) + '%';
+			(( parseInt(data[0]['stats']['hp']) / 150 ) * 100 ) + '%';
 		document.querySelector('.stat-atk .stat-bar-fill').style.width = 
-			(( parseInt(data[0]['stats']['atk']) / 120 ) * 100 ) + '%';
+			(( parseInt(data[0]['stats']['atk']) / 150 ) * 100 ) + '%';
 		document.querySelector('.stat-def .stat-bar-fill').style.width = 
-			(( parseInt(data[0]['stats']['def']) / 120 ) * 100 ) + '%';
+			(( parseInt(data[0]['stats']['def']) / 150 ) * 100 ) + '%';
 		document.querySelector('.stat-spa .stat-bar-fill').style.width = 
-			(( parseInt(data[0]['stats']['spa']) / 120 ) * 100 ) + '%';
+			(( parseInt(data[0]['stats']['spa']) / 150 ) * 100 ) + '%';
 		document.querySelector('.stat-spd .stat-bar-fill').style.width = 
-			(( parseInt(data[0]['stats']['spd']) / 120 ) * 100 ) + '%';
+			(( parseInt(data[0]['stats']['spd']) / 150 ) * 100 ) + '%';
 		document.querySelector('.stat-spe .stat-bar-fill').style.width = 
-			(( parseInt(data[0]['stats']['spe']) / 120 ) * 100 ) + '%';
+			(( parseInt(data[0]['stats']['spe']) / 150 ) * 100 ) + '%';
 
 		// Populate major weakness
 		if ( data[0]['major_weakness'].length > 0 ) {
