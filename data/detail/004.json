@@ -21,13 +21,13 @@
 	"weight" : "7.2kg",
 	"height" : "0.7m",
 	"stats" : {
-		"hp" : "40",
-		"atk" : "42",
-		"def" : "32",
-		"spa" : "24",
-		"spd" : "30",
-		"spe" : "32",
-		"total" : "200"
+		"hp" : "58",
+		"atk" : "61",
+		"def" : "46",
+		"spa" : "40",
+		"spd" : "45",
+		"spe" : "50",
+		"total" : "300"
 	},
 	"major_weakness" : [],
 	"weakness" : ["Water", "Wind", "Earth"],
