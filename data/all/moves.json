@@ -1,5 +1,284 @@
 [{
 	"1" : {
+		"name" : "Scratch",
+		"type" : "Neutral",
+		"category" : "Physical",
+		"power" : "40",
+		"accuracy" : "100%",
+		"stamina" : "5",
+		"effect" : "Scratch the opponent with sharp claws."
+	},
+	"2" : {
+		"name" : "Tackle",
+		"type" : "Neutral",
+		"category" : "Physical",
+		"power" : "40",
+		"accuracy" : "100%",
+		"stamina" : "5",
+		"effect" : "Charge at the opponent with a full-body tackle."
+	},
+	"3" : {
+		"name" : "Spare",
+		"type" : "Neutral",
+		"category" : "Physical",
+		"power" : "40",
+		"accuracy" : "100%",
+		"stamina" : "5",
+		"effect" : "Attack the opponent in restrain to prevent the target from fainting. The target is left with at least 1 HP."
+	},
+	"4" : {
+		"name" : "Quick Strike",
+		"type" : "Neutral",
+		"category" : "Physical",
+		"power" : "40",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Lunges at the opponent quickly before the target can react. This move has a +1 priority."
+	},
+	"5" : {
+		"name" : "Bite",
+		"type" : "Neutral",
+		"category" : "Physical",
+		"power" : "60",
+		"accuracy" : "95%",
+		"stamina" : "10",
+		"effect" : "Bite the opponent with vicious fangs. This move has a 20% chance to reduce the target's Defense stat."
+	},
+	"6" : {
+		"name" : "Tail Slap",
+		"type" : "Neutral",
+		"category" : "Physical",
+		"power" : "60",
+		"accuracy" : "90%",
+		"stamina" : "10",
+		"effect" : "Slap the opponent with a tail. This move has a 10% chance of causing the target to flinch."
+	},
+	"7" : {
+		"name" : "Horn Attack",
+		"type" : "Neutral",
+		"category" : "Physical",
+		"power" : "65",
+		"accuracy" : "95%",
+		"stamina" : "10",
+		"effect" : "Jab at the opponent with a sharply pointed horn. This move has a 20% chance to reduce the target's Attack stat."
+	},
+	"8" : {
+		"name" : "Double Slap",
+		"type" : "Neutral",
+		"category" : "Physical",
+		"power" : "35",
+		"accuracy" : "95%",
+		"stamina" : "10",
+		"effect" : "Slap the opponent twice in one turn."
+	},
+	"9" : {
+		"name" : "Flurry Strike",
+		"type" : "Neutral",
+		"category" : "Physical",
+		"power" : "18",
+		"accuracy" : "85%",
+		"stamina" : "15",
+		"effect" : "Strike the opponent in a flurry. Hit 2-5 times in one turn."
+	},
+	"10" : {
+		"name" : "Decisive Strike",
+		"type" : "Neutral",
+		"category" : "Physical",
+		"power" : "65",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Look for an oponening and strike consistently. This move ignores the stat changes on the opponent."
+	},
+	"11" : {
+		"name" : "Flail",
+		"type" : "Neutral",
+		"category" : "Physical",
+		"power" : "-",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Flail around and aimlessly attack. The less HP the user has, the greater the move's power."
+	},
+	"12" : {
+		"name" : "Headbutt",
+		"type" : "Neutral",
+		"category" : "Physical",
+		"power" : "70",
+		"accuracy" : "95%",
+		"stamina" : "10",
+		"effect" : "Recklessly headbutt the opponent that also hurt the user by a quarter of the damage dealt. This move also has a 20% chance of causing the target to flinch."
+	},
+	"13" : {
+		"name" : "Dizzy Punch",
+		"type" : "Neutral",
+		"category" : "Physical",
+		"power" : "75",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Hit the opponent with a rhythmically punch. This move also has a 10% chance of leaving the target confused."
+	},
+	"14" : {
+		"name" : "Crush Claw",
+		"type" : "Neutral",
+		"category" : "Physical",
+		"power" : "75",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Slash the opponent with hard and sharp claws. This move also lowers the target's Defense stat."
+	},
+	"15" : {
+		"name" : "Body Slam",
+		"type" : "Neutral",
+		"category" : "Physical",
+		"power" : "85",
+		"accuracy" : "95%",
+		"stamina" : "15",
+		"effect" : "Crash into your opponent with a full-body tackle. This move has a 10% chance of leaving the target with paralysis."
+	},
+	"16" : {
+		"name" : "Take Down",
+		"type" : "Neutral",
+		"category" : "Physical",
+		"power" : "90",
+		"accuracy" : "95%",
+		"stamina" : "15",
+		"effect" : "Recklessly slam into the opponent but also hurt the user by a quarter of the damage dealt. This move has a 20% chance of causing the target to flinch."
+	},
+	"17" : {
+		"name" : "Retaliate",
+		"type" : "Neutral",
+		"category" : "Physical",
+		"power" : "70",
+		"accuracy" : "100%",
+		"stamina" : "20",
+		"effect" : "Revenge for a fainted ally. This move's power is doubled if one of the user's party members fainted last turn."
+	},
+	"18" : {
+		"name" : "Rough Combat",
+		"type" : "Neutral",
+		"category" : "Physical",
+		"power" : "120",
+		"accuracy" : "100%",
+		"stamina" : "25",
+		"effect" : "Fight the opponent up close with a rough style. This move lowers the user's Defense if used in succession."
+	},
+	"19" : {
+		"name" : "Reckless Charge",
+		"type" : "Neutral",
+		"category" : "Physical",
+		"power" : "120",
+		"accuracy" : "100%",
+		"stamina" : "25",
+		"effect" : "Recklessly rush and tackle the opponent. If this move lands and the opponent loses HP, the user also gets hurt by a third of the damage dealt."
+	},
+	"20" : {
+		"name" : "Final Act",
+		"type" : "Neutral",
+		"category" : "Physical",
+		"power" : "150",
+		"accuracy" : "100%",
+		"stamina" : "30",
+		"effect" : "Faint after using this move, even if there is no target."
+	},
+	"21" : {
+		"name" : "Colossal Crash",
+		"type" : "Neutral",
+		"category" : "Physical",
+		"power" : "150",
+		"accuracy" : "100%",
+		"stamina" : "30",
+		"effect" : "Charge at the opponent using every bit of its power. The user cannot move on the next turn."
+	},
+	"22" : {
+		"name" : "Echo",
+		"type" : "Neutral",
+		"category" : "Special",
+		"power" : "40",
+		"accuracy" : "100",
+		"stamina" : "5",
+		"effect" : "Attack the opponent with an echoing voice. If this move is used consecutively by anyone on the field, its power is boosted."
+	},
+	"23" : {
+		"name" : "Screech",
+		"type" : "Neutral",
+		"category" : "Special",
+		"power" : "40",
+		"accuracy" : "100",
+		"stamina" : "10",
+		"effect" : "Attack the opponent with a screeching sound. This move also lowers the target's Defense stat."
+	},
+	"24" : {
+		"name" : "Snore",
+		"type" : "Neutral",
+		"category" : "Special",
+		"power" : "50",
+		"accuracy" : "100",
+		"stamina" : "10",
+		"effect" : "This move can only be used if the user is asleep. The harsh noise from it also has a 20% chance of causing the target to flinch."
+	},
+	"25" : {
+		"name" : "Weather Orb",
+		"type" : "Neutral",
+		"category" : "Special",
+		"power" : "50",
+		"accuracy" : "100",
+		"stamina" : "15",
+		"effect" : "This move's type and power change depending on the weather. The move's type changes to ice during hail, water during rain, earth during sandstorm, fire during sunny day and the power doubles under any of these weather conditions."
+	},
+	"26" : {
+		"name" : "Hidden Power",
+		"type" : "Neutral",
+		"category" : "Special",
+		"power" : "60",
+		"accuracy" : "100",
+		"stamina" : "15",
+		"effect" : "Damage the opponent with a mysterious power. This move changes type to deal supereffective damage to the target."
+	},
+	"27" : {
+		"name" : "Ancient Hymn",
+		"type" : "Neutral",
+		"category" : "Special",
+		"power" : "70",
+		"accuracy" : "100",
+		"stamina" : "15",
+		"effect" : "Sing an ancient song that shakes the opponent's heart. This move also has a 10% chance to induce sleep."
+	},
+	"28" : {
+		"name" : "Sonic Boom",
+		"type" : "Neutral",
+		"category" : "Special",
+		"power" : "80",
+		"accuracy" : "100",
+		"stamina" : "15",
+		"effect" : "Release a destructive sound wave that shocks the opponent."
+	},
+	"29" : {
+		"name" : "Outcry",
+		"type" : "Neutral",
+		"category" : "Special",
+		"power" : "80",
+		"accuracy" : "100",
+		"stamina" : "20",
+		"effect" : "Attack in an uproar for 2 turns. During that time, no one can fall asleep, and those who are already asleep on the battle will be woken up."
+	},
+	"30" : {
+		"name" : "Boomburst",
+		"type" : "Neutral",
+		"category" : "Special",
+		"power" : "100",
+		"accuracy" : "100",
+		"stamina" : "25",
+		"effect" : "Attack everything around the user with the destructive power of explosive sound."
+	},
+	"31" : {
+		"name" : "Super Nova",
+		"type" : "Neutral",
+		"category" : "Special",
+		"power" : "150",
+		"accuracy" : "100%",
+		"stamina" : "30",
+		"effect" : "Attack the opponent with a powerful and destructive blast. The user cannot move on the next turn."
+	},
+	"32" : {
 		"name" : "Dodge", 
 		"type" : "Neutral", 
 		"category" : "Support",
@@ -8,7 +287,7 @@
 		"stamina" : "10",
 		"effect" : "Dodge upcoming attack(s), but reduce success rate by 50% if used consecutively with any other evasion moves."
 	},
-	"2" : {
+	"33" : {
 		"name" : "Guard",
 		"type" : "Neutral",
 		"category" : "Support",
@@ -17,7 +296,7 @@
 		"stamina" : "10",
 		"effect" : "Guard upcoming attack(s), but reduce success rate by 50% if used consecutively with any other evasion moves."
 	},
-	"3" : {
+	"34" : {
 		"name" : "Rest",
 		"type" : "Neutral",
 		"category" : "Support",
@@ -26,34 +305,52 @@
 		"stamina" : "10",
 		"effect" : "Rest for 2 turns. Each turn restores the user's HP by 50% and Stamina by 25%. This move also removes all status condition."
 	},
-	"4" : {
-		"name" : "Scratch",
-		"type" : "Neutral",
-		"category" : "Physical",
-		"power" : "20",
-		"accuracy" : "100%",
-		"stamina" : "5",
-		"effect" : "Scratch the opponent with sharp claws."
-	},
-	"5" : {
-		"name" : "Tackle",
-		"type" : "Neutral",
-		"category" : "Physical",
-		"power" : "20",
-		"accuracy" : "100%",
-		"stamina" : "5",
-		"effect" : "Charge at the opponent with a full-body tackle."
-	},
-	"6" : {
-		"name" : "Growl",
+	"35" : {
+		"name" : "Tickle",
 		"type" : "Neutral",
 		"category" : "Support",
 		"power" : "-",
 		"accuracy" : "100%",
 		"stamina" : "5",
-		"effect" : "Let out a growl that lowers the opponent(s)' Attack by one stage."
+		"effect" : "Tickle the target into laughing, lowering its Special Defense stat."
 	},
-	"7" : {
+	"36" : {
+		"name" : "Confide",
+		"type" : "Neutral",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "100%",
+		"stamina" : "5",
+		"effect" : "Tell the opponent a secret and make the target loses its ability to concentrate. This move lowers the target's Special Attack stat."
+	},
+	"37" : {
+		"name" : "Constrict",
+		"type" : "Neutral",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "100%",
+		"stamina" : "5",
+		"effect" : "Use strategical position to restrict the moving space of the opponent. This move lowers the target's Speed stat."
+	},
+	"38" : {
+		"name" : "Growl",
+		"type" : "Neutral",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Let out a growl that lowers the opponent(s)' Attack stats."
+	},
+	"39" : {
+		"name" : "Leer",
+		"type" : "Neutral",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Give out an intimidating leer that lowers the opponent(s)' Defense stats."
+	},
+	"40" : {
 		"name" : "Howl",
 		"type" : "Neutral",
 		"category" : "Support",
@@ -62,7 +359,7 @@
 		"stamina" : "10",
 		"effect" : "Howl to increase the spirit, raising the user's Attack stat."
 	},
-	"8" : {
+	"41" : {
 		"name" : "Withdraw",
 		"type" : "Neutral",
 		"category" : "Support",
@@ -71,7 +368,7 @@
 		"stamina" : "5",
 		"effect" : "Withdraw into a hard shell, raising the user's Defense stat."
 	},
-	"9" : {
+	"42" : {
 		"name" : "Accelerate",
 		"type" : "Neutral",
 		"category" : "Support",
@@ -80,79 +377,16 @@
 		"stamina" : "10",
 		"effect" : "Accelerate to boost the user's Speed stat."
 	},
-	"10" : {
-		"name" : "Quick Feet",
-		"type" : "Wind",
-		"category" : "Support",
-		"power" : "-",
-		"accuracy" : "-",
-		"stamina" : "15",
-		"effect" : "Use faster footwork to raise the user's Evasion stat."
-	},
-	"11" : {
-		"name" : "Bite",
-		"type" : "Neutral",
-		"category" : "Physical",
-		"power" : "40",
-		"accuracy" : "95%",
-		"stamina" : "10",
-		"effect" : "Bite the opponent with vicious fangs. This move has a 20% chance to reduce the target's Defense stat."
-	},
-	"12" : {
-		"name" : "Tail Slap",
-		"type" : "Neutral",
-		"category" : "Physical",
-		"power" : "40",
-		"accuracy" : "90%",
-		"stamina" : "10",
-		"effect" : "Slap the opponent with a tail. This move has a 20% chance of causing the target to flinch."
-	},
-	"13" : {
-		"name" : "Quick Strike",
-		"type" : "Neutral",
-		"category" : "Physical",
-		"power" : "40",
-		"accuracy" : "100%",
-		"stamina" : "15",
-		"effect" : "Lunges at the opponent quickly before the target can react. This move has a +1 priority."
-	},
-	"14" : {
-		"name" : "Headbutt",
-		"type" : "Neutral",
-		"category" : "Physical",
-		"power" : "40",
-		"accuracy" : "95%",
-		"stamina" : "10",
-		"effect" : "Recklessly headbutt the opponent that also hurt the user by a quarter of the damage dealt. This move also has a 20% chance of causing the target to flinch."
-	},
-	"15" : {
-		"name" : "Take Down",
-		"type" : "Neutral",
-		"category" : "Physical",
-		"power" : "60",
-		"accuracy" : "95%",
-		"stamina" : "15",
-		"effect" : "Recklessly slam into the opponent but also hurt the user by a quarter of the damage dealt. This move has a 20% chance of causing the target to flinch."
-	},
-	"16" : {
-		"name" : "Rough Combat",
-		"type" : "Neutral",
-		"category" : "Physical",
-		"power" : "80",
-		"accuracy" : "100%",
-		"stamina" : "25",
-		"effect" : "Fight the opponent up close with a rough style. This move lowers the user's Defense if used in succession."
-	},
-	"17" : {
+	"43" : {
 		"name" : "Copycat",
 		"type" : "Neutral",
-		"category" : "Other",
+		"category" : "Support",
 		"power" : "-",
 		"accuracy" : "-",
 		"stamina" : "15",
 		"effect" : "Copy the move used immediately before the user. If no moves have been used, this move will fail."
 	},
-	"18" : {
+	"44" : {
 		"name" : "Shield",
 		"type" : "Neutral",
 		"category" : "Support",
@@ -161,7 +395,7 @@
 		"stamina" : "20",
 		"effect" : "Create a shield to reduce damage from physical attacks for 5 turns."
 	},
-	"19" : {
+	"45" : {
 		"name" : "Barrier",
 		"type" : "Neutral",
 		"category" : "Support",
@@ -170,16 +404,16 @@
 		"stamina" : "20",
 		"effect" : "Create a barrier to reduce damage from special attacks for 5 turns."
 	},
-	"20" : {
-		"name" : "Battle Cry",
+	"46" : {
+		"name" : "Muscle Up",
 		"type" : "Neutral",
 		"category" : "Support",
 		"power" : "-",
 		"accuracy" : "-",
 		"stamina" : "15",
-		"effect" : "Let out a powerful cry to uplift the spirit. This move raises the user's Attack stat and Defense stat."
+		"effect" : "Tense the muscles to bulk up the body. This move raises the user's Attack stat and Defense stat."
 	},
-	"21" : {
+	"47" : {
 		"name" : "Battle Dance",
 		"type" : "Neutral",
 		"category" : "Support",
@@ -188,7 +422,16 @@
 		"stamina" : "15",
 		"effect" : "Uplift the fighting spirit with a battle dance. This move boosts the user's Attack stat and Speed stat."
 	},
-	"22" : {
+	"48" : {
+		"name" : "Rallying Cry",
+		"type" : "Neutral",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "20",
+		"effect" : "Let out a powerful cry to uplift the spirit. This move sharply boosts the user's Attack stat."
+	},
+	"49" : {
 		"name" : "Shell Break",
 		"type" : "Neutral",
 		"category" : "Support",
@@ -197,61 +440,268 @@
 		"stamina" : "20",
 		"effect" : "Break out of the shell to drastically raise the user's Speed stat, but lowers the user's Defense and Special Defense stats."
 	},
+	"50" : {
+		"name" : "Endow",
+		"type" : "Neutral",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "30",
+		"effect" : "Switch place with an ally in waiting and pass along any stat changes."
+	},
+	"51" : {
+		"name" : "Bind",
+		"type" : "Neutral",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "30",
+		"effect" : "Bind down the opponent to prevent the target from fleeing. The user also cannot switch."
+	},
+	"52" : {
+		"name" : "Endure",
+		"type" : "Neutral",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "20",
+		"effect" : "Survive any attack during this turn with at least 1 HP, but reduce success rate by 50% if used consecutively with any other evasion moves."
+	},
+	"53" : {
+		"name" : "Assist",
+		"type" : "Neutral",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "10",
+		"effect" : "Assist an ally by boosting the power if that ally's attack in the same turn. This move has a +5 priority."
+	},
+	"54" : {
+		"name" : "Roar",
+		"type" : "Neutral",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "20",
+		"effect" : "Scare off the target, causing a different opponent to be dragged out."
+	},
+	"55" : {
+		"name" : "Substitute",
+		"type" : "Neutral",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "25",
+		"effect" : "Create a substitute using a quarter of HP. The substitute serves as the user's decoy."
+	},
+	"56" : {
+		"name" : "Sing",
+		"type" : "Neutral",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "75%",
+		"stamina" : "15",
+		"effect" : "Sing a soothing lullbaby to put the opponent to sleep."
+	},
+	"57" : {
+		"name" : "Recover",
+		"type" : "Neutral",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "10",
+		"effect" : "Regenerate the cells to restore own HP by up to half of the max HP."
+	},
+	"58" : {
+		"name" : "Refresh",
+		"type" : "Neutral",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "10",
+		"effect" : "The user rests to cure itself of poisoning, burn, freeze or paralysis."
+	},
 	"101" : {
 		"name" : "Leaf Blade",
 		"type" : "Nature",
 		"category" : "Physical",
-		"power" : "30",
-		"accuracy" : "90%",
-		"stamina" : "10",
+		"power" : "40",
+		"accuracy" : "100%",
+		"stamina" : "5",
 		"effect" : "Attack the opponent with a hardened leave."
 	},
 	"102" : {
+		"name" : "Vine Whip",
+		"type" : "Nature",
+		"category" : "Physical",
+		"power" : "45",
+		"accuracy" : "95%",
+		"stamina" : "5",
+		"effect" : "Strike the opponent with a slender, whip-like vine to inflict damage."
+	},
+	"103" : {
 		"name" : "Leaf Razor",
 		"type" : "Nature",
 		"category" : "Physical",
 		"power" : "50",
-		"accuracy" : "90%",
-		"stamina" : "15",
+		"accuracy" : "100%",
+		"stamina" : "10",
 		"effect" : "Attack the opponent with razor sharp leaves. This move has 10% critical hit chance."
 	},
-	"103" : {
+	"104" : {
+		"name" : "Seed Pellets",
+		"type" : "Nature",
+		"category" : "Physical",
+		"power" : "25",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Attack the opponent by forcefully shooting seeds at the target. This move hits 2-5 times in a row."
+	},
+	"105" : {
 		"name" : "Fury Cutter",
 		"type" : "Nature",
 		"category" : "Physical",
 		"power" : "60",
 		"accuracy" : "95%",
-		"stamina" : "20",
+		"stamina" : "15",
 		"effect" : "Slash the opponent with scythe-like attack. Consecutive success uses of this move increases the power by 5 each time (Max. 30)."
 	},
-	"104" : {
-		"name" : "Grassy Blast",
-		"type" : "Nature",
-		"category" : "Special",
-		"power" : "70",
-		"accuracy" : "95%",
-		"stamina" : "20",
-		"effect" : "Draw power from nature and blast at the opponent. This move has a 20% chance to cause the target to flinch."
-	},
-	"105" : {
-		"name" : "Deadly Blossom",
+	"106" : {
+		"name" : "Foliate",
 		"type" : "Nature",
 		"category" : "Physical",
 		"power" : "70",
 		"accuracy" : "100%",
-		"stamina" : "20",
-		"effect" : "The user reacts quickly and uses its deadly tail to counter the enemy attack. This move has +2 priority but will fail if the opponent is not readying an attack."
+		"stamina" : "15",
+		"effect" : "Pelt the opponent with flower petals and leaves. This move also has a 10% chance of lowering the target's accuracy."
 	},
-	"106" : {
+	"107" : {
 		"name" : "Forest Glide",
 		"type" : "Nature",
 		"category" : "Physical",
 		"power" : "80",
 		"accuracy" : "95%",
-		"stamina" : "25",
+		"stamina" : "20",
 		"effect" : "Glide through the forest to strike at the opponent. If the battle takes place in Forest Terrain, this move has +1 priority."
 	},
-	"107" : {
+	"108" : {
+		"name" : "Thistle Slash",
+		"type" : "Nature",
+		"category" : "Physical",
+		"power" : "80",
+		"accuracy" : "100%",
+		"stamina" : "20",
+		"effect" : "Hack at the opponent with prickly stems. This move has a 20% chance of landing a critical hit."
+	},
+	"109" : {
+		"name" : "Power Whip",
+		"type" : "Nature",
+		"category" : "Physical",
+		"power" : "100",
+		"accuracy" : "90%",
+		"stamina" : "25",
+		"effect" : "Violently whirl vines, tentacles or the like to lash the opponent. This move also has a 20% of causing the target to flinch."
+	},
+	"110" : {
+		"name" : "Thorn Slam",
+		"type" : "Nature",
+		"category" : "Physical",
+		"power" : "120",
+		"accuracy" : "100%",
+		"stamina" : "25",
+		"effect" : "Slam the opponent with hard thorns to inflict heavy damage. This move also lowers the user's Attack stat."
+	},
+	"111" : {
+		"name" : "Timber Whack",
+		"type" : "Nature",
+		"category" : "Physical",
+		"power" : "120",
+		"accuracy" : "100%",
+		"stamina" : "25",
+		"effect" : "Slam the opponent with hard rugged body to deal serious damage. If this move lands and the opponent loses HP, the user also gets hurt by a third of the damage dealt."
+	},
+	"112" : {
+		"name" : "Pine Needles",
+		"type" : "Nature",
+		"category" : "Special",
+		"power" : "40",
+		"accuracy" : "100%",
+		"stamina" : "5",
+		"effect" : "Shoot pine needles at the opponent."
+	},
+	"113" : {
+		"name" : "Leaf Barrage",
+		"type" : "Nature",
+		"category" : "Special",
+		"power" : "50",
+		"accuracy" : "90%",
+		"stamina" : "5",
+		"effect" : "Blast the target with sharp leaves. This move has a 20% chance of lowering the target's Defense stat."
+	},
+	"114" : {
+		"name" : "Enchanted Leaves",
+		"type" : "Nature",
+		"category" : "Special",
+		"power" : "60",
+		"accuracy" : "95%",
+		"stamina" : "10",
+		"effect" : "Scatter enchanted leaves on the target. This move has a 20% chance of lowering the target's Special Attack stat."
+	},
+	"115" : {
+		"name" : "Grassy Blast",
+		"type" : "Nature",
+		"category" : "Special",
+		"power" : "70",
+		"accuracy" : "95%",
+		"stamina" : "15",
+		"effect" : "Draw power from nature and blast at the opponent. This move has a 20% chance to cause the target to flinch."
+	},
+	"116" : {
+		"name" : "Life Drain",
+		"type" : "Nature",
+		"category" : "Special",
+		"power" : "75",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Drain the opponent's HP, and restore half of that to the user."
+	},
+	"117" : {
+		"name" : "Vine Tangle",
+		"type" : "Nature",
+		"category" : "Special",
+		"power" : "-",
+		"accuracy" : "100%",
+		"stamina" : "20",
+		"effect" : "Snare the opponent with a vine and trip it. The heavier the target, the greater the move's power."
+	},
+	"118" : {
+		"name" : "Nature Force",
+		"type" : "Nature",
+		"category" : "Special",
+		"power" : "100",
+		"accuracy" : "100%",
+		"stamina" : "25",
+		"effect" : "Use the power of nature to unlease a raging thrash to the surrounding area, hitting both foes and allies."
+	},
+	"119" : {
+		"name" : "Solar Beam",
+		"type" : "Nature",
+		"category" : "Special",
+		"power" : "120",
+		"accuracy" : "100%",
+		"stamina" : "25",
+		"effect" : "Gather light on the first turn, then blast a bundled beam on the next. This move does not need to charge on the first turn if the weather is sunny day. Power is halved if it's any other weather."
+	},
+	"120" : {
+		"name" : "Bloom Doom",
+		"type" : "Nature",
+		"category" : "Special",
+		"power" : "150",
+		"accuracy" : "100%",
+		"stamina" : "30",
+		"effect" : "Collect energy from plants and attack the opponent with full force. The user can't move on the next turn."
+	},
+	"121" : {
 		"name" : "Photosynthesis",
 		"type" : "Nature",
 		"category" : "Support",
@@ -260,32 +710,77 @@
 		"stamina" : "20",
 		"effect" : "Restore the user's HP by 25%. During harsh sunlight, this move restores 50% instead."
 	},
-	"108" : {
-		"name" : "Foliate",
-		"type" : "Nature",
-		"category" : "Physical",
-		"power" : "80",
-		"accuracy" : "100%",
-		"stamina" : "25",
-		"effect" : "Sweep the area around the user with a leaf storm, hitting both foes and allies."
-	},
-	"109" : {
-		"name" : "Energy Drain",
-		"type" : "Nature",
-		"category" : "Special",
-		"power" : "50",
-		"accuracy" : "100%",
-		"stamina" : "15",
-		"effect" : "Drain the opponent's HP, and restore half of that to the user."
-	},
-	"110" : {
+	"122" : {
 		"name" : "Sapping Seed",
 		"type" : "Nature",
-		"category" : "Status",
+		"category" : "Support",
 		"power" : "-",
 		"accuracy" : "100%",
 		"stamina" : "25",
 		"effect" : "Plant a seed on the opponent. It steals some HP from the target every turn."
+	},
+	"123" : {
+		"name" : "Fungus Curse",
+		"type" : "Nature",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Cast a spell that curses the opponent, harshly lowering the target's Special Defense stat."
+	},
+	"124" : {
+		"name" : "Snore Spore",
+		"type" : "Nature",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "75%",
+		"stamina" : "10",
+		"effect" : "Put the opponent to sleep with a cloud of sleep-inducing spores."
+	},
+	"125" : {
+		"name" : "Stun Spore",
+		"type" : "Nature",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "75%",
+		"stamina" : "10",
+		"effect" : "Paralyse the opponent with a cloud of statically charged spores."
+	},
+	"126" : {
+		"name" : "Toxic Spore",
+		"type" : "Nature",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "75%",
+		"stamina" : "10",
+		"effect" : "Poison the opponent with a cloud of toxic infused spores."
+	},
+	"127" : {
+		"name" : "Ingrain",
+		"type" : "Nature",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "25",
+		"effect" : "Lay roots that restore the user's own HP every turn. The user can't switch out due to being rooted."
+	},
+	"128" : {
+		"name" : "Wonder Herb",
+		"type" : "Nature",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "30",
+		"effect" : "Administer a special herb to both on and off the field allies and cleanse them off their status ailments."
+	},
+	"129" : {
+		"name" : "Deadly Blossom",
+		"type" : "Nature",
+		"category" : "Physical",
+		"power" : "70",
+		"accuracy" : "100%",
+		"stamina" : "20",
+		"effect" : "The user reacts quickly and uses its deadly tail to counter the enemy attack. This move has +2 priority but will fail if the opponent is not readying an attack."
 	},
 	"201" : {
 		"name" : "Fire Ball",
@@ -507,7 +1002,7 @@
 	"410" : {
 		"name" : "Static Stun",
 		"type" : "Electric",
-		"category" : "Status",
+		"category" : "Support",
 		"power" : "-",
 		"accuracy" : "90%",
 		"stamina" : "10",
@@ -543,7 +1038,7 @@
 	"504" : {
 		"name" : "Tailwind",
 		"type" : "Wind",
-		"category" : "Status",
+		"category" : "Support",
 		"power" : "-",
 		"accuracy" : "100%",
 		"stamina" : "20",
@@ -584,6 +1079,15 @@
 		"accuracy" : "100%",
 		"stamina" : "20",
 		"effect" : "Plummet down onto the opponent below and crash into it. This move deals 25% recoil damage to the user."
+	},
+	"509" : {
+		"name" : "Quick Feet",
+		"type" : "Wind",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "15",
+		"effect" : "Use faster footwork to raise the user's Evasion stat."
 	},
 	"601" : {
 		"name" : "Sand Attack",
@@ -721,6 +1225,34 @@
 		"effect" : "Punch the opponent with an icy first. This move has a 10% chance of leaving the target frozen."
 	},
 	"901" : {
+		"name" : "Faint",
+		"type" : "Dark",
+		"category" : "Physical",
+		"power" : "30",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Attack the opponent and ignore evasion moves such as Dodge or Guard. It also lifts the effects of those moves."
+	},
+
+	"11" : {
+		"name" : "Feint",
+		"type" : "Dark",
+		"category" : "Physical",
+		"power" : "40",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Quickly attack the opponent and make the target flinch. This move only works on the first turn each time the user enters battle."
+	},
+	"13" : {
+		"name" : "Revenge",
+		"type" : "Dark",
+		"category" : "Physical",
+		"power" : "-",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Wait 2 turns then deal double the damage taken."
+	},
+	"901" : {
 		"name" : "Pursuit",
 		"type" : "Dark",
 		"category" : "Physical",
@@ -774,14 +1306,50 @@
 		"stamina" : "10",
 		"effect" : "Stalk the opponent, allowing the next move to have +1 priority and 50% critical hit chance."
 	},
-	"907" : {
+	"22" : {
 		"name" : "Taunt",
+		"type" : "Dark",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "10",
+		"effect" : "The user draws attention to itself, making all opposing opponents take aim only at the user."
+	},
+	"907" : {
+		"name" : "Provoke",
 		"type" : "Dark",
 		"category" : "Support",
 		"power" : "-",
 		"accuracy" : "100%",
 		"stamina" : "10",
 		"effect" : "Taunt the opponent, causing the target to only be able to use attack moves for three turns."
+	},
+	"22" : {
+		"name" : "Reprise",
+		"type" : "Dark",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "20",
+		"effect" : "For the next 3 turns, the target is forced to repeat its last move used."
+	},
+	"22" : {
+		"name" : "Aurora Veil",
+		"type" : "Neutral",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "20",
+		"effect" : "Create a protective veil that reduces the damage from physical and special moves for 5 turns."
+	},
+	"22" : {
+		"name" : "Safe Haven",
+		"type" : "Neutral",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "20",
+		"effect" : "Create a protective sanctuary that prevents status condition for 5 turns."
 	},
 	"1101" : {
 		"name" : "Poison Tail",
