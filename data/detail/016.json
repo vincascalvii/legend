@@ -1,0 +1,123 @@
+[{
+	"number" : "016",
+	"name" : "Thundaptor",
+	"types" : ["Electric", "Wind"],
+	"abilities" : [
+		{
+			"name" : "Volt Absorb",
+			"desc" : "If hit by an Electric-type move, the possesor has its HP restored instead of taking damage."
+		},
+		{
+			"name" : "Lightning Rod (Secret)",
+			"desc" : "The possessor draws in all Electric-type moves. Instead of taking damage from them, its Special Attack stat is boosted."
+		}
+	],
+	"description" : "Currenbird are always curious about any strong source of electricity. They enjoy soaring the sky during a thunderstorm. Their bodies are built to withstand powerful lightning strike. The two blue sticks on their heads can serve as the antenna, helping them to pick up radio signals in the air.",
+	"gender" : {
+		"male" : "50%",
+		"female" : "50%"
+	},
+	"species" : "Bird",
+	"weight" : "42.5kg",
+	"height" : "1.0m",
+	"stats" : {
+		"hp" : "72",
+		"atk" : "70",
+		"def" : "56",
+		"spa" : "103",
+		"spd" : "72",
+		"spe" : "127",
+		"total" : "500"
+	},
+	"major_weakness" : [],
+	"weakness" : ["Water", "Ice"],
+	"resistance" : ["Nature", "Wind", "Metal"],
+	"major_resistance" : [],
+	"immunity" : ["Earth"],
+	"evolution" : [
+		{
+			"id" : "014",
+			"req" : "Base",
+			"image_1" : "120x120",
+			"image_2" : "240x240",
+			"image_3" : "360x360"
+		},
+		{
+			"id" : "015",
+			"req" : "Level 17",
+			"image_1" : "120x120",
+			"image_2" : "240x240",
+			"image_3" : "360x360"
+		},
+		{
+			"id" : "016",
+			"req" : "Thunder Stone",
+			"image_1" : "120x120",
+			"image_2" : "240x240",
+			"image_3" : "360x360"
+		}
+	],
+	"moves_level" : [
+		{
+			"id" : "509",
+			"level" : "-"
+		},
+		{
+			"id" : "4",
+			"level" : "-"
+		},
+		{
+			"id" : "415",
+			"level" : "Level 18"
+		},
+		{
+			"id" : "501",
+			"level" : "Level 20"
+		},
+		{
+			"id" : "413",
+			"level" : "Level 25"
+		},
+		{
+			"id" : "414",
+			"level" : "Level 35"
+		},
+		{
+			"id" : "505",
+			"level" : "Level 40"
+		},
+		{
+			"id" : "417",
+			"level" : "Level 50"
+		},
+		{
+			"id" : "508",
+			"level" : "Level 60"
+		},
+		{
+			"id" : "418",
+			"level" : "Level 70"
+		},
+		{
+			"id" : "419",
+			"level" : "Level 80"
+		}
+	],
+	"moves_tutor" : [
+		{
+			"id" : "32"
+		},
+		{
+			"id" : "421"
+		},
+		{
+			"id" : "422"
+		},
+		{
+			"id" : "504"
+		},
+		{
+			"id" : "901"
+		}
+	]
+}]

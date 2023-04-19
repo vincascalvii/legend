@@ -969,7 +969,7 @@
 		"type" : "Fire",
 		"category" : "Special",
 		"power" : "130",
-		"accuracy" : "90%",
+		"accuracy" : "100%",
 		"stamina" : "25",
 		"effect" : "Use all of the fire power to attack the opponent. The recoil from this move harshly lowers the user's Special Attack stat."
 	},
@@ -1262,94 +1262,238 @@
 		"effect" : "Create a water barrier to surround the body, protecting the user from the next damaging move(s). If used successfully, this move recovers 1/8 of the user's HP. The success rate is reduced by 50% if used consecutively with any other evasion moves."
 	},
 	"401" : {
-		"name" : "Thunder Fang",
-		"type" : "Electric",
-		"category" : "Physical",
-		"power" : "50",
-		"accuracy" : "90%",
-		"stamina" : "15",
-		"effect" : "Bite the opponent with electrified fangs. This move has a 20% chance to reduce the target's Defense stat and 10% chance to paralyse the target."
-	},
-	"402" : {
-		"name" : "Thunder Claw",
-		"type" : "Electric",
-		"category" : "Physical",
-		"power" : "60",
-		"accuracy" : "100%",
-		"stamina" : "15",
-		"effect" : "Slash the opponent with an electrified claw. This move has a 10% chance of leaving the target with paralysis."
-	},
-	"403" : {
-		"name" : "Thunder Punch",
-		"type" : "Electric",
-		"category" : "Physical",
-		"power" : "60",
-		"accuracy" : "100%",
-		"stamina" : "15",
-		"effect" : "Punch the opponent with an electrified first. This move has a 10% chance of leaving the target with paralysis."
-	},
-	"404" : {
 		"name" : "Zap",
-		"type" : "Electric",
-		"category" : "Physical",
-		"power" : "30",
-		"accuracy" : "90%",
-		"stamina" : "10",
-		"effect" : "Surround the body with electric and zap the opponent."
-	},
-	"405" : {
-		"name" : "Jolt",
-		"type" : "Electric",
-		"category" : "Special",
-		"power" : "30",
-		"accuracy" : "90%",
-		"stamina" : "10",
-		"effect" : "Attack the opponent with a jolt of electricity."
-	},
-	"406" : {
-		"name" : "Shock Wave",
-		"type" : "Electric",
-		"category" : "Special",
-		"power" : "50",
-		"accuracy" : "90%",
-		"stamina" : "15",
-		"effect" : "Strike the opponent with a wave of electricity. This move has a 10% chance of leaving the target with paralysis."
-	},
-	"407" : {
-		"name" : "Thunder Bolt",
-		"type" : "Electric",
-		"category" : "Special",
-		"power" : "70",
-		"accuracy" : "100%",
-		"stamina" : "20",
-		"effect" : "Summon a strong electric bolt to strike at the opponent. This move has a 10% chance of leaving the target with paralysis."
-	},
-	"408" : {
-		"name" : "Discharge",
-		"type" : "Electric",
-		"category" : "Special",
-		"power" : "80",
-		"accuracy" : "100%",
-		"stamina" : "25",
-		"effect" : "Strike everything around the user by letting loose a flare of electricity."
-	},
-	"409" : {
-		"name" : "Lightning Leap",
 		"type" : "Electric",
 		"category" : "Physical",
 		"power" : "40",
 		"accuracy" : "100%",
+		"stamina" : "5",
+		"effect" : "Surround the body with electric and zap the opponent."
+	},
+	"402" : {
+		"name" : "Tase",
+		"type" : "Electric",
+		"category" : "Physical",
+		"power" : "20",
+		"accuracy" : "100%",
+		"stamina" : "5",
+		"effect" : "Stun the opponent with a small jolt that always leaves the target with paralysis."
+	},
+	"403" : {
+		"name" : "Thunder Fang",
+		"type" : "Electric",
+		"category" : "Physical",
+		"power" : "60",
+		"accuracy" : "90%",
+		"stamina" : "15",
+		"effect" : "Bite the opponent with electrified fangs. This move has a 20% chance to reduce the target's Defense stat and 10% chance to paralyse the target."
+	},
+	"404" : {
+		"name" : "Thunder Claw",
+		"type" : "Electric",
+		"category" : "Physical",
+		"power" : "70",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Slash the opponent with an electrified claw. This move has a 10% chance of leaving the target with paralysis."
+	},
+	"405" : {
+		"name" : "Thunder Punch",
+		"type" : "Electric",
+		"category" : "Physical",
+		"power" : "75",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Punch the opponent with an electrified first. This move has a 10% chance of leaving the target with paralysis."
+	},
+	"406" : {
+		"name" : "Lightning Leap",
+		"type" : "Electric",
+		"category" : "Physical",
+		"power" : "70",
+		"accuracy" : "100%",
 		"stamina" : "15",
 		"effect" : "Leap at the opponent like a quick zap, then switch place with an ally waiting in party."
 	},
+	"407" : {
+		"name" : "Lightning Strike",
+		"type" : "Electric",
+		"category" : "Physical",
+		"power" : "90",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Surrounding self with electricity and strike at the opponent. This move has a 10% chance of leaving the target with paralysis."
+	},
+	"408" : {
+		"name" : "Thunder Clap",
+		"type" : "Electric",
+		"category" : "Physical",
+		"power" : "100",
+		"accuracy" : "90%",
+		"stamina" : "20",
+		"effect" : "Throw down a giant thunderbolt. This move has a 20% chance of flinching the target."
+	},
+	"409" : {
+		"name" : "Volt Tackle",
+		"type" : "Electric",
+		"category" : "Physical",
+		"power" : "120",
+		"accuracy" : "100%",
+		"stamina" : "25",
+		"effect" : "Electricfy yourself and recklessly charge into the opponent. This move has a 20% chance of leaving the target with paralysis but also hurts the user by a third of the damage dealt."
+	},
 	"410" : {
-		"name" : "Static Stun",
+		"name" : "Giga Volt",
+		"type" : "Electric",
+		"category" : "Physical",
+		"power" : "120",
+		"accuracy" : "100%",
+		"stamina" : "25",
+		"effect" : "The user discharges all the electricity from its body to perform a high-damage attack. After using this move, the user will no longer be Electric type."
+	},
+	"411" : {
+		"name" : "Jolt",
+		"type" : "Electric",
+		"category" : "Special",
+		"power" : "40",
+		"accuracy" : "100%",
+		"stamina" : "5",
+		"effect" : "Attack the opponent with a jolt of electricity."
+	},
+	"412" : {
+		"name" : "Shock Wave",
+		"type" : "Electric",
+		"category" : "Special",
+		"power" : "50",
+		"accuracy" : "95%",
+		"stamina" : "5",
+		"effect" : "Strike the opponent with a wave of electricity. This move has a 10% chance of leaving the target with paralysis."
+	},
+	"413" : {
+		"name" : "Power Surge",
+		"type" : "Electric",
+		"category" : "Special",
+		"power" : "50",
+		"accuracy" : "95%",
+		"stamina" : "10",
+		"effect" : "Attack the opponent with an electric charge. The residual electricy raises the user's Special Attack stat."
+	},
+	"414" : {
+		"name" : "Guided Bolt",
+		"type" : "Electric",
+		"category" : "Special",
+		"power" : "60",
+		"accuracy" : "-",
+		"stamina" : "10",
+		"effect" : "Zap the opponent with perfect accuracy. This move almost never misses."
+	},
+	"415" : {
+		"name" : "Electro Cage",
+		"type" : "Electric",
+		"category" : "Special",
+		"power" : "80",
+		"accuracy" : "90%",
+		"stamina" : "15",
+		"effect" : "Trap the opponent inside a cage of sparking electricity that inflicts damage for 3-5 turns."
+	},
+	"416" : {
+		"name" : "Kinetic Burst",
+		"type" : "Electric",
+		"category" : "Special",
+		"power" : "80",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Attack the opponent and draw out the target's power. This move regains 1/4 of the damage dealt as Stamina."
+	},
+	"417" : {
+		"name" : "Lightning Bolt",
+		"type" : "Electric",
+		"category" : "Special",
+		"power" : "90",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Summon a strong thunderbolt to strike at the opponent. This move has a 10% chance of leaving the target with paralysis."
+	},
+	"418" : {
+		"name" : "Discharge",
+		"type" : "Electric",
+		"category" : "Special",
+		"power" : "100",
+		"accuracy" : "100%",
+		"stamina" : "20",
+		"effect" : "Strike everything around the user by letting loose a flare of electricity."
+	},
+	"419" : {
+		"name" : "Thunder Storm",
+		"type" : "Electric",
+		"category" : "Special",
+		"power" : "120",
+		"accuracy" : "90%",
+		"stamina" : "25",
+		"effect" : "Summon a great storm to strike at the opponent. This move has a 30% chance of leaving the target with paralysis. If the weather is Rainy Day, this move does not check accuracy, but if it's any Sunny Day, this move's accuracy is only 50%."
+	},
+	"420" : {
+		"name" : "Plasma Burst",
+		"type" : "Electric",
+		"category" : "Special",
+		"power" : "130",
+		"accuracy" : "100%",
+		"stamina" : "25",
+		"effect" : "Strike the opponent by focusing a high voltage of electricity in a single target. The recoil from this move harshly lowers the user's Special Attack stat."
+	},
+	"421" : {
+		"name" : "Electrify",
 		"type" : "Electric",
 		"category" : "Support",
 		"power" : "-",
-		"accuracy" : "90%",
+		"accuracy" : "85%",
 		"stamina" : "10",
 		"effect" : "Launch a weak jolt of electricity that paralyses the opponent."
+	},
+	"422" : {
+		"name" : "Charge",
+		"type" : "Electric",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "15",
+		"effect" : "The user becomes charged, raising the user's Speed stat and doubles the power of the next Electric-type move it uses."
+	},
+	"423" : {
+		"name" : "Energise",
+		"type" : "Electric",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "15",
+		"effect" : "Build up electric charge to raise the user's Special Attack and Special Defense stats."
+	},
+	"424" : {
+		"name" : "Polarity Shift",
+		"type" : "Electric",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "20",
+		"effect" : "Manipulate magnetic energy that lowers the user's Speed stat, but drastically raises the user's Special Defense stat."
+	},
+	"425" : {
+		"name" : "Eerie Impulse",
+		"type" : "Electric",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "10",
+		"effect" : "Generate an eerie impulse to expose the opponent. This move harshly lowers the target's Special Attack stat."
+	},
+	"426" : {
+		"name" : "Magnetic Field",
+		"type" : "Electric",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "30",
+		"effect" : "Create a magnetic field that levitates both foes and allies on the field for 5 turns."
 	},
 	"501" : {
 		"name" : "Scavenge",
