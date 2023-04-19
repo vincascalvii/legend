@@ -32,7 +32,7 @@
 		"category" : "Physical",
 		"power" : "40",
 		"accuracy" : "100%",
-		"stamina" : "10",
+		"stamina" : "5",
 		"effect" : "Lunges at the opponent quickly before the target can react. This move has a +1 priority."
 	},
 	"5" : {
@@ -72,22 +72,22 @@
 		"effect" : "Slap the opponent twice in one turn."
 	},
 	"9" : {
-		"name" : "Flurry Strike",
-		"type" : "Neutral",
-		"category" : "Physical",
-		"power" : "18",
-		"accuracy" : "85%",
-		"stamina" : "15",
-		"effect" : "Strike the opponent in a flurry. Hit 2-5 times in one turn."
-	},
-	"10" : {
 		"name" : "Decisive Strike",
 		"type" : "Neutral",
 		"category" : "Physical",
 		"power" : "65",
 		"accuracy" : "100%",
-		"stamina" : "15",
+		"stamina" : "10",
 		"effect" : "Look for an oponening and strike consistently. This move ignores the stat changes on the opponent."
+	},
+	"10" : {
+		"name" : "Flurry Strike",
+		"type" : "Neutral",
+		"category" : "Physical",
+		"power" : "25",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Strike the opponent in a flurry. Hit 2-5 times in one turn."
 	},
 	"11" : {
 		"name" : "Flail",
@@ -203,7 +203,7 @@
 		"category" : "Special",
 		"power" : "40",
 		"accuracy" : "100",
-		"stamina" : "10",
+		"stamina" : "5",
 		"effect" : "Attack the opponent with a screeching sound. This move also lowers the target's Defense stat."
 	},
 	"24" : {
@@ -212,10 +212,19 @@
 		"category" : "Special",
 		"power" : "50",
 		"accuracy" : "100",
-		"stamina" : "10",
+		"stamina" : "5",
 		"effect" : "This move can only be used if the user is asleep. The harsh noise from it also has a 20% chance of causing the target to flinch."
 	},
 	"25" : {
+		"name" : "Ancient Hymn",
+		"type" : "Neutral",
+		"category" : "Special",
+		"power" : "70",
+		"accuracy" : "100",
+		"stamina" : "10",
+		"effect" : "Sing an ancient song that shakes the opponent's heart. This move also has a 10% chance to induce sleep."
+	},
+	"26" : {
 		"name" : "Weather Orb",
 		"type" : "Neutral",
 		"category" : "Special",
@@ -224,7 +233,7 @@
 		"stamina" : "15",
 		"effect" : "This move's type and power change depending on the weather. The move's type changes to ice during hail, water during rain, earth during sandstorm, fire during sunny day and the power doubles under any of these weather conditions."
 	},
-	"26" : {
+	"27" : {
 		"name" : "Hidden Power",
 		"type" : "Neutral",
 		"category" : "Special",
@@ -232,15 +241,6 @@
 		"accuracy" : "100",
 		"stamina" : "15",
 		"effect" : "Damage the opponent with a mysterious power. This move changes type to deal supereffective damage to the target."
-	},
-	"27" : {
-		"name" : "Ancient Hymn",
-		"type" : "Neutral",
-		"category" : "Special",
-		"power" : "70",
-		"accuracy" : "100",
-		"stamina" : "15",
-		"effect" : "Sing an ancient song that shakes the opponent's heart. This move also has a 10% chance to induce sleep."
 	},
 	"28" : {
 		"name" : "Sonic Boom",
@@ -257,7 +257,7 @@
 		"category" : "Special",
 		"power" : "80",
 		"accuracy" : "100",
-		"stamina" : "20",
+		"stamina" : "15",
 		"effect" : "Attack in an uproar for 2 turns. During that time, no one can fall asleep, and those who are already asleep on the battle will be woken up."
 	},
 	"30" : {
@@ -266,7 +266,7 @@
 		"category" : "Special",
 		"power" : "100",
 		"accuracy" : "100",
-		"stamina" : "25",
+		"stamina" : "20",
 		"effect" : "Attack everything around the user with the destructive power of explosive sound."
 	},
 	"31" : {
@@ -545,7 +545,7 @@
 		"category" : "Physical",
 		"power" : "50",
 		"accuracy" : "100%",
-		"stamina" : "10",
+		"stamina" : "5",
 		"effect" : "Attack the opponent with razor sharp leaves. This move has 10% critical hit chance."
 	},
 	"104" : {
@@ -563,7 +563,7 @@
 		"category" : "Physical",
 		"power" : "60",
 		"accuracy" : "95%",
-		"stamina" : "15",
+		"stamina" : "10",
 		"effect" : "Slash the opponent with scythe-like attack. Consecutive success uses of this move increases the power by 5 each time (Max. 30)."
 	},
 	"106" : {
@@ -572,7 +572,7 @@
 		"category" : "Physical",
 		"power" : "70",
 		"accuracy" : "100%",
-		"stamina" : "15",
+		"stamina" : "10",
 		"effect" : "Pelt the opponent with flower petals and leaves. This move also has a 10% chance of lowering the target's accuracy."
 	},
 	"107" : {
@@ -581,7 +581,7 @@
 		"category" : "Physical",
 		"power" : "80",
 		"accuracy" : "95%",
-		"stamina" : "20",
+		"stamina" : "15",
 		"effect" : "Glide through the forest to strike at the opponent. If the battle takes place in Forest Terrain, this move has +1 priority."
 	},
 	"108" : {
@@ -590,7 +590,7 @@
 		"category" : "Physical",
 		"power" : "80",
 		"accuracy" : "100%",
-		"stamina" : "20",
+		"stamina" : "15",
 		"effect" : "Hack at the opponent with prickly stems. This move has a 20% chance of landing a critical hit."
 	},
 	"109" : {
@@ -599,7 +599,7 @@
 		"category" : "Physical",
 		"power" : "100",
 		"accuracy" : "90%",
-		"stamina" : "25",
+		"stamina" : "20",
 		"effect" : "Violently whirl vines, tentacles or the like to lash the opponent. This move also has a 20% of causing the target to flinch."
 	},
 	"110" : {
@@ -653,7 +653,7 @@
 		"category" : "Special",
 		"power" : "70",
 		"accuracy" : "95%",
-		"stamina" : "15",
+		"stamina" : "10",
 		"effect" : "Draw power from nature and blast at the opponent. This move has a 20% chance to cause the target to flinch."
 	},
 	"116" : {
@@ -671,7 +671,7 @@
 		"category" : "Special",
 		"power" : "-",
 		"accuracy" : "100%",
-		"stamina" : "20",
+		"stamina" : "15",
 		"effect" : "Snare the opponent with a vine and trip it. The heavier the target, the greater the move's power."
 	},
 	"118" : {
@@ -680,7 +680,7 @@
 		"category" : "Special",
 		"power" : "100",
 		"accuracy" : "100%",
-		"stamina" : "25",
+		"stamina" : "20",
 		"effect" : "Use the power of nature to unlease a raging thrash to the surrounding area, hitting both foes and allies."
 	},
 	"119" : {
@@ -762,7 +762,7 @@
 		"power" : "-",
 		"accuracy" : "-",
 		"stamina" : "25",
-		"effect" : "Lay roots that restore the user's own HP every turn. The user can't switch out due to being rooted."
+		"effect" : "Lay roots that restore the user's own HP by 1/16 of the max HP every turn. The user can't switch out due to being rooted."
 	},
 	"128" : {
 		"name" : "Wonder Herb",
@@ -773,96 +773,277 @@
 		"stamina" : "30",
 		"effect" : "Administer a special herb to both on and off the field allies and cleanse them off their status ailments."
 	},
-	"129" : {
+	"199" : {
 		"name" : "Deadly Blossom",
 		"type" : "Nature",
 		"category" : "Physical",
-		"power" : "70",
+		"power" : "80",
 		"accuracy" : "100%",
-		"stamina" : "20",
-		"effect" : "The user reacts quickly and uses its deadly tail to counter the enemy attack. This move has +2 priority but will fail if the opponent is not readying an attack."
+		"stamina" : "15",
+		"effect" : "Stab the opponent with the user's deadly tail. If the user successfully hits the target before it can move, the target will also be poisoned."
 	},
 	"201" : {
-		"name" : "Fire Ball",
+		"level" : "-",
+		"name" : "Spark",
 		"type" : "Fire",
-		"category" : "Special",
-		"power" : "30",
-		"accuracy" : "90%",
-		"stamina" : "10",
-		"effect" : "Blast a fire ball at the opponent."
+		"category" : "Physical",
+		"power" : "40",
+		"accuracy" : "100%",
+		"stamina" : "5",
+		"effect" : "Emit sparks of fire and strike at the opponent."
 	},
 	"202" : {
 		"level" : "-",
-		"name" : "Fire Fang",
+		"name" : "Incinerate",
 		"type" : "Fire",
 		"category" : "Physical",
 		"power" : "50",
-		"accuracy" : "90%",
-		"stamina" : "15",
-		"effect" : "Bite the opponent with flame-cloaked fangs. This move has a 20% chance to reduce the target's Defense stat and 10% chance to leave a burn."
+		"accuracy" : "100%",
+		"stamina" : "5",
+		"effect" : "Raze opponent with a fire attack. This move has a 10% chance of leaving the target with a burn."
 	},
 	"203" : {
-		"name" : "Fiery Claw",
-		"type" : "Fire",
-		"category" : "Physical",
-		"power" : "60",
-		"accuracy" : "100%",
-		"stamina" : "15",
-		"effect" : "Slash the opponent with a blazing claw. This move has a 10% chance of leaving the target with a burn."
-	},
-	"204" : {
 		"name" : "Flame Charge",
 		"type" : "Fire",
 		"category" : "Physical",
 		"power" : "50",
-		"accuracy" : "100%",
-		"stamina" : "20",
+		"accuracy" : "95%",
+		"stamina" : "10",
 		"effect" : "Charge at the opponent in a cloak of fire. Successful hit will raise the user's Attack stat."
 	},
-	"205" : {
-		"name" : "Raging Flame",
-		"type" : "Fire",
-		"category" : "Physical",
-		"power" : "80",
-		"accuracy" : "95%",
-		"stamina" : "25",
-		"effect" : "The user ignites itself and charge at the opponent. This move has a 20% chance of leaving the target with a burn but also hurts the user by a quarter of the damage dealt."
-	},
-	"206" : {
-		"name" : "Fire Breath",
-		"type" : "Fire",
-		"category" : "Special",
-		"power" : "70",
-		"accuracy" : "100%",
-		"stamina" : "20",
-		"effect" : "Breathe out a wave of fire at the opponent. This move has a 10% chance of leaving the target with a burn."
-	},
-	"207" : {
-		"name" : "Fire Punch",
+	"204" : {
+		"name" : "Flame Flicker",
 		"type" : "Fire",
 		"category" : "Physical",
 		"power" : "60",
 		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Charge at the opponent after cloaking in fire. This move has a 10% chance of leaving the target with a burn. The user thaws out if it is frozen."
+	},
+	"205" : {
+		"name" : "Fire Fang",
+		"type" : "Fire",
+		"category" : "Physical",
+		"power" : "65",
+		"accuracy" : "90%",
+		"stamina" : "10",
+		"effect" : "Bite the opponent with flame-cloaked fangs. This move has a 20% chance to reduce the target's Defense stat and 10% chance to leave a burn."
+	},
+	"206" : {
+		"name" : "Fiery Claw",
+		"type" : "Fire",
+		"category" : "Physical",
+		"power" : "70",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Slash the opponent with a blazing claw. This move has a 10% chance of landing a critical hit and 10% chance of leaving the target with a burn."
+	},
+	"207" : {
+		"name" : "Blaze Punch",
+		"type" : "Fire",
+		"category" : "Physical",
+		"power" : "75",
+		"accuracy" : "100%",
 		"stamina" : "15",
 		"effect" : "Punch the opponent with a flaming first. This move has a 10% chance of leaving the target with a burn."
 	},
-	"301" : {
-		"name" : "Water Gun",
-		"type" : "Water",
-		"category" : "Special",
-		"power" : "30",
-		"accuracy" : "90%",
-		"stamina" : "10",
-		"effect" : "Blast at the opponent with a shot of water."
+	"208" : {
+		"name" : "Flaming Kick",
+		"type" : "Fire",
+		"category" : "Physical",
+		"power" : "80",
+		"accuracy" : "95%",
+		"stamina" : "15",
+		"effect" : "Launch a flaming kick at the opponent. This move has a 10% chance of leaving the target with a burn."
 	},
-	"302" : {
-		"name" : "Water Bomb",
-		"type" : "Water",
+	"209" : {
+		"name" : "Inferno Edge",
+		"type" : "Fire",
+		"category" : "Physical",
+		"power" : "90",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Focus bitter feelings toward the world of the lviing into a slashing attach. The user's HP is restored by up to half of the damage dealt to the target."
+	},
+	"210" : {
+		"name" : "Wild Fire",
+		"type" : "Fire",
+		"category" : "Physical",
+		"power" : "100",
+		"accuracy" : "90%",
+		"stamina" : "20",
+		"effect" : "Trap the target inside a wild vortex of fire that inflicts damage for 3-5 turns."
+	},
+	"211" : {
+		"name" : "Raging Flame",
+		"type" : "Fire",
+		"category" : "Physical",
+		"power" : "120",
+		"accuracy" : "100%",
+		"stamina" : "25",
+		"effect" : "The user ignites itself and charge at the opponent. This move has a 20% chance of leaving the target with a burn but also hurts the user by a third of the damage dealt."
+	},
+	"212" : {
+		"name" : "Sacred Fire",
+		"type" : "Fire",
+		"category" : "Physical",
+		"power" : "130",
+		"accuracy" : "85%",
+		"stamina" : "25",
+		"effect" : "Raze the opponent with a mystical fire of great intensity. This move has a 50% chance of leaving the target with a burn."
+	},
+	"213" : {
+		"name" : "Fire Ball",
+		"type" : "Fire",
 		"category" : "Special",
-		"power" : "50",
+		"power" : "40",
+		"accuracy" : "100%",
+		"stamina" : "5",
+		"effect" : "Blast a fire ball at the opponent."
+	},
+	"214" : {
+		"name" : "Fire Breath",
+		"type" : "Fire",
+		"category" : "Special",
+		"power" : "60",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Breathe out a wave of fire at the opponent. This move has a 10% chance of leaving the target with a burn."
+	},
+	"215" : {
+		"name" : "Fire Blast",
+		"type" : "Fire",
+		"category" : "Special",
+		"power" : "70",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Release a fiery blast at the opponent. This move has a 10% chance of leaving the target with a burn."
+	},
+	"216" : {
+		"name" : "Heat Wave",
+		"type" : "Fire",
+		"category" : "Special",
+		"power" : "75",
+		"accuracy" : "95%",
+		"stamina" : "15",
+		"effect" : "Exhale hot breath on the opposing field. This move has a 20% chance of lowering the target(s) Special Defense stat."
+	},
+	"217" : {
+		"name" : "Flame Burst",
+		"type" : "Fire",
+		"category" : "Special",
+		"power" : "80",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Breath out bursting flame at the opponent. This move also deals half of the damage to the opponents next to the target as well."
+	},
+	"218" : {
+		"name" : "Magma Storm",
+		"type" : "Fire",
+		"category" : "Special",
+		"power" : "90",
 		"accuracy" : "90%",
 		"stamina" : "15",
-		"effect" : "Attack the opponent with a strong blast of water. This move has a 20% chance of leaving the target in confusion."
+		"effect" : "Trap the opponent inside a maelstrom of fire that inflicts damage for 3-5 turns."
+	},
+	"219" : {
+		"name" : "Eruption",
+		"type" : "Fire",
+		"category" : "Special",
+		"power" : "100",
+		"accuracy" : "100%",
+		"stamina" : "20",
+		"effect" : "Release magma blasts into the surrounding area, dealing damage to both foes and allies."
+	},
+	"220" : {
+		"name" : "Blue Flare",
+		"type" : "Fire",
+		"category" : "Special",
+		"power" : "120",
+		"accuracy" : "90%",
+		"stamina" : "25",
+		"effect" : "Engulf the opponent in an intense, yet beautiful, blue flame. This move has a 20% chance of lowering the target's Special Defense stat."
+	},
+	"221" : {
+		"name" : "Scorching Fire",
+		"type" : "Fire",
+		"category" : "Special",
+		"power" : "130",
+		"accuracy" : "90%",
+		"stamina" : "25",
+		"effect" : "Use all of the fire power to attack the opponent. The recoil from this move harshly lowers the user's Special Attack stat."
+	},
+	"222" : {
+		"name" : "Blast Burn",
+		"type" : "Fire",
+		"category" : "Special",
+		"power" : "150",
+		"accuracy" : "100%",
+		"stamina" : "30",
+		"effect" : "Raze the opponent with an intense blast of all-consuming fire. The user can't move on the next turn."
+	},
+	"223" : {
+		"name" : "Sun Dance",
+		"type" : "Fire",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "30",
+		"effect" : "Intensify the sun for 5 turns. The sunlight powers up Fire-type atacks and lowers the power of Water-type attacks."
+	},
+	"224" : {
+		"name" : "Ignite",
+		"type" : "Fire",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "85%",
+		"stamina" : "10",
+		"effect" : "Shoot a sinister flame at the target to inflict a burn."
+	},
+	"225" : {
+		"name" : "Combustion",
+		"type" : "Fire",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "15",
+		"effect" : "The user kindle its flames to raise both Special Attack and Special Defense stats."
+	},
+	"226" : {
+		"name" : "Overheat",
+		"type" : "Fire",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "20",
+		"effect" : "The user gathers all the fire power to surpass its own limit. This move drastically raises the user's Special Attack stat but costs half of the user's max HP."
+	},
+	"299" : {
+		"name" : "Ember Cutter",
+		"type" : "Fire",
+		"category" : "Physical",
+		"power" : "70",
+		"accuracy" : "100",
+		"stamina" : "15",
+		"effect" : "The user ignites its sharp claws or fangs and slash at the opponent. This move has a 20% chance of lowering the target's Defense stat and 20% chance of leaving the target with a burn."
+	},
+	"301" : {
+		"name" : "Plunge",
+		"type" : "Water",
+		"category" : "Physical",
+		"power" : "40",
+		"accuracy" : "100%",
+		"stamina" : "5",
+		"effect" : "Plunge the opponent into the water."
+	},
+	"302" : {
+		"name" : "Clamp",
+		"type" : "Water",
+		"category" : "Physical",
+		"power" : "50",
+		"accuracy" : "95%",
+		"stamina" : "5",
+		"effect" : "Clamp and squeeze the opponent with a very thick and sturdy shell. This move prevents both the user and the opponent from switching out."
 	},
 	"303" : {
 		"name" : "Aqua Jet",
@@ -870,7 +1051,7 @@
 		"category" : "Physical",
 		"power" : "50",
 		"accuracy" : "90%",
-		"stamina" : "15",
+		"stamina" : "10",
 		"effect" : "Lunge at the target like a jet. This move deals double damage if the user is under the water."
 	},
 	"304" : {
@@ -879,44 +1060,206 @@
 		"category" : "Physical",
 		"power" : "60",
 		"accuracy" : "95%",
-		"stamina" : "20",
+		"stamina" : "10",
 		"effect" : "Dive under the water and attack the next turn. The user becomes untargetable by all non-Electric typed moves during this turn."
 	},
 	"305" : {
-		"name" : "Muddy Wave",
+		"name" : "Geyser",
+		"type" : "Water",
+		"category" : "Physical",
+		"power" : "60",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Slam into the opponent with full-force blast of water. This move has a 20% chance of lowering the target's Defense stat."
+	},
+	"306" : {
+		"name" : "Torrent Climb",
+		"type" : "Water",
+		"category" : "Physical",
+		"power" : "70",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Hit the opponent with a blow packing the power of fish travelling up waterfalls."
+	},
+	"307" : {
+		"name" : "Razor Shell",
+		"type" : "Water",
+		"category" : "Physical",
+		"power" : "75",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Cut the opponent with sharp shell to inflict damage. This move has a 20% chance of reducing the target's Defense stat."
+	},
+	"308" : {
+		"name" : "Tide Rush",
+		"type" : "Water",
+		"category" : "Physical",
+		"power" : "80",
+		"accuracy" : "90%",
+		"stamina" : "15",
+		"effect" : "Swamp on a giant wave to strike the opponent."
+	},
+	"309" : {
+		"name" : "Surging Strikes",
+		"type" : "Water",
+		"category" : "Physical",
+		"power" : "25",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Strike the opponent with a flowing motion of water 3 times in a row. This move has a 100% critical hit chance."
+	},
+	"310" : {
+		"name" : "Tidal Twister",
+		"type" : "Water",
+		"category" : "Physical",
+		"power" : "90",
+		"accuracy" : "90%",
+		"stamina" : "20",
+		"effect" : "Trap the opponent inside a violent, swirling whirlpool that inflict damage for 3-5 turns."
+	},
+	"311" : {
+		"name" : "Wave Crash",
+		"type" : "Water",
+		"category" : "Physical",
+		"power" : "120",
+		"accuracy" : "100%",
+		"stamina" : "25",
+		"effect" : "Shroud in water and slam into the target with the whole body. This move hurts the user by a third of the damage dealt."
+	},
+	"312" : {
+		"name" : "Water Gun",
+		"type" : "Water",
+		"category" : "Special",
+		"power" : "40",
+		"accuracy" : "100%",
+		"stamina" : "5",
+		"effect" : "Blast at the opponent with a shot of water."
+	},
+	"313" : {
+		"name" : "Water Bomb",
+		"type" : "Water",
+		"category" : "Special",
+		"power" : "50",
+		"accuracy" : "95%",
+		"stamina" : "5",
+		"effect" : "Attack the opponent with a strong blast of water. This move has a 10% chance of leaving the target in confusion."
+	},
+	"314" : {
+		"name" : "Chilling Water",
 		"type" : "Water",
 		"category" : "Special",
 		"power" : "60",
-		"accuracy" : "85%",
-		"stamina" : "20",
-		"effect" : "Send off a wave of muddy water to opponent(s). This move has a 20% chance of lowering the target's Accuracy."
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Shower the opponent with chilling cold water. This move has a 10% chance of leaving the target frozen."
 	},
-	"306" : {
-		"name" : "Tsunami",
+	"315" : {
+		"name" : "Bubble Burst",
+		"type" : "Water",
+		"category" : "Special",
+		"power" : "70",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Splash the opponent with a giant water bubble. If targeting a foe, the harsh torrent will hurt them. If targeting an ally, cleansing water will soothe and heal them."
+	},
+	"316" : {
+		"name" : "Maroon",
+		"type" : "Water",
+		"category" : "Special",
+		"power" : "80",
+		"accuracy" : "90%",
+		"stamina" : "15",
+		"effect" : "Wash the opponent(s) with an enourmous wave of water. This move has a 20% chance of lowering the target's Attack stat."
+	},
+	"317" : {
+		"name" : "Scald",
 		"type" : "Water",
 		"category" : "Special",
 		"power" : "80",
 		"accuracy" : "100%",
-		"stamina" : "25",
+		"stamina" : "15",
+		"effect" : "Shoot boiling water at the opponent. This move has a 20% chance of leaving the target with a burn. This move also thaws the target."
+	},
+	"318" : {
+		"name" : "Aqua Blast",
+		"type" : "Water",
+		"category" : "Special",
+		"power" : "90",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Summon a massive amount of water and blast it at the opponent in full force."
+	},
+	"319" : {
+		"name" : "Tsunami",
+		"type" : "Water",
+		"category" : "Special",
+		"power" : "100",
+		"accuracy" : "100%",
+		"stamina" : "20",
 		"effect" : "Set off a tsunami that drowns everyone around the user, foes and allies."
 	},
-	"307" : {
-		"name" : "Rainfall",
+	"320" : {
+		"name" : "Hydro Cannon",
+		"type" : "Water",
+		"category" : "Special",
+		"power" : "120",
+		"accuracy" : "90%",
+		"stamina" : "25",
+		"effect" : "Blast the opponent with a huge volume of water launched under great pressure. This move also has a 20% chance of flinching the target."
+	},
+	"321" : {
+		"name" : "Origin Pulse",
+		"type" : "Water",
+		"category" : "Special",
+		"power" : "150",
+		"accuracy" : "100%",
+		"stamina" : "30",
+		"effect" : "Fire countless beams of brilliant blue water from the deep at the opponent. The user can't move on the next turn."
+	},
+	"322" : {
+		"name" : "Rain Fall",
 		"type" : "Water",
 		"category" : "Support",
 		"power" : "-",
 		"accuracy" : "-",
-		"stamina" : "20",
+		"stamina" : "30",
 		"effect" : "Summon a heavy rain that falls for 5 turns. The rain powers up Water-type moves by 50% and lowers the power of Fire-type moves by 50%."
 	},
-	"308" : {
-		"name" : "Aqua Shield",
+	"323" : {
+		"name" : "Aqua Veil",
+		"type" : "Water",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "25",
+		"effect" : "The user envelopes itself in a veil made of water. This move restores 1/16 of the user's max HP each turn."
+	},
+	"324" : {
+		"name" : "Holy Water",
 		"type" : "Water",
 		"category" : "Support",
 		"power" : "-",
 		"accuracy" : "-",
 		"stamina" : "15",
-		"effect" : "Create a water shield to surround the body, protecting the user from the next damaging move(s). If used successfully, this move raises the user's Defense or Special Defense stat based on the attack category, but reduce success rate by 50% if used consecutively with any other evasion moves."
+		"effect" : "Scatter pure water around and restore the HP of the user and its ally on the field."
+	},
+	"325" : {
+		"name" : "Drench",
+		"type" : "Water",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "20",
+		"effect" : "Shoot a torrent of water that changes the target's type into Water for 3-5 turns."
+	},
+	"399" : {
+		"name" : "Flowing Barrier",
+		"type" : "Water",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "15",
+		"effect" : "Create a water barrier to surround the body, protecting the user from the next damaging move(s). If used successfully, this move recovers 1/8 of the user's HP. The success rate is reduced by 50% if used consecutively with any other evasion moves."
 	},
 	"401" : {
 		"name" : "Thunder Fang",
@@ -1201,18 +1544,18 @@
 		"name" : "Frost Fang",
 		"type" : "Ice",
 		"category" : "Physical",
-		"power" : "50",
+		"power" : "65",
 		"accuracy" : "90%",
-		"stamina" : "15",
+		"stamina" : "10",
 		"effect" : "Bite the opponent with frosty fangs. This move has a 20% chance to reduce the target's Defense stat and 10% chance to freeze the target."
 	},
 	"802" : {
 		"name" : "Frost Beam",
 		"type" : "Ice",
 		"category" : "Special",
-		"power" : "70",
+		"power" : "90",
 		"accuracy" : "100%",
-		"stamina" : "20",
+		"stamina" : "15",
 		"effect" : "Shoot a beam of frosty ice at the opponent. This move has a 10% chance of leaving the target frozen."
 	},
 	"803" : {
