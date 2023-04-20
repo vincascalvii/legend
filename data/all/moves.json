@@ -1664,7 +1664,7 @@
 		"power" : "120",
 		"accuracy" : "90%",
 		"stamina" : "25",
-		"effect" : "Send out powerful air blades to cut the cloud. This move sharply reduces the user's Evasion stat."
+		"effect" : "Send out powerful air blades to cut the cloud. This move sharply reduces the target's Evasion stat."
 	},
 	"520" : {
 		"name" : "Bleakwind Storm",
