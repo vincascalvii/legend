@@ -200,21 +200,21 @@ if ( no != '' && no != null ) {
 		moveLevelContainer = document.querySelector('.moves-level');
 		for ( var ml = 0; ml < data[0]['moves_level'].length; ml++ ) {
 			var id = data[0]['moves_level'][ml]['id'];
-			console.log(moves);
+			console.log(moves[0]);
 			var level = data[0]['moves_level'][ml]['level'];
 			var moveLevel = document.createElement('div');
 				moveLevel.classList.add('move');
 				moveLevel.innerHTML = '<p class="move-label"><span class="move-name">' + 
-					moves[id]['name'] + '</span><span class="type ' +
-					moves[id]['type'].toLowerCase() + '">' + 
-					moves[id]['type'] + '</span><span class="move-level">' + 
+					moves[0][id]['name'] + '</span><span class="type ' +
+					moves[0][id]['type'].toLowerCase() + '">' + 
+					moves[0][id]['type'] + '</span><span class="move-level">' + 
 					level + '</span></p>' + 
 					'<p class="move-details"><span class="move-category">' + 
-					moves[id]['category'] + '</span><span class="move-power">PWR: ' +
-					moves[id]['power'] + '</span><span class="move-accuracy">ACC: ' +
-					moves[id]['accuracy'] + '</span><span class="move-stamina">STA: ' +
-					moves[id]['stamina'] + '</span></p>' +
-					'<p class="move-effect">' + moves[id]['effect'] + '</p>';
+					moves[0][id]['category'] + '</span><span class="move-power">PWR: ' +
+					moves[0][id]['power'] + '</span><span class="move-accuracy">ACC: ' +
+					moves[0][id]['accuracy'] + '</span><span class="move-stamina">STA: ' +
+					moves[0][id]['stamina'] + '</span></p>' +
+					'<p class="move-effect">' + moves[0][id]['effect'] + '</p>';
 			moveLevelContainer.appendChild(moveLevel);
 		}
 
@@ -225,15 +225,15 @@ if ( no != '' && no != null ) {
 			var moveTutor = document.createElement('div');
 				moveTutor.classList.add('move');
 				moveTutor.innerHTML = '<p class="move-label"><span class="move-name">' + 
-					moves[id]['name'] + '</span><span class="type ' +
-					moves[id]['type'].toLowerCase() + '">' + 
-					moves[id]['type'] + '</span></p>' + 
+					moves[0][id]['name'] + '</span><span class="type ' +
+					moves[0][id]['type'].toLowerCase() + '">' + 
+					moves[0][id]['type'] + '</span></p>' + 
 					'<p class="move-details"><span class="move-category">' + 
-					moves[id]['category'] + '</span><span class="move-power">PWR: ' +
-					moves[id]['power'] + '</span><span class="move-accuracy">ACC: ' +
-					moves[id]['accuracy'] + '</span><span class="move-stamina">STA: ' +
-					moves[id]['stamina'] + '</span></p>' +
-					'<p class="move-effect">' + moves[id]['effect'] + '</p>';
+					moves[0][id]['category'] + '</span><span class="move-power">PWR: ' +
+					moves[0][id]['power'] + '</span><span class="move-accuracy">ACC: ' +
+					moves[0][id]['accuracy'] + '</span><span class="move-stamina">STA: ' +
+					moves[0][id]['stamina'] + '</span></p>' +
+					'<p class="move-effect">' + moves[0][id]['effect'] + '</p>';
 			moveTutorContainer.appendChild(moveTutor);
 		}
 
