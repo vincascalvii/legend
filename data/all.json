@@ -3,171 +3,114 @@
 		"number" : "001",
 		"name" : "Leafen",
 		"type_1" : "Nature",
-		"type_2" : "",
-		"image_1" : "120x120",
-		"image_2" : "240x240",
-		"image_3" : "360x360"
+		"type_2" : ""
 	},
 	{
 		"number" : "002",
 		"name" : "Petalen",
 		"type_1" : "Nature",
-		"type_2" : "",
-		"image_1" : "120x120",
-		"image_2" : "240x240",
-		"image_3" : "360x360"
+		"type_2" : ""
 	},
 	{
 		"number" : "003",
 		"name" : "Shadoward",
 		"type_1" : "Nature",
-		"type_2" : "Dark",
-		"image_1" : "160x120",
-		"image_2" : "320x240",
-		"image_3" : "480x360"
+		"type_2" : "Dark"
 	},
 	{
 		"number" : "004",
 		"name" : "Pupyro",
 		"type_1" : "Fire",
-		"type_2" : "",
-		"image_1" : "120x120",
-		"image_2" : "240x240",
-		"image_3" : "360x360"
+		"type_2" : ""
 	},
 	{
 		"number" : "005",
 		"name" : "Flamound",
 		"type_1" : "Fire",
-		"type_2" : "",
-		"image_1" : "160x120",
-		"image_2" : "320x240",
-		"image_3" : "480x360"
+		"type_2" : ""
 	},
 	{
 		"number" : "006",
 		"name" : "Wolflare",
 		"type_1" : "Fire",
-		"type_2" : "Earth",
-		"image_1" : "160x120",
-		"image_2" : "320x240",
-		"image_3" : "480x360"
+		"type_2" : "Earth"
 	},
 	{
 		"number" : "007",
 		"name" : "Turteen",
 		"type_1" : "Water",
-		"type_2" : "",
-		"image_1" : "120x120",
-		"image_2" : "240x240",
-		"image_3" : "360x360"
+		"type_2" : ""
 	},
 	{
 		"number" : "008",
 		"name" : "Turtank",
 		"type_1" : "Water",
-		"type_2" : "",
-		"image_1" : "120x120",
-		"image_2" : "240x240",
-		"image_3" : "360x360"
+		"type_2" : ""
 	},
 	{
 		"number" : "009",
 		"name" : "Turtidal",
 		"type_1" : "Water",
-		"type_2" : "Metal",
-		"image_1" : "160x120",
-		"image_2" : "320x240",
-		"image_3" : "480x360"
+		"type_2" : "Metal"
 	},
 	{
 		"number" : "010",
 		"name" : "Tapahorn",
 		"type_1" : "Neutral",
-		"type_2" : "",
-		"image_1" : "160x120",
-		"image_2" : "320x240",
-		"image_3" : "480x360"
+		"type_2" : ""
 	},
 	{
 		"number" : "011",
 		"name" : "Palmahorn",
 		"type_1" : "Neutral",
-		"type_2" : "",
-		"image_1" : "160x120",
-		"image_2" : "320x240",
-		"image_3" : "480x360"
+		"type_2" : ""
 	},
 	{
 		"number" : "012",
 		"name" : "Snailog",
 		"type_1" : "Nature",
-		"type_2" : "Earth",
-		"image_1" : "160x120",
-		"image_2" : "320x240",
-		"image_3" : "480x360"
+		"type_2" : "Earth"
 	},
 	{
 		"number" : "013",
 		"name" : "Trunklug",
 		"type_1" : "Nature",
-		"type_2" : "Earth",
-		"image_1" : "160x120",
-		"image_2" : "320x240",
-		"image_3" : "480x360"
+		"type_2" : "Earth"
 	},
 	{
 		"number" : "014",
 		"name" : "Elechic",
 		"type_1" : "Electric",
-		"type_2" : "Wind",
-		"image_1" : "160x120",
-		"image_2" : "320x240",
-		"image_3" : "480x360"
+		"type_2" : "Wind"
 	},
 	{
 		"number" : "015",
 		"name" : "Currenbird",
 		"type_1" : "Electric",
-		"type_2" : "Wind",
-		"image_1" : "160x120",
-		"image_2" : "320x240",
-		"image_3" : "480x360"
+		"type_2" : "Wind"
 	},
 	{
 		"number" : "016",
 		"name" : "Thundaptor",
 		"type_1" : "Electric",
-		"type_2" : "Wind",
-		"image_1" : "160x120",
-		"image_2" : "320x240",
-		"image_3" : "480x360"
+		"type_2" : "Wind"
 	},
 	{
 		"number" : "017",
 		"name" : "Blupillar",
 		"type_1" : "Light",
-		"type_2" : "",
-		"image_1" : "160x120",
-		"image_2" : "320x240",
-		"image_3" : "480x360"
+		"type_2" : ""
 	},
 	{
 		"number" : "018",
 		"name" : "Silkocoon",
 		"type_1" : "Light",
-		"type_2" : "",
-		"image_1" : "160x120",
-		"image_2" : "320x240",
-		"image_3" : "480x360"
+		"type_2" : ""
 	},
 	{
 		"number" : "019",
 		"name" : "Faeifly",
 		"type_1" : "Light",
-		"type_2" : "",
-		"image_1" : "160x120",
-		"image_2" : "320x240",
-		"image_3" : "480x360"
+		"type_2" : ""
 	}
 ]

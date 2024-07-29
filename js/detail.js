@@ -188,13 +188,14 @@ if ( no != '' && no != null ) {
 				return response.json();
 			})
 			.then( function(_moves) {
-				console.log(_moves);
+				// Merge the JSON data to the "moves" object
+				moves = moves.concat(_moves);
 			})
 			.catch( function(error) {
 				console.log('Fetch error: ', error);
 			});;
 		}
-			/*
+			
 		// Populate moveset by level up
 		moveLevelContainer = document.querySelector('.moves-level');
 		for ( var ml = 0; ml < data[0]['moves_level'].length; ml++ ) {
@@ -203,16 +204,16 @@ if ( no != '' && no != null ) {
 			var moveLevel = document.createElement('div');
 				moveLevel.classList.add('move');
 				moveLevel.innerHTML = '<p class="move-label"><span class="move-name">' + 
-					moves[0][id]['name'] + '</span><span class="type ' +
-					moves[0][id]['type'].toLowerCase() + '">' + 
-					moves[0][id]['type'] + '</span><span class="move-level">' + 
+					moves[id]['name'] + '</span><span class="type ' +
+					moves[id]['type'].toLowerCase() + '">' + 
+					moves[id]['type'] + '</span><span class="move-level">' + 
 					level + '</span></p>' + 
 					'<p class="move-details"><span class="move-category">' + 
-					moves[0][id]['category'] + '</span><span class="move-power">PWR: ' +
-					moves[0][id]['power'] + '</span><span class="move-accuracy">ACC: ' +
-					moves[0][id]['accuracy'] + '</span><span class="move-stamina">STA: ' +
-					moves[0][id]['stamina'] + '</span></p>' +
-					'<p class="move-effect">' + moves[0][id]['effect'] + '</p>';
+					moves[id]['category'] + '</span><span class="move-power">PWR: ' +
+					moves[id]['power'] + '</span><span class="move-accuracy">ACC: ' +
+					moves[id]['accuracy'] + '</span><span class="move-stamina">STA: ' +
+					moves[id]['stamina'] + '</span></p>' +
+					'<p class="move-effect">' + moves[id]['effect'] + '</p>';
 			moveLevelContainer.appendChild(moveLevel);
 		}
 
@@ -223,46 +224,37 @@ if ( no != '' && no != null ) {
 			var moveTutor = document.createElement('div');
 				moveTutor.classList.add('move');
 				moveTutor.innerHTML = '<p class="move-label"><span class="move-name">' + 
-					moves[0][id]['name'] + '</span><span class="type ' +
-					moves[0][id]['type'].toLowerCase() + '">' + 
-					moves[0][id]['type'] + '</span></p>' + 
+					moves[id]['name'] + '</span><span class="type ' +
+					moves[id]['type'].toLowerCase() + '">' + 
+					moves[id]['type'] + '</span></p>' + 
 					'<p class="move-details"><span class="move-category">' + 
-					moves[0][id]['category'] + '</span><span class="move-power">PWR: ' +
-					moves[0][id]['power'] + '</span><span class="move-accuracy">ACC: ' +
-					moves[0][id]['accuracy'] + '</span><span class="move-stamina">STA: ' +
-					moves[0][id]['stamina'] + '</span></p>' +
-					'<p class="move-effect">' + moves[0][id]['effect'] + '</p>';
+					moves[id]['category'] + '</span><span class="move-power">PWR: ' +
+					moves[id]['power'] + '</span><span class="move-accuracy">ACC: ' +
+					moves[id]['accuracy'] + '</span><span class="move-stamina">STA: ' +
+					moves[id]['stamina'] + '</span></p>' +
+					'<p class="move-effect">' + moves[id]['effect'] + '</p>';
 			moveTutorContainer.appendChild(moveTutor);
 		}
-*/
+
 		// Populate evolution
 		var evolution = document.querySelector('.evolution');
 		if ( data[0]['evolution'].length > 0 ) {
 			for ( var evo = 0; evo < data[0]['evolution'].length; evo++ ) {
-			    evolution.innerHTML += '<a href="/legend/detail?no=' + 
-			    data[0]['evolution'][evo]['id'] + '" class="evo-block" aria-label="' + 
-			    data[0]['name'] + ' link">' + '<picture>' +
-				'<source data-srcset="/legend/img/pokemon/' + 
-				data[0]['evolution'][evo]['id'] + '/thumb-' + 
-				data[0]['evolution'][evo]['image_1'] + '.webp 1x, /legend/img/pokemon/' +
-				data[0]['evolution'][evo]['id'] + '/thumb-' + 
-				data[0]['evolution'][evo]['image_2'] + '.webp 2x, /legend/img/pokemon/' +
-				data[0]['evolution'][evo]['id'] + '/thumb-' + 
-				data[0]['evolution'][evo]['image_3'] + '.webp 3x" ' +
-				' type="image/webp">' +
-				'<source data-srcset="/legend/img/pokemon/' + 
-				data[0]['evolution'][evo]['id'] + '/thumb-' + 
-				data[0]['evolution'][evo]['image_1'] + '.png 1x, /legend/img/pokemon/' +
-				data[0]['evolution'][evo]['id'] + '/thumb-' + 
-				data[0]['evolution'][evo]['image_2'] + '.png 2x, /legend/img/pokemon/' +
-				data[0]['evolution'][evo]['id'] + '/thumb-' + 
-				data[0]['evolution'][evo]['image_3'] + '.png 3x" ' +
-				' type="image/png">' +
-				'<img data-src="/legend/img/pokemon/' + no + '/thumb-' +
-				data[0]['evolution'][evo]['image_1'] + '.png" ' + 
-				'src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"' + 
-				' class="lazyload evo-thumb" alt="' + data[0]['name'] + ' evolution thumbnail">' +
-				'</picture><p class="evo-req">' + data[0]['evolution'][evo]['req'] + '</p></a>';
+			    evolution.innerHTML += '<a href="/legend/detail?no=' 
+					+ data[0]['evolution'][evo]['id'] + '" class="evo-block" aria-label="' 
+			    	+ data[0]['name'] + ' link">' + '<picture>'
+					+ '<source data-srcset="/legend/img/pokemon/' 
+					+ data[0]['evolution'][evo]['id'] + '/thumb-120x120.webp 1x, /legend/img/pokemon/'
+					+ data[0]['evolution'][evo]['id'] + '/thumb-240x240.webp 2x, /legend/img/pokemon/'
+					+ data[0]['evolution'][evo]['id'] + '/thumb-360x360.webp 3x" type="image/webp">'
+					+ '<source data-srcset="/legend/img/pokemon/'
+					+ data[0]['evolution'][evo]['id'] + '/thumb-120x120.png 1x, /legend/img/pokemon/'
+					+ data[0]['evolution'][evo]['id'] + '/thumb-240x240.png 2x, /legend/img/pokemon/'
+					+ data[0]['evolution'][evo]['id'] + '/thumb-360x360.png 3x" type="image/png">'
+					+ '<img data-src="/legend/img/pokemon/' + no + '/thumb120x120.png" '
+					+ 'src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"'
+					+ ' class="lazyload evo-thumb" alt="' + data[0]['name'] + ' evolution thumbnail">'
+					+ '</picture><p class="evo-req">' + data[0]['evolution'][evo]['req'] + '</p></a>';
 			}
 		}
 

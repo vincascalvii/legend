@@ -49,22 +49,17 @@ fetch('/legend/data/all.json')
 
 		// Populate the thumbnail
 		var image = document.createElement('picture');
-			image.innerHTML = 
-				'<source data-srcset="/legend/img/pokemon/' + data[i]['number'] + '/thumb-' + 
-				data[i]['image_1'] + '.webp 1x, ' + 
-				'/legend/img/pokemon/' + data[i]['number'] + '/thumb-' +
-				data[i]['image_2'] + '.webp 2x, ' + 
-				'/legend/img/pokemon/' + data[i]['number'] + '/thumb-' + 
-				data[i]['image_3'] + '.webp 3x" type="image/webp">' + 
-				'<source data-srcset="/legend/img/pokemon/' + data[i]['number'] + '/thumb-' 
-				+ data[i]['image_1'] + '.png 1x, ' + 
-				'/legend/img/pokemon/' + data[i]['number'] + '/thumb-' + 
-				data[i]['image_2'] + '.png 2x, ' + 
-				'/legend/img/pokemon/' + data[i]['number'] + '/thumb-' + 
-				data[i]['image_3'] + '.png 3x" type="image/png">' +
-				'<img data-src="/legend/img/pokemon/' + data[i]['number'] + '/thumb-' 
-				+ data[i]['image_1'] + '.png" class="lazyload image ' + 
-				'image-' + data[i]['image_1'] + '" alt="' + data[i]['name'] + '">';
+			image.innerHTML = '<source data-srcset="' 
+				+ '/legend/img/pokemon/' + data[i]['number'] + '/thumb-120x120.webp 1x, '
+				+ '/legend/img/pokemon/' + data[i]['number'] + '/thumb-240x240.webp 2x, '
+				+ '/legend/img/pokemon/' + data[i]['number'] + '/thumb-360x360.webp 3x" type="image/webp">' 
+				+ '<source data-srcset="'
+				+ '/legend/img/pokemon/' + data[i]['number'] + '/thumb-120x120.png 1x, '
+				+ '/legend/img/pokemon/' + data[i]['number'] + '/thumb-240x240.png 2x, '
+				+ '/legend/img/pokemon/' + data[i]['number'] + '/thumb-360x360.png 3x" type="image/png">'
+				+ '<img data-src="'
+				+ '/legend/img/pokemon/' + data[i]['number'] + '/thumb-120x120.png" class="lazyload image '
+				+ 'image-120x120" alt="' + data[i]['name'] + '">';
 
 		// Populate the block background
 		var background = document.createElement('picture');
