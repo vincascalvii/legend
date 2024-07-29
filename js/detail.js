@@ -188,8 +188,10 @@ if ( no != '' && no != null ) {
 				return response.json();
 			})
 			.then( function(_moves) {
+				console.log(_moves[0]);
 				// Merge the JSON data to the "moves" object
 				moves = Object.assign(moves, _moves[0]);
+				console.log(moves);
 			})
 			.catch( function(error) {
 				console.log('Fetch error: ', error);
