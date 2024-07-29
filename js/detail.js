@@ -188,10 +188,8 @@ if ( no != '' && no != null ) {
 				return response.json();
 			})
 			.then( function(_moves) {
-				console.log(_moves[0]);
 				// Merge the JSON data to the "moves" object
 				moves = Object.assign(moves, _moves[0]);
-				console.log(moves);
 			})
 			.catch( function(error) {
 				console.log('Fetch error: ', error);
@@ -202,6 +200,7 @@ if ( no != '' && no != null ) {
 		moveLevelContainer = document.querySelector('.moves-level');
 		for ( var ml = 0; ml < data[0]['moves_level'].length; ml++ ) {
 			var id = data[0]['moves_level'][ml]['id'];
+			console.log(id);console.log(moves[id]);
 			var level = data[0]['moves_level'][ml]['level'];
 			var moveLevel = document.createElement('div');
 				moveLevel.classList.add('move');
