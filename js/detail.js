@@ -189,7 +189,7 @@ if ( no != '' && no != null ) {
 			})
 			.then( function(_moves) {
 				// Merge the JSON data to the "moves" object
-				moves = moves.concat(_moves);
+				moves = Object.assign(moves, _moves[0]);
 			})
 			.catch( function(error) {
 				console.log('Fetch error: ', error);
