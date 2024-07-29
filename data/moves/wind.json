@@ -1,0 +1,245 @@
+[{
+    "501" : {
+		"name" : "Peck",
+		"type" : "Wind",
+		"category" : "Physical",
+		"power" : "40",
+		"accuracy" : "100%",
+		"stamina" : "5",
+		"effect" : "Jab the opponent with a sharply pointed beak."
+	},
+	"5002" : {
+		"name" : "Drill Peck",
+		"type" : "Wind",
+		"category" : "Physical",
+		"power" : "50",
+		"accuracy" : "95%",
+		"stamina" : "5",
+		"effect" : "Strike the opponent with a sharp beak acting as a drill. This move has a 10% chance of landing a critical hit."
+	},
+	"5003" : {
+		"name" : "Scavenge",
+		"type" : "Wind",
+		"category" : "Physical",
+		"power" : "60",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Swoop down and strike the opponent. This move has a 25% chance of stealing the opponent's item."
+	},
+	"5004" : {
+		"name" : "Aerial Assault",
+		"type" : "Wind",
+		"category" : "Physical",
+		"power" : "70",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Confound the opponent with speed, then slash. This attack has a +1 priority."
+	},
+	"5005" : {
+		"name" : "Winged Blitz",
+		"type" : "Wind",
+		"category" : "Physical",
+		"power" : "40",
+		"accuracy" : "95%",
+		"stamina" : "10",
+		"effect" : "Slam the opponent with both wings to inflict damage. The target is hit twice in a row."
+	},
+	"5006" : {
+		"name" : "Skyward Glide",
+		"type" : "Wind",
+		"category" : "Physical",
+		"power" : "55",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Nimbly strike the opponent. This move does double the damage if the user isn't holding an item."
+	},
+	"5007" : {
+		"name" : "Soaring Strike",
+		"type" : "Wind",
+		"category" : "Physical",
+		"power" : "80",
+		"accuracy" : "95%",
+		"stamina" : "15",
+		"effect" : "Strike the opponent while soaring into the sky. This move has a 20% of raising the user's Speed stat."
+	},
+	"5008" : {
+		"name" : "Sky Drop",
+		"type" : "Wind",
+		"category" : "Physical",
+		"power" : "90",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Grab the opponent and fly up into the sky on the first turn, then drop the target on the next turn. If the target is heavier than 200kg or a Wind type, this move will fail."
+	},
+	"5009" : {
+		"name" : "Valiant Wing",
+		"type" : "Wind",
+		"category" : "Physical",
+		"power" : "120",
+		"accuracy" : "100%",
+		"stamina" : "25",
+		"effect" : "Plummet down onto the opponent below and crash into it. This move deals 25% recoil damage to the user."
+	},
+	"5010" : {
+		"name" : "Dragon Descend",
+		"type" : "Wind",
+		"category" : "Physical",
+		"power" : "130",
+		"accuracy" : "90%",
+		"stamina" : "25",
+		"effect" : "Attack the opponent by dropping out of the sky at high speed. This move lowers the user's Defense and Special Defense stats."
+	},
+	"5011" : {
+		"name" : "Gust",
+		"type" : "Wind",
+		"category" : "Special",
+		"power" : "40",
+		"accuracy" : "100%",
+		"stamina" : "5",
+		"effect" : "Whip up a gust of wind and launch it at the opponent."
+	},
+	"5012" : {
+		"name" : "Air Slash",
+		"type" : "Wind",
+		"category" : "Special",
+		"power" : "50",
+		"accuracy" : "95%",
+		"stamina" : "5",
+		"effect" : "Slash the opponent with a wave of air."
+	},
+	"5013" : {
+		"name" : "Air Whip",
+		"type" : "Wind",
+		"category" : "Special",
+		"power" : "60",
+		"accuracy" : "95%",
+		"stamina" : "10",
+		"effect" : "Whiplash your opponent with high speed wind. This move has a 10% chance of flinching the target."
+	},
+	"5014" : {
+		"name" : "Air Blade",
+		"type" : "Wind",
+		"category" : "Special",
+		"power" : "75",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Attack the opponent with a blade of air that slices even the sky. This move has a 20% chance of landing a critical hit."
+	},
+	"5015" : {
+		"name" : "Jet Stream",
+		"type" : "Wind",
+		"category" : "Special",
+		"power" : "80",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Batter the opponent with turbulent gusts. This move has a 20% chance of lowering the target's Speed stat."
+	},
+	"5016" : {
+		"name" : "Aero Blast",
+		"type" : "Wind",
+		"category" : "Special",
+		"power" : "90",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Attack the opponent with fierce wind. This move has a 10% chance of leaving the target with confusion."
+	},
+	"5017" : {
+		"name" : "Cyclone",
+		"type" : "Wind",
+		"category" : "Special",
+		"power" : "100",
+		"accuracy" : "90%",
+		"stamina" : "20",
+		"effect" : "Wrap the opponent in a powerful storm. This move will trap the opponent and deal 1/8 of the target's maximum HP per turn."
+	},
+	"5018" : {
+		"name" : "Hurricane",
+		"type" : "Wind",
+		"category" : "Special",
+		"power" : "100",
+		"accuracy" : "100%",
+		"stamina" : "20",
+		"effect" : "Stir up a hurricane to attack the surrounding area, including foes and allies."
+	},
+	"5019" : {
+		"name" : "Cloud Cutter",
+		"type" : "Wind",
+		"category" : "Special",
+		"power" : "120",
+		"accuracy" : "90%",
+		"stamina" : "25",
+		"effect" : "Send out powerful air blades to cut the cloud. This move sharply reduces the target's Evasion stat."
+	},
+	"5020" : {
+		"name" : "Bleakwind Storm",
+		"type" : "Wind",
+		"category" : "Special",
+		"power" : "120",
+		"accuracy" : "80%",
+		"stamina" : "25",
+		"effect" : "Attack the opponent with savagely cold winds that cause both body and spirit to tremble. This move has a 10% chance of freezing the target and 20% chance of lowering the target's Speed stat."
+	},
+	"5021" : {
+		"name" : "Sky Splitter",
+		"type" : "Wind",
+		"category" : "Special",
+		"power" : "140",
+		"accuracy" : "80%",
+		"stamina" : "30",
+		"effect" : "The user concentrates all the air from surrounding area and fires a single air blade that can split the sky. This move has a 30% chance of flinching the target."
+	},
+	"5022" : {
+		"name" : "Tailwind",
+		"type" : "Wind",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "20",
+		"effect" : "Whip up a turbulent whirlwind that boost the Speed stats of itself and its allies for 4 turns."
+	},
+	"5023" : {
+		"name" : "Defog",
+		"type" : "Wind",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "20",
+		"effect" : "Use strong wind to blow away the opponents' barriers and shields. This move also lowers the opponent(s)' Evasive stats."
+	},
+	"5024" : {
+		"name" : "Roost",
+		"type" : "Wind",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "10",
+		"effect" : "The user lands and rests its body. This move restores the user's HP by half of its max HP."
+	},
+	"5025" : {
+		"name" : "Quick Feet",
+		"type" : "Wind",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "5",
+		"effect" : "Use faster footwork to raise the user's Evasion stat."
+	},
+	"5026" : {
+		"name" : "Avian Ruffle",
+		"type" : "Wind",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Cover the opponent's body with a mass of feathers that lowers the target's Accuracy and Speed stats."
+	},
+	"5027" : {
+		"name" : "Second Wind",
+		"type" : "Wind",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "20",
+		"effect" : "Kick up a burst of wind to soar higher. This move sharply raises the user's Speed stat."
+	}
+}]

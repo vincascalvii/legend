@@ -1,0 +1,29 @@
+[{
+    "10001" : {
+		"name" : "Flash",
+		"type" : "Neutral",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "90%",
+		"stamina" : "10",
+		"effect" : "The user flashes a bright light that harshly lowers the target's accuracy."
+	},
+	"10002" : {
+		"name" : "Aurora Veil",
+		"type" : "Neutral",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "20",
+		"effect" : "Create a protective veil that reduces the damage from physical and special moves for 5 turns."
+	},
+	"10003" : {
+		"name" : "Safe Haven",
+		"type" : "Neutral",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "20",
+		"effect" : "Create a protective sanctuary that prevents status condition for 5 turns."
+	}
+}]

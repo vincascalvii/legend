@@ -1,0 +1,11 @@
+[{
+	"11001" : {
+		"name" : "Poison Tail",
+		"type" : "Toxic",
+		"category" : "Physical",
+		"power" : "60",
+		"accuracy" : "90%",
+		"stamina" : "15",
+		"effect" : "Hit the opponent with a poisonous tail. This move has a 10% chance of poisoning the target."
+	}
+}]

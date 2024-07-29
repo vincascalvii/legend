@@ -1,0 +1,247 @@
+[{
+    "2001" : {
+		"level" : "-",
+		"name" : "Spark",
+		"type" : "Fire",
+		"category" : "Physical",
+		"power" : "40",
+		"accuracy" : "100%",
+		"stamina" : "5",
+		"effect" : "Emit sparks of fire and strike at the opponent."
+	},
+	"2002" : {
+		"level" : "-",
+		"name" : "Incinerate",
+		"type" : "Fire",
+		"category" : "Physical",
+		"power" : "50",
+		"accuracy" : "100%",
+		"stamina" : "5",
+		"effect" : "Raze opponent with a fire attack. This move has a 10% chance of leaving the target with a burn."
+	},
+	"2003" : {
+		"name" : "Flame Charge",
+		"type" : "Fire",
+		"category" : "Physical",
+		"power" : "50",
+		"accuracy" : "95%",
+		"stamina" : "10",
+		"effect" : "Charge at the opponent in a cloak of fire. Successful hit will raise the user's Attack stat."
+	},
+	"2004" : {
+		"name" : "Flame Flicker",
+		"type" : "Fire",
+		"category" : "Physical",
+		"power" : "60",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Charge at the opponent after cloaking in fire. This move has a 10% chance of leaving the target with a burn. The user thaws out if it is frozen."
+	},
+	"2005" : {
+		"name" : "Fire Fang",
+		"type" : "Fire",
+		"category" : "Physical",
+		"power" : "65",
+		"accuracy" : "90%",
+		"stamina" : "10",
+		"effect" : "Bite the opponent with flame-cloaked fangs. This move has a 20% chance to reduce the target's Defense stat and 10% chance to leave a burn."
+	},
+	"2006" : {
+		"name" : "Fiery Claw",
+		"type" : "Fire",
+		"category" : "Physical",
+		"power" : "70",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Slash the opponent with a blazing claw. This move has a 10% chance of landing a critical hit and 10% chance of leaving the target with a burn."
+	},
+	"2007" : {
+		"name" : "Blaze Punch",
+		"type" : "Fire",
+		"category" : "Physical",
+		"power" : "75",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Punch the opponent with a flaming first. This move has a 10% chance of leaving the target with a burn."
+	},
+	"2008" : {
+		"name" : "Flaming Kick",
+		"type" : "Fire",
+		"category" : "Physical",
+		"power" : "80",
+		"accuracy" : "95%",
+		"stamina" : "15",
+		"effect" : "Launch a flaming kick at the opponent. This move has a 10% chance of leaving the target with a burn."
+	},
+	"2009" : {
+		"name" : "Inferno Edge",
+		"type" : "Fire",
+		"category" : "Physical",
+		"power" : "90",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Focus bitter feelings toward the world of the lviing into a slashing attach. The user's HP is restored by up to half of the damage dealt to the target."
+	},
+	"2010" : {
+		"name" : "Wild Fire",
+		"type" : "Fire",
+		"category" : "Physical",
+		"power" : "100",
+		"accuracy" : "90%",
+		"stamina" : "20",
+		"effect" : "Trap the target inside a wild vortex of fire that inflicts damage for 3-5 turns."
+	},
+	"2011" : {
+		"name" : "Raging Flame",
+		"type" : "Fire",
+		"category" : "Physical",
+		"power" : "120",
+		"accuracy" : "100%",
+		"stamina" : "25",
+		"effect" : "The user ignites itself and charge at the opponent. This move has a 20% chance of leaving the target with a burn but also hurts the user by a third of the damage dealt."
+	},
+	"2012" : {
+		"name" : "Sacred Fire",
+		"type" : "Fire",
+		"category" : "Physical",
+		"power" : "130",
+		"accuracy" : "85%",
+		"stamina" : "25",
+		"effect" : "Raze the opponent with a mystical fire of great intensity. This move has a 50% chance of leaving the target with a burn."
+	},
+	"2013" : {
+		"name" : "Fire Ball",
+		"type" : "Fire",
+		"category" : "Special",
+		"power" : "40",
+		"accuracy" : "100%",
+		"stamina" : "5",
+		"effect" : "Blast a fire ball at the opponent."
+	},
+	"2014" : {
+		"name" : "Fire Breath",
+		"type" : "Fire",
+		"category" : "Special",
+		"power" : "60",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Breathe out a wave of fire at the opponent. This move has a 10% chance of leaving the target with a burn."
+	},
+	"2015" : {
+		"name" : "Fire Blast",
+		"type" : "Fire",
+		"category" : "Special",
+		"power" : "70",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Release a fiery blast at the opponent. This move has a 10% chance of leaving the target with a burn."
+	},
+	"2016" : {
+		"name" : "Heat Wave",
+		"type" : "Fire",
+		"category" : "Special",
+		"power" : "75",
+		"accuracy" : "95%",
+		"stamina" : "15",
+		"effect" : "Exhale hot breath on the opposing field. This move has a 20% chance of lowering the target(s) Special Defense stat."
+	},
+	"2017" : {
+		"name" : "Flame Burst",
+		"type" : "Fire",
+		"category" : "Special",
+		"power" : "80",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Breath out bursting flame at the opponent. This move also deals half of the damage to the opponents next to the target as well."
+	},
+	"2018" : {
+		"name" : "Magma Storm",
+		"type" : "Fire",
+		"category" : "Special",
+		"power" : "90",
+		"accuracy" : "90%",
+		"stamina" : "15",
+		"effect" : "Trap the opponent inside a maelstrom of fire that inflicts damage for 3-5 turns."
+	},
+	"2019" : {
+		"name" : "Eruption",
+		"type" : "Fire",
+		"category" : "Special",
+		"power" : "100",
+		"accuracy" : "100%",
+		"stamina" : "20",
+		"effect" : "Release magma blasts into the surrounding area, dealing damage to both foes and allies."
+	},
+	"2020" : {
+		"name" : "Blue Flare",
+		"type" : "Fire",
+		"category" : "Special",
+		"power" : "120",
+		"accuracy" : "90%",
+		"stamina" : "25",
+		"effect" : "Engulf the opponent in an intense, yet beautiful, blue flame. This move has a 20% chance of lowering the target's Special Defense stat."
+	},
+	"2021" : {
+		"name" : "Scorching Fire",
+		"type" : "Fire",
+		"category" : "Special",
+		"power" : "130",
+		"accuracy" : "100%",
+		"stamina" : "25",
+		"effect" : "Use all of the fire power to attack the opponent. The recoil from this move harshly lowers the user's Special Attack stat."
+	},
+	"2022" : {
+		"name" : "Blast Burn",
+		"type" : "Fire",
+		"category" : "Special",
+		"power" : "150",
+		"accuracy" : "100%",
+		"stamina" : "30",
+		"effect" : "Raze the opponent with an intense blast of all-consuming fire. The user can't move on the next turn."
+	},
+	"2023" : {
+		"name" : "Sun Dance",
+		"type" : "Fire",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "30",
+		"effect" : "Intensify the sun for 5 turns. The sunlight powers up Fire-type atacks and lowers the power of Water-type attacks."
+	},
+	"2024" : {
+		"name" : "Ignite",
+		"type" : "Fire",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "85%",
+		"stamina" : "10",
+		"effect" : "Shoot a sinister flame at the target to inflict a burn."
+	},
+	"2025" : {
+		"name" : "Combustion",
+		"type" : "Fire",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "15",
+		"effect" : "The user kindle its flames to raise both Special Attack and Special Defense stats."
+	},
+	"2026" : {
+		"name" : "Overheat",
+		"type" : "Fire",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "20",
+		"effect" : "The user gathers all the fire power to surpass its own limit. This move drastically raises the user's Special Attack stat but costs half of the user's max HP."
+	},
+	"2027" : {
+		"name" : "Ember Cutter",
+		"type" : "Fire",
+		"category" : "Physical",
+		"power" : "70",
+		"accuracy" : "100",
+		"stamina" : "15",
+		"effect" : "The user ignites its sharp claws or fangs and slash at the opponent. This move has a 20% chance of lowering the target's Defense stat and 20% chance of leaving the target with a burn."
+	}
+}]

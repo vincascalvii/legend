@@ -1,0 +1,65 @@
+[{
+    "7001" : {
+		"name" : "Iron Claw",
+		"type" : "Metal",
+		"category" : "Physical",
+		"power" : "60",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Slash the opponent with a harden claw. This move has a 20% chance of lowering the target's Defense stat."
+	},
+	"7002" : {
+		"name" : "Iron Tail",
+		"type" : "Metal",
+		"category" : "Physical",
+		"power" : "60",
+		"accuracy" : "90%",
+		"stamina" : "15",
+		"effect" : "Slam the opponent with a steel-hard tail. This move has a 20% chance of reducing the target's Defense stat by one stage."
+	},
+	"7003" : {
+		"name" : "Power Ball",
+		"type" : "Metal",
+		"category" : "Physical",
+		"power" : "70",
+		"accuracy" : "80%",
+		"stamina" : "20",
+		"effect" : "Roll towards the opponent like a powerball. If it misses, the user is hurt instead for 25% of the maximum HP."
+	},
+	"7004" : {
+		"name" : "Heavy Bash",
+		"type" : "Metal",
+		"category" : "Physical",
+		"power" : "60",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Bash the target heavily with a harden body part. This move has a 20% chance of causing the target to flinch."
+	},
+	"7005" : {
+		"name" : "Heavy Slam",
+		"type" : "Metal",
+		"category" : "Physical",
+		"power" : "-",
+		"accuracy" : "100%",
+		"stamina" : "20",
+		"effect" : "Slam into the target with a heavy body. The more the user outweights the target, the greater the move's power."
+	},
+	"7006" : {
+		"name" : "Steel Crusher",
+		"type" : "Metal",
+		"category" : "Physical",
+		"power" : "80",
+		"accuracy" : "95%",
+		"stamina" : "25",
+		"effect" : "Crush the opponent with a force that can bend steel. This move has 20% chance of lowering the target's Defense stat."
+	},
+	"7007" : {
+		"name" : "Iron Wall",
+		"type" : "Metal",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "15",
+		"effect" : "Harden the body like an iron wall to sharply raise the user's Defense stat."
+	}
+}]

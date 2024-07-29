@@ -1,0 +1,236 @@
+[{
+    "3001" : {
+		"name" : "Plunge",
+		"type" : "Water",
+		"category" : "Physical",
+		"power" : "40",
+		"accuracy" : "100%",
+		"stamina" : "5",
+		"effect" : "Plunge the opponent into the water."
+	},
+	"3002" : {
+		"name" : "Clamp",
+		"type" : "Water",
+		"category" : "Physical",
+		"power" : "50",
+		"accuracy" : "95%",
+		"stamina" : "5",
+		"effect" : "Clamp and squeeze the opponent with a very thick and sturdy shell. This move prevents both the user and the opponent from switching out."
+	},
+	"3003" : {
+		"name" : "Aqua Jet",
+		"type" : "Water",
+		"category" : "Physical",
+		"power" : "50",
+		"accuracy" : "90%",
+		"stamina" : "10",
+		"effect" : "Lunge at the target like a jet. This move deals double damage if the user is under the water."
+	},
+	"3004" : {
+		"name" : "Submerge",
+		"type" : "Water",
+		"category" : "Physical",
+		"power" : "60",
+		"accuracy" : "95%",
+		"stamina" : "10",
+		"effect" : "Dive under the water and attack the next turn. The user becomes untargetable by all non-Electric typed moves during this turn."
+	},
+	"3005" : {
+		"name" : "Geyser",
+		"type" : "Water",
+		"category" : "Physical",
+		"power" : "60",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Slam into the opponent with full-force blast of water. This move has a 20% chance of lowering the target's Defense stat."
+	},
+	"3006" : {
+		"name" : "Torrent Climb",
+		"type" : "Water",
+		"category" : "Physical",
+		"power" : "70",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Hit the opponent with a blow packing the power of fish travelling up waterfalls."
+	},
+	"3007" : {
+		"name" : "Razor Shell",
+		"type" : "Water",
+		"category" : "Physical",
+		"power" : "75",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Cut the opponent with sharp shell to inflict damage. This move has a 20% chance of reducing the target's Defense stat."
+	},
+	"3008" : {
+		"name" : "Tide Rush",
+		"type" : "Water",
+		"category" : "Physical",
+		"power" : "80",
+		"accuracy" : "90%",
+		"stamina" : "15",
+		"effect" : "Swamp on a giant wave to strike the opponent."
+	},
+	"3009" : {
+		"name" : "Surging Strikes",
+		"type" : "Water",
+		"category" : "Physical",
+		"power" : "25",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Strike the opponent with a flowing motion of water 3 times in a row. This move has a 100% critical hit chance."
+	},
+	"3010" : {
+		"name" : "Tidal Twister",
+		"type" : "Water",
+		"category" : "Physical",
+		"power" : "90",
+		"accuracy" : "90%",
+		"stamina" : "20",
+		"effect" : "Trap the opponent inside a violent, swirling whirlpool that inflict damage for 3-5 turns."
+	},
+	"3011" : {
+		"name" : "Wave Crash",
+		"type" : "Water",
+		"category" : "Physical",
+		"power" : "120",
+		"accuracy" : "100%",
+		"stamina" : "25",
+		"effect" : "Shroud in water and slam into the target with the whole body. This move hurts the user by a third of the damage dealt."
+	},
+	"3012" : {
+		"name" : "Water Gun",
+		"type" : "Water",
+		"category" : "Special",
+		"power" : "40",
+		"accuracy" : "100%",
+		"stamina" : "5",
+		"effect" : "Blast at the opponent with a shot of water."
+	},
+	"3013" : {
+		"name" : "Water Bomb",
+		"type" : "Water",
+		"category" : "Special",
+		"power" : "50",
+		"accuracy" : "95%",
+		"stamina" : "5",
+		"effect" : "Attack the opponent with a strong blast of water. This move has a 10% chance of leaving the target in confusion."
+	},
+	"3014" : {
+		"name" : "Chilling Water",
+		"type" : "Water",
+		"category" : "Special",
+		"power" : "60",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Shower the opponent with chilling cold water. This move has a 10% chance of leaving the target frozen."
+	},
+	"3015" : {
+		"name" : "Bubble Burst",
+		"type" : "Water",
+		"category" : "Special",
+		"power" : "70",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Splash the opponent with a giant water bubble. If targeting a foe, the harsh torrent will hurt them. If targeting an ally, cleansing water will soothe and heal them."
+	},
+	"3016" : {
+		"name" : "Maroon",
+		"type" : "Water",
+		"category" : "Special",
+		"power" : "80",
+		"accuracy" : "90%",
+		"stamina" : "15",
+		"effect" : "Wash the opponent(s) with an enourmous wave of water. This move has a 20% chance of lowering the target's Attack stat."
+	},
+	"3017" : {
+		"name" : "Scald",
+		"type" : "Water",
+		"category" : "Special",
+		"power" : "80",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Shoot boiling water at the opponent. This move has a 20% chance of leaving the target with a burn. This move also thaws the target."
+	},
+	"3018" : {
+		"name" : "Aqua Blast",
+		"type" : "Water",
+		"category" : "Special",
+		"power" : "90",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Summon a massive amount of water and blast it at the opponent in full force."
+	},
+	"3019" : {
+		"name" : "Tsunami",
+		"type" : "Water",
+		"category" : "Special",
+		"power" : "100",
+		"accuracy" : "100%",
+		"stamina" : "20",
+		"effect" : "Set off a tsunami that drowns everyone around the user, foes and allies."
+	},
+	"3020" : {
+		"name" : "Hydro Cannon",
+		"type" : "Water",
+		"category" : "Special",
+		"power" : "120",
+		"accuracy" : "90%",
+		"stamina" : "25",
+		"effect" : "Blast the opponent with a huge volume of water launched under great pressure. This move also has a 20% chance of flinching the target."
+	},
+	"3021" : {
+		"name" : "Origin Pulse",
+		"type" : "Water",
+		"category" : "Special",
+		"power" : "150",
+		"accuracy" : "100%",
+		"stamina" : "30",
+		"effect" : "Fire countless beams of brilliant blue water from the deep at the opponent. The user can't move on the next turn."
+	},
+	"3022" : {
+		"name" : "Rain Fall",
+		"type" : "Water",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "30",
+		"effect" : "Summon a heavy rain that falls for 5 turns. The rain powers up Water-type moves by 50% and lowers the power of Fire-type moves by 50%."
+	},
+	"3023" : {
+		"name" : "Aqua Veil",
+		"type" : "Water",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "25",
+		"effect" : "The user envelopes itself in a veil made of water. This move restores 1/16 of the user's max HP each turn."
+	},
+	"3024" : {
+		"name" : "Holy Water",
+		"type" : "Water",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "15",
+		"effect" : "Scatter pure water around and restore the HP of the user and its ally on the field."
+	},
+	"3025" : {
+		"name" : "Drench",
+		"type" : "Water",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "20",
+		"effect" : "Shoot a torrent of water that changes the target's type into Water for 3-5 turns."
+	},
+	"3026" : {
+		"name" : "Flowing Barrier",
+		"type" : "Water",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "15",
+		"effect" : "Create a water barrier to surround the body, protecting the user from the next damaging move(s). If used successfully, this move recovers 1/8 of the user's HP. The success rate is reduced by 50% if used consecutively with any other evasion moves."
+	}
+}]

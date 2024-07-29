@@ -1,0 +1,47 @@
+[{
+    "6001" : {
+		"name" : "Sand Attack",
+		"type" : "Earth",
+		"category" : "Physical",
+		"power" : "10",
+		"accuracy" : "80%",
+		"stamina" : "5",
+		"effect" : "Hurl sand at the opponent to lower the target's Accuracy."
+	},
+	"6002" : {
+		"name" : "Burrow",
+		"type" : "Earth",
+		"category" : "Physical",
+		"power" : "60",
+		"accuracy" : "90%",
+		"stamina" : "15",
+		"effect" : "Burrow into the ground and attack the next turn. The user becomes untargetable by all non-Earth typed moves during this turn."
+	},
+	"6003" : {
+		"name" : "Rock Fall",
+		"type" : "Earth",
+		"category" : "Physical",
+		"power" : "60",
+		"accuracy" : "90%",
+		"stamina" : "15",
+		"effect" : "Hurl large boulders at the opponent(s) to inflict damage. This move has a 20% chance of causing the target to flinch."
+	},
+	"6004" : {
+		"name" : "Ground Stomp",
+		"type" : "Earth",
+		"category" : "Physical",
+		"power" : "60",
+		"accuracy" : "90%",
+		"stamina" : "15",
+		"effect" : "Strongly stomp down on the ground to strike everything around the user, foes and allies. This move lowers the Speed stats of those hit."
+	},
+	"6005" : {
+		"name" : "Earthquake",
+		"type" : "Earth",
+		"category" : "Physical",
+		"power" : "80",
+		"accuracy" : "100%",
+		"stamina" : "25",
+		"effect" : "Set off an earthquake that strikes everyone around the user, foes and allies."
+	}
+}]

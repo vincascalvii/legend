@@ -171,58 +171,70 @@ if ( no != '' && no != null ) {
 			document.querySelector('.condition-immunity').appendChild(immunity);
 		}
 
-		// Fetch the moves
-		fetch('/legend/data/all/moves.json')
-		.then( function(response) {
-			if (!response.ok) throw new Error("HTTP error " + response.status);
-		    return response.json();
-		})
-		.then( function(moves) {
-			
-			// Populate moveset by level up
-			moveLevelContainer = document.querySelector('.moves-level');
-			for ( var ml = 0; ml < data[0]['moves_level'].length; ml++ ) {
-				var id = data[0]['moves_level'][ml]['id'];
-				var level = data[0]['moves_level'][ml]['level'];
-				var moveLevel = document.createElement('div');
-					moveLevel.classList.add('move');
-					moveLevel.innerHTML = '<p class="move-label"><span class="move-name">' + 
-						moves[0][id]['name'] + '</span><span class="type ' +
-						moves[0][id]['type'].toLowerCase() + '">' + 
-						moves[0][id]['type'] + '</span><span class="move-level">' + 
-						level + '</span></p>' + 
-						'<p class="move-details"><span class="move-category">' + 
-						moves[0][id]['category'] + '</span><span class="move-power">PWR: ' +
-						moves[0][id]['power'] + '</span><span class="move-accuracy">ACC: ' +
-						moves[0][id]['accuracy'] + '</span><span class="move-stamina">STA: ' +
-						moves[0][id]['stamina'] + '</span></p>' +
-						'<p class="move-effect">' + moves[0][id]['effect'] + '</p>';
-				moveLevelContainer.appendChild(moveLevel);
-			}
+		// Create an empty object to store all the moves
+		var moves = {};
 
-			// Populate moveset by tutor
-			var moveTutorContainer = document.querySelector('.moves-tutor');
-			for ( var mt = 0; mt < data[0]['moves_tutor'].length; mt++ ) {
-				var id = data[0]['moves_tutor'][mt]['id'];
-				var moveTutor = document.createElement('div');
-					moveTutor.classList.add('move');
-					moveTutor.innerHTML = '<p class="move-label"><span class="move-name">' + 
-						moves[0][id]['name'] + '</span><span class="type ' +
-						moves[0][id]['type'].toLowerCase() + '">' + 
-						moves[0][id]['type'] + '</span></p>' + 
-						'<p class="move-details"><span class="move-category">' + 
-						moves[0][id]['category'] + '</span><span class="move-power">PWR: ' +
-						moves[0][id]['power'] + '</span><span class="move-accuracy">ACC: ' +
-						moves[0][id]['accuracy'] + '</span><span class="move-stamina">STA: ' +
-						moves[0][id]['stamina'] + '</span></p>' +
-						'<p class="move-effect">' + moves[0][id]['effect'] + '</p>';
-				moveTutorContainer.appendChild(moveTutor);
-			}
-		})
-		.catch( function(error) {
-			console.log('Fetch error: ', error);
-		});
+		// Build the array of types
+		let types = [
+			'neutral', 'nature', 'fire', 'water', 'electric', 'wind', 'earth', 
+			'metal', 'ice', 'dark', 'light', 'toxic'
+		];
 
+		// Loop through the types to get all the moves
+		for ( var m = 0; m < types.length; m++ ) {
+			fetch('/legend/data/moves/' + types[m] + '.json')
+			.then( function(response) {
+				if (!response.ok) throw new Error("HTTP error " + response.status);
+				return response.json();
+			})
+			.then( function(_moves) {
+				console.log(_moves);
+			})
+			.catch( function(error) {
+				console.log('Fetch error: ', error);
+			});;
+		}
+			/*
+		// Populate moveset by level up
+		moveLevelContainer = document.querySelector('.moves-level');
+		for ( var ml = 0; ml < data[0]['moves_level'].length; ml++ ) {
+			var id = data[0]['moves_level'][ml]['id'];
+			var level = data[0]['moves_level'][ml]['level'];
+			var moveLevel = document.createElement('div');
+				moveLevel.classList.add('move');
+				moveLevel.innerHTML = '<p class="move-label"><span class="move-name">' + 
+					moves[0][id]['name'] + '</span><span class="type ' +
+					moves[0][id]['type'].toLowerCase() + '">' + 
+					moves[0][id]['type'] + '</span><span class="move-level">' + 
+					level + '</span></p>' + 
+					'<p class="move-details"><span class="move-category">' + 
+					moves[0][id]['category'] + '</span><span class="move-power">PWR: ' +
+					moves[0][id]['power'] + '</span><span class="move-accuracy">ACC: ' +
+					moves[0][id]['accuracy'] + '</span><span class="move-stamina">STA: ' +
+					moves[0][id]['stamina'] + '</span></p>' +
+					'<p class="move-effect">' + moves[0][id]['effect'] + '</p>';
+			moveLevelContainer.appendChild(moveLevel);
+		}
+
+		// Populate moveset by tutor
+		var moveTutorContainer = document.querySelector('.moves-tutor');
+		for ( var mt = 0; mt < data[0]['moves_tutor'].length; mt++ ) {
+			var id = data[0]['moves_tutor'][mt]['id'];
+			var moveTutor = document.createElement('div');
+				moveTutor.classList.add('move');
+				moveTutor.innerHTML = '<p class="move-label"><span class="move-name">' + 
+					moves[0][id]['name'] + '</span><span class="type ' +
+					moves[0][id]['type'].toLowerCase() + '">' + 
+					moves[0][id]['type'] + '</span></p>' + 
+					'<p class="move-details"><span class="move-category">' + 
+					moves[0][id]['category'] + '</span><span class="move-power">PWR: ' +
+					moves[0][id]['power'] + '</span><span class="move-accuracy">ACC: ' +
+					moves[0][id]['accuracy'] + '</span><span class="move-stamina">STA: ' +
+					moves[0][id]['stamina'] + '</span></p>' +
+					'<p class="move-effect">' + moves[0][id]['effect'] + '</p>';
+			moveTutorContainer.appendChild(moveTutor);
+		}
+*/
 		// Populate evolution
 		var evolution = document.querySelector('.evolution');
 		if ( data[0]['evolution'].length > 0 ) {

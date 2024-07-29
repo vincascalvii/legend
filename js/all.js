@@ -5,7 +5,7 @@
 ================================================================ */
 
 // Fetch the data
-fetch('/legend/data/all/all.json')
+fetch('/legend/data/all.json')
 .then( function(response) {
 	if (!response.ok) throw new Error("HTTP error " + response.status);
     return response.json();

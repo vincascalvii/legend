@@ -1,0 +1,101 @@
+[{
+	"9001" : {
+		"name" : "Pursuit",
+		"type" : "Dark",
+		"category" : "Physical",
+		"power" : "40",
+		"accuracy" : "75%",
+		"stamina" : "10",
+		"effect" : "Chase after the opponent and inflict double damage if the target switches out."
+	},
+	"9002" : {
+		"name" : "Shadow Claw",
+		"type" : "Dark",
+		"category" : "Physical",
+		"power" : "60",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Slash the opponent with a claw made from shadow. This move has a 10% critical hit chance."
+	},
+	"9003" : {
+		"name" : "Shadow Sneak",
+		"type" : "Dark",
+		"category" : "Physical",
+		"power" : "60",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Sneak in the dark and attack the next turn. The user becomes untargetable by all non-Light typed moves during this turn."
+	},
+	"9004" : {
+		"name" : "Phantom Force",
+		"type" : "Dark",
+		"category" : "Physical",
+		"power" : "80",
+		"accuracy" : "95%",
+		"stamina" : "25",
+		"effect" : "Surround the body with a swirl of dark energy then strike at the opponent. This move has 20% chance of lowering the target's Attack stat."
+	},
+	"9005" : {
+		"name" : "Glare",
+		"type" : "Dark",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Frighten the target with a scary face to lower the target's Speed stat."
+	},
+	"9006" : {
+		"name" : "Stalk",
+		"type" : "Dark",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Stalk the opponent, allowing the next move to have +1 priority and 50% critical hit chance."
+	},
+	"9007" : {
+		"name" : "Provoke",
+		"type" : "Dark",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Taunt the opponent, causing the target to only be able to use attack moves for three turns."
+	},
+	"9008" : {
+		"name" : "Taunt",
+		"type" : "Dark",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "10",
+		"effect" : "The user draws attention to itself, making all opposing opponents take aim only at the user."
+	},
+	"9009" : {
+		"name" : "Reprise",
+		"type" : "Dark",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "20",
+		"effect" : "For the next 3 turns, the target is forced to repeat its last move used."
+	},
+    "9010" : {
+		"name" : "Feint",
+		"type" : "Dark",
+		"category" : "Physical",
+		"power" : "30",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Attack the opponent and ignore evasion moves such as Dodge or Guard. It also lifts the effects of those moves."
+	},
+    "9011" : {
+		"name" : "Revenge",
+		"type" : "Dark",
+		"category" : "Physical",
+		"power" : "-",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Wait 1 turn then deal double the damage taken on next turn."
+	}
+}]

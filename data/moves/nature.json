@@ -1,0 +1,263 @@
+[{
+    "1001" : {
+		"name" : "Leaf Blade",
+		"type" : "Nature",
+		"category" : "Physical",
+		"power" : "40",
+		"accuracy" : "100%",
+		"stamina" : "5",
+		"effect" : "Attack the opponent with a hardened leave."
+	},
+	"1002" : {
+		"name" : "Vine Whip",
+		"type" : "Nature",
+		"category" : "Physical",
+		"power" : "45",
+		"accuracy" : "95%",
+		"stamina" : "5",
+		"effect" : "Strike the opponent with a slender, whip-like vine to inflict damage."
+	},
+	"1003" : {
+		"name" : "Leaf Razor",
+		"type" : "Nature",
+		"category" : "Physical",
+		"power" : "50",
+		"accuracy" : "100%",
+		"stamina" : "5",
+		"effect" : "Attack the opponent with razor sharp leaves. This move has 10% critical hit chance."
+	},
+	"1004" : {
+		"name" : "Seed Pellets",
+		"type" : "Nature",
+		"category" : "Physical",
+		"power" : "25",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Attack the opponent by forcefully shooting seeds at the target. This move hits 2-5 times in a row."
+	},
+	"1005" : {
+		"name" : "Fury Cutter",
+		"type" : "Nature",
+		"category" : "Physical",
+		"power" : "60",
+		"accuracy" : "95%",
+		"stamina" : "10",
+		"effect" : "Slash the opponent with scythe-like attack. Consecutive success uses of this move increases the power by 5 each time (Max. 30)."
+	},
+	"1006" : {
+		"name" : "Foliate",
+		"type" : "Nature",
+		"category" : "Physical",
+		"power" : "70",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Pelt the opponent with flower petals and leaves. This move also has a 10% chance of lowering the target's accuracy."
+	},
+	"1007" : {
+		"name" : "Forest Glide",
+		"type" : "Nature",
+		"category" : "Physical",
+		"power" : "80",
+		"accuracy" : "95%",
+		"stamina" : "15",
+		"effect" : "Glide through the forest to strike at the opponent. If the battle takes place in Forest Terrain, this move has +1 priority."
+	},
+	"1008" : {
+		"name" : "Thistle Slash",
+		"type" : "Nature",
+		"category" : "Physical",
+		"power" : "80",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Hack at the opponent with prickly stems. This move has a 20% chance of landing a critical hit."
+	},
+	"1009" : {
+		"name" : "Power Whip",
+		"type" : "Nature",
+		"category" : "Physical",
+		"power" : "100",
+		"accuracy" : "90%",
+		"stamina" : "20",
+		"effect" : "Violently whirl vines, tentacles or the like to lash the opponent. This move also has a 20% of causing the target to flinch."
+	},
+	"1010" : {
+		"name" : "Thorn Slam",
+		"type" : "Nature",
+		"category" : "Physical",
+		"power" : "120",
+		"accuracy" : "100%",
+		"stamina" : "25",
+		"effect" : "Slam the opponent with hard thorns to inflict heavy damage. This move also lowers the user's Attack stat."
+	},
+	"1011" : {
+		"name" : "Timber Whack",
+		"type" : "Nature",
+		"category" : "Physical",
+		"power" : "120",
+		"accuracy" : "100%",
+		"stamina" : "25",
+		"effect" : "Slam the opponent with hard rugged body to deal serious damage. If this move lands and the opponent loses HP, the user also gets hurt by a third of the damage dealt."
+	},
+	"1012" : {
+		"name" : "Pine Needles",
+		"type" : "Nature",
+		"category" : "Special",
+		"power" : "40",
+		"accuracy" : "100%",
+		"stamina" : "5",
+		"effect" : "Shoot pine needles at the opponent."
+	},
+	"1013" : {
+		"name" : "Leaf Barrage",
+		"type" : "Nature",
+		"category" : "Special",
+		"power" : "50",
+		"accuracy" : "90%",
+		"stamina" : "5",
+		"effect" : "Blast the target with sharp leaves. This move has a 20% chance of lowering the target's Defense stat."
+	},
+	"1014" : {
+		"name" : "Enchanted Leaves",
+		"type" : "Nature",
+		"category" : "Special",
+		"power" : "60",
+		"accuracy" : "95%",
+		"stamina" : "10",
+		"effect" : "Scatter enchanted leaves on the target. This move has a 20% chance of lowering the target's Special Attack stat."
+	},
+	"1015" : {
+		"name" : "Grassy Blast",
+		"type" : "Nature",
+		"category" : "Special",
+		"power" : "70",
+		"accuracy" : "95%",
+		"stamina" : "10",
+		"effect" : "Draw power from nature and blast at the opponent. This move has a 20% chance to cause the target to flinch."
+	},
+	"1016" : {
+		"name" : "Life Drain",
+		"type" : "Nature",
+		"category" : "Special",
+		"power" : "75",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Drain the opponent's HP, and restore half of that to the user."
+	},
+	"1017" : {
+		"name" : "Vine Tangle",
+		"type" : "Nature",
+		"category" : "Special",
+		"power" : "-",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Snare the opponent with a vine and trip it. The heavier the target, the greater the move's power."
+	},
+	"1018" : {
+		"name" : "Nature Force",
+		"type" : "Nature",
+		"category" : "Special",
+		"power" : "100",
+		"accuracy" : "100%",
+		"stamina" : "20",
+		"effect" : "Use the power of nature to unlease a raging thrash to the surrounding area, hitting both foes and allies."
+	},
+	"1019" : {
+		"name" : "Solar Beam",
+		"type" : "Nature",
+		"category" : "Special",
+		"power" : "120",
+		"accuracy" : "100%",
+		"stamina" : "25",
+		"effect" : "Gather light on the first turn, then blast a bundled beam on the next. This move does not need to charge on the first turn if the weather is sunny day. Power is halved if it's any other weather."
+	},
+	"1020" : {
+		"name" : "Bloom Doom",
+		"type" : "Nature",
+		"category" : "Special",
+		"power" : "150",
+		"accuracy" : "100%",
+		"stamina" : "30",
+		"effect" : "Collect energy from plants and attack the opponent with full force. The user can't move on the next turn."
+	},
+	"1021" : {
+		"name" : "Photosynthesis",
+		"type" : "Nature",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "20",
+		"effect" : "Restore the user's HP by 25%. During harsh sunlight, this move restores 50% instead."
+	},
+	"1022" : {
+		"name" : "Sapping Seed",
+		"type" : "Nature",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "100%",
+		"stamina" : "25",
+		"effect" : "Plant a seed on the opponent. It steals some HP from the target every turn."
+	},
+	"1023" : {
+		"name" : "Fungus Curse",
+		"type" : "Nature",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Cast a spell that curses the opponent, harshly lowering the target's Special Defense stat."
+	},
+	"1024" : {
+		"name" : "Snore Spore",
+		"type" : "Nature",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "75%",
+		"stamina" : "10",
+		"effect" : "Put the opponent to sleep with a cloud of sleep-inducing spores."
+	},
+	"1025" : {
+		"name" : "Stun Spore",
+		"type" : "Nature",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "75%",
+		"stamina" : "10",
+		"effect" : "Paralyse the opponent with a cloud of statically charged spores."
+	},
+	"1026" : {
+		"name" : "Toxic Spore",
+		"type" : "Nature",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "75%",
+		"stamina" : "10",
+		"effect" : "Poison the opponent with a cloud of toxic infused spores."
+	},
+	"1027" : {
+		"name" : "Ingrain",
+		"type" : "Nature",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "25",
+		"effect" : "Lay roots that restore the user's own HP by 1/16 of the max HP every turn. The user can't switch out due to being rooted."
+	},
+	"1028" : {
+		"name" : "Wonder Herb",
+		"type" : "Nature",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "30",
+		"effect" : "Administer a special herb to both on and off the field allies and cleanse them off their status ailments."
+	},
+	"1029" : {
+		"name" : "Deadly Blossom",
+		"type" : "Nature",
+		"category" : "Physical",
+		"power" : "80",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Stab the opponent with the user's deadly tail. If the user successfully hits the target before it can move, the target will also be poisoned."
+	}
+}]
