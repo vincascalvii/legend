@@ -44,6 +44,8 @@ main {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
     z-index: -2;
 }
 
@@ -56,7 +58,7 @@ main {
 }
 
 #background.fire {
-    background-color: #e56640;
+    background-color: #ff351e;
 }
 
 #background.water {
@@ -74,7 +76,7 @@ main {
     width: 100%;
     height: 100%;
     z-index: -1;
-    opacity: .5;
+    opacity: .4;
 }
 
 .background-wave img {
@@ -112,7 +114,7 @@ main {
 }
 
 .header .name {
-    color: #fff;
+    color: #333;
     font-size: 2.4rem;
     margin: 5px 0 10px;
 }
@@ -145,36 +147,36 @@ main {
 }
 
 .type.neutral {
-    background-color: #727272;
+    background-color: #ada79c;
 }
 
 .type.nature {
-    background-color: #2b7d53;
+    background-color: #3ca33f;
 }
 
 .type.fire {
-    background-color: #bf4e2f;
+    background-color: #ff4a41;
 }
 
 .type.water {
-    background-color: #3d59d1;
+    background-color: #2e9bf7;
 }
 
 .type.electric {
-    background-color: #f5e234;
+    background-color: #ffca35;
     color: #606060;
 }
 
 .type.wind {
-    background-color: #0f7d81;
+    background-color: #2ed5af;
 }
 
 .type.earth {
-    background-color: #a1673b;
+    background-color: #cf7735;
 }
 
 .type.metal {
-    background-color: #555;
+    background-color: #6d7e8d;
 }
 
 .type.ice {
