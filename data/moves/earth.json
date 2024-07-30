@@ -39,9 +39,9 @@
 		"name" : "Earthquake",
 		"type" : "Earth",
 		"category" : "Physical",
-		"power" : "80",
+		"power" : "100",
 		"accuracy" : "100%",
-		"stamina" : "25",
+		"stamina" : "20",
 		"effect" : "Set off an earthquake that strikes everyone around the user, foes and allies."
 	}
 }]

@@ -1,0 +1,70 @@
+[{
+	"number" : "018",
+	"name" : "Silkocoon",
+	"types" : ["Light", ""],
+	"abilities" : [
+		{
+			"name" : "Shed Skin",
+			"desc" : "The Pokémon may heal its own status conditions by shedding its skin."
+		},
+		{
+			"name" : "Shed Skin (Secret)",
+			"desc" : "The Pokémon may heal its own status conditions by shedding its skin."
+		}
+	],
+	"description" : "Silkocoon are protected by thick layer of silk that was slowly built up by their previous evolution. It acts as the armour to protect their bodies from tough weathers and dangerous predators. Their colours have also faded and they no longer glow in the dark.",
+	"gender" : {
+		"male" : "50%",
+		"female" : "50%"
+	},
+	"species" : "Cocoon",
+	"weight" : "9.9kg",
+	"height" : "0.6m",
+	"stats" : {
+		"hp" : "50",
+		"atk" : "60",
+		"def" : "55",
+		"spa" : "45",
+		"spd" : "55",
+		"spe" : "15",
+		"total" : "280"
+	},
+	"major_weakness" : [],
+	"weakness" : ["Metal", "Dark"],
+	"resistance" : ["Fire", "Light"],
+	"major_resistance" : [],
+	"immunity" : [],
+	"evolution" : [
+		{
+			"id" : "017",
+			"req" : "Base"
+		},
+		{
+			"id" : "018",
+			"req" : "Level 15"
+		},
+		{
+			"id" : "019",
+			"req" : "Level 25"
+		}
+	],
+	"moves_level" : [
+		{
+			"id" : "2",
+			"level" : "-"
+		},
+        {
+			"id" : "60",
+			"level" : "-"
+		},
+		{
+			"id" : "41",
+			"level" : "-"
+		},
+		{
+			"id" : "52",
+			"level" : "-"
+		}
+	],
+	"moves_tutor" : []
+}]

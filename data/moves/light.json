@@ -1,29 +1,209 @@
 [{
-    "10001" : {
+	"10001" : {
+		"name" : "Glitter",
+		"type" : "Light",
+		"category" : "Physical",
+		"power" : "40",
+		"accuracy" : "100%",
+		"stamina" : "5",
+		"effect" : "Attack the opponent while infused with light."
+	},
+	"10002" : {
+		"name" : "Daybreak Strike",
+		"type" : "Light",
+		"category" : "Physical",
+		"power" : "40",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "A strong light-based attack that deals double damage if it's sunny."
+	},
+	"10003" : {
+		"name" : "Shimmer Strike",
+		"type" : "Light",
+		"category" : "Physical",
+		"power" : "60",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "A quick, light-infused strike. This move has a +1 priority."
+	},
+	"10004" : {
+		"name" : "Photon Blade",
+		"type" : "Light",
+		"category" : "Physical",
+		"power" : "60",
+		"accuracy" : "90%",
+		"stamina" : "20",
+		"effect" : "Create a blade of pure light that slices through the opponent's defense. This move will ignore the target's Defense stat."
+	},
+	"10005" : {
+		"name" : "Lustrous Cut",
+		"type" : "Light",
+		"category" : "Physical",
+		"power" : "90",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Intensify the light at a single line to cut through the opponent."
+	},
+	"10006" : {
+		"name" : "Stellar Blade",
+		"type" : "Light",
+		"category" : "Physical",
+		"power" : "120",
+		"accuracy" : "80%",
+		"stamina" : "25",
+		"effect" : "Emits a powerful burst of cosmic light from a distant celestial source, then strike at the opponent. This move has a 20% chance of lowering the target's Attack."
+	},
+	"10007" : {
+		"name" : "Light Convergence",
+		"type" : "Light",
+		"category" : "Physical",
+		"power" : "150",
+		"accuracy" : "90%",
+		"stamina" : "30",
+		"effect" : "Concentrate light into a single point, dealing massive damage but harshly lowering the user's Defense stat."
+	},
+	"10008" : {
+		"name" : "Shine",
+		"type" : "Light",
+		"category" : "Special",
+		"power" : "40",
+		"accuracy" : "100%",
+		"stamina" : "5",
+		"effect" : "Damage the opponent with bright light."
+	},
+	"10009" : {
+		"name" : "Bright Beam",
+		"type" : "Light",
+		"category" : "Special",
+		"power" : "60",
+		"accuracy" : "100",
+		"stamina" : "10",
+		"effect" : "Emit a concentraded beam of light at the opponent. This move has a 10% chance of confusing the target."
+	},
+	"10010" : {
+		"name" : "Energy Surge",
+		"type" : "Light",
+		"category" : "Special",
+		"power" : "40",
+		"accuracy" : "100%",
+		"stamina" : "30",
+		"effect" : "Radiate a huge wave of energy that damages all foes on the opposing field, while increasing self and allies' Special Attack stat."
+	},
+	"10011" : {
+		"name" : "Dazzling Gleam",
+		"type" : "Light",
+		"category" : "Special",
+		"power" : "65",
+		"accuracy" : "95%",
+		"stamina" : "15",
+		"effect" : "Send out a burst of dazzling light at all opposing foes, with a 10% chance of causing target(s) to flinch."
+	},
+	"10012" : {
+		"name" : "Prismatic Wave",
+		"type" : "Light",
+		"category" : "Special",
+		"power" : "90",
+		"accuracy" : "90%",
+		"stamina" : "15",
+		"effect" : "Send out a wave of shifting light that has a 20% chance of confusing the target."
+	},
+	"10013" : {
+		"name" : "Radiant Burst",
+		"type" : "Light",
+		"category" : "Special",
+		"power" : "100",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Release a powerful burst of light that deals damage to the opponent, but will be unable to use Light-typed move on next turn."
+	},
+	"10014" : {
+		"name" : "Starfall",
+		"type" : "Light",
+		"category" : "Special",
+		"power" : "100",
+		"accuracy" : "100%",
+		"stamina" : "20",
+		"effect" : "Bring the bursting light of a nearby star to crush down, striking everyone around the user, foes and allies."
+	},
+	"10015" : {
+		"name" : "Solar Flare",
+		"type" : "Light",
+		"category" : "Special",
+		"power" : "130",
+		"accuracy" : "90%",
+		"stamina" : "30",
+		"effect" : "Unleash a concentraed flare of sunlight at the opponent, with a 20% chance of leaving the target with a burn."
+	},
+	"10016" : {
+		"name" : "Celestial Beam",
+		"type" : "Light",
+		"category" : "Special",
+		"power" : "130",
+		"accuracy" : "70%",
+		"stamina" : "30",
+		"effect" : "A high-energy beam from the sky that deals damage to the opponent and has a 20% chance of lowering the target's Special Defense."
+	},
+    "10017" : {
 		"name" : "Flash",
-		"type" : "Neutral",
+		"type" : "Light",
 		"category" : "Support",
 		"power" : "-",
 		"accuracy" : "90%",
 		"stamina" : "10",
 		"effect" : "The user flashes a bright light that harshly lowers the target's accuracy."
 	},
-	"10002" : {
+	"10018" : {
+		"name" : "Flashbang",
+		"type" : "Light",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "90",
+		"stamina" : "15",
+		"effect" : "Blind the opponent with a sudden flash, causing confusion."
+	},
+	"10019" : {
 		"name" : "Aurora Veil",
-		"type" : "Neutral",
+		"type" : "Light",
 		"category" : "Support",
 		"power" : "-",
 		"accuracy" : "-",
 		"stamina" : "20",
 		"effect" : "Create a protective veil that reduces the damage from physical and special moves for 5 turns."
 	},
-	"10003" : {
+	"10020" : {
 		"name" : "Safe Haven",
-		"type" : "Neutral",
+		"type" : "Light",
 		"category" : "Support",
 		"power" : "-",
 		"accuracy" : "-",
 		"stamina" : "20",
 		"effect" : "Create a protective sanctuary that prevents status condition for 5 turns."
+	},
+	"10021" : {
+		"name" : "Radiant Glow",
+		"type" : "Light",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "10",
+		"effect" : "Heal 50% of the user's HP with a soothing light."
+	},
+	"10022" : {
+		"name" : "Sunlit Grace",
+		"type" : "Light",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "10",
+		"effect" : "Heal all on-field allies' HP by 50% with the power of sunlight."
+	},
+	"10023" : {
+		"name" : "Moonlit Blessing",
+		"type" : "Light",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "10",
+		"effect" : "Heal all on-field allies' status conditions with the gentle light of the moon."
 	}
 }]

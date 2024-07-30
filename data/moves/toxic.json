@@ -1,11 +1,200 @@
 [{
 	"11001" : {
+		"name" : "Poison Stringer",
+		"type" : "Toxic",
+		"category" : "Physical",
+		"power" : "40",
+		"accuracy" : "100%",
+		"stamina" : "5",
+		"effect" : "A quick stinger attack that deals damage and has a 5% chance of poisoning the target."
+	},
+	"11002" : {
 		"name" : "Poison Tail",
 		"type" : "Toxic",
 		"category" : "Physical",
 		"power" : "60",
 		"accuracy" : "90%",
-		"stamina" : "15",
+		"stamina" : "10",
 		"effect" : "Hit the opponent with a poisonous tail. This move has a 10% chance of poisoning the target."
+	},
+	"11003" : {
+		"name" : "Venomous Bite",
+		"type" : "Toxic",
+		"category" : "Physical",
+		"power" : "70",
+		"accuracy" : "95%",
+		"stamina" : "10",
+		"effect" : "A bite infused with venom that deals damage to the opponent and has a 10% chance of poisoning the target."
+	},
+	"11004" : {
+		"name" : "Creeping Poison",
+		"type" : "Toxic",
+		"category" : "Physical",
+		"power" : "75",
+		"accuracy" : "95%",
+		"stamina" : "10",
+		"effect" : "Strike the opponent with a creeping poison that deals 20% of the original damage at the end of the turn, over the next 3 turns."
+	},
+	"11005" : {
+		"name" : "Poison Jab",
+		"type" : "Toxic",
+		"category" : "Physical",
+		"power" : "80",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "A quick jab infused with poison that has a 10% chance of poisoning the target. Consecutive use increases the damage by 10% and chance of poisoning by 5%, but reducing accuracy by 5%."
+	},
+	"11006" : {
+		"name" : "Gunk Shot",
+		"type" : "Toxic",
+		"category" : "Physical",
+		"power" : "90",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Fire a shot of vile gunk at the opponent. This move has a 20% chance of poisoning the target."
+	},
+	"11007" : {
+		"name" : "Venomous Barrage",
+		"type" : "Toxic",
+		"category" : "Physical",
+		"power" : "120",
+		"accuracy" : "90%",
+		"stamina" : "20",
+		"effect" : "Delivers a rapid series of powerful, venom-infused strikes at the opponent. This move has a 20% chance of poisoning the target."
+	},
+	"11008" : {
+		"name" : "Acid Spit",
+		"type" : "Toxic",
+		"category" : "Special",
+		"power" : "40",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Spit a corrosive acid that deals damage to the opponent and has a 10% chance of lowering the target's Defense stat."
+	},
+	"11009" : {
+		"name" : "Toxic Spray",
+		"type" : "Toxic",
+		"category" : "Special",
+		"power" : "50",
+		"accuracy" : "90%",
+		"stamina" : "10",
+		"effect" : "Spray a cloud of toxic gas that has a 10% chance of poisoning the target."
+	},
+	"11010" : {
+		"name" : "Toxic Wave",
+		"type" : "Toxic",
+		"category" : "Special",
+		"power" : "60",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Send out a wave of toxic energy that deal damage to all opposing foes and has a 10% chance of poisoning the target(s)."
+	},
+	"11011" : {
+		"name" : "Noxious Cloud",
+		"type" : "Toxic",
+		"category" : "Special",
+		"power" : "60",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Release a cloud of noxious fumes that has a 20% chance of causing the target to become poisoned."
+	},
+	"11012" : {
+		"name" : "Corrosive Mist",
+		"type" : "Toxic",
+		"category" : "Special",
+		"power" : "60",
+		"accuracy" : "90%",
+		"stamina" : "10",
+		"effect" : "Create a mist of corrosive poison that deal damage and lower the target's Special Defense stat."
+	},
+	"11013" : {
+		"name" : "Siphon Drain",
+		"type" : "Toxic",
+		"category" : "Special",
+		"power" : "70",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Absorb the target's life force and restore 50% of the damage as HP to the user. If the target is poisoned, restore 100% of the damage as HP to the user instead."
+	},
+	"11014" : {
+		"name" : "Acidic Beam",
+		"type" : "Toxic",
+		"category" : "Special",
+		"power" : "80",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Fire a concentrated beam of acid that deal damage and has a 10% chance of lowering the target's Defense stat."
+	},
+	"11015" : {
+		"name" : "Sludge Bomb",
+		"type" : "Toxic",
+		"category" : "Special",
+		"power" : "90",
+		"accuracy" : "95%",
+		"stamina" : "15",
+		"effect" : "Hurl an unsanitary sludge at the opponent. This move has a 20% chance of poisoning the target."
+	},
+	"11016" : {
+		"name" : "Plague",
+		"type" : "Toxic",
+		"category" : "Special",
+		"power" : "100",
+		"accuracy" : "100%",
+		"stamina" : "20",
+		"effect" : "Unleash a catastrophic wave of toxic energy that ravages the battlefield, dealing damage to everyone around the user. This move has a 10% chance of poisoning the target(s)."
+	},
+	"11017" : {
+		"name" : "Malignant Vortex",
+		"type" : "Toxic",
+		"category" : "Special",
+		"power" : "120",
+		"accuracy" : "90%",
+		"stamina" : "25",
+		"effect" : "Unleash a swirling, malignant cloud of toxic energy that engulfs the target, dealing damage and harshly reducing the target's Attack."
+	},
+	"11018" : {
+		"name" : "Poison Powder",
+		"type" : "Toxic",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "90%",
+		"stamina" : "10",
+		"effect" : "Spray toxic powder at the opponent to poison them."
+	},
+	"11019" : {
+		"name" : "Poison Mist",
+		"type" : "Toxic",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "90%",
+		"stamina" : "20",
+		"effect" : "Create a thick mist of poison around the opponent, poisoning the target, and lowering the target's Accuracy stat."
+	},
+	"11020" : {
+		"name" : "Blight",
+		"type" : "Toxic",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Apply a blight to the opponent, reducing the target's Defense stat."
+	},
+	"11021" : {
+		"name" : "Venom Drench",
+		"type" : "Toxic",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "100%",
+		"stamina" : "20",
+		"effect" : "Soak the target in venom, reducing their Speed and Special Attack stats."
+	},
+	"11022" : {
+		"name" : "Contagion",
+		"type" : "Toxic",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Poison the opponent. Every turn, opponent(s) next to the target has a 50% chance of getting poisoned too."
 	}
 }]
