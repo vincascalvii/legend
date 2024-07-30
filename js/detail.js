@@ -199,6 +199,7 @@ if ( no != '' && no != null ) {
 						var level = data[0]['moves_level'][ml]['level'];
 						var moveLevel = document.createElement('div');
 							moveLevel.classList.add('move');
+							moveLevel.style.order = level === '-' ? '0' : level;
 							moveLevel.innerHTML = '<p class="move-label"><span class="move-name">' 
 								+ moves[0][id]['name'] + '</span><span class="type '
 								+ moves[0][id]['type'].toLowerCase() + '">'

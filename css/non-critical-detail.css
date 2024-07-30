@@ -97,6 +97,8 @@
 }
 
 .moves {
+	display: flex;
+	flex-direction: column;
 	width: calc(100% + 60px);
     margin: 0 -30px;
 }
