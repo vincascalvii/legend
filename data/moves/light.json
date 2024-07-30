@@ -195,7 +195,7 @@
 		"power" : "-",
 		"accuracy" : "-",
 		"stamina" : "10",
-		"effect" : "Heal all on-field allies' HP by 50% with the power of sunlight."
+		"effect" : "Heal all onfield allies' HP by 50% with the power of sunlight."
 	},
 	"10023" : {
 		"name" : "Moonlit Blessing",
@@ -204,6 +204,15 @@
 		"power" : "-",
 		"accuracy" : "-",
 		"stamina" : "10",
-		"effect" : "Heal all on-field allies' status conditions with the gentle light of the moon."
+		"effect" : "Heal all onfield allies' status conditions with the gentle light of the moon."
+	},
+	"10024" : {
+		"name" : "Luminous Dance",
+		"type" : "Light",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "15",
+		"effect" : "The user performs an enchanting dance that radiates a beautiful, glowing light. This move restores all onfield allies' HP by 50% and has a 30% chance of confusing the opponent(s)."
 	}
 }]

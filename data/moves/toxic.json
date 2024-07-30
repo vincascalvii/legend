@@ -90,6 +90,15 @@
 		"effect" : "Send out a wave of toxic energy that deal damage to all opposing foes and has a 10% chance of poisoning the target(s)."
 	},
 	"11011" : {
+		"name" : "Corrode",
+		"type" : "Toxic",
+		"category" : "Special",
+		"power" : "60",
+		"accuracy" : "90%",
+		"stamina" : "10",
+		"effect" : "Create a mist of corrosive poison that deal damage and lower the target's Special Defense stat."
+	},
+	"11012" : {
 		"name" : "Noxious Cloud",
 		"type" : "Toxic",
 		"category" : "Special",
@@ -97,15 +106,6 @@
 		"accuracy" : "100%",
 		"stamina" : "10",
 		"effect" : "Release a cloud of noxious fumes that has a 20% chance of causing the target to become poisoned."
-	},
-	"11012" : {
-		"name" : "Corrosive Mist",
-		"type" : "Toxic",
-		"category" : "Special",
-		"power" : "60",
-		"accuracy" : "90%",
-		"stamina" : "10",
-		"effect" : "Create a mist of corrosive poison that deal damage and lower the target's Special Defense stat."
 	},
 	"11013" : {
 		"name" : "Siphon Drain",
@@ -135,13 +135,13 @@
 		"effect" : "Hurl an unsanitary sludge at the opponent. This move has a 20% chance of poisoning the target."
 	},
 	"11016" : {
-		"name" : "Plague",
+		"name" : "Baneful Burst",
 		"type" : "Toxic",
 		"category" : "Special",
-		"power" : "100",
-		"accuracy" : "100%",
-		"stamina" : "20",
-		"effect" : "Unleash a catastrophic wave of toxic energy that ravages the battlefield, dealing damage to everyone around the user. This move has a 10% chance of poisoning the target(s)."
+		"power" : "95",
+		"accuracy" : "90%",
+		"stamina" : "15",
+		"effect" : "Attack the opponent with biohazardous waste. This move has a 20% chance of lowering the target's stamina by 20 points."
 	},
 	"11017" : {
 		"name" : "Malignant Vortex",
@@ -153,13 +153,13 @@
 		"effect" : "Unleash a swirling, malignant cloud of toxic energy that engulfs the target, dealing damage and harshly reducing the target's Attack."
 	},
 	"11018" : {
-		"name" : "Poison Powder",
+		"name" : "Plague",
 		"type" : "Toxic",
 		"category" : "Support",
 		"power" : "-",
 		"accuracy" : "90%",
 		"stamina" : "10",
-		"effect" : "Spray toxic powder at the opponent to poison them."
+		"effect" : "Plague the opponent. This move will poison the target."
 	},
 	"11019" : {
 		"name" : "Poison Mist",
@@ -185,8 +185,8 @@
 		"category" : "Support",
 		"power" : "-",
 		"accuracy" : "100%",
-		"stamina" : "20",
-		"effect" : "Soak the target in venom, reducing their Speed and Special Attack stats."
+		"stamina" : "25",
+		"effect" : "Soak the target in venom, reducing their Attack, Special Attack and Speed stats."
 	},
 	"11022" : {
 		"name" : "Contagion",
@@ -196,5 +196,14 @@
 		"accuracy" : "100%",
 		"stamina" : "15",
 		"effect" : "Poison the opponent. Every turn, opponent(s) next to the target has a 50% chance of getting poisoned too."
+	},
+	"11023" : {
+		"name" : "Toxic Spikes",
+		"type" : "Toxic",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "100%",
+		"stamina" : "20",
+		"effect" : "Lay a trap of poisonous spikes at the feet of the opposing team. The spikes will poison opposing foes that switch into battle."
 	}
 }]
