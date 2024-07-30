@@ -17,7 +17,7 @@ if ( no != '' && no != null ) {
 	.then( function(data) {
 
 		// Change background colour
-		document.querySelector('main').classList.add(data[0]['types'][0].toLowerCase());
+		document.getElementById('background').classList.add(data[0]['types'][0].toLowerCase());
 
 		// Populate name
 		document.querySelector('.name').innerHTML = data[0]['name'];
