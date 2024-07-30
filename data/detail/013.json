@@ -65,27 +65,27 @@
 		},
 		{
 			"id" : "15",
-			"level" : "Level 25"
+			"level" : "25"
 		},
 		{
 			"id" : "114",
-			"level" : "Level 30"
+			"level" : "30"
 		},
 		{
 			"id" : "116",
-			"level" : "Level 35"
+			"level" : "35"
 		},
 		{
 			"id" : "115",
-			"level" : "Level 45"
+			"level" : "45"
 		},
 		{
 			"id" : "605",
-			"level" : "Level 60"
+			"level" : "60"
 		},
 		{
 			"id" : "118",
-			"level" : "Level 80"
+			"level" : "80"
 		}
 	],
 	"moves_tutor" : [

@@ -204,7 +204,7 @@ if ( no != '' && no != null ) {
 								+ moves[0][id]['name'] + '</span><span class="type '
 								+ moves[0][id]['type'].toLowerCase() + '">'
 								+ moves[0][id]['type'] + '</span><span class="move-level">'
-								+ level + '</span></p>'
+								+ ( level === '-' ? level : 'Level ' + level ) + '</span></p>'
 								+ '<p class="move-details"><span class="move-category">'
 								+ moves[0][id]['category'] + '</span><span class="move-power">PWR: '
 								+ moves[0][id]['power'] + '</span><span class="move-accuracy">ACC: '

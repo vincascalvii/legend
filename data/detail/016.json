@@ -68,39 +68,39 @@
 		},
 		{
 			"id" : "412",
-			"level" : "Level 18"
+			"level" : "18"
 		},
 		{
 			"id" : "514",
-			"level" : "Level 20"
+			"level" : "20"
 		},
 		{
 			"id" : "413",
-			"level" : "Level 25"
+			"level" : "25"
 		},
 		{
 			"id" : "414",
-			"level" : "Level 35"
+			"level" : "35"
 		},
 		{
 			"id" : "516",
-			"level" : "Level 40"
+			"level" : "40"
 		},
 		{
 			"id" : "417",
-			"level" : "Level 50"
+			"level" : "50"
 		},
 		{
 			"id" : "509",
-			"level" : "Level 60"
+			"level" : "60"
 		},
 		{
 			"id" : "418",
-			"level" : "Level 70"
+			"level" : "70"
 		},
 		{
 			"id" : "419",
-			"level" : "Level 80"
+			"level" : "80"
 		}
 	],
 	"moves_tutor" : [
