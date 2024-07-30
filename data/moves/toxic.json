@@ -148,7 +148,7 @@
 		"type" : "Toxic",
 		"category" : "Special",
 		"power" : "120",
-		"accuracy" : "90%",
+		"accuracy" : "80%",
 		"stamina" : "25",
 		"effect" : "Unleash a swirling, malignant cloud of toxic energy that engulfs the target, dealing damage and harshly reducing the target's Attack."
 	},
@@ -162,15 +162,6 @@
 		"effect" : "Plague the opponent. This move will poison the target."
 	},
 	"11019" : {
-		"name" : "Poison Mist",
-		"type" : "Toxic",
-		"category" : "Support",
-		"power" : "-",
-		"accuracy" : "90%",
-		"stamina" : "20",
-		"effect" : "Create a thick mist of poison around the opponent, poisoning the target, and lowering the target's Accuracy stat."
-	},
-	"11020" : {
 		"name" : "Blight",
 		"type" : "Toxic",
 		"category" : "Support",
@@ -178,6 +169,15 @@
 		"accuracy" : "100%",
 		"stamina" : "10",
 		"effect" : "Apply a blight to the opponent, reducing the target's Defense stat."
+	},
+	"11020" : {
+		"name" : "Poison Mist",
+		"type" : "Toxic",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "90%",
+		"stamina" : "15",
+		"effect" : "Create a thick mist of poison around the opponent, poisoning the target, and lowering the target's Accuracy stat."
 	},
 	"11021" : {
 		"name" : "Venom Drench",

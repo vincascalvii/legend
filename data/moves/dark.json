@@ -9,78 +9,6 @@
 		"effect" : "Chase after the opponent and inflict double damage if the target switches out."
 	},
 	"9002" : {
-		"name" : "Shadow Claw",
-		"type" : "Dark",
-		"category" : "Physical",
-		"power" : "60",
-		"accuracy" : "100%",
-		"stamina" : "15",
-		"effect" : "Slash the opponent with a claw made from shadow. This move has a 10% critical hit chance."
-	},
-	"9003" : {
-		"name" : "Shadow Sneak",
-		"type" : "Dark",
-		"category" : "Physical",
-		"power" : "60",
-		"accuracy" : "100%",
-		"stamina" : "15",
-		"effect" : "Sneak in the dark and attack the next turn. The user becomes untargetable by all non-Light typed moves during this turn."
-	},
-	"9004" : {
-		"name" : "Phantom Force",
-		"type" : "Dark",
-		"category" : "Physical",
-		"power" : "80",
-		"accuracy" : "95%",
-		"stamina" : "25",
-		"effect" : "Surround the body with a swirl of dark energy then strike at the opponent. This move has 20% chance of lowering the target's Attack stat."
-	},
-	"9005" : {
-		"name" : "Glare",
-		"type" : "Dark",
-		"category" : "Support",
-		"power" : "-",
-		"accuracy" : "100%",
-		"stamina" : "10",
-		"effect" : "Frighten the target with a scary face to lower the target's Speed stat."
-	},
-	"9006" : {
-		"name" : "Stalk",
-		"type" : "Dark",
-		"category" : "Support",
-		"power" : "-",
-		"accuracy" : "100%",
-		"stamina" : "10",
-		"effect" : "Stalk the opponent, allowing the next move to have +1 priority and 50% critical hit chance."
-	},
-	"9007" : {
-		"name" : "Provoke",
-		"type" : "Dark",
-		"category" : "Support",
-		"power" : "-",
-		"accuracy" : "100%",
-		"stamina" : "10",
-		"effect" : "Taunt the opponent, causing the target to only be able to use attack moves for three turns."
-	},
-	"9008" : {
-		"name" : "Taunt",
-		"type" : "Dark",
-		"category" : "Support",
-		"power" : "-",
-		"accuracy" : "-",
-		"stamina" : "10",
-		"effect" : "The user draws attention to itself, making all opposing opponents take aim only at the user."
-	},
-	"9009" : {
-		"name" : "Reprise",
-		"type" : "Dark",
-		"category" : "Support",
-		"power" : "-",
-		"accuracy" : "-",
-		"stamina" : "20",
-		"effect" : "For the next 3 turns, the target is forced to repeat its last move used."
-	},
-    "9010" : {
 		"name" : "Feint",
 		"type" : "Dark",
 		"category" : "Physical",
@@ -89,7 +17,7 @@
 		"stamina" : "15",
 		"effect" : "Attack the opponent and ignore evasion moves such as Dodge or Guard. It also lifts the effects of those moves."
 	},
-    "9011" : {
+    "9003" : {
 		"name" : "Revenge",
 		"type" : "Dark",
 		"category" : "Physical",
@@ -97,5 +25,185 @@
 		"accuracy" : "100%",
 		"stamina" : "15",
 		"effect" : "Wait 1 turn then deal double the damage taken on next turn."
+	},
+	"9004" : {
+		"name" : "Shadow Claw",
+		"type" : "Dark",
+		"category" : "Physical",
+		"power" : "60",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Slash the opponent with a claw made from shadow. This move has a 10% critical hit chance."
+	},
+	"9005" : {
+		"name" : "Shadow Sneak",
+		"type" : "Dark",
+		"category" : "Physical",
+		"power" : "60",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Sneak in the dark and attack the next turn. The user becomes untargetable by all non-Light typed moves during this turn."
+	},
+	"9006" : {
+		"name" : "Sucker Punch",
+		"type" : "Dark",
+		"category" : "Physical",
+		"power" : "70",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Strike the target with a surprise punch before they can attack. This move has a +2 priority and only works if the target is about to use a move."
+	},
+	"9007" : {
+		"name" : "Midnight Raid",
+		"type" : "Dark",
+		"category" : "Physical",
+		"power" : "90",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Attack the target using the surrounding darkness. This move deals 50% less damage under the sun, but has a 50% chance of landing a critical hit when used at night."
+	},
+	"9008" : {
+		"name" : "Eclipse Strike",
+		"type" : "Dark",
+		"category" : "Physical",
+		"power" : "100",
+		"accuracy" : "90%",
+		"stamina" : "20",
+		"effect" : "Strike at the opponent with the borrowed power of eclipse. This move has a 20% chance of lowering the target's Defense stat."
+	},
+	"9009" : {
+		"name" : "Phantom Force",
+		"type" : "Dark",
+		"category" : "Physical",
+		"power" : "120",
+		"accuracy" : "90%",
+		"stamina" : "25",
+		"effect" : "Surround the body with a swirl of dark energy then strike at the opponent. This move has 20% chance of lowering the target's Attack stat."
+	},
+	"9010" : {
+		"name" : "Void Crush",
+		"type" : "Dark",
+		"category" : "Physical",
+		"power" : "140",
+		"accuracy" : "85%",
+		"stamina" : "30",
+		"effect" : "Crush the target with immense dark energy from the void. This move has a 30% chance of lowering the target's Defense stat."
+	},
+	"9011" : {
+		"name" : "Dread Wave",
+		"type" : "Dark",
+		"category" : "Special",
+		"power" : "75",
+		"accuracy" : "95%",
+		"stamina" : "10",
+		"effect" : "Unlease a wave of dread on an opponent. This move has a 10% chance of paralysing the target."
+	},
+	"9012" : {
+		"name" : "Dark Pulse",
+		"type" : "Dark",
+		"category" : "Special",
+		"power" : "80",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Emit a pulse of dark energy at the opponent. This move has a 10% chance of lowering the target's Special Defense."
+	},
+	"9013" : {
+		"name" : "Umbra Beam",
+		"type" : "Dark",
+		"category" : "Special",
+		"power" : "90",
+		"accuracy" : "90%",
+		"stamina" : "15",
+		"effect" : "Fire a concentrated beam of darkness. This move has a 20% chance of causing confusion to the target."
+	},
+	"9014" : {
+		"name" : "Nightmare",
+		"type" : "Dark",
+		"category" : "Special",
+		"power" : "100",
+		"accuracy" : "100%",
+		"stamina" : "20",
+		"effect" : "Haunt the sleeping opponent. This move only works if the target is asleep."
+	},
+	"9015" : {
+		"name" : "Sinister Shade",
+		"type" : "Dark",
+		"category" : "Special",
+		"power" : "120",
+		"accuracy" : "95%",
+		"stamina" : "25",
+		"effect" : "Embrace the opponent with a wave of sinister energy. This move has a 20% chance to lower either the target's Special Attack or Special Defense stat."
+	},
+	"9016" : {
+		"name" : "Abyssal Wrath",
+		"type" : "Dark",
+		"category" : "Special",
+		"power" : "150%",
+		"accuracy" : "100%",
+		"stamina" : "30",
+		"effect" : "Release the hidden power from the abyss at the opponent. The user will have their Defense and Special Defense stats harshly reduced before using the move."
+	},
+	"9017" : {
+		"name" : "Glare",
+		"type" : "Dark",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Frighten the target with a scary face to lower the target's Speed stat."
+	},
+	"9018" : {
+		"name" : "Stalk",
+		"type" : "Dark",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Stalk the opponent, allowing the next move to have +1 priority and 50% critical hit chance."
+	},
+	"9019" : {
+		"name" : "Provoke",
+		"type" : "Dark",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Taunt the opponent, causing the target to only be able to use attack moves for three turns."
+	},
+	"9020" : {
+		"name" : "Taunt",
+		"type" : "Dark",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "10",
+		"effect" : "The user draws attention to itself, making all opposing opponents take aim only at the user."
+	},
+	"9021" : {
+		"name" : "Reprise",
+		"type" : "Dark",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "20",
+		"effect" : "For the next 3 turns, the target is forced to repeat its last move used."
+	},
+	"9022" : {
+		"name" : "Blackout",
+		"type" : "Dark",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "10",
+		"effect" : "Plunge the area into darkness. This move lowers the Accuracy stat for everyone around the user, foes and allies alike."
+	},
+	"9023" : {
+		"name" : "Shadow Veil",
+		"type" : "Dark",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "20",
+		"effect" : "Envelop the user in shadows. This move raises the user's Evasion stat."
 	}
 }]

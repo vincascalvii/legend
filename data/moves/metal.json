@@ -9,6 +9,15 @@
 		"effect" : "Slash the opponent with a harden claw. This move has a 20% chance of lowering the target's Defense stat."
 	},
 	"7002" : {
+		"name" : "Bullet Punch",
+		"type" : "Metal",
+		"category" : "Physical",
+		"power" : "40",
+		"accuracy" : "100%",
+		"stamina" : "10",
+		"effect" : "Deliver a fast punch with bullet-like speed. This move has a +1 priority."
+	},
+	"7003" : {
 		"name" : "Iron Tail",
 		"type" : "Metal",
 		"category" : "Physical",
@@ -17,16 +26,25 @@
 		"stamina" : "15",
 		"effect" : "Slam the opponent with a steel-hard tail. This move has a 20% chance of reducing the target's Defense stat by one stage."
 	},
-	"7003" : {
+	"7004" : {
+		"name" : "Steel Wing",
+		"type" : "Metal",
+		"category" : "Physical",
+		"power" : "65",
+		"accuracy" : "95%",
+		"stamina" : "15",
+		"effect" : "Strike the opponent with hard, steel wings. This move has a 10% chance of raising the user's Attack stat."
+	},
+	"7005" : {
 		"name" : "Power Ball",
 		"type" : "Metal",
 		"category" : "Physical",
 		"power" : "70",
 		"accuracy" : "80%",
-		"stamina" : "20",
+		"stamina" : "15",
 		"effect" : "Roll towards the opponent like a powerball. If it misses, the user is hurt instead for 25% of the maximum HP."
 	},
-	"7004" : {
+	"7006" : {
 		"name" : "Heavy Bash",
 		"type" : "Metal",
 		"category" : "Physical",
@@ -35,7 +53,7 @@
 		"stamina" : "15",
 		"effect" : "Bash the target heavily with a harden body part. This move has a 20% chance of causing the target to flinch."
 	},
-	"7005" : {
+	"7007" : {
 		"name" : "Heavy Slam",
 		"type" : "Metal",
 		"category" : "Physical",
@@ -44,7 +62,7 @@
 		"stamina" : "20",
 		"effect" : "Slam into the target with a heavy body. The more the user outweights the target, the greater the move's power."
 	},
-	"7006" : {
+	"7008" : {
 		"name" : "Steel Crusher",
 		"type" : "Metal",
 		"category" : "Physical",
@@ -53,7 +71,97 @@
 		"stamina" : "25",
 		"effect" : "Crush the opponent with a force that can bend steel. This move has 20% chance of lowering the target's Defense stat."
 	},
-	"7007" : {
+	"7009" : {
+		"name" : "Steel Blade",
+		"type" : "Metal",
+		"category" : "Physical",
+		"power" : "85",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Slash the target with a blade of steel. This move has a 20% chance of landing a critial hit."
+	},
+	"7010" : {
+		"name" : "Iron Spike",
+		"type" : "Metal",
+		"category" : "Physical",
+		"power" : "90",
+		"accuracy" : "90%",
+		"stamina" : "15",
+		"effect" : "Strike the opponent with a sharp iron spike. This move has a 10% chance of causing the target to flinch."
+	},
+	"7011" : {
+		"name" : "Comet Smash",
+		"type" : "Metal",
+		"category" : "Physical",
+		"power" : "120",
+		"accuracy" : "85%",
+		"stamina" : "25",
+		"effect" : "Hit the target with a powerful, comet-like punch. This move has a 20% chance of raising the user's Attack stat."
+	},
+	"7012" : {
+		"name" : "Magnet Bomb",
+		"type" : "Metal",
+		"category" : "Special",
+		"power" : "60",
+		"accuracy" : "-",
+		"stamina" : "10",
+		"effect" : "Launch a magnetic bomb that never misses."
+	},
+	"7013" : {
+		"name" : "Steel Debris",
+		"type" : "Metal",
+		"category" : "Special",
+		"power" : "65",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Summon a rain of sharp steel shards at the opponent. The target will take 50% of the damage one more time on the next turn."
+	},
+	"7014" : {
+		"name" : "Iron Shot",
+		"type" : "Metal",
+		"category" : "Special",
+		"power" : "75",
+		"accuracy" : "95%",
+		"stamina" : "15",
+		"effect" : "Fire a projectile of molten iron at the target. This move has a 10% chance of burning the target."
+	},
+	"7015" : {
+		"name" : "Steel Surge",
+		"type" : "Metal",
+		"category" : "Special",
+		"power" : "90",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Blast the target with a wave of sharp steel energy. This move has a 10% chance of lowering the target's Special Defense stat."
+	},
+	"7016" : {
+		"name" : "Metal Burst",
+		"type" : "Metal",
+		"category" : "Special",
+		"power" : "95",
+		"accuracy" : "90%",
+		"stamina" : "15",
+		"effect" : "Unlease a burst of damaged metal parts. This move hits both foes and allies alike, with a 10% chance of lowering the targets' Speed stat."
+	},
+	"7017" : {
+		"name" : "Lustre Cannon",
+		"type" : "Metal",
+		"category" : "Special",
+		"power" : "120",
+		"accuracy" : "95%",
+		"stamina" : "25",
+		"effect" : "Fire a burst of light energy from steel. This move has a 20% chance of lowering the target's Special Defense. After using the move, the user's Special Attack will be lowered."
+	},
+	"7018" : {
+		"name" : "Meteor Shower",
+		"type" : "Metal",
+		"category" : "Special",
+		"power" : "140",
+		"accuracy" : "90%",
+		"stamina" : "30",
+		"effect" : "Summon a rain of meteors onto the opposing field. The recoil from this move harshly lowers the user's Special Attack stat."
+	},
+	"7019" : {
 		"name" : "Iron Wall",
 		"type" : "Metal",
 		"category" : "Support",
@@ -61,5 +169,32 @@
 		"accuracy" : "-",
 		"stamina" : "15",
 		"effect" : "Harden the body like an iron wall to sharply raise the user's Defense stat."
+	},
+	"7020" : {
+		"name" : "Chompers",
+		"type" : "Metal",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "15",
+		"effect" : "Set a trap with iron chompers. All non-Metal typed opponents will take damage when switching in."
+	},
+	"7021" : {
+		"name" : "Gear Up",
+		"type" : "Metal",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "15",
+		"effect" : "Enhance the user's gear. This move raises the user's Attack and Special Attack stats."
+	},
+	"7022" : {
+		"name" : "Gear Grind",
+		"type" : "Metal",
+		"category" : "Physical",
+		"power" : "50 (per hit)",
+		"accuracy" : "90%",
+		"stamina" : "15",
+		"effect" : "Hit the target with rotating gears. This move strikes twice."
 	}
 }]
