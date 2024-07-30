@@ -1,21 +1,21 @@
 [{
-    "8001" : {
-		"name" : "Frost Fang",
+	"8001" : {
+		"name" : "Snowball",
 		"type" : "Ice",
 		"category" : "Physical",
-		"power" : "65",
-		"accuracy" : "90%",
-		"stamina" : "10",
-		"effect" : "Bite the opponent with frosty fangs. This move has a 20% chance to reduce the target's Defense stat and 10% chance to freeze the target."
+		"power" : "40",
+		"accuracy" : "100%",
+		"stamina" : "5",
+		"effect" : "Throw a snowball at the target."
 	},
 	"8002" : {
-		"name" : "Frost Beam",
+		"name" : "Ice Shard",
 		"type" : "Ice",
-		"category" : "Special",
-		"power" : "90",
+		"category" : "Physical",
+		"power" : "50",
 		"accuracy" : "100%",
-		"stamina" : "15",
-		"effect" : "Shoot a beam of frosty ice at the opponent. This move has a 10% chance of leaving the target frozen."
+		"stamina" : "5",
+		"effect" : "Hurl a shard of ice at the target."
 	},
 	"8003" : {
 		"name" : "Ice Punch",
@@ -25,5 +25,158 @@
 		"accuracy" : "100%",
 		"stamina" : "15",
 		"effect" : "Punch the opponent with an icy first. This move has a 10% chance of leaving the target frozen."
+	},
+    "8004" : {
+		"name" : "Frost Fang",
+		"type" : "Ice",
+		"category" : "Physical",
+		"power" : "65",
+		"accuracy" : "90%",
+		"stamina" : "10",
+		"effect" : "Bite the opponent with frosty fangs. This move has a 20% chance to reduce the target's Defense stat and 10% chance to freeze the target."
+	},
+	"8005" : {
+		"name" : "Icicle Spear",
+		"type" : "Ice",
+		"category" : "Physical",
+		"power" : "25 (per hit)",
+		"accuracy" : "90%",
+		"stamina" : "15",
+		"effect" : "Launch sharp icicles at the target, hitting 2-5 times."
+	},
+	"8006" : {
+		"name" : "Glacial Spike",
+		"type" : "Ice",
+		"category" : "Physical",
+		"power" : "85",
+		"accuracy" : "90%",
+		"stamina" : "15",
+		"effect" : "Strike the target with a giant icicle. This move has a 10% chance of causing the target to flinch."
+	},
+	"8007" : {
+		"name" : "Subzero Slam",
+		"type" : "Ice",
+		"category" : "Physical",
+		"power" : "90",
+		"accuracy" : "95%",
+		"stamina" : "15",
+		"effect" : "A high-impact slam infused with freezing energy. This move has a 10% chance of paralysing the target and a 10% chance of lowering the target's Speed stat."
+	},
+	"8008" : {
+		"name" : "Artic Impact",
+		"type" : "Ice",
+		"category" : "Physical",
+		"power" : "130",
+		"accuracy" : "85%",
+		"stamina" : "25",
+		"effect" : "Charge at the opponent with immense force, shrouded in a chilling aura. This move has a 20% chance of causing the target to flinch."
+	},
+	"8009" : {
+		"name" : "Icy Wind",
+		"type" : "Ice",
+		"category" : "Special",
+		"power" : "55",
+		"accuracy" : "95%",
+		"stamina" : "10",
+		"effect" : "Release a chilling wind that hits all opponents and lowers their Speed stat."
+	},
+	"8010" : {
+		"name" : "Frost Breath",
+		"type" : "Ice",
+		"category" : "Special",
+		"power" : "60",
+		"accuracy" : "95%",
+		"stamina" : "10",
+		"effect" : "Exhale a chilling breath at the opponent. This move has a 10% chance of freezing the target."
+	},
+	"8011" : {
+		"name" : "Chill Blast",
+		"type" : "Ice",
+		"category" : "Special",
+		"power" : "70",
+		"accuracy" : "95%",
+		"stamina" : "10",
+		"effect" : "Rapidly cool the opponent, with a 10% chance of freezing the target. This move is super-effective against Water-typed target."
+	},
+	"8012" : {
+		"name" : "Cold Snap",
+		"type" : "Ice",
+		"category" : "Special",
+		"power" : "80",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "A sudden burst of freezing air that has a 10% chance of freezing the target and 10% chance of lowering the target's Speed stat."
+	},
+	"8013" : {
+		"name" : "Cryo Beam",
+		"type" : "Ice",
+		"category" : "Special",
+		"power" : "90",
+		"accuracy" : "100%",
+		"stamina" : "15",
+		"effect" : "Shoot a beam of frosty ice at the opponent. This move has a 10% chance of leaving the target frozen."
+	},
+	"8014" : {
+		"name" : "Blizzard",
+		"type" : "Ice",
+		"category" : "Special",
+		"power" : "100",
+		"accuracy" : "100%",
+		"stamina" : "20",
+		"effect" : "Summon a massive blizzard to damage everyone on the field, allies and foes alike."
+	},
+	"8015" : {
+		"name" : "Permafrost",
+		"type" : "Ice",
+		"category" : "Special",
+		"power" : "120",
+		"accuracy" : "75%",
+		"stamina" : "25",
+		"effect" : "Envope the opponent in permafrost. This move will harshly lower the target's Speed stat."
+	},
+	"8016" : {
+		"name" : "Frost Nova",
+		"type" : "Ice",
+		"category" : "Special",
+		"power" : "150",
+		"accuracy" : "100%",
+		"stamina" : "30",
+		"effect" : "Unlease a burst of powerful freezing energy on the opponent. The user cannot move in the next turn."
+	},
+	"8017" : {
+		"name" : "Hailstorm",
+		"type" : "Ice",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "20",
+		"effect" : "Summon a hailstorm that damages all combatants for several turns."
+	},
+	"8018" : {
+		"name" : "Frost Armour",
+		"type" : "Ice",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "10",
+		"effect" : "Cover the user in a layer of ice. This move boosts the user's Defense stat."
+	},
+	"8019" : {
+		"name" : "Snow Cloak",
+		"type" : "Ice",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "10",
+		"effect" : "Envelop the user in a cloak of snow. This move boosts the user's Special Defense stat."
+	},
+	"8020" : {
+		"name" : "Ice Wall",
+		"type" : "Ice",
+		"category" : "Support",
+		"power" : "-",
+		"accuracy" : "-",
+		"stamina" : "20",
+		"effect" : "Raise a barrier of ice that protect the user and allies by reducing all Ice-typed attacks from opponents by 50%."
 	}
 }]
