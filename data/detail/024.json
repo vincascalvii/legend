@@ -1,0 +1,58 @@
+[{
+	"number" : "024",
+	"name" : "Vipython",
+	"types" : ["Toxic", ""],
+	"abilities" : [
+		{
+			"name" : "Wicked Touch",
+			"desc" : "High chance of poisoning a target when the possessor makes contact."
+		},
+		{
+			"name" : "Predator (Secret)",
+			"desc" : "If the possessor moves first, its move deals 50% more damage."
+		}
+	],
+	"description" : "Vipython are the king of poison. They are infamous for their deadly venom that can kill a prey twice bigger in size in less than an hour. The venom extends all the way to their tail and the sharp scales around their body. When enraged, their mane will stand out like a furious flame.",
+	"gender" : {
+		"male" : "50%",
+		"female" : "50%"
+	},
+	"species" : "Snake",
+	"weight" : "6.9kg",
+	"height" : "1.2m",
+	"stats" : {
+		"hp" : "73",
+		"atk" : "105",
+		"def" : "70",
+		"spa" : "55",
+		"spd" : "88",
+		"spe" : "84",
+		"total" : "475"
+	},
+	"major_weakness" : [],
+	"weakness" : ["Wind", "Earth", "Light"],
+	"resistance" : ["Nature", "Water", "Toxic"],
+	"major_resistance" : [],
+	"immunity" : [],
+	"evolution" : [
+		{
+			"id" : "023",
+			"req" : "Base"
+		},
+		{
+			"id" : "024",
+			"req" : "Level 26"
+		}
+	],
+	"moves_level" : [
+		{
+			"id" : "11003",
+			"level" : "20"
+		}
+	],
+	"moves_tutor" : [
+        {
+			"id" : "51"
+		}
+    ]
+}]

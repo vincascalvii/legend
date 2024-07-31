@@ -1,0 +1,62 @@
+[{
+	"number" : "022",
+	"name" : "Regnabee",
+	"types" : ["Wind", "Toxic"],
+	"abilities" : [
+		{
+			"name" : "Toxic Orb",
+			"desc" : "When the possessor faints, release poison from the orb and poisons all combatants on the field."
+		},
+		{
+			"name" : "Wind Rider (Secret)",
+			"desc" : "When hit by a Wind-type move, the possessor's Speed stat is increased by one stage."
+		}
+	],
+	"description" : "Regnabee are the rare gender from the species and are always the leader of the nest. One nest usually only have one queen and the whole family would do anything by their queen's command. There is a poison pouch that Regnabee always carry which can explode and drive away the dangerous foes.",
+	"gender" : {
+		"male" : "0%",
+		"female" : "100%"
+	},
+	"species" : "Bee",
+	"weight" : "18.9kg",
+	"height" : "1.4m",
+	"stats" : {
+		"hp" : "70",
+		"atk" : "50",
+		"def" : "95",
+		"spa" : "110",
+		"spd" : "95",
+		"spe" : "40",
+		"total" : "460"
+	},
+	"major_weakness" : [],
+	"weakness" : ["Electric", "Ice", "Wind", "Light"],
+	"resistance" : ["Water", "Toxic"],
+	"major_resistance" : ["Nature"],
+	"immunity" : ["Earth"],
+	"evolution" : [
+		{
+			"id" : "020",
+			"req" : "Base"
+		},
+		{
+			"id" : "021",
+			"req" : "Level 22 (Male)"
+		},
+		{
+			"id" : "022",
+			"req" : "Level 22 (Female)"
+		}
+	],
+	"moves_level" : [
+		{
+			"id" : "5011",
+			"level" : "5"
+		}
+	],
+	"moves_tutor" : [
+        {
+			"id" : "53"
+		}
+    ]
+}]

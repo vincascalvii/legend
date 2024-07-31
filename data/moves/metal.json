@@ -108,13 +108,13 @@
 		"effect" : "Launch a magnetic bomb that never misses."
 	},
 	"7013" : {
-		"name" : "Steel Debris",
+		"name" : "Steel Scraps",
 		"type" : "Metal",
 		"category" : "Special",
-		"power" : "65",
+		"power" : "60",
 		"accuracy" : "100%",
 		"stamina" : "15",
-		"effect" : "Summon a rain of sharp steel shards at the opponent. The target will take 50% of the damage one more time on the next turn."
+		"effect" : "Hurl sharp steel scraps at the opponent. The target will take 50% of the damage one more time on the next turn."
 	},
 	"7014" : {
 		"name" : "Iron Shot",

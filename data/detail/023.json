@@ -1,0 +1,58 @@
+[{
+	"number" : "023",
+	"name" : "Vesnull",
+	"types" : ["Toxic", ""],
+	"abilities" : [
+		{
+			"name" : "Wicked Touch",
+			"desc" : "High chance of poisoning a target when the possessor makes contact."
+		},
+		{
+			"name" : "Shed Skin (Secret)",
+			"desc" : "The possessor may heal its own status conditions by shedding its skin."
+		}
+	],
+	"description" : "Vesnull are the kind of creatures that must be treated with care. They might be tiny, but a slight contact with their scales can easily cause the body part to be swollen. When in danger, they will stab the enemies with their tail, where the poison is most concentrated.",
+	"gender" : {
+		"male" : "50%",
+		"female" : "50%"
+	},
+	"species" : "Snake",
+	"weight" : "6.9kg",
+	"height" : "1.2m",
+	"stats" : {
+		"hp" : "35",
+		"atk" : "63",
+		"def" : "40",
+		"spa" : "37",
+		"spd" : "50",
+		"spe" : "55",
+		"total" : "280"
+	},
+	"major_weakness" : [],
+	"weakness" : ["Wind", "Earth", "Light"],
+	"resistance" : ["Nature", "Water", "Toxic"],
+	"major_resistance" : [],
+	"immunity" : [],
+	"evolution" : [
+		{
+			"id" : "023",
+			"req" : "Base"
+		},
+		{
+			"id" : "024",
+			"req" : "Level 26"
+		}
+	],
+	"moves_level" : [
+		{
+			"id" : "11003",
+			"level" : "20"
+		}
+	],
+	"moves_tutor" : [
+        {
+			"id" : "51"
+		}
+    ]
+}]

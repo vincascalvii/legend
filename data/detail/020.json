@@ -1,0 +1,62 @@
+[{
+	"number" : "020",
+	"name" : "Beebuilder",
+	"types" : ["Wind", ""],
+	"abilities" : [
+		{
+			"name" : "Honey Gather",
+			"desc" : "The possessor may gather Honey during a battle. The possessor will consume Honey when its HP falls below 50%. Honey will recover 20% of the user's HP."
+		},
+		{
+			"name" : "Hustle (Secret)",
+			"desc" : "Boosts the possessor's Attack stat, but lowers its accuracy."
+		}
+	],
+	"description" : "Beebuilder are the lower tier of their species who are assigned to collect materials, food and build nest. They have a small protective armour made from clay to help them with the heavy duties. Their small arms are able to carry things 10 times heavier than their bodies' mass.",
+	"gender" : {
+		"male" : "90%",
+		"female" : "10%"
+	},
+	"species" : "Bee",
+	"weight" : "5.5kg",
+	"height" : "0.4m",
+	"stats" : {
+		"hp" : "38",
+		"atk" : "30",
+		"def" : "40",
+		"spa" : "30",
+		"spd" : "40",
+		"spe" : "62",
+		"total" : "240"
+	},
+	"major_weakness" : [],
+	"weakness" : ["Electric", "Ice"],
+	"resistance" : ["Nature"],
+	"major_resistance" : [],
+	"immunity" : ["Earth"],
+	"evolution" : [
+		{
+			"id" : "020",
+			"req" : "Base"
+		},
+		{
+			"id" : "021",
+			"req" : "Level 22 (Male)"
+		},
+		{
+			"id" : "022",
+			"req" : "Level 22 (Female)"
+		}
+	],
+	"moves_level" : [
+		{
+			"id" : "5011",
+			"level" : "5"
+		}
+	],
+	"moves_tutor" : [
+        {
+			"id" : "53"
+		}
+    ]
+}]

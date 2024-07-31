@@ -50,23 +50,51 @@ main {
 }
 
 #background.neutral {
-    background-color: #bbb;
+    background-color: #ada79c;
 }
 
 #background.nature {
-    background-color: #48d08b;
+    background-color: #3ca33f;
 }
 
 #background.fire {
-    background-color: #ff351e;
+    background-color: #ff551e;
 }
 
 #background.water {
-    background-color: #6072bf;
+    background-color: #2e9bf7;
 }
 
 #background.electric {
-    background-color: #ffca6b;
+    background-color: #ffca35;
+}
+
+#background.wind {
+    background-color: #2ed5af;
+}
+
+#background.earth {
+    background-color: #cf7735;
+}
+
+#background.metal {
+    background-color: #6d7e8d;
+}
+
+#background.ice {
+    background-color: #47f0fd;
+}
+
+#background.dark {
+    background-color: #6e6257;
+}
+
+#background.light {
+    background-color: #fff386;
+}
+
+#background.toxic {
+    background-color: #9f41c1;
 }
 
 .background-wave {
@@ -155,7 +183,7 @@ main {
 }
 
 .type.fire {
-    background-color: #ff4a41;
+    background-color: #ff551e;
 }
 
 .type.water {
