@@ -139,7 +139,7 @@
 }
 
 .tab-moves .separator {
-	margin: 20px -30px;
+	margin-block: 20px;
 }
 
 .evo-block {
