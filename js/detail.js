@@ -39,8 +39,8 @@ if ( no != '' && no != null ) {
 
 		// Populate image
 		document.querySelector('.image').innerHTML += 
-			'<img data-src="/legend/img/pokemon/' + no + '/full-600x600.png" class="image-normal active" alt="' + data[0]['name'] + '">'
-			+ '<img data-src="/legend/img/pokemon/' + no + '/shiny-600x600.png" class="image-shiny" alt="' + data[0]['name'] + '">';
+			'<img src="/legend/img/pokemon/' + no + '/full-600x600.png" class="image-normal active" alt="' + data[0]['name'] + '">'
+			+ '<img src="/legend/img/pokemon/' + no + '/shiny-600x600.png" class="image-shiny" alt="' + data[0]['name'] + '">';
 
 		// Populate abilities
 		document.querySelector('.ability-1 .ability-name').innerHTML = data[0]['abilities'][0]['name'];

@@ -49,7 +49,7 @@ fetch('/legend/data/all.json')
 
 		// Populate the thumbnail
 		var image = document.createElement('img');
-			image.src = '/legend/img/pokemon/' + data[i]['number'] + '/thumb-360x360.png';
+			image.src = '/legend/img/pokemon/' + data[i]['number'] + '/thumb-480x360.png';
 			image.alt = data[i]['name'];
 			image.classList.add('image');
 
