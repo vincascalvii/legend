@@ -38,26 +38,9 @@ if ( no != '' && no != null ) {
 		document.querySelector('.number').innerHTML = data[0]['number'];
 
 		// Populate image
-		document.querySelector('.image').innerHTML +=
-			'<picture>' +
-			'<source data-srcset="/legend/img/pokemon/' + no + '/full-500x500.webp" ' +
-			'media="(min-width: 1024px)" type="image/webp">' +
-			'<source data-srcset="/legend/img/pokemon/' + no + '/full-500x500.png" ' +
-			'media="(min-width: 1024px)" type="image/png">' +
-			'<source data-srcset="/legend/img/pokemon/' + 
-			no + '/full-300x300.webp 1x, /legend/img/pokemon/' +
-			no + '/full-600x600.webp 2x, /legend/img/pokemon/' +
-			no + '/full-900x900.webp 3x" ' +
-			'media="(max-width: 1023px)" type="image/webp">' +
-			'<source data-srcset="/legend/img/pokemon/' + 
-			no + '/full-300x300.png 1x, /legend/img/pokemon/' +
-			no + '/full-600x600.png 2x, /legend/img/pokemon/' +
-			no + '/full-900x900.png 3x" ' +
-			'media="(max-width: 1023px)" type="image/png">' +
-			'<img data-src="/legend/img/pokemon/' + no + '/full-500x500.png" ' + 
-			'src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"' + 
-			' class="lazyload image-normal active" alt="' + data[0]['name'] + '">' +
-			'</picture>';
+		document.querySelector('.image').innerHTML += 
+			'<img data-src="/legend/img/pokemon/' + no + '/full-600x600.png" class="image-normal active" alt="' + data[0]['name'] + '">'
+			+ '<img data-src="/legend/img/pokemon/' + no + '/shiny-600x600.png" class="image-shiny" alt="' + data[0]['name'] + '">';
 
 		// Populate abilities
 		document.querySelector('.ability-1 .ability-name').innerHTML = data[0]['abilities'][0]['name'];
@@ -248,19 +231,11 @@ if ( no != '' && no != null ) {
 			for ( var evo = 0; evo < data[0]['evolution'].length; evo++ ) {
 			    evolution.innerHTML += '<a href="/legend/detail?no=' 
 					+ data[0]['evolution'][evo]['id'] + '" class="evo-block" aria-label="' 
-			    	+ data[0]['name'] + ' link">' + '<picture>'
-					+ '<source data-srcset="/legend/img/pokemon/' 
-					+ data[0]['evolution'][evo]['id'] + '/thumb-120x120.webp 1x, /legend/img/pokemon/'
-					+ data[0]['evolution'][evo]['id'] + '/thumb-240x240.webp 2x, /legend/img/pokemon/'
-					+ data[0]['evolution'][evo]['id'] + '/thumb-360x360.webp 3x" type="image/webp">'
-					+ '<source data-srcset="/legend/img/pokemon/'
-					+ data[0]['evolution'][evo]['id'] + '/thumb-120x120.png 1x, /legend/img/pokemon/'
-					+ data[0]['evolution'][evo]['id'] + '/thumb-240x240.png 2x, /legend/img/pokemon/'
-					+ data[0]['evolution'][evo]['id'] + '/thumb-360x360.png 3x" type="image/png">'
-					+ '<img data-src="/legend/img/pokemon/' + no + '/thumb120x120.png" '
+			    	+ data[0]['name'] + ' link">' 
+			    	+ '<img data-src="/legend/img/pokemon/' + no + '/thumb-120x120.png" '
 					+ 'src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"'
 					+ ' class="lazyload evo-thumb" alt="' + data[0]['name'] + ' evolution thumbnail">'
-					+ '</picture><p class="evo-req">' + data[0]['evolution'][evo]['req'] + '</p></a>';
+					+ '<p class="evo-req">' + data[0]['evolution'][evo]['req'] + '</p></a>';
 			}
 		}
 
@@ -279,8 +254,9 @@ if ( no != '' && no != null ) {
 	.catch( function(error) {
 		console.log('Fetch error: ', error);
 	});
-
 }
+
+
 
 /* =============================================================================
 
@@ -315,6 +291,8 @@ function getParameter() {
     return key === false ? results : null;
 }
 
+
+
 /* =============================================================================
 
     SWITCH TAB
@@ -323,9 +301,11 @@ function getParameter() {
 
 (function() {
 
+	// Get the tab and tab content
 	var tabs = document.querySelectorAll('.info .tab');
 	var tabContents = document.querySelectorAll('.info .tab-content');
 
+	// Loop through the tabs
 	for ( var i = 0; i < tabs.length; i++ ) {
 		tabs[i].addEventListener('click', function() {
 
@@ -345,12 +325,11 @@ function getParameter() {
 			// Display the current tab content
 			var currentTab = 'tab-' + this.innerText.toLowerCase();
 			document.querySelector('.info .' + currentTab).classList.add('active');
-
 		}, false);
 	}
-
-
 })();
+
+
 
 /* =============================================================================
 
@@ -363,58 +342,19 @@ function getParameter() {
 	// Get the button trigger for shiny version
 	var shinyTrigger = document.querySelector('.shiny-trigger');
 
-	// Set first load as false first
-	var loaded = false;
-
 	// Add "click" event to the button
 	shinyTrigger.addEventListener('click', function() {
 
 		// Toggle the trigger class to tell whether it's active or not
 		this.classList.toggle('active');
 
-		// If shiny version hasn't been loaded yet, then load it
-		if ( !loaded ) {
-
-			// Hide the normal version
-			document.querySelector('.image-normal').classList.remove('active');
-
-			// Get the pokemon name
-			var name = document.querySelector('.header .name').innerText;
-
-			// Add the shiny version ( including class "active" to display it straight away )
-			document.querySelector('.image').innerHTML +=
-				'<picture>' +
-				'<source data-srcset="/legend/img/pokemon/' + no + '/shiny-500x500.webp" ' +
-				'media="(min-width: 1024px)" type="image/webp">' +
-				'<source data-srcset="/legend/img/pokemon/' + no + '/shiny-500x500.png" ' +
-				'media="(min-width: 1024px)" type="image/png">' +
-				'<source data-srcset="/legend/img/pokemon/' + 
-				no + '/shiny-300x300.webp 1x, /legend/img/pokemon/' +
-				no + '/shiny-600x600.webp 2x, /legend/img/pokemon/' +
-				no + '/shiny-900x900.webp 3x" ' +
-				'media="(max-width: 1023px)" type="image/webp">' +
-				'<source data-srcset="/legend/img/pokemon/' + 
-				no + '/shiny-300x300.png 1x, /legend/img/pokemon/' +
-				no + '/shiny-600x600.png 2x, /legend/img/pokemon/' +
-				no + '/shiny-900x900.png 3x" ' +
-				'media="(max-width: 1023px)" type="image/png">' +
-				'<img data-src="/legend/img/pokemon/' + no + '/shiny-500x500.png" ' + 
-				'src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"' + 
-				' class="lazyload image-shiny active" alt="' + name + '">' +
-				'</picture>';
-
-			// Set loaded as "true" so future toggle won't add further request
-			loaded = true;
-
-		// If the shiny version is already loaded, simply toggle the 2 versions
-		} else {
-			document.querySelector('.image-normal').classList.toggle('active');
-			document.querySelector('.image-shiny').classList.toggle('active');
-		}
-
+		// Toggle between the two images
+		document.querySelector('.image-normal').classList.toggle('active');
+		document.querySelector('.image-shiny').classList.toggle('active');
 	}, false);
-
 })();
+
+
 
 /* =============================================================================
 
@@ -425,7 +365,7 @@ function getParameter() {
 (function() {
 
 	// Prepare the image, url, title and description
-	var image = '/legend/img/pokemon/' + no + '/full-900x900.png';
+	var image = '/legend/img/pokemon/' + no + '/full-600x600.png';
 	var url = 'https://vincascalvii.github.io/legend/detail/?no=' + no;
 
 	// Update OpenGraph info
@@ -435,5 +375,4 @@ function getParameter() {
 	// Update Twitter card info
 	document.querySelector('meta[name="twitter:image"]').content = image;
 	document.querySelector('meta[name="twitter:url"]').content = url;
-
 })();
