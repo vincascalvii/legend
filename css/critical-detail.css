@@ -29,14 +29,14 @@ a {
 
 main {
     position: relative;
-    padding-block: 60px;
+    padding-block: 20px;
 }
 
 .container {
 	background-color: #fff;
-    width: 1400px;
+    width: 100%;
     margin-inline: auto;
-    border-radius: 60px;
+    border-radius: 40px;
     overflow: hidden;
 }
 
@@ -105,6 +105,7 @@ main {
     height: 100%;
     z-index: -1;
     opacity: .4;
+    overflow: hidden;
 }
 
 .background-wave img {
@@ -116,12 +117,13 @@ main {
 .header {
     position: relative;
     display: flex;
-    align-items: center;
-    padding: 20px 40px 0;
+    align-items: flex-start;
+    padding: 20px 20px 0;
 }
 
 .header .back {
     color: #fff;
+    margin-right: 20px;
 }
 
 .header .back .icon {
@@ -141,29 +143,29 @@ main {
     display: none;
 }
 
+.header .number {
+    color: #aaa;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
 .header .name {
     color: #333;
     font-size: 2.4rem;
-    margin: 5px 0 10px;
-}
-
-.header .background {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100px;
-    height: 100px;
-    opacity: .3;
-}
-
-.header .types {
-    display: flex;
+    margin: 0 0 5px;
 }
 
 .header .heading {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.header .types {
+    display: flex;
+    width: 100%;
 }
 
 .type {
@@ -225,15 +227,18 @@ main {
     background-color: #9f41c1;
 }
 
-.header .number {
-    color: #aaa;
-    font-size: 2rem;
-    font-weight: 500;
+.header .background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    opacity: .3;
 }
 
 .main-container {
     position: relative;
-    padding-inline: 40px;
+    padding: 20px 20px 0;
 }
 
 .image {
@@ -256,7 +261,7 @@ main {
 .shiny-trigger {
     position: absolute;
     right: 20px;
-    top: 250px;
+    top: 280px;
     width: 40px;
     height: 40px;
     display: flex;
@@ -292,7 +297,7 @@ main {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 20px 30px 0;
+    padding: 20px 0 0;
     margin: 0;
     border-bottom: 1px solid #ddd;
 }
@@ -313,7 +318,7 @@ main {
 
 .info .tab-content {
     display: none;
-    padding: 30px;
+    padding-block: 20px;
 }
 
 .info .tab-content.active {
@@ -322,7 +327,7 @@ main {
 
 .info .tab-content .tab-heading {
     font-size: 1.6rem;
-    margin: 0 0 30px;
+    margin: 0 0 20px;
 }
 
 .info .tab-content .ability {
@@ -346,8 +351,13 @@ main {
         padding-bottom: 60px;
     }
 
+    .container {
+        width: 980px;
+    }
+
     .header {
-        margin-bottom: 40px;
+        align-items: center;
+        padding-top: 10px;
     }
 
     .header .container,
@@ -356,33 +366,38 @@ main {
         align-items: center;
     }
 
-    .header .left {
-        order: 1;
-    }
-
-    .header .name {
-        margin: 0 20px;
+    .header .heading {
+        align-items: center;
     }
 
     .header .number {
-        margin-left: 30px;
+        margin-top: 4px;
+    }
+
+    .header .name {
+        margin-right: 20px;
+    }
+
+    .header .types {
+        width: auto;
     }
 
     .main-container {
         display: flex;
         justify-content: space-between;
+        padding-inline: 40px;
         margin: 0 auto;
     }
 
     .image {
-        width: 500px;
-        height: 500px;
-        margin-right: 40px;
+        width: 460px;
+        height: 460px;
+        margin: 50px 40px 0 0;
     }
 
     .shiny-trigger {
-        top: 560px;
-        left: 600px;
+        top: 490px;
+        left: 460px;
         right: initial;
         bottom: initial;
         cursor: pointer;
@@ -390,7 +405,7 @@ main {
 
     .info {
         flex: 1;
-        height: calc(100vh - 200px);
+        height: calc(100vh - 140px);
         padding-bottom: 30px;
         border-radius: 30px;
     }
@@ -427,10 +442,48 @@ main {
 
 @media only screen and (min-width: 1366px) {
 
+    .container {
+        width: 1200px;
+    }
+
+    .header {
+        padding-inline: 40px;
+    }
+
+    .main-container {
+        padding-inline: 40px;
+    }
+
     .image {
-        width: 600px;
-        height: 600px;
+        width: 500px;
+        height: 500px;
         margin-right: 80px;
     }
 
+    .shiny-trigger {
+        top: 530px;
+        left: 500px;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+
+    .container {
+        width: 1400px;
+        border-radius: 60px;
+    }
+
+    .main-container {
+        padding-inline: 60px;
+    }
+
+    .image {
+        width: 600px;
+        height: 600px;
+    }
+
+    .shiny-trigger {
+        top: 630px;
+        left: 600px;
+    }
 }

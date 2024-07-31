@@ -1,6 +1,6 @@
 
 .info .separator {
-	margin: 40px 0;
+	margin: 30px 0;
 	border-top: 1px solid #ddd;
 }
 
@@ -99,12 +99,10 @@
 .moves {
 	display: flex;
 	flex-direction: column;
-	width: calc(100% + 60px);
-    margin: 0 -30px;
 }
 
 .moves .move {
-	padding: 10px 30px;
+	padding-bottom: 5px;
 	border-top: 1px solid #ddd;
 }
 
@@ -142,7 +140,7 @@
 }
 
 .tab-moves .separator {
-	margin: 40px -30px;
+	margin: 20px -30px;
 }
 
 .evo-block {
@@ -220,13 +218,30 @@
 	.evo-block .evo-thumb {
 		margin-right: 0;
 	}
-
 }
 
 @media only screen and (min-width: 1024px) {
-
+	
 	.info .tabs .tab:hover {
 		color: #3f78ff;
 	}
+}
 
+@media only screen and (min-width: 1366px) {
+
+	.info .tab-content {
+		padding-top: 30px;
+	}
+
+	.info .tab-content .tab-heading {
+		margin-bottom: 30px;
+	}
+
+	.tab-moves .separator {
+		margin-block: 30px;
+	}
+
+	.tab-moves .tab-content .tab-heading {
+		margin-bottom: 30px;
+	}
 }
