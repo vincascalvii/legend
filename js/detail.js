@@ -37,6 +37,29 @@ if ( no != '' && no != null ) {
 		// Populate number
 		document.querySelector('.number').innerHTML = data[0]['number'];
 
+		// Get the previous and next numbers
+		let arrowNumbers = getArrowNumber(data[0]['number']);
+
+		// If previous number is not null, add the arrow
+		if ( arrowNumbers[0] !== null ) {
+			document.querySelector('#prev-number .arrow-number').innerHTML = arrowNumbers[0];
+			document.querySelector('#prev-number').href = '/legend/detail?no=' + arrowNumbers[0];
+
+		// Otherwise, hide it
+		} else {
+			document.querySelector('#prev-number').style.display = 'none';
+		}
+
+		// If next number is not null, add the arrow
+		if ( arrowNumbers[1] !== null ) {
+			document.querySelector('#next-number .arrow-number').innerHTML = arrowNumbers[1];
+			document.querySelector('#next-number').href = '/legend/detail?no=' + arrowNumbers[1];
+
+		// Otherwise, hide it
+		} else {
+			document.querySelector('#next-number').style.display = 'none';
+		}
+
 		// Populate image
 		document.querySelector('.image').innerHTML += 
 			'<img src="/legend/img/pokemon/' + no + '/full-600x600.png" class="image-normal active" alt="' + data[0]['name'] + '">'
@@ -376,3 +399,37 @@ function getParameter() {
 	document.querySelector('meta[name="twitter:image"]').content = image;
 	document.querySelector('meta[name="twitter:url"]').content = url;
 })();
+
+
+
+/* =============================================================================
+
+    GET PARAMETER
+
+============================================================================= */
+
+// "original" is the current number
+function getArrowNumber(original) {
+
+	// Convert the original number string to a number
+	let number = parseInt(original, 10);
+
+	// Calculate the previous and next numbers
+	let prevNumber = number - 1;
+	let nextNumber = number + 1;
+
+	// Convert the numbers back to strings
+	let prevString = prevNumber.toString();
+	let nextString = nextNumber.toString();
+
+	// Pad the strings with leading zeros
+	while ( prevString.length < 3 ) prevString = '0' + prevString;
+	while ( nextString.length < 3 ) nextString = '0' + nextString;
+
+	// Add min-max limit
+	if ( prevString === '000' ) prevString = null;
+	if ( nextString === '151' ) nextString = null;
+
+	// Return the numbers ( in string, array )
+	return [prevString, nextString];
+}

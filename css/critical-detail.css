@@ -286,6 +286,31 @@ main {
     color: #ff5a5a;
 }
 
+.arrows {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.arrows .arrow {
+    background-color: #f5f5fb;
+    color: #333;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.arrows .arrow-number {
+    color: #aaa;
+}
+
+.arrows .left .arrow-number {
+    margin-left: 10px;
+}
+
+.arrows .right .arrow-number {
+    margin-right: 10px;
+}
+
 .info {
     background-color: #fff;
     border-radius: 30px 30px 0 0;
@@ -348,7 +373,6 @@ main {
 
     main {
         height: 100vh;
-        padding-bottom: 60px;
     }
 
     .container {
@@ -396,6 +420,21 @@ main {
         right: initial;
         bottom: initial;
         cursor: pointer;
+    }
+
+    .arrows .arrow {
+        position: absolute;
+        bottom: 20px;
+        padding: 10px 20px;
+        border-radius: 60px;
+    }
+
+    .arrows .left .arrow {
+        left: 20px;
+    }
+
+    .arrows .right .arrow {
+        right: 400px;
     }
 
     .info {
@@ -459,9 +498,21 @@ main {
         top: 530px;
         left: 500px;
     }
+
+    .arrows .left .arrow {
+        left: 40px;
+    }
+
+    .arrows .right .arrow {
+        left: 440px;
+    }
 }
 
 @media only screen and (min-width: 1600px) {
+
+    main {
+        padding-block: 30px;
+    }
 
     .container {
         width: 1400px;
@@ -480,5 +531,40 @@ main {
     .shiny-trigger {
         top: 630px;
         left: 600px;
+    }
+
+    .arrows .arrow {
+        position: fixed;
+        top: calc(50% - 30px);
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        color: #fff;
+        font-size: 2rem;
+        padding: 0;
+        transition: .2s ease-in-out;
+    }
+
+    .arrows .arrow-number {
+        color: #fff;
+        font-weight: 500;
+        margin-left: 0;
+    }
+
+    .arrows .left .arrow {
+        left: 30px;
+    }
+
+    .arrows .right .arrow {
+        right: 30px;
+    }
+
+    .arrows .arrow:hover,
+    .arrows .arrow:hover .arrow-number {
+        color: #eee;
+    }
+
+    .info {
+        height: calc(100vh - 140px);
     }
 }

@@ -240,7 +240,7 @@
 		"type" : "Fire",
 		"category" : "Physical",
 		"power" : "70",
-		"accuracy" : "100",
+		"accuracy" : "100%",
 		"stamina" : "15",
 		"effect" : "The user ignites its sharp claws or fangs and slash at the opponent. This move has a 20% chance of lowering the target's Defense stat and 20% chance of leaving the target with a burn."
 	}

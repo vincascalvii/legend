@@ -18,15 +18,6 @@
 		"effect" : "Burrow into the ground and attack the next turn. The user becomes untargetable by all non-Earth typed moves during this turn."
 	},
 	"6003" : {
-		"name" : "Rock Fall",
-		"type" : "Earth",
-		"category" : "Physical",
-		"power" : "60",
-		"accuracy" : "90%",
-		"stamina" : "15",
-		"effect" : "Hurl large boulders at the opponent(s) to inflict damage. This move has a 20% chance of causing the target to flinch."
-	},
-	"6004" : {
 		"name" : "Ground Stomp",
 		"type" : "Earth",
 		"category" : "Physical",
@@ -34,6 +25,15 @@
 		"accuracy" : "90%",
 		"stamina" : "15",
 		"effect" : "Strongly stomp down on the ground to strike everything around the user, foes and allies. This move lowers the Speed stats of those hit."
+	},
+	"6004" : {
+		"name" : "Rock Fall",
+		"type" : "Earth",
+		"category" : "Physical",
+		"power" : "75",
+		"accuracy" : "90%",
+		"stamina" : "15",
+		"effect" : "Hurl large boulders at the opponent(s) to inflict damage. This move has a 20% chance of causing the target to flinch."
 	},
 	"6005" : {
 		"name" : "Quake Punch",
