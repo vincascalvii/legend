@@ -162,7 +162,7 @@ a {
     }
 
     .pokedex .block {
-        width: calc((100% - 3) - 20px);
+        width: calc((100% / 3) - 20px);
     }
 
     .footer {

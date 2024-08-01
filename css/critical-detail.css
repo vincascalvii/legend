@@ -429,11 +429,11 @@ main {
         border-radius: 60px;
     }
 
-    .arrows .left .arrow {
+    .arrows .arrow.left {
         left: 20px;
     }
 
-    .arrows .right .arrow {
+    .arrows .arrow.right {
         right: 400px;
     }
 
@@ -499,11 +499,11 @@ main {
         left: 500px;
     }
 
-    .arrows .left .arrow {
+    .arrows .arrow.left {
         left: 40px;
     }
 
-    .arrows .right .arrow {
+    .arrows .arrow.right {
         left: 440px;
     }
 }
@@ -551,11 +551,11 @@ main {
         margin-left: 0;
     }
 
-    .arrows .left .arrow {
+    .arrows .arrow.left {
         left: 30px;
     }
 
-    .arrows .right .arrow {
+    .arrows .arrow.right {
         right: 30px;
     }
 
