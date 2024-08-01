@@ -21,7 +21,7 @@ fetch('/legend/data/all.json')
 		// Populate the number
 		var number = document.createElement('p');
 			number.classList.add('number');
-			number.innerHTML = data[i]['number'];
+			number.innerHTML = '#' + data[i]['number'];
 
 		// Populate the name
 		var name = document.createElement('p');
