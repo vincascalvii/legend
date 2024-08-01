@@ -434,7 +434,7 @@ main {
     }
 
     .arrows .arrow.right {
-        right: 400px;
+        left: 405px;
     }
 
     .info {
@@ -504,7 +504,7 @@ main {
     }
 
     .arrows .arrow.right {
-        left: 440px;
+        left: 435px;
     }
 }
 
@@ -548,7 +548,6 @@ main {
     .arrows .arrow-number {
         color: #fff;
         font-weight: 500;
-        margin-left: 0;
     }
 
     .arrows .arrow.left {
@@ -556,7 +555,17 @@ main {
     }
 
     .arrows .arrow.right {
+        left: unset;
         right: 30px;
+    }
+
+    .arrows .right .arrow-number {
+        margin: 0;
+    }
+
+    .arrows .right .arrow-number {
+        order: 1;
+        margin: 0;
     }
 
     .arrows .arrow:hover,

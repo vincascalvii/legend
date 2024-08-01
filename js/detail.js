@@ -35,14 +35,14 @@ if ( no != '' && no != null ) {
 		}
 
 		// Populate number
-		document.querySelector('.number').innerHTML = data[0]['number'];
+		document.querySelector('.number').innerHTML = '#' + data[0]['number'];
 
 		// Get the previous and next numbers
 		let arrowNumbers = getArrowNumber(data[0]['number']);
 
 		// If previous number is not null, add the arrow
 		if ( arrowNumbers[0] !== null ) {
-			document.querySelector('#prev-number .arrow-number').innerHTML = arrowNumbers[0];
+			document.querySelector('#prev-number .arrow-number').innerHTML = '#' + arrowNumbers[0];
 			document.querySelector('#prev-number').href = '/legend/detail?no=' + arrowNumbers[0];
 
 		// Otherwise, hide it
@@ -52,7 +52,7 @@ if ( no != '' && no != null ) {
 
 		// If next number is not null, add the arrow
 		if ( arrowNumbers[1] !== null ) {
-			document.querySelector('#next-number .arrow-number').innerHTML = arrowNumbers[1];
+			document.querySelector('#next-number .arrow-number').innerHTML = '#' + arrowNumbers[1];
 			document.querySelector('#next-number').href = '/legend/detail?no=' + arrowNumbers[1];
 
 		// Otherwise, hide it
