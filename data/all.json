@@ -111,6 +111,54 @@
 		"number" : "019",
 		"name" : "Faerifly",
 		"type_1" : "Light",
+		"type_2" : "Wind"
+	},
+	{
+		"number" : "020",
+		"name" : "Beebuilder",
+		"type_1" : "Wind",
 		"type_2" : ""
+	},
+	{
+		"number" : "021",
+		"name" : "Stratiobee",
+		"type_1" : "Wind",
+		"type_2" : ""
+	},
+	{
+		"number" : "022",
+		"name" : "Regnabee",
+		"type_1" : "Wind",
+		"type_2" : "Toxic"
+	},
+	{
+		"number" : "023",
+		"name" : "Vesnull",
+		"type_1" : "Toxic",
+		"type_2" : ""
+	},
+	{
+		"number" : "024",
+		"name" : "Vipython",
+		"type_1" : "Toxic",
+		"type_2" : ""
+	},
+	{
+		"number" : "025",
+		"name" : "Bulbairy",
+		"type_1" : "Nature",
+		"type_2" : ""
+	},
+	{
+		"number" : "026",
+		"name" : "Sweerena",
+		"type_1" : "Nature",
+		"type_2" : ""
+	},
+	{
+		"number" : "027",
+		"name" : "Bloomiquin",
+		"type_1" : "Nature",
+		"type_2" : "Light"
 	}
 ]

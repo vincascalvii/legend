@@ -1,0 +1,62 @@
+[{
+	"number" : "027",
+	"name" : "Bloomiquin",
+	"types" : ["Nature", "Light"],
+	"abilities" : [
+		{
+			"name" : "Cute Charm",
+			"desc" : "Contact with the posessor may cause infatuation."
+		},
+		{
+			"name" : "Chlorophyll (Secret)",
+			"desc" : "Boosts the posessor's Speed stat in harsh sunlight."
+		}
+	],
+	"description" : "Bloomiquin are believed to be the most beautiful creature in this region, to the point of becoming a symbol for many beauty contests. It is very rare to see a Bloomiquin due to the difficulty of evolving them. Moreover, they hold pride in their look and often avoid all physical contacts, including battles.",
+	"gender" : {
+		"male" : "0%",
+		"female" : "100%"
+	},
+	"species" : "Fairy",
+	"weight" : "48.4kg",
+	"height" : "1.6m",
+	"stats" : {
+		"hp" : "72",
+		"atk" : "66",
+		"def" : "64",
+		"spa" : "116",
+		"spd" : "102",
+		"spe" : "80",
+		"total" : "500"
+	},
+	"major_weakness" : [],
+	"weakness" : ["Ice", "Metal", "Toxic", "Dark"],
+	"resistance" : ["Water", "Electric", "Earth"],
+	"major_resistance" : [],
+	"immunity" : ["Light"],
+	"evolution" : [
+		{
+			"id" : "025",
+			"req" : "Base"
+		},
+		{
+			"id" : "026",
+			"req" : "Level 20"
+		},
+        {
+			"id" : "027",
+			"req" : "Maximum Happiness"
+		}
+	],
+	"moves_level" : [
+		{
+			"id" : "1013",
+			"level" : "20"
+		}
+	],
+	"moves_tutor" : [
+        {
+			"id" : "1021"
+		}
+    ]
+}]

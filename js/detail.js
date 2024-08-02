@@ -254,10 +254,10 @@ if ( no != '' && no != null ) {
 			for ( var evo = 0; evo < data[0]['evolution'].length; evo++ ) {
 			    evolution.innerHTML += '<a href="/legend/detail?no=' 
 					+ data[0]['evolution'][evo]['id'] + '" class="evo-block" aria-label="' 
-			    	+ data[0]['name'] + ' link">' 
-			    	+ '<img data-src="/legend/img/pokemon/' + no + '/thumb-120x120.png" '
+			    	+ data[0]['evolution'][evo]['id'] + ' link">' 
+			    	+ '<img data-src="/legend/img/pokemon/' + data[0]['evolution'][evo]['id'] + '/thumb-120x120.png" '
 					+ 'src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"'
-					+ ' class="lazyload evo-thumb" alt="' + data[0]['name'] + ' evolution thumbnail">'
+					+ ' class="lazyload evo-thumb" alt="' + data[0]['evolution'][evo]['id'] + ' evolution thumbnail">'
 					+ '<p class="evo-req">' + data[0]['evolution'][evo]['req'] + '</p></a>';
 			}
 		}

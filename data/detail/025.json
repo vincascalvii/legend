@@ -1,0 +1,62 @@
+[{
+	"number" : "025",
+	"name" : "Bulbairy",
+	"types" : ["Nature", ""],
+	"abilities" : [
+		{
+			"name" : "Cute Charm",
+			"desc" : "Contact with the posessor may cause infatuation."
+		},
+		{
+			"name" : "Chlorophyll (Secret)",
+			"desc" : "Boosts the posessor's Speed stat in harsh sunlight."
+		}
+	],
+	"description" : "Bulbairy are timid creatures that are often founded hiding in bushes when there are strangers nearby. However, once they are comfortable, they quickly become friendly and love playing with their new friends. There is a special and rare Bulbairy that can only be found in the royal garden, owned by the Queen.",
+	"gender" : {
+		"male" : "0%",
+		"female" : "100%"
+	},
+	"species" : "Fairy",
+	"weight" : "6.6kg",
+	"height" : "0.6m",
+	"stats" : {
+		"hp" : "30",
+		"atk" : "25",
+		"def" : "25",
+		"spa" : "45",
+		"spd" : "35",
+		"spe" : "40",
+		"total" : "200"
+	},
+	"major_weakness" : [],
+	"weakness" : ["Fire", "Ice", "Toxic"],
+	"resistance" : ["Water", "Electric", "Earth"],
+	"major_resistance" : [],
+	"immunity" : ["Light"],
+	"evolution" : [
+		{
+			"id" : "025",
+			"req" : "Base"
+		},
+		{
+			"id" : "026",
+			"req" : "Level 20"
+		},
+        {
+			"id" : "027",
+			"req" : "Maximum Happiness"
+		}
+	],
+	"moves_level" : [
+		{
+			"id" : "1013",
+			"level" : "20"
+		}
+	],
+	"moves_tutor" : [
+        {
+			"id" : "1021"
+		}
+    ]
+}]

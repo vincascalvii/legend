@@ -1,0 +1,62 @@
+[{
+	"number" : "026",
+	"name" : "Sweerena",
+	"types" : ["Nature", ""],
+	"abilities" : [
+		{
+			"name" : "Cute Charm",
+			"desc" : "Contact with the posessor may cause infatuation."
+		},
+		{
+			"name" : "Chlorophyll (Secret)",
+			"desc" : "Boosts the posessor's Speed stat in harsh sunlight."
+		}
+	],
+	"description" : "Sweerena like to decorate themselves with flowers and leaves to look appealing. The bulb on their head has also opened up to complement their mature look. However, their timid nature still hold them back from meeting strangers.",
+	"gender" : {
+		"male" : "0%",
+		"female" : "100%"
+	},
+	"species" : "Fairy",
+	"weight" : "20.2kg",
+	"height" : "1.1m",
+	"stats" : {
+		"hp" : "48",
+		"atk" : "33",
+		"def" : "40",
+		"spa" : "79",
+		"spd" : "58",
+		"spe" : "62",
+		"total" : "320"
+	},
+	"major_weakness" : [],
+	"weakness" : ["Fire", "Ice", "Toxic"],
+	"resistance" : ["Water", "Electric", "Earth"],
+	"major_resistance" : [],
+	"immunity" : ["Light"],
+	"evolution" : [
+		{
+			"id" : "025",
+			"req" : "Base"
+		},
+		{
+			"id" : "026",
+			"req" : "Level 20"
+		},
+        {
+			"id" : "027",
+			"req" : "Maximum Happiness"
+		}
+	],
+	"moves_level" : [
+		{
+			"id" : "1013",
+			"level" : "20"
+		}
+	],
+	"moves_tutor" : [
+        {
+			"id" : "1021"
+		}
+    ]
+}]
