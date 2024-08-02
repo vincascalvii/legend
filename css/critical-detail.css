@@ -293,10 +293,20 @@ main {
 }
 
 .arrows .arrow {
+    display: flex;
     background-color: #f5f5fb;
     color: #333;
     padding: 5px 15px;
     border-radius: 5px;
+}
+
+.arrows .arrow-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.arrows .arrow-icon * {
+    stroke: #333;
 }
 
 .arrows .arrow-number {
@@ -545,6 +555,10 @@ main {
         transition: .2s ease-in-out;
     }
 
+    .arrows .arrow-icon * {
+        stroke: #fff;
+    }
+
     .arrows .arrow-number {
         color: #fff;
         font-weight: 500;
@@ -557,6 +571,7 @@ main {
     .arrows .arrow.right {
         left: unset;
         right: 30px;
+        align-items: flex-end;
     }
 
     .arrows .left .arrow-number {
