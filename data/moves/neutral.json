@@ -538,5 +538,14 @@
 		"accuracy" : "90%",
 		"stamina" : "10",
 		"effect" : "Bound the target with silk blown from the user's mouth that harshly lowers the target's Speed stat."
+	},
+	"61" : {
+		"name" : "Bug Buzz",
+		"type" : "Neutral",
+		"category" : "Special",
+		"power" : "80",
+		"accuracy" : "90%",
+		"stamina" : "15",
+		"effect" : "Generate a damaging sound wave by vibration. This move has a 10% chance to lower the target's Special Defense stat."
 	}
 }]
