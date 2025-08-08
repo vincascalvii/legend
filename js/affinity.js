@@ -107,24 +107,35 @@ function displayTypeEffectiveness() {
 
     // Check if a type is selected
     if (!selectedType) {
-        resultDiv.innerHTML = '<h3>Effectiveness</h3><p>Select a type to see its strengths and weaknesses.</p>';
+        resultDiv.innerHTML = '<h3>Effectiveness</h3><p>Select a type to see what is strong or weak against it.</p>';
         return;
     }
 
-    // Get the data for the selected type
-    const data = typesData[selectedType];
+    // Find strengths and weaknesses against the selected type
+    const takes2xDamageFrom = [];
+    const takes05xDamageFrom = [];
+
+    // Loop through all types to find strengths and weaknesses
+    for (const type in typesData) {
+        if (typesData[type].strengths.includes(selectedType)) {
+            takes2xDamageFrom.push(type);
+        }
+        if (typesData[type].weaknesses.includes(selectedType)) {
+            takes05xDamageFrom.push(type);
+        }
+    }
     
-    // Display strengths and weaknesses
-    const strengthsList = data.strengths.length > 0 ? data.strengths.map(s => `<li>${s}</li>`).join('') : '<li>None</li>';
-    const weaknessesList = data.weaknesses.length > 0 ? data.weaknesses.map(w => `<li>${w}</li>`).join('') : '<li>None</li>';
+    // Format the results into lists
+    const strengthsList = takes05xDamageFrom.length > 0 ? takes05xDamageFrom.map(t => `<li>${t}</li>`).join('') : '<li>None</li>';
+    const weaknessesList = takes2xDamageFrom.length > 0 ? takes2xDamageFrom.map(t => `<li>${t}</li>`).join('') : '<li>None</li>';
 
     // Update the result div with the effectiveness information
     resultDiv.innerHTML = `
-        <h3>${selectedType} Effectiveness</h3>
-        <p><strong>Strengths (2x):</strong></p>
-        <ul>${strengthsList}</ul>
-        <p><strong>Weaknesses (0.5x):</strong></p>
+        <h3>How ${selectedType} is Affected</h3>
+        <p><strong>Takes 2x Damage From:</strong></p>
         <ul>${weaknessesList}</ul>
+        <p><strong>Takes 0.5x Damage From:</strong></p>
+        <ul>${strengthsList}</ul>
     `;
 }
 
@@ -186,35 +197,46 @@ function displayAttributeEffectiveness() {
         return;
     }
 
-    // Combine the strengths, weaknesses, and immunities of the selected attributes
-    let combinedStrengths = new Set();
-    let combinedWeaknesses = new Set();
-    let combinedImmune = new Set();
-
-    // Function to process each attribute and combine its strengths, weaknesses, and immunities
-    const processAttribute = (attr) => {
-        if (attr && attributesData[attr]) {
-            attributesData[attr].strengths.forEach(s => combinedStrengths.add(s));
-            attributesData[attr].weaknesses.forEach(w => combinedWeaknesses.add(w));
-            attributesData[attr].immune.forEach(i => combinedImmune.add(i));
-        }
+    // Calculate effectiveness based on selected attributes
+    const effectiveness = {
+        "4x": [], "2x": [], "0.5x": [], "0.25x": [], "0x": []
     };
 
-    // Process both selected attributes
-    processAttribute(attribute1);
-    processAttribute(attribute2);
+    // Get all attributes to check against
+    const allAttributes = Object.keys(attributesData);
 
-    // Remove duplicates and conflicts
-    combinedStrengths = [...combinedStrengths].filter(s => !combinedWeaknesses.has(s) && !combinedImmune.has(s));
-    combinedWeaknesses = [...combinedWeaknesses].filter(w => !combinedStrengths.includes(w) && !combinedImmune.has(w));
-    combinedImmune = [...combinedImmune].filter(i => !combinedStrengths.includes(i) && !combinedWeaknesses.includes(i));
+    // Loop through all attributes to determine their effectiveness against the selected attributes
+    for (const attribute of allAttributes) {
+        if (attribute === attribute1 || attribute === attribute2) {
+            continue;
+        }
+
+        // Initialise damage multiplier
+        let damageMultiplier = 1.0;
+        
+        // Check against attribute 1
+        if (attribute1) {
+            if (attributesData[attribute].strengths.includes(attribute1)) damageMultiplier *= 2.0;
+            if (attributesData[attribute].weaknesses.includes(attribute1)) damageMultiplier *= 0.5;
+            if (attributesData[attribute].immune.includes(attribute1)) damageMultiplier *= 0.0;
+        }
+        
+        // Check against attribute 2
+        if (attribute2) {
+            if (attributesData[attribute].strengths.includes(attribute2)) damageMultiplier *= 2.0;
+            if (attributesData[attribute].weaknesses.includes(attribute2)) damageMultiplier *= 0.5;
+            if (attributesData[attribute].immune.includes(attribute2)) damageMultiplier *= 0.0;
+        }
+
+        // Assign to the correct category
+        if (damageMultiplier === 4.0) effectiveness["4x"].push(attribute);
+        else if (damageMultiplier === 2.0) effectiveness["2x"].push(attribute);
+        else if (damageMultiplier === 0.5) effectiveness["0.5x"].push(attribute);
+        else if (damageMultiplier === 0.25) effectiveness["0.25x"].push(attribute);
+        else if (damageMultiplier === 0.0) effectiveness["0x"].push(attribute);
+    }
     
     // Format the results into lists
-    const strengthsList = combinedStrengths.length > 0 ? combinedStrengths.map(s => `<li>${s}</li>`).join('') : '<li>None</li>';
-    const weaknessesList = combinedWeaknesses.length > 0 ? combinedWeaknesses.map(w => `<li>${w}</li>`).join('') : '<li>None</li>';
-    const immuneList = combinedImmune.length > 0 ? combinedImmune.map(i => `<li>${i}</li>`).join('') : '<li>None</li>';
-    
-    // Set the title based on selected attributes
     let title = "Combined Effectiveness";
     if (attribute1 && attribute2) {
         title = `${attribute1} & ${attribute2} Effectiveness`;
@@ -224,14 +246,18 @@ function displayAttributeEffectiveness() {
         title = `${attribute2} Effectiveness`;
     }
 
-    // Update the result div with the combined effectiveness information
+    // Update the result div with the effectiveness information
     resultDiv.innerHTML = `
-        <h3>${title}</h3>
-        <p><strong>Strengths (2x):</strong></p>
-        <ul>${strengthsList}</ul>
-        <p><strong>Weaknesses (0.5x):</strong></p>
-        <ul>${weaknessesList}</ul>
-        <p><strong>Immune (0x):</strong></p>
-        <ul>${immuneList}</ul>
+        <h3>How ${title} is Affected</h3>
+        <p><strong>Takes 4x Damage From:</strong></p>
+        <ul>${effectiveness["4x"].length > 0 ? effectiveness["4x"].map(t => `<li>${t}</li>`).join('') : '<li>None</li>'}</ul>
+        <p><strong>Takes 2x Damage From:</strong></p>
+        <ul>${effectiveness["2x"].length > 0 ? effectiveness["2x"].map(t => `<li>${t}</li>`).join('') : '<li>None</li>'}</ul>
+        <p><strong>Takes 0.5x Damage From:</strong></p>
+        <ul>${effectiveness["0.5x"].length > 0 ? effectiveness["0.5x"].map(t => `<li>${t}</li>`).join('') : '<li>None</li>'}</ul>
+        <p><strong>Takes 0.25x Damage From:</strong></p>
+        <ul>${effectiveness["0.25x"].length > 0 ? effectiveness["0.25x"].map(t => `<li>${t}</li>`).join('') : '<li>None</li>'}</ul>
+        <p><strong>Takes 0x Damage From:</strong></p>
+        <ul>${effectiveness["0x"].length > 0 ? effectiveness["0x"].map(t => `<li>${t}</li>`).join('') : '<li>None</li>'}</ul>
     `;
 }
