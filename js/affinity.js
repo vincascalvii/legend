@@ -11,10 +11,10 @@
 
 // Set up the data for types
 const typesData = {
-    "Beast": { strengths: ["Beast"], weaknesses: ["Plant", "Construct", "Mythic"] },
-    "Insect": { strengths: ["Plant"], weaknesses: ["Avian"] },
-    "Avian": { strengths: ["Insect", "Plant"], weaknesses: ["Aquatic", "Construct", "Mythic"] },
-    "Aquatic": { strengths: ["Beast", "Avian"], weaknesses: ["Aquatic", "Plant", "Mythic"] },
+    "Beast": { strengths: ["Insect"], weaknesses: ["Construct", "Mythic"] },
+    "Insect": { strengths: ["Plant"], weaknesses: ["Beast", "Avian"] },
+    "Avian": { strengths: ["Insect", "Plant"], weaknesses: ["Construct", "Mythic"] },
+    "Aquatic": { strengths: ["Beast", "Avian"], weaknesses: ["Plant", "Mythic"] },
     "Plant": { strengths: ["Aquatic", "Construct"], weaknesses: ["Insect", "Avian", "Mythic"] },
     "Construct": { strengths: ["Beast", "Mythic"], weaknesses: ["Aquatic", "Plant"] },
     "Mythic": { strengths: ["Mythic"], weaknesses: ["Construct"] }
