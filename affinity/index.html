@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weakness and Strength Checker</title>
+    <meta name="description" content="A web application to check the strengths and weaknesses of various types and attributes in a game.">
+    <link rel="stylesheet" href="../css/affinity.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tabs">
+            <div class="tab-button active" onclick="openTab('types')">Types</div>
+            <div class="tab-button" onclick="openTab('attributes')">Attributes</div>
+        </div>
+        <div id="types-tab" class="tab-content active">
+            <h2>Types Chart</h2>
+            <table class="chart-table">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Strengths (2x)</th>
+                        <th>Weaknesses (0.5x)</th>
+                    </tr>
+                </thead>
+                <tbody id="types-chart-body">
+                </tbody>
+            </table>
+            <div class="controls">
+                <div class="controls-row">
+                    <label for="type-select">Select a Type:</label>
+                    <div class="controls-select">
+                        <select id="type-select"></select>
+                        <span class="arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.29289 8.29289C4.68342 7.90237 5.31658 7.90237 5.70711 8.29289L12 14.5858L18.2929 8.29289C18.6834 7.90237 19.3166 7.90237 19.7071 8.29289C20.0976 8.68342 20.0976 9.31658 19.7071 9.70711L12.7071 16.7071C12.3166 17.0976 11.6834 17.0976 11.2929 16.7071L4.29289 9.70711C3.90237 9.31658 3.90237 8.68342 4.29289 8.29289Z" fill="#000000"/>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div id="type-result" class="result">
+                <h3>Effectiveness</h3>
+                <p>Select a type to see its strengths and weaknesses.</p>
+            </div>
+        </div>
+        <div id="attributes-tab" class="tab-content">
+            <h2>Attributes Chart</h2>
+            <table class="chart-table">
+                <thead>
+                    <tr>
+                        <th>Attribute</th>
+                        <th>Strengths (2x)</th>
+                        <th>Weaknesses (0.5x)</th>
+                        <th>No Effect (0x)</th>
+                    </tr>
+                </thead>
+                <tbody id="attributes-chart-body">
+                </tbody>
+            </table>
+            <div class="controls">
+                <div class="controls-row">
+                    <label for="attribute1-select">Select Attribute 1:</label>
+                    <div class="controls-select">
+                        <select id="attribute1-select"></select>
+                        <span class="arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.29289 8.29289C4.68342 7.90237 5.31658 7.90237 5.70711 8.29289L12 14.5858L18.2929 8.29289C18.6834 7.90237 19.3166 7.90237 19.7071 8.29289C20.0976 8.68342 20.0976 9.31658 19.7071 9.70711L12.7071 16.7071C12.3166 17.0976 11.6834 17.0976 11.2929 16.7071L4.29289 9.70711C3.90237 9.31658 3.90237 8.68342 4.29289 8.29289Z" fill="#000000"/>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+                <div class="controls-row">
+                    <label for="attribute2-select">Select Attribute 2 (optional):</label>
+                    <div class="controls-select">
+                        <select id="attribute2-select"></select>
+                        <span class="arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.29289 8.29289C4.68342 7.90237 5.31658 7.90237 5.70711 8.29289L12 14.5858L18.2929 8.29289C18.6834 7.90237 19.3166 7.90237 19.7071 8.29289C20.0976 8.68342 20.0976 9.31658 19.7071 9.70711L12.7071 16.7071C12.3166 17.0976 11.6834 17.0976 11.2929 16.7071L4.29289 9.70711C3.90237 9.31658 3.90237 8.68342 4.29289 8.29289Z" fill="#000000"/>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div id="attribute-result" class="result">
+                <h3>Combined Effectiveness</h3>
+                <p>Select one or two attributes to see their combined strengths and weaknesses.</p>
+            </div>
+        </div>
+    </div>
+    <script src="../js/affinity.js"></script>
+</body>
+</html>
