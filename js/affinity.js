@@ -29,7 +29,7 @@ const attributesData = {
     "Wind": { strengths: ["Fire", "Toxic"], weaknesses: ["Electric", "Metal"], immune: [] },
     "Earth": { strengths: ["Fire", "Electric", "Metal", "Toxic"], weaknesses: ["Nature", "Water"], immune: ["Wind"] },
     "Metal": { strengths: ["Ice", "Light"], weaknesses: ["Fire", "Electric", "Metal"], immune: [] },
-    "Ice": { strengths: ["Nature", "Wind", "Earth"], weaknesses: ["Metal", "Ice"], immune: [] },
+    "Ice": { strengths: ["Nature", "Wind", "Earth"], weaknesses: ["Fire", "Metal", "Ice"], immune: [] },
     "Toxic": { strengths: ["Nature", "Water"], weaknesses: ["Earth", "Toxic"], immune: ["Metal"] },
     "Dark": { strengths: ["Light", "Neutral"], weaknesses: ["Dark"], immune: [] },
     "Light": { strengths: ["Toxic", "Dark"], weaknesses: ["Ice", "Light"], immune: ["Nature"] },
