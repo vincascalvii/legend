@@ -207,9 +207,6 @@ function displayAttributeEffectiveness() {
 
     // Loop through all attributes to determine their effectiveness against the selected attributes
     for (const attribute of allAttributes) {
-        if (attribute === attribute1 || attribute === attribute2) {
-            continue;
-        }
 
         // Initialise damage multiplier
         let damageMultiplier = 1.0;
