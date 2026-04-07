@@ -2,7 +2,7 @@
 	"number" : "017",
 	"name" : "Blupillar",
 	"types" : ["Light", ""],
-	"abilities" : [
+	"traits" : [
 		{
 			"name" : "Shield Dust",
 			"desc" : "Damaging moves used by the opponent will not have an additional effect."

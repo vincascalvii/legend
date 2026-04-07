@@ -2,7 +2,7 @@
 	"number" : "011",
 	"name" : "Palmahorn",
 	"types" : ["Neutral", ""],
-	"abilities" : [
+	"traits" : [
 		{
 			"name" : "Gluttony",
 			"desc" : "Make the possessor eat a held Berry when its HP drops to half or less."

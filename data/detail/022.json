@@ -2,7 +2,7 @@
 	"number" : "022",
 	"name" : "Regnabee",
 	"types" : ["Wind", "Toxic"],
-	"abilities" : [
+	"traits" : [
 		{
 			"name" : "Toxic Orb",
 			"desc" : "When the possessor faints, release poison from the orb and poisons all combatants on the field."

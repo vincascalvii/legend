@@ -2,7 +2,7 @@
 	"number" : "015",
 	"name" : "Currenbird",
 	"types" : ["Electric", "Wind"],
-	"abilities" : [
+	"traits" : [
 		{
 			"name" : "Keen Eyes",
 			"desc" : "Prevent others from lowering the possessor's accuracy."

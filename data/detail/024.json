@@ -2,7 +2,7 @@
 	"number" : "024",
 	"name" : "Vipython",
 	"types" : ["Toxic", ""],
-	"abilities" : [
+	"traits" : [
 		{
 			"name" : "Wicked Touch",
 			"desc" : "High chance of poisoning a target when the possessor makes contact."

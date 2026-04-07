@@ -1,18 +1,15 @@
 [{
 	"number" : "008",
 	"name" : "Turtank",
-	"types" : ["Water", ""],
-	"abilities" : [
+	"type": "Aquatic",
+	"attributes": ["Water"],
+	"traits" : [
 		{
-			"name" : "Aquatic",
-			"desc" : "Increase the possessor's Water-type moves' power to 50%."
-		},
-		{
-			"name" : "Tough Shell (Secret)",
-			"desc" : "Prevent critical hit from opponent's moves."
+			"name" : "Aquatic (enhanced)",
+			"desc" : "Boost Water moves' power by 50%."
 		}
 	],
-	"description" : "Turtank possess a stronger and sturdy shell, allowing them to defend against powerful attacks from their enemies. At the same time, sharp spikes from their shell can be used as the main weapon if they ever feel like retaliating.",
+	"description" : "Turtank possesses a stronger and sturdy shell, allowing it to defend against powerful attacks from the enemies. At the same time, sharp spikes from its shell can be used as the main weapon if it ever feels like retaliating.",
 	"gender" : {
 		"male" : "50%",
 		"female" : "50%"
@@ -29,11 +26,17 @@
 		"spe" : "30",
 		"total" : "400"
 	},
-	"major_weakness" : [],
-	"weakness" : ["Nature", "Electric", "Toxic"],
-	"resistance" : ["Fire", "Water", "Earth" ],
-	"major_resistance" : [],
-	"immunity" : [],
+	"type_eff": {
+		"weakness" : ["Plant"],
+		"resistance" : ["Construct"]
+	},
+	"attr_eff": {
+		"major_weakness" : [],
+		"weakness" : ["Nature", "Electric", "Toxic"],
+		"resistance" : ["Fire", "Water", "Earth" ],
+		"major_resistance" : [],
+		"immunity" : []
+	},
 	"evolution" : [
 		{
 			"id" : "007",

@@ -2,7 +2,7 @@
 	"number" : "027",
 	"name" : "Bloomiquin",
 	"types" : ["Nature", "Light"],
-	"abilities" : [
+	"traits" : [
 		{
 			"name" : "Cute Charm",
 			"desc" : "Contact with the posessor may cause infatuation."

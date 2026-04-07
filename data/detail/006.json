@@ -1,18 +1,19 @@
 [{
 	"number" : "006",
 	"name" : "Wolflare",
-	"types" : ["Fire", "Earth"],
-	"abilities" : [
+	"type": "Beast",
+	"attributes": ["Fire", "Dark"],
+	"traits" : [
 		{
-			"name" : "Pyro",
-			"desc" : "Increase the possessor's Fire-type moves' power to 50%."
+			"name" : "Pyro (enhanced)",
+			"desc" : "Boost Fire moves' power by 50%."
 		},
 		{
-			"name" : "Sharp Claws (Secret)",
-			"desc" : "Increase the power of the possessor's Claw-typed moves by 30%."
+			"name" : "Honed Claws",
+			"desc" : "Boost Claw-type moves' power by 30%."
 		}
 	],
-	"description" : "Wolflare are very aggressive Pokémon due to their duelling spirit and ego. Their sharp claws are able to cut down rocks and steels if they are taken care properly. When their fighting spirit is set alight, their manes and arms will light up like a blazing flame.",
+	"description" : "Wolflare is a very aggressive creature due to its duelling spirit and ego. Its sharp claws are able to cut down rocks and steels if they are taken care properly. When its fighting spirit is set alight, its manes and arms will light up like a blazing flame.",
 	"gender" : {
 		"male" : "50%",
 		"female" : "50%"
@@ -23,17 +24,23 @@
 	"stats" : {
 		"hp" : "92",
 		"atk" : "120",
-		"def" : "82",
-		"spa" : "60",
-		"spd" : "80",
-		"spe" : "86",
-		"total" : "520"
+		"def" : "78",
+		"spa" : "55",
+		"spd" : "75",
+		"spe" : "80",
+		"total" : "500"
 	},
-	"major_weakness" : ["Water"],
-	"weakness" : ["Wind", "Earth"],
-	"resistance" : ["Metal", "Toxic"],
-	"major_resistance" : ["Fire"],
-	"immunity" : ["Electric"],
+	"type_eff": {
+		"weakness" : ["Aquatic", "Construct"],
+		"resistance" : ["Insect"]
+	},
+	"attr_eff": {
+		"major_weakness" : [],
+		"weakness" : ["Water", "Wind", "Earth", "Light"],
+		"resistance" : ["Neutral", "Nature", "Ice", "Metal", "Dark"],
+		"major_resistance" : [],
+		"immunity" : []
+	},
 	"evolution" : [
 		{
 			"id" : "004",

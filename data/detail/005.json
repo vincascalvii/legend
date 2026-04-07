@@ -1,18 +1,15 @@
 [{
 	"number" : "005",
 	"name" : "Flamound",
-	"types" : ["Fire", ""],
-	"abilities" : [
+	"type": "Beast",
+	"attributes": ["Fire"],
+	"traits" : [
 		{
-			"name" : "Pyro",
-			"desc" : "Increase the possessor's Fire-type moves' power to 50%."
-		},
-		{
-			"name" : "Sharp Claws (Secret)",
-			"desc" : "Increase the power of the possessor's Claw-typed moves by 30%."
+			"name" : "Pyro (enhanced)",
+			"desc" : "Boost Fire moves' power by 50%."
 		}
 	],
-	"description" : "Flamound are tougher and stronger than their pre-evolution. Their natural instinct always tells them to find a worthy owner before they can proceed further in anything. Usually, that stubbornness makes it very hard for them to evolve.",
+	"description" : "Flamound is tougher and stronger than its pre-evolution. Its natural instinct always tells it to find a worthy owner before it can proceed further in anything. Usually, that stubbornness makes it very hard for it to evolve.",
 	"gender" : {
 		"male" : "50%",
 		"female" : "50%"
@@ -29,11 +26,17 @@
 		"spe" : "70",
 		"total" : "400"
 	},
-	"major_weakness" : [],
-	"weakness" : ["Water", "Wind", "Earth"],
-	"resistance" : ["Nature", "Fire", "Metal", "Ice" ],
-	"major_resistance" : [],
-	"immunity" : [],
+	"type_eff": {
+		"weakness" : ["Aquatic", "Construct"],
+		"resistance" : ["Insect"]
+	},
+	"attr_eff": {
+		"major_weakness" : [],
+		"weakness" : ["Water", "Wind", "Earth"],
+		"resistance" : ["Nature", "Fire", "Metal", "Ice" ],
+		"major_resistance" : [],
+		"immunity" : []
+	},
 	"evolution" : [
 		{
 			"id" : "004",

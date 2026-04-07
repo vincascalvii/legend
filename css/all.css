@@ -111,6 +111,116 @@ a {
 	display: none;
 }
 
+.dex .block.active {
+	display: flex;
+}
+
+.dex .block .info,
+.dex .block .image,
+.dex .block .background {
+    display: block;
+}
+
+.dex .block:hover {
+	border-color:#aaa
+}
+
+.dex .block .info {
+	display: flex;
+	flex-direction: column;
+	color: #333;
+	padding: 10px 5px 10px 15px;
+	flex: 1;
+}
+
+.dex .block .number {
+	color: #727272;
+	font-size: 1.4rem;
+	font-weight: 500;
+	margin: 0;
+}
+
+.dex .block .name {
+	font-size: 1.8rem;
+	font-weight: 700;
+	margin: 0;
+}
+
+.dex .block .types {
+	display: flex;
+	margin-top: 15px;
+}
+
+.dex .block .type {
+	display: flex;
+	align-items: center;
+	color: #fff;
+	font-size: 1.4rem;
+	padding: 5px 10px;
+	border-radius: 30px;
+}
+
+.dex .block .type:first-child {
+	margin-right: 10px;
+}
+
+.dex .block .image {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 160px;
+	height: 120px;
+}
+
+.dex .block .background {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 200px;
+	height: 200px;
+	z-index: -1;
+}
+
+.dex .block .type.neutral {
+	background-color: #ada79c;
+}
+.dex .block .type.nature {
+	background-color: #3ca33f;
+}
+.dex .block .type.fire {
+	background-color: #ff551e;
+}
+.dex .block .type.water {
+	background-color: #2e9bf7;
+}
+.dex .block .type.electric {
+	background-color: #ffca35;
+	color: #cf7500;
+}
+.dex .block .type.wind {
+	background-color: #2ed5af;
+}
+.dex .block .type.earth {
+	background-color: #cf7735;
+}
+.dex .block .type.metal {
+	background-color: #6d7e8d;
+}
+.dex .block .type.ice {
+	background-color: #92ffff;
+	color: #133ebd;
+}
+.dex .block .type.dark {
+	background-color: #7f6c61;
+}
+.dex .block .type.light {
+	background-color: #fff089;
+	color: #7d790d;
+}
+.dex .block .type.toxic {
+	background-color: #b360ff;
+}
+
 @media only screen and (min-width: 768px) {
 
     .container {

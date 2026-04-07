@@ -1,100 +1,103 @@
 [{
-	"number" : "001",
-	"name" : "Leafen",
-	"types" : ["Nature", ""],
-	"abilities" : [
+	"number": "001",
+	"name": "Leafen",
+	"type": "Beast",
+	"attributes": ["Nature"],
+	"traits": [
 		{
-			"name" : "Verdant",
-			"desc" : "Increase the possessor's Nature-type moves' power to 50%."
-		},
-		{
-			"name" : "Nimble (Secret)",
-			"desc" : "Increase the possessor's Speed stat by 1 stage at the end of each turn."
+			"name": "Verdant",
+			"desc": "Boost Nature moves' power by 30%."
 		}
 	],
-	"description" : "Leafen is an agile and cunning kitten who loves to eat berries. It usually doesn't live as house-hold pet since its natural habitat belongs to the forest. Its eyes glow red when dusk arrives, allowing it to scare enemies away from the dark.",
-	"gender" : {
-		"male" : "50%",
-		"female" : "50%"
+	"description": "Leafen is an agile and cunning kitten who loves to eat berries. It usually doesn't live as house-hold pet since its natural habitat belongs to the forest. Its eyes glow red when dusk arrives, allowing it to scare enemies away from the dark.",
+	"gender": {
+		"male": "50%",
+		"female": "50%"
 	},
-	"species" : "Cat",
-	"weight" : "3.8kg",
-	"height" : "0.6m",
-	"stats" : {
-		"hp" : "49",
-		"atk" : "60",
-		"def" : "50",
-		"spa" : "42",
-		"spd" : "34",
-		"spe" : "65",
-		"total" : "300"
+	"species": "Cat",
+	"weight": "3.8kg",
+	"height": "0.6m",
+	"stats": {
+		"hp": "49",
+		"atk": "60",
+		"def": "50",
+		"spa": "42",
+		"spd": "34",
+		"spe": "65",
+		"total": "300"
 	},
-	"major_weakness" : [],
-	"weakness" : ["Fire", "Ice", "Toxic"],
-	"resistance" : ["Water", "Electric", "Earth" ],
-	"major_resistance" : [],
-	"immunity" : ["Light"],
-	"evolution" : [
+	"type_eff": {
+		"weakness" : ["Aquatic", "Construct"],
+		"resistance" : ["Insect"]
+	},
+	"attr_eff": {
+		"major_weakness" : [],
+		"weakness" : ["Fire", "Ice", "Toxic"],
+		"resistance" : ["Water", "Electric", "Earth" ],
+		"major_resistance" : [],
+		"immunity" : ["Light"]
+	},
+	"evolution": [
 		{
-			"id" : "001",
-			"req" : "Base"
+			"id": "001",
+			"req": "Base"
 		},
 		{
-			"id" : "002",
-			"req" : "Level 16"
+			"id": "002",
+			"req": "Level 16"
 		},
 		{
-			"id" : "003",
-			"req" : "Level 36"
+			"id": "003",
+			"req": "Level 36"
 		}
 	],
-	"moves_level" : [
+	"moves_level": [
 		{
-			"id" : "1",
-			"level" : "-"
+			"id": "1",
+			"level": "-"
 		},
 		{
-			"id" : "38",
-			"level" : "-"
+			"id": "38",
+			"level": "-"
 		},
 		{
-			"id" : "1001",
-			"level" : "5"
+			"id": "1001",
+			"level": "5"
 		},
 		{
-			"id" : "42",
-			"level" : "8"
+			"id": "42",
+			"level": "8"
 		},
 		{
-			"id" : "32",
-			"level" : "10"
+			"id": "32",
+			"level": "10"
 		},
 		{
-			"id" : "1003",
-			"level" : "15"
+			"id": "1003",
+			"level": "15"
 		},
 		{
-			"id" : "4",
-			"level" : "18"
+			"id": "4",
+			"level": "18"
 		},
 		{
-			"id" : "9018",
-			"level" : "25"
+			"id": "9018",
+			"level": "25"
 		},
 		{
-			"id" : "43",
-			"level" : "30"
+			"id": "43",
+			"level": "30"
 		}
 	],
-	"moves_tutor" : [
+	"moves_tutor": [
 		{
-			"id" : "34"
+			"id": "34"
 		},
 		{
-			"id" : "1021"
+			"id": "1021"
 		},
 		{
-			"id" : "6001"
+			"id": "6001"
 		}
 	]
 }]

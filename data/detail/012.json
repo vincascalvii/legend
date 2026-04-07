@@ -2,7 +2,7 @@
 	"number" : "012",
 	"name" : "Snailog",
 	"types" : ["Nature", "Earth"],
-	"abilities" : [
+	"traits" : [
 		{
 			"name" : "Oblivious",
 			"desc" : "The possessor is oblivious, and that keeps it from being infatuated or falling for taunts."

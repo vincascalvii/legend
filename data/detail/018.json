@@ -2,7 +2,7 @@
 	"number" : "018",
 	"name" : "Silkocoon",
 	"types" : ["Light", ""],
-	"abilities" : [
+	"traits" : [
 		{
 			"name" : "Shed Skin",
 			"desc" : "The Pokémon may heal its own status conditions by shedding its skin."

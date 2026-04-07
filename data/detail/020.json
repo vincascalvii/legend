@@ -2,7 +2,7 @@
 	"number" : "020",
 	"name" : "Beebuilder",
 	"types" : ["Wind", ""],
-	"abilities" : [
+	"traits" : [
 		{
 			"name" : "Honey Gather",
 			"desc" : "The possessor may gather Honey during a battle. The possessor will consume Honey when its HP falls below 50%. Honey will recover 20% of the user's HP."

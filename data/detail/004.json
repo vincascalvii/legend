@@ -1,18 +1,15 @@
 [{
 	"number" : "004",
 	"name" : "Pupyro",
-	"types" : ["Fire", ""],
-	"abilities" : [
+	"type": "Beast",
+	"attributes": ["Fire"],
+	"traits" : [
 		{
 			"name" : "Pyro",
-			"desc" : "Increase the possessor's Fire-type moves' power to 50%."
-		},
-		{
-			"name" : "Sharp Claws (Secret)",
-			"desc" : "Increase the power of the possessor's Claw-typed moves by 30%."
+			"desc" : "Boost Fire moves' power by 30%."
 		}
 	],
-	"description" : "Pupyro are very aggressive puppies at first hand but will become attached to those who they deem worthy of their owners. They have a very strong fighting spirit and would often cause trouble against others of their kind.",
+	"description" : "Pupyro is a very aggressive puppy at first-hand but will become attached to those who it deems worthy of its owners. It has a very strong fighting spirit and would often cause trouble against others of its kind.",
 	"gender" : {
 		"male" : "50%",
 		"female" : "50%"
@@ -29,11 +26,17 @@
 		"spe" : "50",
 		"total" : "300"
 	},
-	"major_weakness" : [],
-	"weakness" : ["Water", "Wind", "Earth"],
-	"resistance" : ["Nature", "Fire", "Metal", "Ice" ],
-	"major_resistance" : [],
-	"immunity" : [],
+	"type_eff": {
+		"weakness" : ["Aquatic", "Construct"],
+		"resistance" : ["Insect"]
+	},
+	"attr_eff": {
+		"major_weakness" : [],
+		"weakness" : ["Water", "Wind", "Earth"],
+		"resistance" : ["Nature", "Fire", "Metal", "Ice" ],
+		"major_resistance" : [],
+		"immunity" : []
+	},
 	"evolution" : [
 		{
 			"id" : "004",

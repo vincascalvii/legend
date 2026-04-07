@@ -2,7 +2,7 @@
 	"number" : "019",
 	"name" : "Faerifly",
 	"types" : ["Light", "Wind"],
-	"abilities" : [
+	"traits" : [
 		{
 			"name" : "Shield Dust",
 			"desc" : "Damaging moves used by the opponent will not have an additional effect."

@@ -1,18 +1,19 @@
 [{
 	"number" : "003",
 	"name" : "Shadoward",
-	"types" : ["Nature", "Dark"],
-	"abilities" : [
+	"type": "Beast",
+	"attributes" : ["Nature", "Toxic"],
+	"traits" : [
 		{
-			"name" : "Verdant",
-			"desc" : "Increase the possessor's Nature-type moves' power to 50%."
+			"name" : "Verdant (Enhanced)",
+			"desc" : "Boost Nature moves' power by 50%."
 		},
 		{
-			"name" : "Nimble (Secret)",
-			"desc" : "Increase the possessor's Speed stat by 1 stage at the end of each turn."
+			"name" : "Nimble Feet",
+			"desc" : "Increase Speed stat by 1 stage at the end of first turn."
 		}
 	],
-	"description" : "Shadoward lurk inside the forest and usually go active at night. They use the red end of the tail as a bait to lure their prey to their hunting ground. Combined with their green mane, they become very hard to be spotted out, making them a fearsome assassin.",
+	"description" : "Shadoward lurks inside the forest and usually goes active at night. It uses the red end of the tail as a bait to lure its prey to its hunting ground. Combined with its green mane, it becomes very hard to be spotted out, making it a fearsome assassin.",
 	"gender" : {
 		"male" : "50%",
 		"female" : "50%"
@@ -21,19 +22,25 @@
 	"weight" : "84.0kg",
 	"height" : "2.0m",
 	"stats" : {
-		"hp" : "79",
+		"hp" : "80",
 		"atk" : "103",
-		"def" : "81",
-		"spa" : "74",
-		"spd" : "71",
+		"def" : "75",
+		"spa" : "70",
+		"spd" : "60",
 		"spe" : "112",
-		"total" : "520"
+		"total" : "500"
 	},
-	"major_weakness" : ["Fire"],
-	"weakness" : ["Ice", "Toxic"],
-	"resistance" : ["Water", "Electric", "Earth", "Dark", "Neutral"],
-	"major_resistance" : [],
-	"immunity" : ["Light"],
+	"type_eff": {
+		"weakness" : ["Aquatic", "Construct"],
+		"resistance" : ["Insect"]
+	},
+	"attr_eff": {
+		"major_weakness" : ["Fire"],
+		"weakness" : ["Ice", "Toxic"],
+		"resistance" : ["Water", "Electric", "Earth", "Dark", "Neutral"],
+		"major_resistance" : [],
+		"immunity" : ["Light"]
+	},
 	"evolution" : [
 		{
 			"id" : "001",

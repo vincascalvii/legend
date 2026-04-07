@@ -1,18 +1,15 @@
 [{
 	"number" : "007",
 	"name" : "Turteen",
-	"types" : ["Water", ""],
-	"abilities" : [
+	"type": "Aquatic",
+	"attributes": ["Water"],
+	"traits" : [
 		{
 			"name" : "Aquatic",
-			"desc" : "Increase the possessor's Water-type moves' power to 50%."
-		},
-		{
-			"name" : "Tough Shell (Secret)",
-			"desc" : "Prevent critical hit from opponent's moves."
+			"desc" : "Boost Water moves' power by 30%."
 		}
 	],
-	"description" : "Turteen are very shy Pokémon who love to stay hidden within their shells most of the time. Their shells are specially designed so that water can easily flow in. The stored water can later be used as water beam to defend themselves.",
+	"description" : "Turteen is a very shy turtle who loves to stay hidden within its shells most of the time. Its shell is specially designed so that water can easily flow in. The stored water can later be used as water beam to defend itself.",
 	"gender" : {
 		"male" : "50%",
 		"female" : "50%"
@@ -29,11 +26,17 @@
 		"spe" : "26",
 		"total" : "300"
 	},
-	"major_weakness" : [],
-	"weakness" : ["Nature", "Electric", "Toxic"],
-	"resistance" : ["Fire", "Water", "Earth" ],
-	"major_resistance" : [],
-	"immunity" : [],
+	"type_eff": {
+		"weakness" : ["Plant"],
+		"resistance" : ["Construct"]
+	},
+	"attr_eff": {
+		"major_weakness" : [],
+		"weakness" : ["Nature", "Electric", "Toxic"],
+		"resistance" : ["Fire", "Water", "Earth" ],
+		"major_resistance" : [],
+		"immunity" : []
+	},
 	"evolution" : [
 		{
 			"id" : "007",

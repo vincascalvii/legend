@@ -1,18 +1,15 @@
 [{
 	"number" : "002",
 	"name" : "Petalen",
-	"types" : ["Nature", ""],
-	"abilities" : [
+	"type": "Beast",
+	"attributes": ["Nature"],
+	"traits" : [
 		{
-			"name" : "Verdant",
-			"desc" : "Increase the possessor's Nature-type moves' power to 50%."
-		},
-		{
-			"name" : "Nimble (Secret)",
-			"desc" : "Increase the possessor's Speed stat by 1 stage at the end of each turn."
+			"name" : "Verdant (Enhanced)",
+			"desc" : "Boost Nature moves' power by 50%."
 		}
 	],
-	"description" : "Petalen like to live in the forest and enjoy brushing themselves on leaves and bushes. They move swiftly between trees and their tails are used as a sharp blade that cuts down their foes and prey.",
+	"description" : "Petalen likes to live in the forest and enjoy brushing itself on leaves and bushes. It moves swiftly between trees and its tail is used as a sharp blade that cuts down its foes and prey.",
 	"gender" : {
 		"male" : "50%",
 		"female" : "50%"
@@ -29,11 +26,17 @@
 		"spe" : "91",
 		"total" : "400"
 	},
-	"major_weakness" : [],
-	"weakness" : ["Fire", "Ice", "Toxic"],
-	"resistance" : ["Water", "Electric", "Earth" ],
-	"major_resistance" : [],
-	"immunity" : ["Light"],
+	"type_eff": {
+		"weakness" : ["Aquatic", "Construct"],
+		"resistance" : ["Insect"]
+	},
+	"attr_eff": {
+		"major_weakness" : [],
+		"weakness" : ["Fire", "Ice", "Toxic"],
+		"resistance" : ["Water", "Electric", "Earth" ],
+		"major_resistance" : [],
+		"immunity" : ["Light"]
+	},
 	"evolution" : [
 		{
 			"id" : "001",

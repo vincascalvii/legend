@@ -2,7 +2,7 @@
 	"number" : "016",
 	"name" : "Thundaptor",
 	"types" : ["Electric", "Wind"],
-	"abilities" : [
+	"traits" : [
 		{
 			"name" : "Volt Absorb",
 			"desc" : "If hit by an Electric-type move, the possesor has its HP restored instead of taking damage."

@@ -2,7 +2,7 @@
 	"number" : "021",
 	"name" : "Stratiobee",
 	"types" : ["Wind", ""],
-	"abilities" : [
+	"traits" : [
 		{
 			"name" : "Vigilant",
 			"desc" : "The possessor and its allies cannot fall asleep."

@@ -2,163 +2,163 @@
 	{
 		"number" : "001",
 		"name" : "Leafen",
-		"type_1" : "Nature",
-		"type_2" : ""
+		"attr_1" : "Nature",
+		"attr_2" : ""
 	},
 	{
 		"number" : "002",
 		"name" : "Petalen",
-		"type_1" : "Nature",
-		"type_2" : ""
+		"attr_1" : "Nature",
+		"attr_2" : ""
 	},
 	{
 		"number" : "003",
 		"name" : "Shadoward",
-		"type_1" : "Nature",
-		"type_2" : "Dark"
+		"attr_1" : "Nature",
+		"attr_2" : "Toxic"
 	},
 	{
 		"number" : "004",
 		"name" : "Pupyro",
-		"type_1" : "Fire",
-		"type_2" : ""
+		"attr_1" : "Fire",
+		"attr_2" : ""
 	},
 	{
 		"number" : "005",
 		"name" : "Flamound",
-		"type_1" : "Fire",
-		"type_2" : ""
+		"attr_1" : "Fire",
+		"attr_2" : ""
 	},
 	{
 		"number" : "006",
 		"name" : "Wolflare",
-		"type_1" : "Fire",
-		"type_2" : "Earth"
+		"attr_1" : "Fire",
+		"attr_2" : "Dark"
 	},
 	{
 		"number" : "007",
 		"name" : "Turteen",
-		"type_1" : "Water",
-		"type_2" : ""
+		"attr_1" : "Water",
+		"attr_2" : ""
 	},
 	{
 		"number" : "008",
 		"name" : "Turtank",
-		"type_1" : "Water",
-		"type_2" : ""
+		"attr_1" : "Water",
+		"attr_2" : ""
 	},
 	{
 		"number" : "009",
 		"name" : "Turtidal",
-		"type_1" : "Water",
-		"type_2" : "Metal"
+		"attr_1" : "Water",
+		"attr_2" : "Metal"
 	},
 	{
 		"number" : "010",
 		"name" : "Tapahorn",
-		"type_1" : "Neutral",
-		"type_2" : ""
+		"attr_1" : "Neutral",
+		"attr_2" : ""
 	},
 	{
 		"number" : "011",
 		"name" : "Palmahorn",
-		"type_1" : "Neutral",
-		"type_2" : ""
+		"attr_1" : "Neutral",
+		"attr_2" : ""
 	},
 	{
 		"number" : "012",
 		"name" : "Snailog",
-		"type_1" : "Nature",
-		"type_2" : "Earth"
+		"attr_1" : "Nature",
+		"attr_2" : "Earth"
 	},
 	{
 		"number" : "013",
 		"name" : "Trunklug",
-		"type_1" : "Nature",
-		"type_2" : "Earth"
+		"attr_1" : "Nature",
+		"attr_2" : "Earth"
 	},
 	{
 		"number" : "014",
 		"name" : "Elechic",
-		"type_1" : "Electric",
-		"type_2" : "Wind"
+		"attr_1" : "Electric",
+		"attr_2" : "Wind"
 	},
 	{
 		"number" : "015",
 		"name" : "Currenbird",
-		"type_1" : "Electric",
-		"type_2" : "Wind"
+		"attr_1" : "Electric",
+		"attr_2" : "Wind"
 	},
 	{
 		"number" : "016",
 		"name" : "Thundaptor",
-		"type_1" : "Electric",
-		"type_2" : "Wind"
+		"attr_1" : "Electric",
+		"attr_2" : "Wind"
 	},
 	{
 		"number" : "017",
 		"name" : "Blupillar",
-		"type_1" : "Light",
-		"type_2" : ""
+		"attr_1" : "Light",
+		"attr_2" : ""
 	},
 	{
 		"number" : "018",
 		"name" : "Silkocoon",
-		"type_1" : "Light",
-		"type_2" : ""
+		"attr_1" : "Light",
+		"attr_2" : ""
 	},
 	{
 		"number" : "019",
 		"name" : "Faerifly",
-		"type_1" : "Light",
-		"type_2" : "Wind"
+		"attr_1" : "Light",
+		"attr_2" : "Wind"
 	},
 	{
 		"number" : "020",
 		"name" : "Beebuilder",
-		"type_1" : "Wind",
-		"type_2" : ""
+		"attr_1" : "Wind",
+		"attr_2" : ""
 	},
 	{
 		"number" : "021",
 		"name" : "Stratiobee",
-		"type_1" : "Wind",
-		"type_2" : ""
+		"attr_1" : "Wind",
+		"attr_2" : ""
 	},
 	{
 		"number" : "022",
 		"name" : "Regnabee",
-		"type_1" : "Wind",
-		"type_2" : "Toxic"
+		"attr_1" : "Wind",
+		"attr_2" : "Toxic"
 	},
 	{
 		"number" : "023",
 		"name" : "Vesnull",
-		"type_1" : "Toxic",
-		"type_2" : ""
+		"attr_1" : "Toxic",
+		"attr_2" : ""
 	},
 	{
 		"number" : "024",
 		"name" : "Vipython",
-		"type_1" : "Toxic",
-		"type_2" : ""
+		"attr_1" : "Toxic",
+		"attr_2" : ""
 	},
 	{
 		"number" : "025",
 		"name" : "Bulbairy",
-		"type_1" : "Nature",
-		"type_2" : ""
+		"attr_1" : "Nature",
+		"attr_2" : ""
 	},
 	{
 		"number" : "026",
 		"name" : "Sweerena",
-		"type_1" : "Nature",
-		"type_2" : ""
+		"attr_1" : "Nature",
+		"attr_2" : ""
 	},
 	{
 		"number" : "027",
 		"name" : "Bloomiquin",
-		"type_1" : "Nature",
-		"type_2" : "Light"
+		"attr_1" : "Nature",
+		"attr_2" : "Light"
 	}
 ]

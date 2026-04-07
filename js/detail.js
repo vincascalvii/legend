@@ -5,266 +5,180 @@
 ================================================================ */
 
 // Get the Legend number from URL query
-var no = getParameter('no');
-if ( no != '' && no != null ) {
+var num = getParameter('num');
+if (num != '' && num != null) {
 
 	// Fetch the data
-	fetch('/legend/data/detail/' + no + '.json')
-	.then( function(response) {
+	fetch('/legend/data/detail/' + num + '.json')
+	.then(function(response) {
 		if (!response.ok) throw new Error("HTTP error " + response.status);
 	    return response.json();
 	})
-	.then( function(data) {
+	.then(function(data) {
+		var data = data[0];
+		const dbNum = data['number'];
+		const dbName = data['name'];
+		const dbAttr1 = data['attributes'][0];
+		const dbAttr2 = data['attributes'][1] ?? null;
 
 		// Change background colour
-		document.getElementById('background').classList.add(data[0]['types'][0].toLowerCase());
+		document.getElementById('background').classList.add(dbAttr1.toLowerCase());
 
 		// Populate name
-		document.querySelector('.name').innerHTML = data[0]['name'];
+		document.getElementById('name').innerHTML = dbName;
 
-		// Populate typings
-		document.querySelector('.types span:first-child').innerHTML = data[0]['types'][0];
-		document.querySelector('.types span:first-child').classList.add(
-			data[0]['types'][0].toLowerCase()
-		);
-		if ( data[0]['types'][1] != '' && data[0]['types'][1] != null ) {
-			var type2 = document.createElement('span');
-				type2.classList.add('type', data[0]['types'][1].toLowerCase());
-				type2.innerHTML = data[0]['types'][1];
-			document.querySelector('.types').appendChild(type2);
+		// Populate type
+		const type = data['type'];
+		const elType = document.getElementById('type');
+		elType.innerHTML = type;
+		elType.classList.add(type.toLowerCase());
+
+		// Populate attributes
+		const elAttrs = document.getElementById('attrs');
+		const elAttr1 = document.getElementById('attr1');
+		elAttr1.innerHTML = dbAttr1;
+		elAttr1.classList.add(dbAttr1.toLowerCase());
+		if (dbAttr2 !== null) {
+			const elAttr2 = document.createElement('span');
+			elAttr2.classList.add('attribute', dbAttr2.toLowerCase());
+			elAttr2.innerHTML = dbAttr2;
+			elAttrs.appendChild(elAttr2);
 		}
 
 		// Populate number
-		document.querySelector('.number').innerHTML = '#' + data[0]['number'];
+		document.querySelector('.number').innerHTML = '#' + dbNum;
 
 		// Get the previous and next numbers
-		let arrowNumbers = getArrowNumber(data[0]['number']);
+		let arrowNumbers = getArrowNumber(dbNum);
 
 		// If previous number is not null, add the arrow
-		if ( arrowNumbers[0] !== null ) {
-			document.querySelector('#prev-number .arrow-number').innerHTML = '#' + arrowNumbers[0];
-			document.querySelector('#prev-number').href = '/legend/detail?no=' + arrowNumbers[0];
+		const elPrevNum = document.getElementById('prev-arr');
+		if (arrowNumbers[0] !== null) {
+			document.getElementById('prev-num').innerHTML = '#' + arrowNumbers[0];
+			elPrevNum.href = '/legend/detail?num=' + arrowNumbers[0];
 
 		// Otherwise, hide it
 		} else {
-			document.querySelector('#prev-number').style.display = 'none';
+			elPrevNum.style.display = 'none';
 		}
 
 		// If next number is not null, add the arrow
-		if ( arrowNumbers[1] !== null ) {
-			document.querySelector('#next-number .arrow-number').innerHTML = '#' + arrowNumbers[1];
-			document.querySelector('#next-number').href = '/legend/detail?no=' + arrowNumbers[1];
+		const elNextNum = document.getElementById('next-arr');
+		if (arrowNumbers[1] !== null) {
+			document.getElementById('next-num').innerHTML = '#' + arrowNumbers[1];
+			elNextNum.href = '/legend/detail?num=' + arrowNumbers[1];
 
 		// Otherwise, hide it
 		} else {
-			document.querySelector('#next-number').style.display = 'none';
+			elNextNum.style.display = 'none';
 		}
 
 		// Populate image
-		document.querySelector('.image').innerHTML += 
-			'<img src="/legend/img/pokemon/' + no + '/full-600x600.png" class="image-normal active" alt="' + data[0]['name'] + '">'
-			+ '<img src="/legend/img/pokemon/' + no + '/shiny-600x600.png" class="image-shiny" alt="' + data[0]['name'] + '">';
+		document.getElementById('image').innerHTML = 
+			'<img src="/legend/img/lumies/' + num + '/full-600x600.png" class="image-normal active" alt="' + dbName + '">';
 
-		// Populate abilities
-		document.querySelector('.ability-1 .ability-name').innerHTML = data[0]['abilities'][0]['name'];
-		document.querySelector('.ability-1 .ability-desc').innerHTML = data[0]['abilities'][0]['desc'];
-		document.querySelector('.ability-2 .ability-name').innerHTML = data[0]['abilities'][1]['name'];
-		document.querySelector('.ability-2 .ability-desc').innerHTML = data[0]['abilities'][1]['desc'];
+		// Populate traits
+		document.getElementById('tr1-name').innerHTML = data['traits'][0]['name'];
+		document.getElementById('tr1-desc').innerHTML = data['traits'][0]['desc'];
+		if (data['traits'][1]) {
+			document.getElementById('tr2-name').innerHTML = data['traits'][1]['name'];
+			document.getElementById('tr2-desc').innerHTML = data['traits'][1]['desc'];
+		}
 
 		// Populate description
-		document.querySelector('.description').innerHTML = data[0]['description'];
+		document.getElementById('desc').innerHTML = data['description'];
 
 		// Populate additional details
-		document.querySelector('.additional-male-value').innerHTML = data[0]['gender']['male'];
-		document.querySelector('.additional-female-value').innerHTML = data[0]['gender']['female'];
-		document.querySelector('.additional-species .additional-value').innerHTML = 
-			data[0]['species'];
-		document.querySelector('.additional-weight .additional-value').innerHTML = 
-			data[0]['weight'];
-		document.querySelector('.additional-height .additional-value').innerHTML = 
-			data[0]['height'];
+		document.getElementById('gen-male').innerHTML = data['gender']['male'];
+		document.getElementById('gen-female').innerHTML = data['gender']['female'];
+		document.getElementById('species').innerHTML = data['species'];
+		document.getElementById('weight').innerHTML = data['weight'];
+		document.getElementById('height').innerHTML = data['height'];
 
 		// Populate stats
-		document.querySelector('.stat-hp .stat-value').innerHTML = data[0]['stats']['hp'];
-		document.querySelector('.stat-atk .stat-value').innerHTML = data[0]['stats']['atk'];
-		document.querySelector('.stat-def .stat-value').innerHTML = data[0]['stats']['def'];
-		document.querySelector('.stat-spa .stat-value').innerHTML = data[0]['stats']['spa'];
-		document.querySelector('.stat-spd .stat-value').innerHTML = data[0]['stats']['spd'];
-		document.querySelector('.stat-spe .stat-value').innerHTML = data[0]['stats']['spe'];
-		document.querySelector('.stat-total .stat-value').innerHTML = data[0]['stats']['total'];
+		const dbHp = data['stats']['hp'];
+		const dbAtk = data['stats']['atk'];
+		const dbDef = data['stats']['def'];
+		const dbSpa = data['stats']['spa'];
+		const dbSpd = data['stats']['spd'];
+		const dbSpe = data['stats']['spe'];
+		const dbTtl = data['stats']['total'];
+		document.getElementById('stt-hp').innerHTML = dbHp;
+		document.getElementById('stt-atk').innerHTML = dbAtk;
+		document.getElementById('stt-def').innerHTML = dbDef;
+		document.getElementById('stt-spa').innerHTML = dbSpa;
+		document.getElementById('stt-spd').innerHTML = dbSpd;
+		document.getElementById('stt-spe').innerHTML = dbSpe;
+		document.getElementById('stt-ttl').innerHTML = dbTtl;
 
 		// Populate stat bars
-		document.querySelector('.stat-hp .stat-bar-fill').style.width = 
-			(( parseInt(data[0]['stats']['hp']) / 150 ) * 100 ) + '%';
-		document.querySelector('.stat-atk .stat-bar-fill').style.width = 
-			(( parseInt(data[0]['stats']['atk']) / 150 ) * 100 ) + '%';
-		document.querySelector('.stat-def .stat-bar-fill').style.width = 
-			(( parseInt(data[0]['stats']['def']) / 150 ) * 100 ) + '%';
-		document.querySelector('.stat-spa .stat-bar-fill').style.width = 
-			(( parseInt(data[0]['stats']['spa']) / 150 ) * 100 ) + '%';
-		document.querySelector('.stat-spd .stat-bar-fill').style.width = 
-			(( parseInt(data[0]['stats']['spd']) / 150 ) * 100 ) + '%';
-		document.querySelector('.stat-spe .stat-bar-fill').style.width = 
-			(( parseInt(data[0]['stats']['spe']) / 150 ) * 100 ) + '%';
+		document.getElementById('sttbar-hp').style.width = getStatBarPercent(dbHp);
+		document.getElementById('sttbar-atk').style.width = getStatBarPercent(dbAtk);
+		document.getElementById('sttbar-def').style.width = getStatBarPercent(dbDef);
+		document.getElementById('sttbar-spa').style.width = getStatBarPercent(dbSpa);
+		document.getElementById('sttbar-spd').style.width = getStatBarPercent(dbSpd);
+		document.getElementById('sttbar-spe').style.width = getStatBarPercent(dbSpe);
 
-		// Populate major weakness
-		if ( data[0]['major_weakness'].length > 0 ) {
-			document.querySelector('.condition-major-weakness').innerHTML =
-				'<h3 class="condition-label">Major Weakness (x4)</h3>';
-			var majorWeakness = document.createElement('div');
-				majorWeakness.classList.add('condition-types');
-			for ( var mw = 0; mw < data[0]['major_weakness'].length; mw++ ) {
-				majorWeakness.innerHTML += '<span class="type '  + 
-					data[0]['major_weakness'][mw].toLowerCase() +  '">' + 
-					data[0]['major_weakness'][mw] + '</span>';
-			}
-			document.querySelector('.condition-major-weakness').appendChild(majorWeakness);
-		}
-
-		// Populate weakness
-		if ( data[0]['weakness'].length > 0 ) {
-			document.querySelector('.condition-weakness').innerHTML =
-				'<h3 class="condition-label">Weakness (x2)</h3>';
-			var weakness = document.createElement('div');
-				weakness.classList.add('condition-types');
-			for ( var w = 0; w < data[0]['weakness'].length; w++ ) {
-				weakness.innerHTML += '<span class="type '  + 
-					data[0]['weakness'][w].toLowerCase() +  '">' + 
-					data[0]['weakness'][w] + '</span>';
-			}
-			document.querySelector('.condition-weakness').appendChild(weakness);
-		}
-
-		// Populate resistance
-		if ( data[0]['resistance'].length > 0 ) {
-			document.querySelector('.condition-resistance').innerHTML =
-				'<h3 class="condition-label">Resistance (x½)</h3>';
-			var resistance = document.createElement('div');
-				resistance.classList.add('condition-types');
-			for ( var r = 0; r < data[0]['resistance'].length; r++ ) {
-				resistance.innerHTML += '<span class="type '  + 
-					data[0]['resistance'][r].toLowerCase() +  '">' + 
-					data[0]['resistance'][r] + '</span>';
-			}
-			document.querySelector('.condition-resistance').appendChild(resistance);
-		}
-
-		// Populate major resistance
-		if ( data[0]['major_resistance'].length > 0 ) {
-			document.querySelector('.condition-major-resistance').innerHTML =
-				'<h3 class="condition-label">Major Resistance (x¼)</h3>';
-			var majorResistance = document.createElement('div');
-				majorResistance.classList.add('condition-types');
-			for ( var mr = 0; mr < data[0]['major_resistance'].length; mr++ ) {
-				majorResistance.innerHTML += '<span class="type '  + 
-					data[0]['major_resistance'][mr].toLowerCase() +  '">' + 
-					data[0]['major_resistance'][mr] + '</span>';
-			}
-			document.querySelector('.condition-major-resistance').appendChild(majorResistance);
-		}
-
-		// Populate immunity
-		if ( data[0]['immunity'].length > 0 ) {
-			document.querySelector('.condition-immunity').innerHTML =
-				'<h3 class="condition-label">Immunity (x0)</h3>';
-			var immunity = document.createElement('div');
-				immunity.classList.add('condition-types');
-			for ( var im = 0; im < data[0]['immunity'].length; im++ ) {
-				immunity.innerHTML += '<span class="type '  + 
-					data[0]['immunity'][im].toLowerCase() +  '">' + 
-					data[0]['immunity'][im] + '</span>';
-			}
-			document.querySelector('.condition-immunity').appendChild(immunity);
-		}
+		// Populate weaknesses & resistances
+		const dbTypeEff = data['type_eff'];
+		const dbAttrEff = data['attr_eff'];
+		popEff(dbTypeEff['weakness'], 'type', 'wkn', 'Weakness (x2)');
+		popEff(dbTypeEff['resistance'], 'type', 'res', 'Resistance (x½)');
+		popEff(dbAttrEff['major_weakness'], 'attr', 'mj-wkn', 'Major Weakness (x4)');
+		popEff(dbAttrEff['weakness'], 'attr', 'wkn', 'Weakness (x2)');
+		popEff(dbAttrEff['resistance'], 'attr', 'res', 'Resistance (x½)');
+		popEff(dbAttrEff['major_resistance'], 'attr', 'mj-res', 'Major Resistance (x¼)');
+		popEff(dbAttrEff['immunity'], 'attr', 'imm', 'Immunity (x0)');
 
 		// Get these 2 containers
-		var moveLevelContainer = document.querySelector('.moves-level');
-		var moveTutorContainer = document.querySelector('.moves-tutor');
+		const mvLvlCon = document.getElementById('mv-lvl');
+		const mvTutCon = document.getElementById('mv-tut');
 
 		// Build the array of types
 		let types = [
-			'neutral', 'nature', 'fire', 'water', 'electric', 'wind', 'earth', 
-			'metal', 'ice', 'dark', 'light', 'toxic'
+			'neutral', 'nature', 'fire', 
+			'water', 'electric', 'wind', 
+			'earth', 'metal', 'ice', 
+			'dark', 'light', 'toxic'
 		];
 
 		// Loop through the types to get all the moves
-		for ( var m = 0; m < types.length; m++ ) {
+		for (var m = 0; m < types.length; m++) {
 			fetch('/legend/data/moves/' + types[m] + '.json')
-			.then( function(response) {
+			.then(function(response) {
 				if (!response.ok) throw new Error("HTTP error " + response.status);
 				return response.json();
 			})
-			.then( function(moves) {
-
-				// Populate moves by levelling up
-				for ( var ml = 0; ml < data[0]['moves_level'].length; ml++ ) {
-					var id = data[0]['moves_level'][ml]['id'];
-
-					// If the returned "moves" have the same ID, add the HTML
-					if ( moves[0][id] ) {
-						var level = data[0]['moves_level'][ml]['level'];
-						var moveLevel = document.createElement('div');
-							moveLevel.classList.add('move');
-							moveLevel.style.order = level === '-' ? '0' : level;
-							moveLevel.innerHTML = '<p class="move-label"><span class="move-name">' 
-								+ moves[0][id]['name'] + '</span><span class="type '
-								+ moves[0][id]['type'].toLowerCase() + '">'
-								+ moves[0][id]['type'] + '</span><span class="move-level">'
-								+ ( level === '-' ? level : 'Level ' + level ) + '</span></p>'
-								+ '<p class="move-details"><span class="move-category">'
-								+ moves[0][id]['category'] + '</span><span class="move-power">PWR: '
-								+ moves[0][id]['power'] + '</span><span class="move-accuracy">ACC: '
-								+ moves[0][id]['accuracy'] + '</span><span class="move-stamina">STA: '
-								+ moves[0][id]['stamina'] + '</span></p>'
-								+ '<p class="move-effect">' + moves[0][id]['effect'] + '</p>';
-						moveLevelContainer.appendChild(moveLevel);
-					}
-				}
-
-				// Populate moves by tutor
-				for ( var mt = 0; mt < data[0]['moves_tutor'].length; mt++ ) {
-					var id = data[0]['moves_tutor'][mt]['id'];
-
-					// If the returned "moves" have the same ID, add the HTML
-					if ( moves[0][id] ) {
-						var moveTutor = document.createElement('div');
-							moveTutor.classList.add('move');
-							moveTutor.innerHTML = '<p class="move-label"><span class="move-name">'
-								+ moves[0][id]['name'] + '</span><span class="type '
-								+ moves[0][id]['type'].toLowerCase() + '">'
-								+ moves[0][id]['type'] + '</span></p>'
-								+ '<p class="move-details"><span class="move-category">'
-								+ moves[0][id]['category'] + '</span><span class="move-power">PWR: '
-								+ moves[0][id]['power'] + '</span><span class="move-accuracy">ACC: '
-								+ moves[0][id]['accuracy'] + '</span><span class="move-stamina">STA: '
-								+ moves[0][id]['stamina'] + '</span></p>'
-								+ '<p class="move-effect">' + moves[0][id]['effect'] + '</p>';
-						moveTutorContainer.appendChild(moveTutor);
-					}
-				}
+			.then(function(moves) {
+				var moves = moves[0];
+				const dbMvLvl = data['moves_level'];
+				const dbMvTut = data['moves_tutor'];
+				popMoves(moves, dbMvLvl, mvLvlCon);
+				popMoves(moves, dbMvTut, mvTutCon);
 			})
-			.catch( function(error) {
+			.catch(function(error) {
 				console.log('Fetch error: ', error);
 			});
 		}
 
 		// Populate evolution
-		var evolution = document.querySelector('.evolution');
-		if ( data[0]['evolution'].length > 0 ) {
-			for ( var evo = 0; evo < data[0]['evolution'].length; evo++ ) {
-			    evolution.innerHTML += '<a href="/legend/detail?no=' 
-					+ data[0]['evolution'][evo]['id'] + '" class="evo-block" aria-label="' 
-			    	+ data[0]['evolution'][evo]['id'] + ' link">' 
-			    	+ '<img data-src="/legend/img/pokemon/' + data[0]['evolution'][evo]['id'] + '/thumb-120x120.png" '
+		const dbEvol = data['evolution'];
+		const elEvol = document.getElementById('evol');
+		if (dbEvol.length > 0) {
+			for (var evo = 0; evo < dbEvol.length; evo++) {
+			    elEvol.innerHTML += '<a href="/legend/detail?num=' 
+					+ dbEvol[evo]['id'] + '" class="evo-block" aria-label="' 
+			    	+ dbEvol[evo]['id'] + ' link">' 
+			    	+ '<img data-src="/legend/img/lumies/' + dbEvol[evo]['id'] + '/thumb-120x120.png" '
 					+ 'src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"'
-					+ ' class="lazyload evo-thumb" alt="' + data[0]['evolution'][evo]['id'] + ' evolution thumbnail">'
-					+ '<p class="evo-req">' + data[0]['evolution'][evo]['req'] + '</p></a>';
+					+ ' class="lazyload evo-thumb" alt="' + dbEvol[evo]['id'] + ' evolution thumbnail">'
+					+ '<p class="evo-req">' + dbEvol[evo]['req'] + '</p></a>';
 			}
 		}
 
 		// Manipulate the page title, description along with their OG and Twitter meta
-		var metaTitle = data[0]['name'] + ' - Pokémon Design - Calvin Lam';
-		var metaDesc = 'Explore all about ' + data[0]['name'] +
+		const metaTitle = dbName + ' - Pokémon Design - Calvin Lam';
+		const metaDesc = 'Explore all about ' + dbName +
 			' from Newzar region in Pokémon Storm and Pokémon Quake.';
 		document.title = metaTitle;
 		document.querySelector('meta[name="description"]').content = metaDesc;
@@ -274,7 +188,7 @@ if ( no != '' && no != null ) {
 		document.querySelector('meta[name="twitter:description"]').content = metaDesc;
 
 	})
-	.catch( function(error) {
+	.catch(function(error) {
 		console.log('Fetch error: ', error);
 	});
 }
@@ -288,7 +202,6 @@ if ( no != '' && no != null ) {
 ============================================================================= */
 
 function getParameter() {
-
     var key = false, results = {}, item = null;
 
     // Get the query string without the "?""
@@ -310,7 +223,6 @@ function getParameter() {
             results[decodeURIComponent(item[1])] = decodeURIComponent(item[2]);
         }
     }
-
     return key === false ? results : null;
 }
 
@@ -329,11 +241,11 @@ function getParameter() {
 	var tabContents = document.querySelectorAll('.info .tab-content');
 
 	// Loop through the tabs
-	for ( var i = 0; i < tabs.length; i++ ) {
+	for (var i = 0; i < tabs.length; i++) {
 		tabs[i].addEventListener('click', function() {
 
 			// Remove all active class off the tab
-			for ( var j = 0; j < tabs.length; j++ ) {
+			for (var j = 0; j < tabs.length; j++) {
 				tabs[j].classList.remove('active');
 			}
 
@@ -341,7 +253,7 @@ function getParameter() {
 			this.classList.add('active');
 
 			// Remove all active class off the tab
-			for ( var k = 0; k < tabContents.length; k++ ) {
+			for (var k = 0; k < tabContents.length; k++) {
 				tabContents[k].classList.remove('active');
 			}
 
@@ -359,7 +271,7 @@ function getParameter() {
     SHINY
 
 ============================================================================= */
-
+/*
 (function() {
 
 	// Get the button trigger for shiny version
@@ -376,7 +288,7 @@ function getParameter() {
 		document.querySelector('.image-shiny').classList.toggle('active');
 	}, false);
 })();
-
+*/
 
 
 /* =============================================================================
@@ -388,8 +300,8 @@ function getParameter() {
 (function() {
 
 	// Prepare the image, url, title and description
-	var image = '/legend/img/pokemon/' + no + '/full-600x600.png';
-	var url = 'https://vincascalvii.github.io/legend/detail/?no=' + no;
+	var image = '/legend/img/lumies/' + num + '/full-600x600.png';
+	var url = 'https://vincascalvii.github.io/legend/detail/?num=' + num;
 
 	// Update OpenGraph info
 	document.querySelector('meta[property="og:image"]').content = image;
@@ -404,10 +316,11 @@ function getParameter() {
 
 /* =============================================================================
 
-    GET PARAMETER
+    HELPER FUNCTIONS
 
 ============================================================================= */
 
+// Get the previous & next number
 // "original" is the current number
 function getArrowNumber(original) {
 
@@ -423,13 +336,60 @@ function getArrowNumber(original) {
 	let nextString = nextNumber.toString();
 
 	// Pad the strings with leading zeros
-	while ( prevString.length < 3 ) prevString = '0' + prevString;
-	while ( nextString.length < 3 ) nextString = '0' + nextString;
+	while (prevString.length < 3) prevString = '0' + prevString;
+	while (nextString.length < 3) nextString = '0' + nextString;
 
 	// Add min-max limit
-	if ( prevString === '000' ) prevString = null;
-	if ( nextString === '151' ) nextString = null;
+	if (prevString === '000') prevString = null;
+	if (nextString === '101') nextString = null;
 
 	// Return the numbers ( in string, array )
 	return [prevString, nextString];
+}
+
+// Convert stat to bar percentage
+function getStatBarPercent(stat) {
+	return ((parseInt(stat) / 150) * 100) + '%';
+}
+
+// Populate attributes chart
+function popEff(dbEff, strCat, strType, strLbl) {
+	if (dbEff.length > 0) {
+		const elCon = document.getElementById(strCat + '-' + strType);
+		elCon.innerHTML = '<h3 class="condition-label">' + strLbl + '</h3>';
+		const elAttrs = document.createElement('div');
+		elAttrs.classList.add('condition-' + strCat + 's');
+		for (var i = 0; i < dbEff.length; i++) {
+			const cat = strCat === 'type' ? 'type' : 'attribute';
+			elAttrs.innerHTML += '<span class="' + cat + ' ' + dbEff[i].toLowerCase() +  '">' + dbEff[i] + '</span>';
+		}
+		elCon.appendChild(elAttrs);
+	}
+}
+
+// Populate moves
+function popMoves(moves, dbMv, elMvCon) {
+	for (var i = 0; i < dbMv.length; i++) {
+		const id = dbMv[i]['id'];
+
+		// If the returned "moves" have the same ID, add the HTML
+		if (moves[id]) {
+			const lvl = dbMv[i]['level'];
+			const elMv = document.createElement('div');
+			elMv.classList.add('move');
+			elMv.style.order = lvl === '-' ? '0' : lvl;
+			elMv.innerHTML = '<p class="move-label"><span class="move-name">' 
+				+ moves[id]['name'] + '</span><span class="type '
+				+ moves[id]['type'].toLowerCase() + '">'
+				+ moves[id]['type'] + '</span><span class="move-level">'
+				+ (lvl === '-' ? lvl : 'Level ' + lvl) + '</span></p>'
+				+ '<p class="move-details"><span class="move-category">'
+				+ moves[id]['category'] + '</span><span class="move-power">PWR: '
+				+ moves[id]['power'] + '</span><span class="move-accuracy">ACC: '
+				+ moves[id]['accuracy'] + '</span><span class="move-stamina">STA: '
+				+ moves[id]['stamina'] + '</span></p>'
+				+ '<p class="move-effect">' + moves[id]['effect'] + '</p>';
+			elMvCon.appendChild(elMv);
+		}
+	}
 }

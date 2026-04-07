@@ -2,7 +2,7 @@
 	"number" : "026",
 	"name" : "Sweerena",
 	"types" : ["Nature", ""],
-	"abilities" : [
+	"traits" : [
 		{
 			"name" : "Cute Charm",
 			"desc" : "Contact with the posessor may cause infatuation."

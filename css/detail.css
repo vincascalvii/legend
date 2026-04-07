@@ -398,6 +398,230 @@ main {
     margin: 0;
 }
 
+.info .separator {
+	margin: 30px 0;
+	border-top: 1px solid #ddd;
+}
+
+.additional,
+.additional-gender .additional-value {
+	display: flex;
+	align-items: center;
+}
+
+.additional {
+	margin-bottom: 20px;
+}
+
+.additional .additional-label {
+	color: #727272;
+	width: 100px;
+}
+
+.additional .additional-male {
+	margin-right: 20px;
+}
+
+.additional-gender .icon {
+	width: 15px;
+	height: 15px;
+	margin-right: 5px;
+}
+
+.stats .stat {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.stats .stat-label {
+	color: #727272;
+	width: 70px;
+}
+
+.stats .stat-value {
+	width: 60px;
+	font-weight: 500;
+}
+
+.stats .stat-bar {
+	flex: 1;
+    height: 8px;
+    background-color: #eee;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.stats .stat-bar .stat-bar-fill {
+	display: block;
+    height: 100%;
+}
+
+.stats .stat-hp .stat-bar-fill {
+	background-color: #4aa94a;
+}
+
+.stats .stat-atk .stat-bar-fill {
+	background-color: #f75e36;
+}
+
+.stats .stat-def .stat-bar-fill {
+	background-color: #b77a3f;
+}
+
+.stats .stat-spa .stat-bar-fill {
+	background-color: #9f3ed5;
+}
+
+.stats .stat-spd .stat-bar-fill {
+	background-color: #e9cf32;
+}
+
+.stats .stat-spe .stat-bar-fill {
+	background-color: #486feb;
+}
+
+.condition .condition-label {
+	color: #727272;
+	font-size: 1.4rem;
+}
+
+.condition .condition-types,
+.condition .condition-attrs {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.condition .type,
+.condition .attribute {
+	margin-bottom: 10px;
+}
+
+.moves {
+	display: flex;
+	flex-direction: column;
+}
+
+.moves .move {
+	padding-bottom: 5px;
+	border-top: 1px solid #ddd;
+}
+
+.moves .move-label {
+	display: flex;
+	align-items: center;
+}
+
+.moves .move-name {
+	font-size: 1.6rem;
+	font-weight: 500;
+	margin-right: 20px;
+}
+
+.moves .move-level {
+	flex: 1;
+	color: #727272;
+	text-align: right;
+}
+
+.moves .move-details {
+	color: #727272;
+}
+
+.moves .move-details span {
+	padding-right: 10px;
+	margin-right: 10px;
+	border-right: 1px solid #ddd;
+}
+
+.moves .move-details span:last-child {
+	padding-right: 0;
+	margin-right: 0;
+	border: none;
+}
+
+.tab-moves .separator {
+	margin-block: 20px;
+}
+
+.evo-block {
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.evo-block:last-child {
+	margin-bottom: 0;
+}
+
+.evo-block .evo-thumb {
+	object-fit: cover;
+	width: 120px;
+	height: 120px;
+	margin-right: 20px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+}
+
+.evo-block .evo-req {
+	color: #727272;
+}
+
+.fade {
+	-webkit-animation: fadein .2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein .2s; /* Firefox < 16 */
+        -ms-animation: fadein .2s; /* Internet Explorer */
+         -o-animation: fadein .2s; /* Opera < 12.1 */
+            animation: fadein .2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@media only screen and (min-width: 768px) {
+
+	.evolution {
+		display: flex;
+		align-items: center;
+	}
+
+	.evo-block {
+		flex-direction: column;
+		margin: 0 40px 0 0;
+	}
+
+	.evo-block .evo-thumb {
+		margin-right: 0;
+	}
+}
+
+
 @media only screen and (min-width: 1024px) {
 
     main {
@@ -477,6 +701,10 @@ main {
         cursor: pointer;
     }
 
+    .info .tabs .tab:hover {
+		color: #3f78ff;
+	}
+
     .info .tab-content {
         height: calc(100% - 50px);
         overflow-y: scroll;
@@ -500,7 +728,6 @@ main {
     .info .tab-content::-webkit-scrollbar-thumb:hover {
         background-color: #aaa;
     }
-
 }
 
 @media only screen and (min-width: 1366px) {
@@ -535,6 +762,22 @@ main {
     .arrows .arrow.right {
         left: 435px;
     }
+
+    .info .tab-content {
+		padding-top: 30px;
+	}
+
+	.info .tab-content .tab-heading {
+		margin-bottom: 30px;
+	}
+
+	.tab-moves .separator {
+		margin-block: 30px;
+	}
+
+	.tab-moves .tab-content .tab-heading {
+		margin-bottom: 30px;
+	}
 }
 
 @media only screen and (min-width: 1600px) {

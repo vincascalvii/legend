@@ -86,12 +86,12 @@
 	font-size: 1.4rem;
 }
 
-.condition .condition-types {
+.condition .condition-attrs {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.condition .type {
+.condition .condition-attr {
 	margin-bottom: 10px;
 }
 

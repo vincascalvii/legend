@@ -1,18 +1,19 @@
 [{
 	"number" : "009",
 	"name" : "Turtidal",
-	"types" : ["Water", "Metal"],
-	"abilities" : [
+	"type": "Aquatic",
+	"attributes": ["Water", "Metal"],
+	"traits" : [
 		{
-			"name" : "Aquatic",
-			"desc" : "Increase the possessor's Water-type moves' power to 50%."
+			"name" : "Aquatic (enhanced)",
+			"desc" : "Boost Water moves' power by 50%."
 		},
 		{
-			"name" : "Tough Shell (Secret)",
+			"name" : "Tough Shell",
 			"desc" : "Prevent critical hit from opponent's moves."
 		}
 	],
-	"description" : "Turtidal become a much tougher version of their previous evolution. Their shells are covered with hardened steel, providing even better protection while the spikes on their shells can be retracted or extended, allowing more offensive moves.",
+	"description" : "Turtidal becomes a much tougher version of its previous evolution. Its shell is covered with hardened steel, providing even better protection while the spikes on its shells can be retracted or extended, allowing more offensive moves.",
 	"gender" : {
 		"male" : "50%",
 		"female" : "50%"
@@ -22,18 +23,24 @@
 	"height" : "2.2m",
 	"stats" : {
 		"hp" : "108",
-		"atk" : "85",
-		"def" : "105",
-		"spa" : "85",
-		"spd" : "105",
+		"atk" : "80",
+		"def" : "100",
+		"spa" : "80",
+		"spd" : "100",
 		"spe" : "32",
-		"total" : "520"
+		"total" : "500"
 	},
-	"major_weakness" : ["Electric"],
-	"weakness" : [],
-	"resistance" : ["Water", "Wind", "Metal", "Ice", "Neutral"],
-	"major_resistance" : [],
-	"immunity" : ["Toxic"],
+	"type_eff": {
+		"weakness" : ["Plant"],
+		"resistance" : ["Construct"]
+	},
+	"attr_eff": {
+		"major_weakness" : ["Electric"],
+		"weakness" : [],
+		"resistance" : ["Water", "Wind", "Metal", "Ice", "Neutral"],
+		"major_resistance" : [],
+		"immunity" : ["Toxic"]
+	},
 	"evolution" : [
 		{
 			"id" : "007",
