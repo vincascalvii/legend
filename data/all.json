@@ -1,164 +1,135 @@
 [
-	{
-		"number" : "001",
-		"name" : "Leafen",
-		"attr_1" : "Nature",
-		"attr_2" : ""
-	},
-	{
-		"number" : "002",
-		"name" : "Petalen",
-		"attr_1" : "Nature",
-		"attr_2" : ""
-	},
-	{
-		"number" : "003",
-		"name" : "Shadoward",
-		"attr_1" : "Nature",
-		"attr_2" : "Toxic"
-	},
-	{
-		"number" : "004",
-		"name" : "Pupyro",
-		"attr_1" : "Fire",
-		"attr_2" : ""
-	},
-	{
-		"number" : "005",
-		"name" : "Flamound",
-		"attr_1" : "Fire",
-		"attr_2" : ""
-	},
-	{
-		"number" : "006",
-		"name" : "Wolflare",
-		"attr_1" : "Fire",
-		"attr_2" : "Dark"
-	},
-	{
-		"number" : "007",
-		"name" : "Turteen",
-		"attr_1" : "Water",
-		"attr_2" : ""
-	},
-	{
-		"number" : "008",
-		"name" : "Turtank",
-		"attr_1" : "Water",
-		"attr_2" : ""
-	},
-	{
-		"number" : "009",
-		"name" : "Turtidal",
-		"attr_1" : "Water",
-		"attr_2" : "Metal"
-	},
-	{
-		"number" : "010",
-		"name" : "Tapahorn",
-		"attr_1" : "Neutral",
-		"attr_2" : ""
-	},
-	{
-		"number" : "011",
-		"name" : "Palmahorn",
-		"attr_1" : "Neutral",
-		"attr_2" : ""
-	},
-	{
-		"number" : "012",
-		"name" : "Snailog",
-		"attr_1" : "Nature",
-		"attr_2" : "Earth"
-	},
-	{
-		"number" : "013",
-		"name" : "Trunklug",
-		"attr_1" : "Nature",
-		"attr_2" : "Earth"
-	},
-	{
-		"number" : "014",
-		"name" : "Elechic",
-		"attr_1" : "Electric",
-		"attr_2" : "Wind"
-	},
-	{
-		"number" : "015",
-		"name" : "Currenbird",
-		"attr_1" : "Electric",
-		"attr_2" : "Wind"
-	},
-	{
-		"number" : "016",
-		"name" : "Thundaptor",
-		"attr_1" : "Electric",
-		"attr_2" : "Wind"
-	},
-	{
-		"number" : "017",
-		"name" : "Blupillar",
-		"attr_1" : "Light",
-		"attr_2" : ""
-	},
-	{
-		"number" : "018",
-		"name" : "Silkocoon",
-		"attr_1" : "Light",
-		"attr_2" : ""
-	},
-	{
-		"number" : "019",
-		"name" : "Faerifly",
-		"attr_1" : "Light",
-		"attr_2" : "Wind"
-	},
-	{
-		"number" : "020",
-		"name" : "Beebuilder",
-		"attr_1" : "Wind",
-		"attr_2" : ""
-	},
-	{
-		"number" : "021",
-		"name" : "Stratiobee",
-		"attr_1" : "Wind",
-		"attr_2" : ""
-	},
-	{
-		"number" : "022",
-		"name" : "Regnabee",
-		"attr_1" : "Wind",
-		"attr_2" : "Toxic"
-	},
-	{
-		"number" : "023",
-		"name" : "Vesnull",
-		"attr_1" : "Toxic",
-		"attr_2" : ""
-	},
-	{
-		"number" : "024",
-		"name" : "Vipython",
-		"attr_1" : "Toxic",
-		"attr_2" : ""
-	},
-	{
-		"number" : "025",
-		"name" : "Bulbairy",
-		"attr_1" : "Nature",
-		"attr_2" : ""
-	},
-	{
-		"number" : "026",
-		"name" : "Sweerena",
-		"attr_1" : "Nature",
-		"attr_2" : ""
-	},
-	{
-		"number" : "027",
-		"name" : "Bloomiquin",
-		"attr_1" : "Nature",
-		"attr_2" : "Light"
-	}
+	{"number": "001", "name": "Leafen", "type": "Beast", "attr_1": "Nature"},
+	{"number": "002", "name": "Petalen", "type": "Beast", "attr_1": "Nature"},
+	{"number": "003", "name": "Shadoward", "type": "Beast", "attr_1": "Nature", "attr_2": "Toxic"},
+	{"number": "003A", "name": "Apex Shadoward", "type": "Beast", "attr_1": "Nature", "attr_2": "Nature"},
+	{"number": "003D", "name": "Deviant Shadoward", "type": "Beast", "attr_1": "Toxic", "attr_2": "Toxic"},
+	{"number": "004", "name": "Pupyro", "type": "Beast", "attr_1": "Fire"},
+	{"number": "005", "name": "Flamound", "type": "Beast", "attr_1": "Fire"},
+	{"number": "006", "name": "Wolflare", "type": "Beast", "attr_1": "Fire", "attr_2": "Dark"},
+	{"number": "006A", "name": "Apex Wolflare", "type": "Beast", "attr_1": "Fire", "attr_2": "Fire"},
+	{"number": "006D", "name": "Deviant Wolflare", "type": "Beast", "attr_1": "Dark", "attr_2": "Dark"},
+	{"number": "007", "name": "Turteen", "type": "Aquatic", "attr_1": "Water"},
+	{"number": "008", "name": "Turtank", "type": "Aquatic", "attr_1": "Water"},
+	{"number": "009", "name": "Turtidal", "type": "Aquatic", "attr_1": "Water", "attr_2": "Metal"},
+	{"number": "009A", "name": "Apex Turtidal", "type": "Aquatic", "attr_1": "Water", "attr_2": "Water"},
+	{"number": "009D", "name": "Deviant Turtidal", "type": "Aquatic", "attr_1": "Metal", "attr_2": "Metal"},
+	{"number": "010", "name": "Elechic", "type": "Avian", "attr_1": "Electric", "attr_2": "Wind"},
+	{"number": "011", "name": "Currenbird", "type": "Avian", "attr_1": "Electric", "attr_2": "Wind"},
+	{"number": "012", "name": "Thundaptor", "type": "Avian", "attr_1": "Electric", "attr_2": "Wind"},
+	{"number": "012A", "name": "Apex Thundaptor", "type": "Avian", "attr_1": "Electric", "attr_2": "Electric"},
+	{"number": "012D", "name": "Deviant Thundaptor", "type": "Avian", "attr_1": "Wind", "attr_2": "Wind"},
+	{"number": "013", "name": "Maulark", "type": "Aquatic", "attr_1": "Ice"},
+	{"number": "014", "name": "Maurartic", "type": "Aquatic", "attr_1": "Ice"},
+	{"number": "015", "name": "", "type": "Aquatic", "attr_1": "Ice", "attr_2": "Light"},
+	{"number": "015A", "name": "Apex ", "type": "Aquatic", "attr_1": "Ice", "attr_2": "Ice"},
+	{"number": "015D", "name": "Deviant ", "type": "Aquatic", "attr_1": "Light", "attr_2": "Light"},
+	{"number": "016", "name": "", "type": "Beast", "attr_1": "Earth"},
+	{"number": "017", "name": "", "type": "Beast", "attr_1": "Earth"},
+	{"number": "018", "name": "", "type": "Beast", "attr_1": "Earth", "attr_2": "Neutral"},
+	{"number": "018A", "name": "Apex ", "type": "Beast", "attr_1": "Earth", "attr_2": "Earth"},
+	{"number": "018D", "name": "Deviant ", "type": "Beast", "attr_1": "Neutral", "attr_2": "Neutral"},
+	{"number": "019", "name": "Tapahorn", "type": "Beast", "attr_1": "Neutral"},
+	{"number": "020", "name": "Palmahorn", "type": "Beast", "attr_1": "Neutral"},
+	{"number": "021", "name": "Snailog", "type": "Plant", "attr_1": "Nature", "attr_2": "Earth"},
+	{"number": "022", "name": "Trunklug", "type": "Plant", "attr_1": "Nature", "attr_2": "Earth"},
+	{"number": "023", "name": "Blupillar", "type": "Insect", "attr_1": "Light"},
+	{"number": "024", "name": "Silkocoon", "type": "Insect", "attr_1": "Light"},
+	{"number": "025", "name": "Faerifly", "type": "Insect", "attr_1": "Light", "attr_2": "Wind"},
+	{"number": "025A", "name": "Apex Faerifly", "type": "Insect", "attr_1": "Light", "attr_2": "Light"},
+	{"number": "025D", "name": "Deviant Faerifly", "type": "Insect", "attr_1": "Wind", "attr_2": "Wind"},
+	{"number": "026", "name": "Beebuilder", "type": "Insect", "attr_1": "Wind"},
+	{"number": "027", "name": "Stratiobee", "type": "Insect", "attr_1": "Wind", "attr_2": "Metal"},
+	{"number": "028", "name": "Regnabee", "type": "Insect", "attr_1": "Wind", "attr_2": "Toxic"},
+	{"number": "029", "name": "Vesnull", "type": "Beast", "attr_1": "Toxic"},
+	{"number": "030", "name": "Vipython", "type": "Beast", "attr_1": "Toxic"},
+	{"number": "031", "name": "Bulbairy", "type": "Plant", "attr_1": "Nature"},
+	{"number": "032", "name": "Sweerena", "type": "Plant", "attr_1": "Nature"},
+	{"number": "033", "name": "Bloomiquin", "type": "Plant", "attr_1": "Nature", "attr_2": "Light"},
+	{"number": "033A", "name": "Apex Bloomiquin", "type": "Plant", "attr_1": "Nature", "attr_2": "Nature"},
+	{"number": "033D", "name": "Deviant Bloomiquin", "type": "Plant", "attr_1": "Light", "attr_2": "Light"},
+	{"number": "034", "name": "Pongus", "type": "Plant", "attr_1": "Nature", "attr_2": "Toxic"},
+	{"number": "035", "name": "Fumegus", "type": "Plant", "attr_1": "Nature", "attr_2": "Toxic"},
+	{"number": "036", "name": "", "type": "Plant", "attr_1": "Toxic", "attr_2": "Electric"},
+	{"number": "037", "name": "", "type": "Plant", "attr_1": "Toxic", "attr_2": "Electric"},
+	{"number": "038", "name": "Batble", "type": "Avian", "attr_1": "Dark", "attr_2": "Wind"},
+	{"number": "039", "name": "Batrula", "type": "Avian", "attr_1": "Dark", "attr_2": "Wind"},
+	{"number": "040", "name": "Spoblin", "type": "Insect", "attr_1": "Dark", "attr_2": "Toxic"},
+	{"number": "041", "name": "Tarantogre", "type": "Insect", "attr_1": "Dark", "attr_2": "Toxic"},
+	{"number": "042", "name": "Peblite", "type": "Construct", "attr_1": "Metal", "attr_2": "Electric"},
+	{"number": "043", "name": "Bodorite", "type": "Construct", "attr_1": "Metal", "attr_2": "Electric"},
+	{"number": "044", "name": "Gigantolite", "type": "Construct", "attr_1": "Metal", "attr_2": "Electric"},
+	{"number": "044A", "name": "Apex Gigantolite", "type": "Construct", "attr_1": "Metal", "attr_2": "Metal"},
+	{"number": "044D", "name": "Deviant Gigantolite", "type": "Construct", "attr_1": "Electric", "attr_2": "Electric"},
+	{"number": "045", "name": "Moomarr", "type": "Beast", "attr_1": "Dark", "attr_2": "Neutral"},
+	{"number": "046", "name": "Gudarull", "type": "Beast", "attr_1": "Dark", "attr_2": "Neutral"},
+	{"number": "047", "name": "Healeon", "type": "Beast", "attr_1": "Light", "attr_2": "Neutral"},
+	{"number": "048", "name": "Nursmelle", "type": "Beast", "attr_1": "Light", "attr_2": "Neutral"},
+	{"number": "049", "name": "Charcony", "type": "Construct", "attr_1": "Fire", "attr_2": "Metal"},
+	{"number": "050", "name": "Sundersteed", "type": "Construct", "attr_1": "Fire", "attr_2": "Metal"},
+	{"number": "051", "name": "Pincerawl", "type": "Aquatic", "attr_1": "Water"},
+	{"number": "052", "name": "Pincerute", "type": "Aquatic", "attr_1": "Water"},
+	{"number": "053", "name": "Bubloon", "type": "Aquatic", "attr_1": "Electric", "attr_2": "Water"},
+	{"number": "054", "name": "Vainuna", "type": "Aquatic", "attr_1": "Water"},
+	{"number": "055", "name": "Torrena", "type": "Aquatic", "attr_1": "Water"},
+	{"number": "056", "name": "Blublub", "type": "Aquatic", "attr_1": "Water"},
+	{"number": "057", "name": "Flabloblob", "type": "Aquatic", "attr_1": "Water"},
+	{"number": "058", "name": "", "type": "Aquatic", "attr_1": "Light", "attr_2": "Water"},
+	{"number": "059", "name": "Chillub", "type": "Beast", "attr_1": "Ice"},
+	{"number": "060", "name": "Wintear", "type": "Beast", "attr_1": "Ice"},
+	{"number": "061", "name": "Atlursa", "type": "Beast", "attr_1": "Ice"},
+	{"number": "062", "name": "", "type": "Aquatic", "attr_1": "Ice", "attr_2": "Neutral"},
+	{"number": "063", "name": "", "type": "Aquatic", "attr_1": "Ice", "attr_2": "Neutral"},
+	{"number": "064", "name": "", "type": "Plant", "attr_1": "Ice", "attr_2": "Nature"},
+	{"number": "065", "name": "", "type": "Plant", "attr_1": "Ice", "attr_2": "Nature"},
+	{"number": "066", "name": "", "type": "Plant", "attr_1": "Nature"},
+	{"number": "067", "name": "", "type": "Beast", "attr_1": "Electric"},
+	{"number": "068", "name": "", "type": "Beast", "attr_1": "Electric"},
+	{"number": "069", "name": "", "type": "Beast", "attr_1": "Electric"},
+	{"number": "070", "name": "Groundile", "type": "Beast", "attr_1": "Earth"},
+	{"number": "071", "name": "Groundator", "type": "Beast", "attr_1": "Earth", "attr_2": "Toxic"},
+	{"number": "072", "name": "Quakerdile", "type": "Beast", "attr_1": "Earth", "attr_2": "Toxic"},
+	{"number": "072A", "name": "Apex Quakerdile", "type": "Beast", "attr_1": "Earth", "attr_2": "Earth"},
+	{"number": "072D", "name": "Deviant Quakerdile", "type": "Beast", "attr_1": "Toxic", "attr_2": "Toxic"},
+	{"number": "073", "name": "Hailing", "type": "Beast", "attr_1": "Ice"},
+	{"number": "074", "name": "Hailfang", "type": "Beast", "attr_1": "Ice", "attr_2": "Dark"},
+	{"number": "075", "name": "Frostwere", "type": "Beast", "attr_1": "Ice", "attr_2": "Dark"},
+	{"number": "075A", "name": "Apex Frostwere", "type": "Beast", "attr_1": "Ice", "attr_2": "Ice"},
+	{"number": "075D", "name": "Deviant Frostwere", "type": "Beast", "attr_1": "Dark", "attr_2": "Dark"},
+	{"number": "076", "name": "", "type": "Construct", "attr_1": "Neutral"},
+	{"number": "077M1", "name": "", "type": "Construct", "attr_1": "Nature"},
+	{"number": "077M2", "name": "", "type": "Construct", "attr_1": "Fire"},
+	{"number": "077M3", "name": "", "type": "Construct", "attr_1": "Water"},
+	{"number": "077M4", "name": "", "type": "Construct", "attr_1": "Eletric"},
+	{"number": "078", "name": "", "type": "Construct", "attr_1": "Earth", "attr_2": "Fire"},
+	{"number": "079", "name": "", "type": "Construct", "attr_1": "Earth", "attr_2": "Fire"},
+	{"number": "080", "name": "", "type": "Construct", "attr_1": "Earth", "attr_2": "Metal"},
+	{"number": "081", "name": "", "type": "Construct", "attr_1": "Earth", "attr_2": "Metal"},
+	{"number": "082", "name": "Antomor", "type": "Insect", "attr_1": "Metal"},
+	{"number": "083", "name": "Armorant", "type": "Insect", "attr_1": "Metal", "attr_2": "Dark"},
+	{"number": "084M1", "name": "Titanion", "type": "Insect", "attr_1": "Metal", "attr_2": "Dark"},
+	{"number": "084M2", "name": "Titanion", "type": "Insect", "attr_1": "Metal", "attr_2": "Light"},
+	{"number": "084A", "name": "Apex Titanion", "type": "Insect", "attr_1": "Metal", "attr_2": "Metal"},
+	{"number": "084D1", "name": "Deviant Titanion", "type": "Insect", "attr_1": "Dark", "attr_2": "Dark"},
+	{"number": "084D2", "name": "Deviant Titanion", "type": "Insect", "attr_1": "Light", "attr_2": "Light"},
+	{"number": "085", "name": "Dragnaur", "type": "Beast", "attr_1": "Water"},
+	{"number": "086", "name": "Gathalaur", "type": "Beast", "attr_1": "Water", "attr_2": "Fire"},
+	{"number": "087", "name": "Gladiagon", "type": "Beast", "attr_1": "Water", "attr_2": "Fire"},
+	{"number": "087A", "name": "Apex Gladiagon", "type": "Beast", "attr_1": "Water", "attr_2": "Water"},
+	{"number": "087D", "name": "Deviant Gladiagon", "type": "Beast", "attr_1": "Fire", "attr_2": "Fire"},
+	{"number": "088", "name": "Grifflare", "type": "Avian", "attr_1": "Fire"},
+	{"number": "089", "name": "Grifflame", "type": "Avian", "attr_1": "Fire", "attr_2": "Wind"},
+	{"number": "090", "name": "Griffignite", "type": "Avian", "attr_1": "Fire", "attr_2": "Wind"},
+	{"number": "090A", "name": "Apex Griffignite", "type": "Avian", "attr_1": "Fire", "attr_2": "Fire"},
+	{"number": "090D", "name": "Deviant Griffignite", "type": "Avian", "attr_1": "Wind", "attr_2": "Wind"},
+	{"number": "091", "name": "", "type": "Avian", "attr_1": "Wind", "attr_2": "Fire"},
+	{"number": "092", "name": "", "type": "Avian", "attr_1": "Wind", "attr_2": "Water"},
+	{"number": "093", "name": "", "type": "Avian", "attr_1": "Wind", "attr_2": "Ice"},
+	{"number": "094", "name": "", "type": "Avian", "attr_1": "Wind", "attr_2": "Earth"},
+	{"number": "095", "name": "", "type": "Mythic", "attr_1": "Wind", "attr_2": "Electric"},
+	{"number": "096", "name": "", "type": "Mythic", "attr_1": "Earth", "attr_2": "Metal"},
+	{"number": "097", "name": "", "type": "Mythic", "attr_1": "Ice"},
+	{"number": "098", "name": "", "type": "Mythic", "attr_1": "Light"},
+	{"number": "099", "name": "", "type": "Mythic", "attr_1": "Light", "attr_2": "Dark"},
+	{"number": "100", "name": "", "type": "Mythic", "attr_1": "Neutral"}
 ]

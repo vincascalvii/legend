@@ -146,24 +146,6 @@ a {
 	margin: 0;
 }
 
-.dex .block .types {
-	display: flex;
-	margin-top: 15px;
-}
-
-.dex .block .type {
-	display: flex;
-	align-items: center;
-	color: #fff;
-	font-size: 1.4rem;
-	padding: 5px 10px;
-	border-radius: 30px;
-}
-
-.dex .block .type:first-child {
-	margin-right: 10px;
-}
-
 .dex .block .image {
 	position: absolute;
 	top: 0;
@@ -181,43 +163,93 @@ a {
 	z-index: -1;
 }
 
-.dex .block .type.neutral {
+.dex .block .types {
+	display: flex;
+    align-items: center;
+    column-gap: 5px;
+	margin-top: 15px;
+}
+
+.dex .block .type,
+.dex .block .attr {
+	display: flex;
+	align-items: center;
+	color: #fff;
+	font-size: 1.4rem;
+	padding: 5px 10px;
+	border-radius: 30px;
+}
+
+.dex .block .type {
+    border: 2px solid;
+}
+
+.dex .block .type.beast {
+    background-color: #e1793f;
+    border-color: #b34000;
+}
+.dex .block .type.avian {
+    background-color: #66e1d3;
+    border-color: #18b5a3;
+}
+.dex .block .type.aquatic {
+    background-color: #5e92f5;
+    border-color: #0e4fcc;
+}
+.dex .block .type.plant {
+    background-color: #55b65a;
+    border-color: #0C8310;
+}
+.dex .block .type.construct {
+    background-color: #767676;
+    border-color: #333333;
+}
+.dex .block .type.insect {
+    background-color: #cacf30;
+    border-color: #8f9400;
+}
+.dex .block .type.mythic {
+    background-color: #584bd3;
+    border-color: #0b0074;
+}
+
+.dex .block .attr.neutral {
 	background-color: #ada79c;
 }
-.dex .block .type.nature {
+.dex .block .attr.nature {
 	background-color: #3ca33f;
 }
-.dex .block .type.fire {
+.dex .block .attr.fire {
 	background-color: #ff551e;
 }
-.dex .block .type.water {
+.dex .block .attr.water {
 	background-color: #2e9bf7;
 }
-.dex .block .type.electric {
+.dex .block .attr.electric {
 	background-color: #ffca35;
 	color: #cf7500;
 }
-.dex .block .type.wind {
+.dex .block .attr.wind {
 	background-color: #2ed5af;
 }
-.dex .block .type.earth {
+.dex .block .attr.earth {
 	background-color: #cf7735;
 }
-.dex .block .type.metal {
+.dex .block .attr.metal {
 	background-color: #6d7e8d;
 }
-.dex .block .type.ice {
+.dex .block .attr.ice {
 	background-color: #92ffff;
 	color: #133ebd;
 }
-.dex .block .type.dark {
+.dex .block .attr.dark {
 	background-color: #7f6c61;
 }
-.dex .block .type.light {
+.dex .block .attr.light {
 	background-color: #fff089;
 	color: #7d790d;
 }
-.dex .block .type.toxic {
+.dex .block .attr.toxic {
 	background-color: #b360ff;
 }
 

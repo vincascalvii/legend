@@ -11,78 +11,36 @@ fetch('/legend/data/all.json')
     return response.json();
 })
 .then(function(data) {
-
-	// Get the container
 	var container = document.querySelector('.dex .container');
 
 	// Loop through the data to populate
 	for (var i = 0; i < data.length; i++) {
 		let dbNum = data[i]['number'];
 		let dbName = data[i]['name'];
+		let dbType = data[i]['type'];
 		let dbAttr1 = data[i]['attr_1'];
-		let dbAttr2 = data[i]['attr_2'];
+		let dbAttr2 = data[i]['attr_2'] ?? null;
 
-		// Populate the number
-		var number = document.createElement('p');
-			number.classList.add('number');
-			number.innerHTML = '#' + dbNum;
-
-		// Populate the name
-		var name = document.createElement('p');
-			name.classList.add('name');
-			name.innerHTML = dbName;
-
-		// Populate the typings
-		var type = document.createElement('div');
-			type.classList.add('types');
-			type.innerHTML = '<span class="type ' + dbAttr1.toLowerCase() + '">' 
-						   + dbAttr1 + '</span>';
-
-		// Add 2nd type if exist
-		if (dbAttr2 !== '' && dbAttr2 !== null) {
-			type.innerHTML += '<span class="type ' + dbAttr2.toLowerCase() + '">' 
-						   + dbAttr2 + '</span>';
-		}
-
-		// Append them all to the block
-		var info = document.createElement('div');
-			info.classList.add('info');
-			info.appendChild(number);
-			info.appendChild(name);
-			info.appendChild(type);
-
-		// Populate the thumbnail
-		var image = document.createElement('img');
-			image.src = '/legend/img/lumies/' + dbNum + '/thumb-480x360.png';
-			image.alt = dbName;
-			image.classList.add('image');
-
-		// Populate the block background
-		var background = document.createElement('picture');
-			background.innerHTML = 
-				'<source data-srcset="/legend/img/others/corner-200x200.webp 1x, ' + 
-				'/legend/img/others/corner-400x400.webp 2x, ' + 
-				'/legend/img/others/corner-600x600.webp 3x" ' + 
-				'type="image/webp">' + 
-				'<source data-srcset="/legend/img/others/corner-200x200.png 1x, ' + 
-				'/legend/img/others/corner-400x400.png 2x, ' + 
-				'/legend/img/others/corner-600x600.png 3x" ' + 
-				'type="image/png><img data-src="/legend/img/others/corner-200x200.png" ' +
-				'src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" ' +
-				'class="background lazyload" alt="Corner background">';
-
-		// Append all the above to the block and add link to detail page
-		var block = document.createElement('a');
-			block.href = '/legend/detail?num=' + dbNum;
-			block.classList.add('block');
-			block.classList.add('active');
-			block.setAttribute('aria-label', dbName);
-			block.appendChild(info);
-			block.appendChild(image);
-			block.appendChild(background);
-
-		// Add block to the container
-		container.appendChild(block);
+		// Render the block
+		container.innerHTML += `
+			<a href="/legend/detail?num=${dbNum}" class="block active" aria-label="${dbName}">
+				<div class="info">
+					<p class="number">#${dbNum}</p>
+					<p class="name">${dbName}</p>
+					<div class="types">
+						<span class="type ${dbType.toLowerCase()}">${dbType}</span>
+						<span class="attr ${dbAttr1.toLowerCase()}">${dbAttr1}</span>
+						${dbAttr2 ? `<span class="attr ${dbAttr2.toLowerCase()}">${dbAttr2}</span>` : ``}
+					</div>
+				</div>
+				<img src="/legend/img/lumies/${dbNum}/thumb-480x360.png" alt="${dbName}" class="image" onerror="this.style.display='none'">
+				<picture>
+					<source data-srcset="/legend/img/others/corner-200x200.webp 1x, /legend/img/others/corner-400x400.webp 2x, /legend/img/others/corner-600x600.webp 3x" type="image/webp">
+					<source data-srcset="/legend/img/others/corner-200x200.png 1x, /legend/img/others/corner-400x400.png 2x, /legend/img/others/corner-600x600.png 3x" type="image/png">
+					<img data-src="/legend/img/others/corner-200x200.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="background lazyload" alt="Corner background">
+				</picture>
+			</a>
+		`;
 	}
 
 	// Start the search function after all the blocks are populated
