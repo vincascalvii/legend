@@ -143,19 +143,6 @@ main {
     display: none;
 }
 
-.header .number {
-    color: #aaa;
-    font-size: 1.8rem;
-    font-weight: 500;
-    margin-right: 10px;
-}
-
-.header .name {
-    color: #333;
-    font-size: 2.4rem;
-    margin: 0 0 5px;
-}
-
 .header .heading {
     display: flex;
     justify-content: flex-start;
@@ -163,46 +150,67 @@ main {
     flex-wrap: wrap;
 }
 
+.header .number {
+    color: #aaa;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.header .name {
+    color: #333;
+    font-size: 24px;
+    margin: 0 0 5px;
+}
+
+.header .types {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    width: 100%;
+}
+
 .type {
     color: #fff;
     font-size: 1.4rem;
     padding: 5px 10px;
-    margin-right: 10px;
+    border: 2px solid;
     border-radius: 30px;
 }
 
 .type.beast {
     background-color: #e1793f;
+    border-color: #b34000;
 }
 .type.avian {
     background-color: #66e1d3;
+    border-color: #18b5a3;
 }
 .type.aquatic {
     background-color: #5e92f5;
+    border-color: #0e4fcc;
 }
 .type.plant {
     background-color: #55b65a;
+    border-color: #0C8310;
 }
 .type.construct {
     background-color: #767676;
+    border-color: #333333;
 }
 .type.insect {
     background-color: #cacf30;
+    border-color: #8f9400;
 }
 .type.mythic {
     background-color: #584bd3;
-}
-
-.header .attributes {
-    display: flex;
-    width: 100%;
+    border-color: #0b0074;
 }
 
 .attribute {
     color: #fff;
     font-size: 1.4rem;
     padding: 5px 10px;
-    margin-right: 10px;
     border-radius: 30px;
 }
 
@@ -277,7 +285,7 @@ main {
     display: block;
 }
 
-.shiny-trigger {
+/* .shiny-trigger {
     position: absolute;
     right: 20px;
     top: 280px;
@@ -303,7 +311,7 @@ main {
 .shiny-trigger.active {
     background-color: #eee;
     color: #ff5a5a;
-}
+} */
 
 .arrows {
     display: flex;
@@ -490,11 +498,7 @@ main {
 .condition .condition-attrs {
 	display: flex;
 	flex-wrap: wrap;
-}
-
-.condition .type,
-.condition .attribute {
-	margin-bottom: 10px;
+    gap: 10px 5px;
 }
 
 .moves {
@@ -513,9 +517,9 @@ main {
 }
 
 .moves .move-name {
-	font-size: 1.6rem;
+	font-size: 16px;
 	font-weight: 500;
-	margin-right: 20px;
+	margin-right: 15px;
 }
 
 .moves .move-level {
@@ -636,22 +640,24 @@ main {
         align-items: center;
     }
 
-    .header .container,
-    .header .left {
+    .header .container {
         display: flex;
         align-items: center;
     }
 
     .header .heading {
         align-items: center;
+        flex-wrap: nowrap;
+        column-gap: 15px;
     }
 
     .header .name {
-        margin: 0 20px 0 0;
+        margin: 0;
     }
 
-    .header .attributes {
-        width: auto;
+    .header .number {
+        order: 1;
+        margin: 0;
     }
 
     .main-container {
@@ -667,13 +673,13 @@ main {
         margin: 50px 40px 0 0;
     }
 
-    .shiny-trigger {
+    /* .shiny-trigger {
         top: 490px;
         left: 460px;
         right: initial;
         bottom: initial;
         cursor: pointer;
-    }
+    } */
 
     .arrows .arrow {
         position: absolute;
@@ -750,10 +756,10 @@ main {
         margin-right: 80px;
     }
 
-    .shiny-trigger {
+    /* .shiny-trigger {
         top: 530px;
         left: 500px;
-    }
+    } */
 
     .arrows .arrow.left {
         left: 40px;
@@ -800,10 +806,10 @@ main {
         height: 600px;
     }
 
-    .shiny-trigger {
+    /* .shiny-trigger {
         top: 630px;
         left: 600px;
-    }
+    } */
 
     .arrows .arrow {
         position: fixed;

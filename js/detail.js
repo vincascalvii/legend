@@ -39,10 +39,7 @@ if (num != '' && num != null) {
 		elAttr1.innerHTML = dbAttr1;
 		elAttr1.classList.add(dbAttr1.toLowerCase());
 		if (dbAttr2 !== null) {
-			const elAttr2 = document.createElement('span');
-			elAttr2.classList.add('attribute', dbAttr2.toLowerCase());
-			elAttr2.innerHTML = dbAttr2;
-			elAttrs.appendChild(elAttr2);
+			elAttrs.innerHTML += `<span class="attribute ${dbAttr2.toLowerCase()}">${dbAttr2}</span>`;
 		}
 
 		// Populate number
@@ -130,56 +127,43 @@ if (num != '' && num != null) {
 		popEff(dbAttrEff['major_resistance'], 'attr', 'mj-res', 'Major Resistance (x¼)');
 		popEff(dbAttrEff['immunity'], 'attr', 'imm', 'Immunity (x0)');
 
-		// Get these 2 containers
-		const mvLvlCon = document.getElementById('mv-lvl');
-		const mvTutCon = document.getElementById('mv-tut');
-
-		// Build the array of types
-		let types = [
-			'neutral', 'nature', 'fire', 
-			'water', 'electric', 'wind', 
-			'earth', 'metal', 'ice', 
-			'dark', 'light', 'toxic'
-		];
-
-		// Loop through the types to get all the moves
-		for (var m = 0; m < types.length; m++) {
-			fetch('/legend/data/moves/' + types[m] + '.json')
-			.then(function(response) {
-				if (!response.ok) throw new Error("HTTP error " + response.status);
-				return response.json();
-			})
-			.then(function(moves) {
-				var moves = moves[0];
-				const dbMvLvl = data['moves_level'];
-				const dbMvTut = data['moves_tutor'];
-				popMoves(moves, dbMvLvl, mvLvlCon);
-				popMoves(moves, dbMvTut, mvTutCon);
-			})
-			.catch(function(error) {
-				console.log('Fetch error: ', error);
-			});
-		}
-
+		// Populate moves
+		fetch('/legend/data/moves.json')
+		.then(function(response) {
+			if (!response.ok) throw new Error("HTTP error " + response.status);
+			return response.json();
+		})
+		.then(function(moves) {
+			console.log(moves[0]);
+			const mvLvlCon = document.getElementById('mv-lvl');
+			const mvTutCon = document.getElementById('mv-tut');
+			popMoves(moves[0], data['moves_level'], mvLvlCon);
+			popMoves(moves[0], data['moves_tutor'], mvTutCon);
+		})
+		.catch(function(error) {
+			console.log('Fetch error: ', error);
+		});
+		
 		// Populate evolution
 		const dbEvol = data['evolution'];
 		const elEvol = document.getElementById('evol');
 		if (dbEvol.length > 0) {
 			for (var evo = 0; evo < dbEvol.length; evo++) {
-			    elEvol.innerHTML += '<a href="/legend/detail?num=' 
-					+ dbEvol[evo]['id'] + '" class="evo-block" aria-label="' 
-			    	+ dbEvol[evo]['id'] + ' link">' 
-			    	+ '<img data-src="/legend/img/lumies/' + dbEvol[evo]['id'] + '/thumb-120x120.png" '
-					+ 'src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"'
-					+ ' class="lazyload evo-thumb" alt="' + dbEvol[evo]['id'] + ' evolution thumbnail">'
-					+ '<p class="evo-req">' + dbEvol[evo]['req'] + '</p></a>';
+			    elEvol.innerHTML += `
+					<a href="/legend/detail?num=${dbEvol[evo]['id']}" class="evo-block" 
+						aria-label="${dbEvol[evo]['id']} link">
+			    		<img data-src="/legend/img/lumies/${dbEvol[evo]['id']}/thumb-120x120.png"
+							src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+							class="lazyload evo-thumb" alt="${dbEvol[evo]['id']} evolution thumbnail">
+						<p class="evo-req">${dbEvol[evo]['req']}</p>
+					</a>
+				`;
 			}
 		}
 
 		// Manipulate the page title, description along with their OG and Twitter meta
-		const metaTitle = dbName + ' - Pokémon Design - Calvin Lam';
-		const metaDesc = 'Explore all about ' + dbName +
-			' from Newzar region in Pokémon Storm and Pokémon Quake.';
+		const metaTitle = `${dbName} - Lumi Design - Calvin Lam`;
+		const metaDesc = `Learn more about ${dbName}, such as its type, attributes, traits, stats and moves.`;
 		document.title = metaTitle;
 		document.querySelector('meta[name="description"]').content = metaDesc;
 		document.querySelector('meta[property="og:title"]').content = metaTitle;
@@ -374,22 +358,25 @@ function popMoves(moves, dbMv, elMvCon) {
 
 		// If the returned "moves" have the same ID, add the HTML
 		if (moves[id]) {
-			const lvl = dbMv[i]['level'];
-			const elMv = document.createElement('div');
-			elMv.classList.add('move');
-			elMv.style.order = lvl === '-' ? '0' : lvl;
-			elMv.innerHTML = '<p class="move-label"><span class="move-name">' 
-				+ moves[id]['name'] + '</span><span class="type '
-				+ moves[id]['type'].toLowerCase() + '">'
-				+ moves[id]['type'] + '</span><span class="move-level">'
-				+ (lvl === '-' ? lvl : 'Level ' + lvl) + '</span></p>'
-				+ '<p class="move-details"><span class="move-category">'
-				+ moves[id]['category'] + '</span><span class="move-power">PWR: '
-				+ moves[id]['power'] + '</span><span class="move-accuracy">ACC: '
-				+ moves[id]['accuracy'] + '</span><span class="move-stamina">STA: '
-				+ moves[id]['stamina'] + '</span></p>'
-				+ '<p class="move-effect">' + moves[id]['effect'] + '</p>';
-			elMvCon.appendChild(elMv);
+			const type = moves[id]['type'];
+			const lvl = dbMv[i]['level'] ?? null;
+			const elMv = `
+				<div class="move">
+					<p class="move-label">
+						<span class="move-name">${moves[id]['name']}</span>
+						<span class="attribute ${type.toLowerCase()}">${type}</span>
+						<span class="move-level">${!lvl || lvl === '-' ? '-' : 'Level ' + lvl}</span>
+					</p>
+					<p class="move-details">
+						<span class="move-category">${moves[id]['category']}</span>
+						<span class="move-power">PWR: ${moves[id]['power']}</span>
+						<span class="move-accuracy">ACC: ${moves[id]['accuracy']}</span>
+						<span class="move-stamina">STA: ${moves[id]['stamina']}</span>
+					</p>
+					<p class="move-effect">${moves[id]['effect']}</p>
+				</div>
+			`;
+			elMvCon.innerHTML += elMv;;
 		}
 	}
 }
