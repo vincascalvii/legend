@@ -100,7 +100,7 @@
 	{"number": "077M1", "name": "", "type": "Construct", "attr_1": "Nature"},
 	{"number": "077M2", "name": "", "type": "Construct", "attr_1": "Fire"},
 	{"number": "077M3", "name": "", "type": "Construct", "attr_1": "Water"},
-	{"number": "077M4", "name": "", "type": "Construct", "attr_1": "Eletric"},
+	{"number": "077M4", "name": "", "type": "Construct", "attr_1": "Electric"},
 	{"number": "078", "name": "", "type": "Construct", "attr_1": "Earth", "attr_2": "Fire"},
 	{"number": "079", "name": "", "type": "Construct", "attr_1": "Earth", "attr_2": "Fire"},
 	{"number": "080", "name": "", "type": "Construct", "attr_1": "Earth", "attr_2": "Metal"},
