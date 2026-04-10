@@ -35,10 +35,10 @@
 		"resistance" : ["Insect"]
 	},
 	"attr_eff": {
-		"major_weakness" : ["Fire"],
-		"weakness" : ["Ice", "Toxic"],
-		"resistance" : ["Water", "Electric", "Earth", "Dark", "Neutral"],
-		"major_resistance" : [],
+		"major_weakness" : [],
+		"weakness" : ["Fire", "Ice", "Wind"],
+		"resistance" : ["Nature", "Electric"],
+		"major_resistance" : ["Water"],
 		"immunity" : ["Light"]
 	},
 	"evolution" : [

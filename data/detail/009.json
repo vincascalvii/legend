@@ -37,7 +37,7 @@
 	"attr_eff": {
 		"major_weakness" : ["Electric"],
 		"weakness" : [],
-		"resistance" : ["Water", "Wind", "Metal", "Ice", "Neutral"],
+		"resistance" : ["Neutral", "Water", "Ice", "Wind", "Metal"],
 		"major_resistance" : [],
 		"immunity" : ["Toxic"]
 	},
