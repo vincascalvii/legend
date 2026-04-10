@@ -131,5 +131,10 @@
 	{"number": "097", "name": "", "type": "Mythic", "attr_1": "Ice"},
 	{"number": "098", "name": "", "type": "Mythic", "attr_1": "Light"},
 	{"number": "099", "name": "", "type": "Mythic", "attr_1": "Light", "attr_2": "Dark"},
-	{"number": "100", "name": "", "type": "Mythic", "attr_1": "Neutral"}
+	{"number": "100", "name": "", "type": "Mythic", "attr_1": "Neutral"},
+	{"number": "100M1", "name": "", "type": "Mythic", "attr_1": "Neutral"},
+	{"number": "100M2", "name": "", "type": "Mythic", "attr_1": "Neutral"},
+	{"number": "100M3", "name": "", "type": "Mythic", "attr_1": "Neutral"},
+	{"number": "100M4", "name": "", "type": "Mythic", "attr_1": "Neutral"},
+	{"number": "100M5", "name": "", "type": "Mythic", "attr_1": "Neutral"}
 ]
