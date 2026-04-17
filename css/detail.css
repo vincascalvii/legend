@@ -155,12 +155,14 @@ main {
     font-size: 18px;
     font-weight: 500;
     margin-left: 10px;
+    white-space: nowrap;
 }
 
 .header .name {
     color: #333;
     font-size: 24px;
     margin: 0 0 5px;
+    white-space: nowrap;
 }
 
 .header .types {
@@ -463,28 +465,24 @@ main {
 .stats .stat-bar .stat-bar-fill {
 	display: block;
     height: 100%;
+    border-radius: 100px;
 }
 
 .stats .stat-hp .stat-bar-fill {
 	background-color: #4aa94a;
 }
-
 .stats .stat-atk .stat-bar-fill {
 	background-color: #f75e36;
 }
-
 .stats .stat-def .stat-bar-fill {
 	background-color: #b77a3f;
 }
-
 .stats .stat-spa .stat-bar-fill {
 	background-color: #9f3ed5;
 }
-
 .stats .stat-spd .stat-bar-fill {
 	background-color: #e9cf32;
 }
-
 .stats .stat-spe .stat-bar-fill {
 	background-color: #486feb;
 }
@@ -613,11 +611,13 @@ main {
 	.evolution {
 		display: flex;
 		align-items: center;
+        flex-wrap: wrap;
+        gap: 30px 40px;
 	}
 
 	.evo-block {
 		flex-direction: column;
-		margin: 0 40px 0 0;
+        margin: 0;
 	}
 
 	.evo-block .evo-thumb {

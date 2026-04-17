@@ -1,0 +1,68 @@
+[{
+	"number" : "003-D",
+	"name" : "Deviant Shadoward",
+	"type": "Beast",
+	"attributes" : ["Toxic", "Toxic"],
+	"traits" : [
+		{
+			"name" : "Verdant (Enhanced)",
+			"desc" : "Increase the power of Nature moves by 50%."
+		},
+		{
+			"name" : "Nimble Stinger",
+			"desc" : "Increase Speed stat by 1 stage each time an opponent is poisoned and at the end of first turn."
+		}
+	],
+	"description" : "",
+	"gender" : {
+		"male" : "50%",
+		"female" : "50%"
+	},
+	"species" : "Cat",
+	"weight" : "82.0kg",
+	"height" : "2.0m",
+	"stats" : {
+		"hp" : "60",
+		"atk" : "133",
+		"def" : "50",
+		"spa" : "50",
+		"spd" : "95",
+		"spe" : "132",
+		"total" : "520"
+	},
+	"type_eff": {
+		"weakness" : ["Aquatic", "Construct"],
+		"resistance" : ["Insect"]
+	},
+	"attr_eff": {
+		"major_weakness" : ["Wind", "Earth", "Light"],
+		"weakness" : [],
+		"resistance" : [],
+		"major_resistance" : ["Nature", "Water", "Toxic"],
+		"immunity" : []
+	},
+	"evolution" : [
+		{
+			"id" : "001",
+			"req" : "Base"
+		},
+		{
+			"id" : "002",
+			"req" : "Level 16"
+		},
+		{
+			"id" : "003",
+			"req" : "Level 36"
+		},
+		{
+			"id" : "003-A",
+			"req" : "Awakening"
+		},
+		{
+			"id" : "003-D",
+			"req" : "Awakening"
+		}
+	],
+	"moves_level" : [],
+	"moves_tutor" : []
+}]

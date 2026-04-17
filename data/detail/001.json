@@ -6,7 +6,7 @@
 	"traits": [
 		{
 			"name": "Verdant",
-			"desc": "Boost Nature moves' power by 30%."
+			"desc": "Increase the power of Nature moves by 30%."
 		}
 	],
 	"description": "Leafen is an agile and cunning kitten who loves to eat berries. It usually doesn't live as house-hold pet since its natural habitat belongs to the forest. Its eyes glow red when dusk arrives, allowing it to scare enemies away from the dark.",
@@ -49,6 +49,14 @@
 		{
 			"id": "003",
 			"req": "Level 36"
+		},
+		{
+			"id" : "003-A",
+			"req" : "Awakening"
+		},
+		{
+			"id" : "003-D",
+			"req" : "Awakening"
 		}
 	],
 	"moves_level": [

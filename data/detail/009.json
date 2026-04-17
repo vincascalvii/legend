@@ -6,7 +6,7 @@
 	"traits" : [
 		{
 			"name" : "Aquatic (enhanced)",
-			"desc" : "Boost Water moves' power by 50%."
+			"desc" : "Increase the power of Water moves by 50%."
 		},
 		{
 			"name" : "Tough Shell",

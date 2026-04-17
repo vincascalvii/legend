@@ -6,7 +6,7 @@
 	"traits" : [
 		{
 			"name" : "Aquatic (enhanced)",
-			"desc" : "Boost Water moves' power by 50%."
+			"desc" : "Increase the power of Water moves by 50%."
 		}
 	],
 	"description" : "Turtank possesses a stronger and sturdy shell, allowing it to defend against powerful attacks from the enemies. At the same time, sharp spikes from its shell can be used as the main weapon if it ever feels like retaliating.",

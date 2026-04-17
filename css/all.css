@@ -150,7 +150,6 @@ a {
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 160px;
 	height: 120px;
 }
 
@@ -168,6 +167,7 @@ a {
     align-items: center;
     column-gap: 5px;
 	margin-top: 15px;
+    z-index: 1;
 }
 
 .dex .block .type,

@@ -6,7 +6,7 @@
 	"traits" : [
 		{
 			"name" : "Verdant (Enhanced)",
-			"desc" : "Boost Nature moves' power by 50%."
+			"desc" : "Increase the power of Nature moves by 50%."
 		}
 	],
 	"description" : "Petalen likes to live in the forest and enjoy brushing itself on leaves and bushes. It moves swiftly between trees and its tail is used as a sharp blade that cuts down its foes and prey.",
@@ -49,6 +49,14 @@
 		{
 			"id" : "003",
 			"req" : "Level 36"
+		},
+		{
+			"id" : "003-A",
+			"req" : "Awakening"
+		},
+		{
+			"id" : "003-D",
+			"req" : "Awakening"
 		}
 	],
 	"moves_level" : [

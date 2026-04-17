@@ -1,0 +1,68 @@
+[{
+	"number" : "003-A",
+	"name" : "Apex Shadoward",
+	"type": "Beast",
+	"attributes" : ["Nature", "Nature"],
+	"traits" : [
+		{
+			"name" : "Verdant (Enhanced)",
+			"desc" : "Increase the power of Nature moves by 50%."
+		},
+		{
+			"name" : "Sylvan Feet",
+			"desc" : "Increase Speed stat by 1 stage when entering a grassy terrain and at the end of first turn."
+		}
+	],
+	"description" : "",
+	"gender" : {
+		"male" : "50%",
+		"female" : "50%"
+	},
+	"species" : "Cat",
+	"weight" : "94.0kg",
+	"height" : "2.2m",
+	"stats" : {
+		"hp" : "70",
+		"atk" : "133",
+		"def" : "65",
+		"spa" : "50",
+		"spd" : "60",
+		"spe" : "142",
+		"total" : "520"
+	},
+	"type_eff": {
+		"weakness" : ["Aquatic", "Construct"],
+		"resistance" : ["Insect"]
+	},
+	"attr_eff": {
+		"major_weakness" : ["Fire", "Ice", "Toxic"],
+		"weakness" : [],
+		"resistance" : [],
+		"major_resistance" : ["Water", "Electric", "Earth"],
+		"immunity" : ["Light"]
+	},
+	"evolution" : [
+		{
+			"id" : "001",
+			"req" : "Base"
+		},
+		{
+			"id" : "002",
+			"req" : "Level 16"
+		},
+		{
+			"id" : "003",
+			"req" : "Level 36"
+		},
+		{
+			"id" : "003-A",
+			"req" : "Awakening"
+		},
+		{
+			"id" : "003-D",
+			"req" : "Awakening"
+		}
+	],
+	"moves_level" : [],
+	"moves_tutor" : []
+}]

@@ -6,11 +6,11 @@
 	"traits" : [
 		{
 			"name" : "Pyro (enhanced)",
-			"desc" : "Boost Fire moves' power by 50%."
+			"desc" : "Increase the power of Fire moves by 50%."
 		},
 		{
 			"name" : "Honed Claws",
-			"desc" : "Boost Claw-type moves' power by 30%."
+			"desc" : "Increase the power of Claw-type moves by 30%."
 		}
 	],
 	"description" : "Wolflare is a very aggressive creature due to its duelling spirit and ego. Its sharp claws are able to cut down rocks and steels if they are taken care properly. When its fighting spirit is set alight, its manes and arms will light up like a blazing flame.",

@@ -6,7 +6,7 @@
 	"traits" : [
 		{
 			"name" : "Verdant (Enhanced)",
-			"desc" : "Boost Nature moves' power by 50%."
+			"desc" : "Increase the power of Nature moves by 50%."
 		},
 		{
 			"name" : "Nimble Feet",
@@ -53,6 +53,14 @@
 		{
 			"id" : "003",
 			"req" : "Level 36"
+		},
+		{
+			"id" : "003-A",
+			"req" : "Awakening"
+		},
+		{
+			"id" : "003-D",
+			"req" : "Awakening"
 		}
 	],
 	"moves_level" : [

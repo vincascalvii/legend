@@ -6,7 +6,7 @@
 	"traits" : [
 		{
 			"name" : "Aquatic",
-			"desc" : "Boost Water moves' power by 30%."
+			"desc" : "Increase the power of Water moves by 30%."
 		}
 	],
 	"description" : "Turteen is a very shy turtle who loves to stay hidden within its shells most of the time. Its shell is specially designed so that water can easily flow in. The stored water can later be used as water beam to defend itself.",

@@ -43,7 +43,7 @@ if (num != '' && num != null) {
 		}
 
 		// Populate number
-		document.querySelector('.number').innerHTML = '#' + dbNum;
+		document.querySelector('.number').innerHTML = `#${dbNum}`;
 
 		// Get the previous and next numbers
 		let arrowNumbers = getArrowNumber(dbNum);
@@ -51,8 +51,8 @@ if (num != '' && num != null) {
 		// If previous number is not null, add the arrow
 		const elPrevNum = document.getElementById('prev-arr');
 		if (arrowNumbers[0] !== null) {
-			document.getElementById('prev-num').innerHTML = '#' + arrowNumbers[0];
-			elPrevNum.href = '/legend/detail?num=' + arrowNumbers[0];
+			document.getElementById('prev-num').innerHTML = `#${arrowNumbers[0]}`;
+			elPrevNum.href = `/legend/detail?num=${arrowNumbers[0]}`;
 
 		// Otherwise, hide it
 		} else {
@@ -62,8 +62,8 @@ if (num != '' && num != null) {
 		// If next number is not null, add the arrow
 		const elNextNum = document.getElementById('next-arr');
 		if (arrowNumbers[1] !== null) {
-			document.getElementById('next-num').innerHTML = '#' + arrowNumbers[1];
-			elNextNum.href = '/legend/detail?num=' + arrowNumbers[1];
+			document.getElementById('next-num').innerHTML = `#${arrowNumbers[1]}`;
+			elNextNum.href = `/legend/detail?num=${arrowNumbers[1]}`;
 
 		// Otherwise, hide it
 		} else {
@@ -72,7 +72,11 @@ if (num != '' && num != null) {
 
 		// Populate image
 		document.getElementById('image').innerHTML = 
-			'<img src="/legend/img/lumies/' + num + '/full-600x600.png" class="image-normal active" alt="' + dbName + '">';
+			`<img 
+				src="/legend/img/lumies/${num}/full.png" 
+				class="image-normal active" 
+				alt="${dbName}"
+			>`;
 
 		// Populate traits
 		document.getElementById('tr1-name').innerHTML = data['traits'][0]['name'];
@@ -134,7 +138,6 @@ if (num != '' && num != null) {
 			return response.json();
 		})
 		.then(function(moves) {
-			console.log(moves[0]);
 			const mvLvlCon = document.getElementById('mv-lvl');
 			const mvTutCon = document.getElementById('mv-tut');
 			popMoves(moves[0], data['moves_level'], mvLvlCon);
@@ -152,8 +155,7 @@ if (num != '' && num != null) {
 			    elEvol.innerHTML += `
 					<a href="/legend/detail?num=${dbEvol[evo]['id']}" class="evo-block" 
 						aria-label="${dbEvol[evo]['id']} link">
-			    		<img data-src="/legend/img/lumies/${dbEvol[evo]['id']}/thumb-120x120.png"
-							src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+			    		<img src="/legend/img/lumies/${dbEvol[evo]['id']}/evo.png"
 							class="lazyload evo-thumb" alt="${dbEvol[evo]['id']} evolution thumbnail">
 						<p class="evo-req">${dbEvol[evo]['req']}</p>
 					</a>

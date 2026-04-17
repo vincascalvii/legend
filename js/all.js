@@ -33,7 +33,7 @@ fetch('/legend/data/all.json')
 						${dbAttr2 ? `<span class="attr ${dbAttr2.toLowerCase()}">${dbAttr2}</span>` : ``}
 					</div>
 				</div>
-				<img src="/legend/img/lumies/${dbNum}/thumb-480x360.png" alt="${dbName}" class="image" onerror="this.style.display='none'">
+				<img src="/legend/img/lumies/${dbNum}/thumb.png" alt="${dbName}" class="image" onerror="this.style.display='none'">
 				<picture>
 					<source data-srcset="/legend/img/others/corner-200x200.webp 1x, /legend/img/others/corner-400x400.webp 2x, /legend/img/others/corner-600x600.webp 3x" type="image/webp">
 					<source data-srcset="/legend/img/others/corner-200x200.png 1x, /legend/img/others/corner-400x400.png 2x, /legend/img/others/corner-600x600.png 3x" type="image/png">
