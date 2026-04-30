@@ -1,0 +1,68 @@
+[{
+	"number" : "006",
+	"name" : "Apex Wolflare",
+	"type": "Beast",
+	"attributes": ["Fire", "Fire"],
+	"traits" : [
+		{
+			"name" : "Pyro (enhanced)",
+			"desc" : "Increase the power of Fire moves by 50%."
+		},
+		{
+			"name" : "Blazing Claws",
+			"desc" : "Increase the power of Claw-type moves by 30% and grant them a 30% chance to burn the target."
+		}
+	],
+	"description" : "",
+	"gender" : {
+		"male" : "50%",
+		"female" : "50%"
+	},
+	"species" : "Dog",
+	"weight" : "117.0kg",
+	"height" : "2.3m",
+	"stats" : {
+		"hp" : "82",
+		"atk" : "138",
+		"def" : "80",
+		"spa" : "55",
+		"spd" : "60",
+		"spe" : "105",
+		"total" : "520"
+	},
+	"type_eff": {
+		"weakness" : ["Aquatic", "Construct"],
+		"resistance" : ["Insect"]
+	},
+	"attr_eff": {
+		"major_weakness" : ["Water", "Wind", "Earth"],
+		"weakness" : [],
+		"resistance" : [],
+		"major_resistance" : ["Nature", "Fire", "Ice", "Metal"],
+		"immunity" : []
+	},
+	"evolution" : [
+		{
+			"id" : "004",
+			"req" : "Base"
+		},
+		{
+			"id" : "005",
+			"req" : "Level 16"
+		},
+		{
+			"id" : "006",
+			"req" : "Level 36"
+		},
+        {
+			"id" : "006-A",
+			"req" : "Awakening"
+		},
+		{
+			"id" : "006-D",
+			"req" : "Awakening"
+		}
+	],
+	"moves_level" : [],
+	"moves_tutor" : []
+}]
